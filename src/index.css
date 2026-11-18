@@ -242,3 +242,19 @@ textarea { font: inherit; width: 100%; padding: 12px 14px; border-radius: 12px; 
 .day-cell.locked { color: #aab1bf; background: #f3f5f8; }
 .word-row { width: 100%; font: inherit; background: none; border: 0; border-bottom: 1px solid var(--line); text-align: left; cursor: pointer; color: inherit; }
 .word-open { padding: 8px 0 14px; }
+
+/* ===== Speaking & dikte ===== */
+.speak-practice { display: grid; gap: 8px; }
+.small-btn { min-height: 38px; padding: 8px 12px; font-size: 14px; }
+.small-btn svg { width: 18px; height: 18px; }
+.btn.live { background: var(--bad); color: #fff; animation: pulse 1.2s infinite; }
+@keyframes pulse { 50% { opacity: .7; } }
+.speak-result { border-radius: 12px; padding: 10px 12px; display: grid; gap: 4px; }
+.speak-result.good { background: var(--ok-soft); }
+.speak-result.ok { background: var(--warn-soft); }
+.speak-result.low { background: var(--bad-soft); }
+.marks { font-size: 17px; font-weight: 650; }
+.marks .heard { color: var(--ok); }
+.marks .missed { color: var(--bad); text-decoration: underline wavy; }
+.speak-btn.failed { background: #eee; color: #999; }
+.steps { margin: 0; padding-left: 18px; display: grid; gap: 4px; }

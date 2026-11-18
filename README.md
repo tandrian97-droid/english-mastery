@@ -61,6 +61,19 @@ tests/              unit test (Vitest) + tests/e2e (Playwright)
 
 Jangan mengubah blok `this.version(n)` yang sudah ada di `src/db/db.ts`. Untuk perubahan struktur: tambahkan `this.version(n+1)` baru (dengan `.upgrade()` bila perlu), naikkan `SCHEMA_VERSION`, dan uji impor backup dari versi lama sebelum rilis.
 
+## Audio
+
+Audio pengucapan dibuat sekali di komputer pembuat materi dengan [Piper TTS](https://github.com/rhasspy/piper) (suara `en-us-lessac-medium`), lalu disimpan sebagai Ogg Opus 24 kbps di `public/audio/` dan ikut ter-cache untuk offline:
+
+```bash
+pip install piper-tts   # + ffmpeg
+python3 scripts/generate-audio.py --model /path/en-us-lessac-medium.onnx
+```
+
+Nama file = hash FNV-1a dari teks (sama di Python, TypeScript, dan validator). `npm run validate:content` gagal jika ada teks tanpa audio. Suara bawaan perangkat hanya dipakai sebagai cadangan.
+
+Speaking: **Rekam** (MediaRecorder, offline) dan **Cek ucapan** (Web Speech API, butuh internet di sebagian besar perangkat).
+
 ## Lisensi materi
 
-Daftar kata NGSL/BSL © Browne, Culligan & Phillips, CC BY-SA 4.0. Harper © Automattic, Apache-2.0.
+Daftar kata NGSL/BSL © Browne, Culligan & Phillips, CC BY-SA 4.0. Harper © Automattic, Apache-2.0. Suara Lessac (Piper) dilatih dari dataset Blizzard 2013 Lessac; lisensi dataset membatasi pemakaian komersial, jadi audio ini untuk pemakaian pribadi.

@@ -125,7 +125,7 @@ function BlockBody({ data, dayNumber, block }: { data: DayData; dayNumber: numbe
       );
 
     case 'listening':
-      return <ListeningView listening={day.listening} onDone={() => void finish(null)} />;
+      return <ListeningView listening={day.listening} lessonId={blockKey(dayNumber, 'listening')} onDone={(score) => void finish(score)} />;
 
     case 'writing':
       return (

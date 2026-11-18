@@ -11,7 +11,7 @@ export const BLOCK_LABELS: Record<BlockKey, { title: string; minutes: number; de
   vocab: { title: 'Kosakata', minutes: 30, desc: 'Kata baru + review flashcard' },
   grammar: { title: 'Grammar', minutes: 20, desc: 'Pelajaran berlapis + latihan' },
   reading: { title: 'Reading', minutes: 20, desc: 'Bacaan + pertanyaan pemahaman' },
-  listening: { title: 'Listening & Speaking', minutes: 30, desc: 'Dengar dan tirukan (shadowing)' },
+  listening: { title: 'Listening & Speaking', minutes: 30, desc: 'Dengar, ucapkan (dinilai), dan dikte' },
   writing: { title: 'Writing', minutes: 20, desc: 'Menulis kalimat sendiri' },
 };
 

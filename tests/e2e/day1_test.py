@@ -152,11 +152,37 @@ with sync_playwright() as p:
     run_exercises(page)
     page.get_by_role("button", name="Selesai & lanjut").click()
 
-    # --- Blok 4: listening ---
-    expect(page.get_by_role("heading", name="Dengar & tirukan")).to_be_visible()
-    boxes = page.get_by_label("Sudah saya tirukan")
+    # --- Blok 4: listening & speaking ---
+    expect(page.get_by_role("heading", name="Tahap 1 · Dengar & ucapkan")).to_be_visible()
+    # audio terpasang benar-benar diputar dari file (offline, dari cache service worker)
+    played = page.evaluate('''async () => {
+      const btn = document.querySelector('.listen-item .speak-btn'); btn.click();
+      await new Promise(r => setTimeout(r, 1500));
+      return !btn.classList.contains('failed');
+    }''')
+    first_url = page.evaluate('''async () => {
+      const r = await fetch(document.baseURI.split('#')[0] + 'audio/' + '4f9f2cab.ogg'); return [r.status, (await r.blob()).size];
+    }''')
+    check("Audio 'hello' tersedia offline dari cache", first_url[0] == 200 and first_url[1] > 1000, f"HTTP {first_url[0]}, {first_url[1]} byte")
+    check("Tombol suara memutar audio tanpa error", played)
+    expect(page.get_by_role("button", name=re.compile("Rekam"))).to_have_count(len(DAY["listening"]["items"]))
+    check("Setiap kalimat punya tombol Rekam & Cek ucapan", page.get_by_role("button", name=re.compile("Cek ucapan")).count() == len(DAY["listening"]["items"]))
+    expect(page.get_by_text("Cek ucapan butuh internet", exact=False).first).to_be_visible()
+    check("Saat offline, aplikasi menjelaskan cek ucapan butuh internet", True)
+    page.screenshot(path=str(OUT / "19-speaking.png"), full_page=True)
+    boxes = page.get_by_label("Sudah saya ucapkan")
     for i in range(boxes.count()): boxes.nth(i).check()
-    page.get_by_role("button", name="Selesai").click()
+    page.get_by_role("button", name="Lanjut ke dikte").click()
+    for k, it in enumerate(DAY["listening"]["items"]):
+        expect(page.get_by_text(f"Dikte {k + 1} dari")).to_be_visible()
+        page.get_by_label("Yang Anda dengar").fill("wrong words" if k == 0 else it["en"])
+        page.get_by_role("button", name="Periksa").click()
+        if k == 0: page.screenshot(path=str(OUT / "20-dictation.png"), full_page=True)
+        page.locator(".feedback").get_by_role("button", name="Lanjut").click()
+    n_items = len(DAY["listening"]["items"])
+    expect(page.locator(".timer").last).to_have_text(f"{round((n_items - 1) / n_items * 100)}%")
+    check("Dikte dinilai otomatis", True)
+    page.get_by_role("button", name="Selesai & lanjut").click()
 
     # --- Blok 5: writing ---
     expect(page.get_by_role("heading", name="Menulis")).to_be_visible()

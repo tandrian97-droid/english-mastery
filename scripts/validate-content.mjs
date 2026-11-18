@@ -13,6 +13,20 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
+// Harus identik dengan src/engine/audio.ts dan scripts/generate-audio.py
+const normalizeForAudio = (t) => t.replace(/[*~]/g, '').replace(/^[A-Z][a-z]+:\s/, '').replace(/\s+/g, ' ').trim();
+function fnv1a(text) {
+  let h = 0x811c9dc5;
+  for (const b of Buffer.from(text, 'utf8')) { h ^= b; h = Math.imul(h, 0x01000193) >>> 0; }
+  return h.toString(16).padStart(8, '0');
+}
+const AUDIO_DIR = join(process.cwd(), 'public', 'audio');
+let audioChecked = 0;
+function needAudio(text, where) {
+  audioChecked++;
+  if (!existsSync(join(AUDIO_DIR, `${fnv1a(normalizeForAudio(text))}.ogg`))) err(`${where}: audio belum dibuat untuk "${text}" (jalankan scripts/generate-audio.py)`);
+}
+
 const ROOT = join(process.cwd(), 'public', 'content');
 const errors = [];
 const warnings = [];
@@ -79,6 +93,8 @@ for (const month of curriculum.months) {
     byId.set(w.id, w);
     if (!/^\/.+\/$/.test(w.ipa ?? '')) err(`kata ${w.id}: IPA harus diapit /.../`);
     if (!w.example?.toLowerCase().includes(w.word.toLowerCase())) warn(`kata ${w.id}: contoh kalimat tidak memuat kata '${w.word}'`);
+    needAudio(w.word, `kata ${w.id}`);
+    needAudio(w.example, `contoh kata ${w.id}`);
   }
 
   for (let d = month.days[0]; d <= month.availableThroughDay; d++) {
@@ -103,6 +119,8 @@ for (const month of curriculum.months) {
     for (const ex of day.writing.exercises) checkExercise(ex, `${where} writing`);
     if (!day.lesson.exercises.some((e) => e.type === 'explain')) warn(`${where}: tidak ada soal 'jelaskan dengan kata-kata sendiri'`);
     if (!day.listening.items.length) err(`${where}: listening kosong`);
+    for (const it of day.listening.items) needAudio(it.en, `${where} listening`);
+    for (const p of day.reading.paragraphs) needAudio(p.en, `${where} bacaan`);
 
     // Kosakata bacaan: semua kata harus sudah dikenal
     const known = new Set();
@@ -126,5 +144,5 @@ for (const month of curriculum.months) {
 
 for (const w of warnings) console.log('PERINGATAN ' + w);
 for (const e of errors) console.log('ERROR ' + e);
-console.log(`\n${errors.length} error, ${warnings.length} peringatan, ${exerciseIds.size} soal diperiksa`);
+console.log(`\n${errors.length} error, ${warnings.length} peringatan, ${exerciseIds.size} soal diperiksa, ${audioChecked} audio diperiksa`);
 process.exit(errors.length ? 1 : 0);

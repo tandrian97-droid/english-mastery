@@ -1,13 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { db } from '../db/db';
-import { speak, whenVoicesReady } from '../engine/speech';
-
-let voicesPromise: Promise<boolean> | null = null;
-function voicesReady() {
-  voicesPromise ??= whenVoicesReady();
-  return voicesPromise;
-}
+import { playText } from '../engine/audio';
 
 const SpeakerIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -16,33 +10,24 @@ const SpeakerIcon = () => (
   </svg>
 );
 
-/** Tombol putar suara. Tersembunyi jika perangkat tidak punya suara bahasa Inggris. */
+/** Tombol putar suara: memakai audio terpasang (offline), cadangan: suara perangkat. */
 export function SpeakButton({ text, slow = false, label }: { text: string; slow?: boolean; label?: string }) {
-  const [available, setAvailable] = useState<boolean | null>(null);
   const [playing, setPlaying] = useState(false);
+  const [failed, setFailed] = useState(false);
   const settings = useLiveQuery(() => db.settings.get(1));
   const rate = (settings?.audioRate ?? 1) * (slow ? 0.7 : 1);
-
-  useEffect(() => {
-    let alive = true;
-    void voicesReady().then((ok) => alive && setAvailable(ok));
-    return () => {
-      alive = false;
-    };
-  }, []);
-
-  if (available === false) return null;
 
   return (
     <button
       type="button"
-      className={`speak-btn${playing ? ' playing' : ''}`}
+      className={`speak-btn${playing ? ' playing' : ''}${failed ? ' failed' : ''}`}
       aria-label={label ?? (slow ? `Putar pelan: ${text}` : `Putar: ${text}`)}
-      disabled={available === null}
+      title={failed ? 'Audio tidak tersedia untuk teks ini' : undefined}
       onClick={() => {
         setPlaying(true);
-        speak(text, rate)
-          .catch(() => setAvailable(false))
+        setFailed(false);
+        playText(text, rate)
+          .catch(() => setFailed(true))
           .finally(() => setPlaying(false));
       }}
     >

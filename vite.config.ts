@@ -32,10 +32,11 @@ export default defineConfig({
       },
       workbox: {
         // Shell aplikasi + materi (JSON) disimpan saat instalasi, agar semua bisa dibuka offline.
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,json,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,json,webmanifest,ogg}'],
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,
-        // Audio per bulan disimpan saat pertama diputar (dan nanti diunduh per paket bulan).
+        // Audio yang belum ter-precache (mis. file baru) disimpan saat pertama diputar.
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.pathname.includes('/audio/'),
