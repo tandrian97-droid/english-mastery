@@ -103,6 +103,8 @@ export interface FsrsState {
   scheduledDays: number;
   reps: number;
   lapses: number;
+  /** Langkah belajar jangka pendek (menit) yang sedang dijalani FSRS. */
+  learningSteps: number;
   /** 0 New, 1 Learning, 2 Review, 3 Relearning */
   state: 0 | 1 | 2 | 3;
   lastReview: Timestamp | null;

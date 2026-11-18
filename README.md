@@ -9,7 +9,7 @@ Brief proyek lengkap: dokumen **English Mastery — Brief v2 (Revisi)** di Claud
 | Tahap | Isi | Status |
 | --- | --- | --- |
 | 1 · Fondasi | Proyek, PWA offline, database, backup/restore, navigasi, dashboard, timer belajar | **Selesai — 13 unit test + 17 uji end-to-end lulus** |
-| 2 · Inti belajar | Sesi harian, flashcard FSRS + audio, pelajaran grammar & bacaan, konten bulan 1 | Berikutnya |
+| 2 · Inti belajar | Sesi harian, flashcard FSRS + audio, pelajaran grammar & bacaan, konten bulan 1 | **Berjalan — Minggu 1 (Hari 1–7) rilis; 38 unit test + 35 uji e2e lulus** |
 | 3 · Writing & data | Writing Studio, Harper, katalog kesalahan, AI Tutor di Claude | — |
 | 4 · Melengkapi | Rekam-dan-bandingkan, grafik, AI lokal di Fold 7, pembaca impor buku | — |
 | 5 · Lanjutan | Konten bulanan berlanjut, skenario percakapan, review mingguan | — |
@@ -21,10 +21,12 @@ Butuh Node.js 22+.
 ```bash
 npm install
 npm run dev        # server pengembangan di http://localhost:5173
-npm test           # unit test (database, backup, streak)
+npm test           # validasi materi + unit test (database, backup, FSRS, penilai jawaban)
+npm run validate:content  # cek materi: kunci jawaban, kata di bacaan sudah diajarkan, dll.
 npm run build      # build produksi ke folder dist/
 npm run preview    # menjalankan hasil build di http://localhost:4173
 npm run test:e2e   # uji end-to-end di Chrome: offline, restart, backup/restore (butuh Python + Playwright)
+python3 tests/e2e/day1_test.py . tests/e2e/out   # menyelesaikan Hari 1 penuh secara offline
 ```
 
 ## Memasang di HP Android

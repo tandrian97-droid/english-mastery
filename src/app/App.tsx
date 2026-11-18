@@ -1,8 +1,10 @@
 import { useLiveQuery } from 'dexie-react-hooks';
-import { HashRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { HashRouter, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { db } from '../db/db';
 import { HomePage } from '../features/home/HomePage';
 import { LearnPage } from '../features/learn/LearnPage';
+import { DayPage } from '../features/learn/DayPage';
+import { BlockPage } from '../features/learn/BlockPage';
 import { ProgressPage } from '../features/progress/ProgressPage';
 import { SettingsPage } from '../features/settings/SettingsPage';
 import { TutorPage } from '../features/tutor/TutorPage';
@@ -14,13 +16,14 @@ import { UpdatePrompt } from './UpdatePrompt';
 
 const NAV = [
   { to: '/', label: 'Beranda', icon: HomeIcon, end: true },
-  { to: '/learn', label: 'Belajar', icon: LearnIcon },
+  { to: '/learn', label: 'Belajar', icon: LearnIcon, also: '/day' },
   { to: '/vocabulary', label: 'Kosakata', icon: VocabIcon },
   { to: '/tutor', label: 'AI Tutor', icon: TutorIcon },
   { to: '/progress', label: 'Progres', icon: ProgressIcon },
 ];
 
 function Shell() {
+  const location = useLocation();
   // undefined = masih memuat; null = belum ada profil
   const profile = useLiveQuery(async () => (await db.profile.get(1)) ?? null);
   if (profile === undefined) return null;
@@ -32,6 +35,8 @@ function Shell() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/learn" element={<LearnPage />} />
+          <Route path="/day/:day" element={<DayPage />} />
+          <Route path="/day/:day/:block" element={<BlockPage />} />
           <Route path="/vocabulary" element={<VocabularyPage />} />
           <Route path="/tutor" element={<TutorPage />} />
           <Route path="/progress" element={<ProgressPage />} />
@@ -40,8 +45,13 @@ function Shell() {
         </Routes>
       </main>
       <nav className="nav" aria-label="Navigasi utama">
-        {NAV.map(({ to, label, icon: Icon, end }) => (
-          <NavLink key={to} to={to} end={end} className={({ isActive }) => (isActive ? 'active' : '')}>
+        {NAV.map(({ to, label, icon: Icon, end, also }) => (
+          <NavLink
+            key={to}
+            to={to}
+            end={end}
+            className={({ isActive }) => (isActive || (also && location.pathname.startsWith(also)) ? 'active' : '')}
+          >
             <span className="nav-icon">
               <Icon />
             </span>

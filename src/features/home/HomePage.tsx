@@ -8,6 +8,9 @@ import { formatClock, useStudyTimer } from '../../engine/useStudyTimer';
 import { useFeedback } from '../../ui/feedback';
 import { GearIcon, PauseIcon, PlayIcon } from '../../ui/icons';
 import { useOnline } from '../../ui/hooks';
+import { BLOCK_LABELS, BLOCK_ORDER, getDayProgress } from '../../db/learning';
+import { loadDay, lastAvailableDay } from '../../content/load';
+import { useEffect, useState } from 'react';
 
 const STOP_MESSAGES = {
   idle: 'Timer dijeda otomatis karena 10 menit tidak ada aktivitas.',
@@ -98,20 +101,10 @@ export function HomePage() {
             )}
           </div>
           {timer.lastStop && timer.lastStop !== 'user' && <p className="muted small">{STOP_MESSAGES[timer.lastStop]}</p>}
-          <p className="muted small">
-            Timer ini menghitung waktu belajar aktif. Mulai Tahap 2, timer berjalan otomatis di dalam setiap pelajaran.
-          </p>
+          <p className="muted small">Timer berjalan otomatis di dalam pelajaran. Tombol ini untuk belajar di luar aplikasi (misalnya membaca buku).</p>
         </section>
 
-        <section className="card">
-          <h2>Pelajaran hari ini</h2>
-          <p className="muted">
-            Materi bulan 1 (bunyi & ejaan, 300 kata pertama, <i>to be</i>, simple present) sedang dibuat dan masuk di Tahap 2.
-          </p>
-          <Link to="/learn" className="btn secondary block">
-            Lihat kurikulum 10 bulan
-          </Link>
-        </section>
+        <TodayLessonCard day={profile.curriculumDay} />
 
         <section className="card span-2">
           <div className="stats">
@@ -176,5 +169,54 @@ export function HomePage() {
         </section>
       </div>
     </div>
+  );
+}
+
+function TodayLessonCard({ day }: { day: number }) {
+  const progress = useLiveQuery(() => getDayProgress(day), [day]);
+  const [info, setInfo] = useState<{ day: number; title: string | null; lastDay: number } | null>(null);
+  useEffect(() => {
+    let alive = true;
+    lastAvailableDay()
+      .then(async (lastDay) => {
+        const title = day <= lastDay ? (await loadDay(day)).title : null;
+        if (alive) setInfo({ day, title, lastDay });
+      })
+      .catch(() => alive && setInfo({ day, title: null, lastDay: 0 }));
+    return () => {
+      alive = false;
+    };
+  }, [day]);
+
+  if (!info || info.day !== day || !progress) return <section className="card" aria-busy="true" />;
+  if (!info.title) {
+    return (
+      <section className="card">
+        <h2>Pelajaran hari ini</h2>
+        <p className="muted">Hebat, Anda sudah menyelesaikan semua materi yang tersedia (s.d. Hari {info.lastDay}). Materi berikutnya sedang dibuat. Sementara itu, lanjutkan review kosakata.</p>
+        <Link to="/vocabulary" className="btn secondary block">
+          Review kosakata
+        </Link>
+      </section>
+    );
+  }
+  const done = BLOCK_ORDER.filter((b) => progress[b]?.status === 'completed').length;
+  const next = BLOCK_ORDER.find((b) => progress[b]?.status !== 'completed');
+  return (
+    <section className="card">
+      <p className="muted small">Hari {day}</p>
+      <h2>{info.title}</h2>
+      <div className="row between">
+        <span className="muted small">
+          {done}/{BLOCK_ORDER.length} blok selesai
+        </span>
+      </div>
+      <div className="progress">
+        <span style={{ width: `${(done / BLOCK_ORDER.length) * 100}%` }} />
+      </div>
+      <Link to={next ? `/day/${day}/${next}` : `/day/${day}`} className="btn block">
+        {next ? `${done === 0 ? 'Mulai' : 'Lanjutkan'}: ${BLOCK_LABELS[next].title}` : 'Lihat ringkasan hari'}
+      </Link>
+    </section>
   );
 }

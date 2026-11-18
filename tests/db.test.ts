@@ -25,7 +25,7 @@ function card(wordId: string, mastery: 0 | 1 | 2 | 3 | 4, due: number): VocabCar
     due,
     firstSeenAt: 1,
     updatedAt: 1,
-    fsrs: { due, stability: 1, difficulty: 5, elapsedDays: 0, scheduledDays: 1, reps: 1, lapses: 0, state: 2, lastReview: null },
+    fsrs: { due, stability: 1, difficulty: 5, elapsedDays: 0, scheduledDays: 1, reps: 1, lapses: 0, learningSteps: 0, state: 2, lastReview: null },
   };
 }
 

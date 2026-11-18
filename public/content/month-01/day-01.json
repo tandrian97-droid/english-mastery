@@ -1,0 +1,515 @@
+{
+  "day": 1,
+  "month": 1,
+  "title": "Halo! Menyapa dan memperkenalkan diri",
+  "goals": [
+    "Menyapa orang dengan tepat sesuai waktu (pagi, siang, malam)",
+    "Memperkenalkan nama Anda dalam satu kalimat",
+    "Mengerti kenapa tulisan bahasa Inggris sering berbeda dengan bunyinya"
+  ],
+  "newWords": [
+    "hello",
+    "hi",
+    "good",
+    "morning",
+    "afternoon",
+    "evening",
+    "name",
+    "my",
+    "yes",
+    "no"
+  ],
+  "lesson": {
+    "id": "L01",
+    "title": "Menyapa dan menyebut nama",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa berkata: \"Good morning. My name is ___.\" dan tahu kapan memakai Hello, Hi, Good morning, Good afternoon, Good evening, dan Good night.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bahasa Indonesia itu **jujur**: apa yang ditulis, itulah yang dibaca. *Meja* dibaca me-ja. Bahasa Inggris **tidak begitu**. Tulisan *name* dibaca \"neim\", bukan \"na-me\"."
+          },
+          {
+            "type": "p",
+            "text": "Bayangkan bahasa Indonesia seperti peta yang rapi, sedangkan bahasa Inggris seperti kota tua yang nama jalannya sudah lama tidak cocok dengan bentuk jalannya. Karena itu, **setiap kata baru harus didengar, bukan hanya dibaca.** Di aplikasi ini setiap kata punya tombol suara dan petunjuk bunyi, misalnya: name = NEIM."
+          },
+          {
+            "type": "tip",
+            "text": "Kebiasaan pertama yang paling penting: setiap bertemu kata baru, tekan tombol suara dulu, tirukan dengan keras, baru lihat tulisannya."
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "Ucapan",
+              "Bunyi",
+              "Kapan",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "Hello",
+                "he-LOU",
+                "kapan saja, ke siapa saja",
+                "Halo"
+              ],
+              [
+                "Hi",
+                "HAI",
+                "santai: teman, rekan dekat, chat",
+                "Hai"
+              ],
+              [
+                "Good morning",
+                "gud MOR-ning",
+                "bangun tidur s.d. ±12.00",
+                "Selamat pagi"
+              ],
+              [
+                "Good afternoon",
+                "gud af-ter-NUUN",
+                "±12.00 s.d. ±18.00",
+                "Selamat siang / sore"
+              ],
+              [
+                "Good evening",
+                "gud IIV-ning",
+                "saat BERTEMU di malam hari",
+                "Selamat malam"
+              ],
+              [
+                "Good night",
+                "gud NAIT",
+                "saat BERPISAH malam / mau tidur",
+                "Selamat malam / selamat tidur"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Untuk menyebut nama, polanya: **My name is** + nama Anda."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "My name is Budi.",
+                "id": "Nama saya Budi."
+              },
+              {
+                "en": "Good morning. My name is Rina.",
+                "id": "Selamat pagi. Nama saya Rina."
+              },
+              {
+                "en": "Hello, my name is Andi.",
+                "id": "Halo, nama saya Andi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kenapa \"my name\" dan bukan \"name my\"?** Dalam bahasa Indonesia, pemilik ditulis di belakang: *nama saya*, *rumah saya*. Dalam bahasa Inggris, **pemilik selalu di depan**: *my name*, *my house*. Ini aturan tetap, dan akan Anda temui ribuan kali."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa tidak ada \"Good noon\" untuk siang dan \"Good sore\" untuk sore?** Bahasa Inggris membagi hari hanya menjadi *morning* (pagi), *afternoon* (setelah tengah hari), dan *evening* (malam). Kata *afternoon* artinya harfiah \"setelah tengah hari\": *after* (setelah) + *noon* (tengah hari). Jadi siang dan sore sama-sama *afternoon*."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa ada \"is\" di \"My name is Budi\"?** Bahasa Indonesia cukup bilang *Nama saya Budi*. Bahasa Inggris **wajib** punya kata kerja di setiap kalimat, dan *is* berperan sebagai \"adalah\". Untuk sekarang, hafalkan saja *My name is ...* sebagai satu paket. Di Hari 3 Anda akan paham sepenuhnya kenapa kata itu wajib ada."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {
+            "type": "mistakes",
+            "items": [
+              {
+                "wrong": "Good night! (saat datang ke rapat jam 19.00)",
+                "right": "Good evening!",
+                "why": "Good night hanya untuk berpisah atau mau tidur. Untuk menyapa saat bertemu di malam hari: Good evening."
+              },
+              {
+                "wrong": "Good afternoon! (jam 09.00)",
+                "right": "Good morning!",
+                "why": "Jam 9 masih pagi. Afternoon dimulai setelah jam 12 siang."
+              },
+              {
+                "wrong": "Name my is Budi.",
+                "right": "My name is Budi.",
+                "why": "Pemilik (my) selalu di depan benda (name)."
+              },
+              {
+                "wrong": "My name Budi.",
+                "right": "My name is Budi.",
+                "why": "Kalimat bahasa Inggris wajib punya kata kerja. Di sini kata kerjanya 'is'."
+              },
+              {
+                "wrong": "Hi, Mr. Lee. (email pertama ke klien baru)",
+                "right": "Hello, Mr. Lee. / Good morning, Mr. Lee.",
+                "why": "Hi terlalu santai untuk orang yang baru dikenal secara profesional."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Hello** aman untuk siapa saja. **Hi** terasa ramah dan santai, cocok untuk teman dan chat. Di kantor modern, Hi juga biasa dipakai ke rekan kerja yang sudah akrab."
+          },
+          {
+            "type": "p",
+            "text": "Saat berkenalan, orang Inggris biasa menambahkan **Nice to meet you** (senang bertemu Anda). Jawabannya: **Nice to meet you too** (senang bertemu Anda juga). Hafalkan dua kalimat ini sebagai paket. Kata-katanya akan kita bedah di minggu-minggu berikutnya."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "Hello, my name is Budi. Nice to meet you.",
+                "id": "Halo, nama saya Budi. Senang bertemu Anda."
+              },
+              {
+                "en": "Nice to meet you too.",
+                "id": "Senang bertemu Anda juga."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {
+            "type": "p",
+            "text": "*Good morning* awalnya adalah doa: \"semoga pagimu baik\". Begitu juga **goodbye** (selamat tinggal), yang berasal dari ucapan lama *God be with ye*, artinya \"Tuhan bersamamu\". Lama-lama diucapkan cepat dan disingkat menjadi *goodbye*."
+          },
+          {
+            "type": "p",
+            "text": "*Hello* justru kata yang relatif baru. Kata ini menjadi sapaan umum sekitar abad ke-19, dan makin populer sebagai kata pembuka saat menjawab telepon."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d1-e1",
+        "type": "mc",
+        "prompt": "Jam 08.00, Anda datang ke kantor klien. Sapaan yang tepat:",
+        "options": [
+          {
+            "text": "Good morning!"
+          },
+          {
+            "text": "Good afternoon!",
+            "why": "Afternoon dimulai setelah jam 12 siang."
+          },
+          {
+            "text": "Good night!",
+            "why": "Good night untuk berpisah di malam hari."
+          }
+        ],
+        "answer": 0,
+        "explain": "Jam 8 masih pagi, jadi Good morning."
+      },
+      {
+        "id": "d1-e2",
+        "type": "mc",
+        "prompt": "Jam 15.00 (sore). Sapaan yang tepat:",
+        "options": [
+          {
+            "text": "Good evening!",
+            "why": "Evening dimulai sekitar jam 6 sore."
+          },
+          {
+            "text": "Good afternoon!"
+          },
+          {
+            "text": "Good morning!",
+            "why": "Morning hanya sampai sekitar jam 12."
+          }
+        ],
+        "answer": 1,
+        "explain": "Bahasa Inggris tidak membedakan siang dan sore. Jam 3 sore tetap afternoon."
+      },
+      {
+        "id": "d1-e3",
+        "type": "mc",
+        "prompt": "Jam 19.00 Anda DATANG ke rapat. Sapaan yang tepat:",
+        "options": [
+          {
+            "text": "Good night!",
+            "why": "Good night untuk berpisah atau mau tidur, bukan untuk menyapa saat datang."
+          },
+          {
+            "text": "Good evening!"
+          },
+          {
+            "text": "Good afternoon!",
+            "why": "Jam 7 malam sudah evening."
+          }
+        ],
+        "answer": 1,
+        "explain": "Bertemu di malam hari = Good evening. Berpisah di malam hari = Good night.",
+        "errorTag": "greeting-time"
+      },
+      {
+        "id": "d1-e4",
+        "type": "mc",
+        "prompt": "Anda menulis email PERTAMA ke klien baru bernama Mr. Lee. Pembuka yang paling tepat:",
+        "options": [
+          {
+            "text": "Hi, Lee!",
+            "why": "Terlalu santai dan tanpa sapaan hormat."
+          },
+          {
+            "text": "Hello, Mr. Lee."
+          },
+          {
+            "text": "Good night, Mr. Lee.",
+            "why": "Good night adalah salam perpisahan."
+          }
+        ],
+        "answer": 1,
+        "explain": "Untuk orang yang baru dikenal secara profesional, Hello + Mr./Ms. + nama terdengar sopan."
+      },
+      {
+        "id": "d1-e5",
+        "type": "fill",
+        "prompt": "My ___ is Budi. (Nama saya Budi.)",
+        "accept": [
+          "name"
+        ],
+        "explain": "Pola perkenalan: My name is + nama.",
+        "hint": "nama = ..."
+      },
+      {
+        "id": "d1-e6",
+        "type": "fill",
+        "prompt": "My name ___ Sara.",
+        "accept": [
+          "is"
+        ],
+        "explain": "Kalimat bahasa Inggris wajib punya kata kerja. Di sini 'is' berperan sebagai 'adalah'.",
+        "errorTag": "missing-be"
+      },
+      {
+        "id": "d1-e7",
+        "type": "order",
+        "prompt": "Susun: Nama saya Rina.",
+        "tokens": [
+          "My",
+          "name",
+          "is",
+          "Rina."
+        ],
+        "explain": "Pemilik (my) di depan benda (name), lalu 'is', lalu nama.",
+        "errorTag": "possessive-order"
+      },
+      {
+        "id": "d1-e8",
+        "type": "translate",
+        "prompt": "Terjemahkan: Selamat pagi. Nama saya Andi.",
+        "accept": [
+          "Good morning. My name is Andi.",
+          "Good morning, my name is Andi."
+        ],
+        "explain": "Good morning + My name is + nama."
+      },
+      {
+        "id": "d1-e9",
+        "type": "explain",
+        "prompt": "Jelaskan dengan kata-kata Anda sendiri: apa bedanya Good evening dan Good night?",
+        "model": "Good evening dipakai untuk menyapa saat bertemu di malam hari. Good night dipakai saat berpisah di malam hari atau mau tidur.",
+        "explain": "Kalau Anda bisa menjelaskannya sendiri, berarti Anda paham, bukan sekadar hafal."
+      }
+    ]
+  },
+  "reading": {
+    "id": "R01",
+    "title": "At the office",
+    "cefr": "A1",
+    "intro": "Baca percakapan pendek ini dulu tanpa melihat terjemahan. Ketuk kata yang belum Anda tahu untuk melihat artinya.",
+    "paragraphs": [
+      {
+        "en": "Sara: Good morning!",
+        "id": "Sara: Selamat pagi!"
+      },
+      {
+        "en": "Budi: Good morning! My name is Budi.",
+        "id": "Budi: Selamat pagi! Nama saya Budi."
+      },
+      {
+        "en": "Sara: Hi, Budi. My name is Sara. Nice to meet you.",
+        "id": "Sara: Hai, Budi. Nama saya Sara. Senang bertemu denganmu."
+      },
+      {
+        "en": "Budi: Nice to meet you too, Sara.",
+        "id": "Budi: Senang bertemu denganmu juga, Sara."
+      }
+    ],
+    "glossary": {
+      "nice": "menyenangkan",
+      "to": "untuk / ke",
+      "meet": "bertemu",
+      "too": "juga",
+      "office": "kantor",
+      "at": "di",
+      "the": "(kata sandang: yang itu)",
+      "is": "adalah (dibahas tuntas di Hari 3)",
+      "you": "kamu / Anda (dipelajari di Hari 2)"
+    },
+    "questions": [
+      {
+        "id": "d1-r1",
+        "type": "mc",
+        "prompt": "Percakapan ini terjadi pada waktu apa?",
+        "options": [
+          {
+            "text": "Pagi"
+          },
+          {
+            "text": "Siang"
+          },
+          {
+            "text": "Malam"
+          }
+        ],
+        "answer": 0,
+        "explain": "Mereka berkata 'Good morning', jadi ini pagi hari."
+      },
+      {
+        "id": "d1-r2",
+        "type": "mc",
+        "prompt": "Siapa yang berkata 'Hi'?",
+        "options": [
+          {
+            "text": "Budi"
+          },
+          {
+            "text": "Sara"
+          }
+        ],
+        "answer": 1,
+        "explain": "Sara berkata: 'Hi, Budi.'"
+      },
+      {
+        "id": "d1-r3",
+        "type": "mc",
+        "prompt": "Apa arti 'Nice to meet you too'?",
+        "options": [
+          {
+            "text": "Selamat tinggal"
+          },
+          {
+            "text": "Senang bertemu denganmu juga"
+          },
+          {
+            "text": "Nama saya juga Budi"
+          }
+        ],
+        "answer": 1,
+        "explain": "'too' = juga. Ini balasan untuk 'Nice to meet you'."
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Dengarkan setiap kalimat, lalu tirukan dengan keras 3 kali (shadowing). Fokus pada suku kata yang ditekan.",
+    "items": [
+      {
+        "en": "Hello.",
+        "id": "Halo.",
+        "tip": "he-LOU: tekanan di suku kedua."
+      },
+      {
+        "en": "Hi.",
+        "id": "Hai."
+      },
+      {
+        "en": "Good morning.",
+        "id": "Selamat pagi.",
+        "tip": "Bunyi 'good' pendek: gud."
+      },
+      {
+        "en": "Good afternoon.",
+        "id": "Selamat siang.",
+        "tip": "af-ter-NUUN: tekanan di akhir."
+      },
+      {
+        "en": "Good evening.",
+        "id": "Selamat malam.",
+        "tip": "IIV-ning: dua suku kata saja."
+      },
+      {
+        "en": "Good night.",
+        "id": "Selamat malam (berpisah)."
+      },
+      {
+        "en": "My name is Budi.",
+        "id": "Nama saya Budi.",
+        "tip": "'name is' tersambung: NEI-miz."
+      },
+      {
+        "en": "Nice to meet you.",
+        "id": "Senang bertemu denganmu.",
+        "tip": "Diucapkan cepat: nais-te-MIIT-yu."
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Tulis kalimat Anda sendiri. Jawaban dicek offline. Tanda baca dan huruf besar tidak memengaruhi nilai.",
+    "exercises": [
+      {
+        "id": "d1-w1",
+        "type": "translate",
+        "prompt": "Selamat siang, Pak Lee.",
+        "accept": [
+          "Good afternoon, Mr. Lee.",
+          "Good afternoon, Mr Lee.",
+          "Good afternoon Mr. Lee"
+        ],
+        "explain": "Pak/Bapak = Mr. (dibaca MIS-ter), diletakkan sebelum nama."
+      },
+      {
+        "id": "d1-w2",
+        "type": "translate",
+        "prompt": "Halo, nama saya Rina.",
+        "accept": [
+          "Hello, my name is Rina.",
+          "Hi, my name is Rina."
+        ],
+        "explain": "Hello (atau Hi) + my name is + nama."
+      },
+      {
+        "id": "d1-w3",
+        "type": "explain",
+        "prompt": "Tulis perkenalan diri Anda: sapaan pagi + nama Anda + 'senang bertemu Anda'.",
+        "model": "Good morning. My name is (nama Anda). Nice to meet you.",
+        "explain": "Simpan perkenalan ini. Besok Anda akan menambah satu kalimat lagi."
+      }
+    ]
+  }
+}

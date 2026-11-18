@@ -1,0 +1,520 @@
+{
+  "day": 6,
+  "month": 1,
+  "title": "Ini, itu, dan milik siapa",
+  "goals": [
+    "Menunjuk benda dekat dan jauh: this, that, these, those",
+    "Menyebut pemilik: my, your, his, her, our, their",
+    "Tidak lagi tertukar his dan her"
+  ],
+  "newWords": [
+    "this",
+    "that",
+    "these",
+    "those",
+    "your",
+    "his",
+    "her",
+    "our",
+    "their",
+    "new"
+  ],
+  "lesson": {
+    "id": "L06",
+    "title": "Kata penunjuk dan kata kepemilikan",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa berkata \"This is my office\", \"Those are their chairs\", dan memilih his/her berdasarkan pemiliknya.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Bahasa Indonesia punya dua kata penunjuk: **ini** (dekat) dan **itu** (jauh). Bahasa Inggris punya **empat**, karena si petugas gudang kemarin ikut campur lagi: ia ingin tahu **satu atau banyak**."
+          },
+          {
+            "type": "table",
+            "head": [
+              "",
+              "Satu",
+              "Banyak"
+            ],
+            "rows": [
+              [
+                "Dekat (ini)",
+                "**this**",
+                "**these**"
+              ],
+              [
+                "Jauh (itu)",
+                "**that**",
+                "**those**"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Untuk kepemilikan, Anda sudah kenal **my** (milik saya). Setiap kata ganti punya pasangan pemiliknya sendiri, dan semuanya diletakkan **di depan** benda."
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "Pelaku",
+              "Pemilik",
+              "Contoh",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "I",
+                "**my**",
+                "my office",
+                "kantor saya"
+              ],
+              [
+                "you",
+                "**your**",
+                "your project",
+                "proyekmu"
+              ],
+              [
+                "he",
+                "**his**",
+                "his chair",
+                "kursinya (laki-laki)"
+              ],
+              [
+                "she",
+                "**her**",
+                "her house",
+                "rumahnya (perempuan)"
+              ],
+              [
+                "it",
+                "**its**",
+                "its door",
+                "pintunya (benda)"
+              ],
+              [
+                "we",
+                "**our**",
+                "our team",
+                "tim kami"
+              ],
+              [
+                "they",
+                "**their**",
+                "their kitchen",
+                "dapur mereka"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "This is my office.",
+                "id": "Ini kantor saya."
+              },
+              {
+                "en": "That is her house.",
+                "id": "Itu rumahnya (perempuan)."
+              },
+              {
+                "en": "These are our chairs.",
+                "id": "Ini kursi-kursi kami."
+              },
+              {
+                "en": "Those are their windows.",
+                "id": "Itu jendela-jendela mereka."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kenapa *his/her* mengikuti pemilik, bukan bendanya?** Dalam bahasa Inggris, benda tidak punya jenis kelamin. Yang dicatat adalah jenis kelamin **pemiliknya**. Kursi milik Budi = *his chair*. Kursi milik Sara = *her chair*. Kursinya sendiri netral."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa *these/those* lalu *are*?** Karena keduanya jamak. Satu lagi contoh kebiasaan bahasa Inggris \"mencocokkan\" jumlah di seluruh kalimat: *This **is** a chair* ↔ *These **are** chairs*. Kata penunjuk, kata kerja, dan kata benda harus kompak: semua tunggal, atau semua jamak."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa kata sifat di depan?** *a new house* (rumah baru), bukan *a house new*. Dalam bahasa Inggris, **penjelas diletakkan sebelum yang dijelaskan**. Urutannya terbalik dari bahasa Indonesia, seperti *my name* = nama saya."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {
+            "type": "mistakes",
+            "items": [
+              {
+                "wrong": "Sara? This is his office.",
+                "right": "Sara? This is **her** office.",
+                "why": "Pemiliknya perempuan (Sara), jadi 'her'."
+              },
+              {
+                "wrong": "This chairs are new.",
+                "right": "**These** chairs are new.",
+                "why": "Banyak kursi = these."
+              },
+              {
+                "wrong": "These is my table.",
+                "right": "**This is** my table.",
+                "why": "Satu meja = this + is."
+              },
+              {
+                "wrong": "a house new",
+                "right": "a **new house**",
+                "why": "Kata sifat sebelum kata benda."
+              },
+              {
+                "wrong": "office my",
+                "right": "**my office**",
+                "why": "Pemilik selalu di depan."
+              },
+              {
+                "wrong": "Their are my clients.",
+                "right": "**They** are my clients.",
+                "why": "'their' = milik mereka. Pelaku kalimat = 'they'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Tiga kata yang bunyinya sama:** *their* (milik mereka), *there* (di sana), *they're* (= they are). Penutur asli pun sering salah menulisnya. Cara membedakan: ganti dengan *they are*. Kalau masuk akal, tulis *they're*. Kalau artinya tempat, tulis *there*. Kalau artinya milik, tulis *their*."
+          },
+          {
+            "type": "p",
+            "text": "*This* juga dipakai untuk **memperkenalkan orang**: *This is Sara, my friend.* (Ini Sara, teman saya.) Bukan *She is Sara* saat memperkenalkan."
+          }
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {
+            "type": "p",
+            "text": "*Their* dan *they* bukan kata asli Inggris Kuno. Keduanya dipinjam dari bahasa **Norse Kuno** (bahasa bangsa Viking) sekitar seribu tahun lalu, ketika bangsa Viking menetap di Inggris. Banyak kata sehari-hari bahasa Inggris berasal dari mereka."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d6-e1",
+        "type": "mc",
+        "prompt": "(Satu kursi, dekat Anda) ___ is my chair.",
+        "options": [
+          {
+            "text": "This"
+          },
+          {
+            "text": "These",
+            "why": "'These' untuk banyak."
+          },
+          {
+            "text": "Those",
+            "why": "'Those' untuk banyak dan jauh."
+          }
+        ],
+        "answer": 0,
+        "explain": "Satu + dekat = this."
+      },
+      {
+        "id": "d6-e2",
+        "type": "mc",
+        "prompt": "(Banyak jendela, jauh) ___ are big windows.",
+        "options": [
+          {
+            "text": "That",
+            "why": "'That' untuk satu."
+          },
+          {
+            "text": "Those"
+          },
+          {
+            "text": "This",
+            "why": "'This' untuk satu dan dekat."
+          }
+        ],
+        "answer": 1,
+        "explain": "Banyak + jauh = those."
+      },
+      {
+        "id": "d6-e3",
+        "type": "mc",
+        "prompt": "Ini kantor Sara. This is ___ office.",
+        "options": [
+          {
+            "text": "his",
+            "why": "'his' untuk pemilik laki-laki."
+          },
+          {
+            "text": "her"
+          },
+          {
+            "text": "she",
+            "why": "'she' adalah pelaku, bukan pemilik."
+          }
+        ],
+        "answer": 1,
+        "explain": "Pemiliknya perempuan = her.",
+        "errorTag": "his-her"
+      },
+      {
+        "id": "d6-e4",
+        "type": "mc",
+        "prompt": "Ini meja Budi. This is ___ table.",
+        "options": [
+          {
+            "text": "his"
+          },
+          {
+            "text": "her",
+            "why": "Budi laki-laki."
+          },
+          {
+            "text": "he",
+            "why": "'he' adalah pelaku, bukan pemilik."
+          }
+        ],
+        "answer": 0,
+        "explain": "Pemiliknya laki-laki = his.",
+        "errorTag": "his-her"
+      },
+      {
+        "id": "d6-e5",
+        "type": "fill",
+        "prompt": "Budi dan Sara punya rumah. It is ___ house.",
+        "accept": [
+          "their"
+        ],
+        "explain": "Milik mereka = their."
+      },
+      {
+        "id": "d6-e6",
+        "type": "fill",
+        "prompt": "These ___ new chairs.",
+        "accept": [
+          "are"
+        ],
+        "explain": "These = jamak → are.",
+        "errorTag": "be-agreement"
+      },
+      {
+        "id": "d6-e7",
+        "type": "order",
+        "prompt": "Susun: Itu proyek baru kami.",
+        "tokens": [
+          "That",
+          "is",
+          "our",
+          "new",
+          "project."
+        ],
+        "explain": "our (pemilik) + new (sifat) + project (benda). Semua penjelas di depan."
+      },
+      {
+        "id": "d6-e8",
+        "type": "translate",
+        "prompt": "Terjemahkan: Ini kantor saya.",
+        "accept": [
+          "This is my office."
+        ],
+        "explain": "This + is + my + office."
+      },
+      {
+        "id": "d6-e9",
+        "type": "translate",
+        "prompt": "Terjemahkan: Kursi-kursi ini baru.",
+        "accept": [
+          "These chairs are new."
+        ],
+        "explain": "These + chairs + are + new.",
+        "errorTag": "plural-s"
+      },
+      {
+        "id": "d6-e10",
+        "type": "explain",
+        "prompt": "Jelaskan dengan kata-kata Anda: kursi milik Sara disebut 'her chair'. Kenapa bukan 'his chair', padahal kata 'chair' tidak punya jenis kelamin?",
+        "model": "Karena his/her ditentukan oleh pemiliknya, bukan oleh bendanya. Pemiliknya Sara (perempuan), jadi 'her chair'.",
+        "explain": "Pertanyaan otomatis yang perlu dibiasakan: siapa pemiliknya, laki-laki atau perempuan?"
+      }
+    ]
+  },
+  "reading": {
+    "id": "R06",
+    "title": "Welcome to our office",
+    "cefr": "A1",
+    "intro": "Budi menunjukkan kantornya kepada klien baru. Perhatikan this/that/these/those dan kata kepemilikan.",
+    "paragraphs": [
+      {
+        "en": "Good morning! This is our office.",
+        "id": "Selamat pagi! Ini kantor kami."
+      },
+      {
+        "en": "This is my table, and that is my chair.",
+        "id": "Ini meja saya, dan itu kursi saya."
+      },
+      {
+        "en": "This is Sara. She is our designer. That is her room.",
+        "id": "Ini Sara. Dia desainer kami. Itu ruangannya."
+      },
+      {
+        "en": "These are new chairs. Those are their windows, not our windows.",
+        "id": "Ini kursi-kursi baru. Itu jendela-jendela mereka, bukan jendela kami."
+      },
+      {
+        "en": "Are you ready? This is your new project!",
+        "id": "Anda siap? Ini proyek baru Anda!"
+      }
+    ],
+    "glossary": {
+      "welcome": "selamat datang",
+      "to": "ke"
+    },
+    "questions": [
+      {
+        "id": "d6-r1",
+        "type": "mc",
+        "prompt": "Siapa Sara?",
+        "options": [
+          {
+            "text": "Klien baru"
+          },
+          {
+            "text": "Desainer di kantor Budi"
+          },
+          {
+            "text": "Kontraktor"
+          }
+        ],
+        "answer": 1,
+        "explain": "'She is our designer.'"
+      },
+      {
+        "id": "d6-r2",
+        "type": "mc",
+        "prompt": "Kenapa ditulis 'her room', bukan 'his room'?",
+        "options": [
+          {
+            "text": "Karena ruangannya kecil"
+          },
+          {
+            "text": "Karena pemiliknya Sara (perempuan)"
+          },
+          {
+            "text": "Karena 'room' kata perempuan"
+          }
+        ],
+        "answer": 1,
+        "explain": "his/her ditentukan oleh pemilik."
+      },
+      {
+        "id": "d6-r3",
+        "type": "mc",
+        "prompt": "Jendela yang disebut di kalimat keempat milik siapa?",
+        "options": [
+          {
+            "text": "Milik kantor Budi"
+          },
+          {
+            "text": "Milik orang lain (mereka)"
+          }
+        ],
+        "answer": 1,
+        "explain": "'their windows, not our windows' = jendela mereka, bukan jendela kami."
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Bedakan this (pendek: dhis) dan these (panjang: dhiiz).",
+    "items": [
+      {
+        "en": "This is my office.",
+        "id": "Ini kantor saya.",
+        "tip": "this = dhis, pendek."
+      },
+      {
+        "en": "These are new chairs.",
+        "id": "Ini kursi-kursi baru.",
+        "tip": "these = dhiiz, panjang dan berdengung."
+      },
+      {
+        "en": "That is her house.",
+        "id": "Itu rumahnya (perempuan)."
+      },
+      {
+        "en": "Those are their windows.",
+        "id": "Itu jendela-jendela mereka.",
+        "tip": "their = dher, sama bunyinya dengan 'there'."
+      },
+      {
+        "en": "This is Sara, my friend.",
+        "id": "Ini Sara, teman saya."
+      },
+      {
+        "en": "Is this your project?",
+        "id": "Apakah ini proyekmu?"
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Bayangkan Anda memperkenalkan kantor atau rumah Anda.",
+    "exercises": [
+      {
+        "id": "d6-w1",
+        "type": "translate",
+        "prompt": "Itu rumah baru mereka.",
+        "accept": [
+          "That is their new house.",
+          "That's their new house."
+        ],
+        "explain": "That + is + their + new + house."
+      },
+      {
+        "id": "d6-w2",
+        "type": "translate",
+        "prompt": "Ini Rina. Dia klien saya.",
+        "accept": [
+          "This is Rina. She is my client.",
+          "This is Rina. She's my client."
+        ],
+        "explain": "Memperkenalkan orang memakai 'This is ...'. Rina perempuan = she.",
+        "errorTag": "he-she"
+      },
+      {
+        "id": "d6-w3",
+        "type": "explain",
+        "prompt": "Tulis 3 kalimat tentang benda di ruangan Anda dengan this/that/these/those dan my/our.",
+        "model": "This is my table. These are my chairs. That is our window.",
+        "explain": "Pakai benda yang benar-benar ada di sekitar Anda."
+      }
+    ]
+  }
+}

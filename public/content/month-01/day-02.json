@@ -1,0 +1,530 @@
+{
+  "day": 2,
+  "month": 1,
+  "title": "Saya, kamu, dia: kata ganti orang",
+  "goals": [
+    "Memakai I, you, he, she, it, we, they dengan benar",
+    "Tidak lagi tertukar he dan she",
+    "Menyebut teman dan klien Anda: my friend, my client"
+  ],
+  "newWords": [
+    "i",
+    "you",
+    "he",
+    "she",
+    "it",
+    "we",
+    "they",
+    "and",
+    "friend",
+    "client"
+  ],
+  "lesson": {
+    "id": "L02",
+    "title": "Kata ganti orang (subject pronouns)",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa mengganti nama orang atau benda dengan kata ganti yang tepat, dan tahu kenapa bahasa Inggris memaksa kita memilih he atau she.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kata ganti itu seperti **nama panggilan sementara**. Daripada berkata \"Budi datang. Budi lapar. Budi lelah.\", kita cukup menyebut Budi sekali, lalu menggantinya dengan **dia**."
+          },
+          {
+            "type": "p",
+            "text": "Bedanya: bahasa Indonesia punya satu kata **dia** untuk semua orang. Bahasa Inggris punya **tiga laci** untuk \"dia\": *he* untuk laki-laki, *she* untuk perempuan, dan *it* untuk benda atau hewan. Setiap kali ingin berkata \"dia\", Anda harus memilih laci yang benar dulu."
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "Kata ganti",
+              "Bunyi",
+              "Arti",
+              "Untuk"
+            ],
+            "rows": [
+              [
+                "I",
+                "AI",
+                "saya, aku",
+                "diri sendiri"
+              ],
+              [
+                "you",
+                "YUU",
+                "kamu, Anda, kalian",
+                "orang yang diajak bicara (satu atau banyak)"
+              ],
+              [
+                "he",
+                "HII",
+                "dia",
+                "satu laki-laki"
+              ],
+              [
+                "she",
+                "SYII",
+                "dia",
+                "satu perempuan"
+              ],
+              [
+                "it",
+                "IT",
+                "ia, itu",
+                "satu benda, hewan, atau hal"
+              ],
+              [
+                "we",
+                "WII",
+                "kami, kita",
+                "saya + orang lain"
+              ],
+              [
+                "they",
+                "DHEI",
+                "mereka",
+                "dua atau lebih (orang atau benda)"
+              ]
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "Budi → he",
+                "id": "Budi laki-laki, jadi 'he'."
+              },
+              {
+                "en": "Sara → she",
+                "id": "Sara perempuan, jadi 'she'."
+              },
+              {
+                "en": "the house → it",
+                "id": "Rumah adalah benda, jadi 'it'."
+              },
+              {
+                "en": "Budi and Sara → they",
+                "id": "Dua orang, jadi 'they'."
+              },
+              {
+                "en": "Sara and I → we",
+                "id": "Saya termasuk di dalamnya, jadi 'we'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kenapa harus memilih he atau she?** Bahasa Inggris \"mencatat\" jenis kelamin orang ketiga di dalam kata gantinya, sama seperti bahasa Indonesia mencatat hormat lewat *Anda* atau *kamu*. Setiap bahasa mewajibkan informasi yang berbeda. Bahasa Inggris tidak peduli Anda sopan atau akrab (semua orang *you*), tapi peduli laki-laki atau perempuan."
+          },
+          {
+            "type": "p",
+            "text": "Karena itu otak Anda perlu kebiasaan baru: **sebelum mengucapkan \"dia\", tanya dulu: laki-laki atau perempuan?** Di awal terasa lambat, lalu menjadi otomatis setelah ratusan kali latihan."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa *we* untuk kami dan kita?** Bahasa Inggris tidak membedakan apakah pendengar ikut termasuk atau tidak. Kalau perlu jelas, mereka menambahkan kata lain, misalnya *we, the design team* (kami, tim desain)."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {
+            "type": "mistakes",
+            "items": [
+              {
+                "wrong": "Sara? He is my friend.",
+                "right": "Sara? She is my friend.",
+                "why": "Sara perempuan, jadi 'she'. Ini kesalahan paling umum penutur Indonesia, bahkan di level mahir."
+              },
+              {
+                "wrong": "Mr. Lee? It is my client.",
+                "right": "Mr. Lee? He is my client.",
+                "why": "'it' hanya untuk benda/hewan. Manusia selalu he atau she."
+              },
+              {
+                "wrong": "i and Sara",
+                "right": "Sara and I",
+                "why": "'I' selalu huruf besar. Dan secara sopan, orang lain disebut lebih dulu, diri sendiri terakhir."
+              },
+              {
+                "wrong": "The house? She is big.",
+                "right": "The house? It is big.",
+                "why": "Benda memakai 'it'."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kepada atasan, klien, atau orang tua, tetap pakai **you**. Tidak ada versi \"Anda\" yang lebih sopan. Kesopanan ditunjukkan lewat sapaan seperti *Mr. Lee* atau *Ms. Sara* dan kata seperti *please* (mohon), yang akan Anda pelajari nanti."
+          },
+          {
+            "type": "p",
+            "text": "Dalam bahasa Inggris modern, **they** juga dipakai untuk SATU orang yang jenis kelaminnya tidak diketahui atau tidak ingin disebut, misalnya \"A client called. They want a meeting.\" Anda cukup mengenali pemakaian ini dulu."
+          }
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kenapa **I** selalu huruf besar? Dulu kata ini ditulis *ic* atau *ich* (masih mirip bahasa Jerman *ich*). Lama-lama menyusut menjadi satu huruf *i* kecil, yang mudah hilang atau tertukar dalam tulisan tangan. Para penulis mulai membesarkannya agar jelas terlihat, dan kebiasaan itu menetap."
+          },
+          {
+            "type": "p",
+            "text": "**You** dulunya bentuk jamak (\"kalian\"). Untuk satu orang dipakai *thou*. *Thou* lalu menghilang, dan *you* dipakai untuk satu orang maupun banyak. Ini sebabnya nanti Anda akan memakai *you are*, bukan *you is*."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d2-e1",
+        "type": "mc",
+        "prompt": "Ganti 'Sara' dengan kata ganti:",
+        "options": [
+          {
+            "text": "he",
+            "why": "'he' untuk laki-laki."
+          },
+          {
+            "text": "she"
+          },
+          {
+            "text": "it",
+            "why": "'it' untuk benda."
+          }
+        ],
+        "answer": 1,
+        "explain": "Sara perempuan, jadi 'she'.",
+        "errorTag": "he-she"
+      },
+      {
+        "id": "d2-e2",
+        "type": "mc",
+        "prompt": "Ganti 'Pak Lee (klien saya)' dengan kata ganti:",
+        "options": [
+          {
+            "text": "it",
+            "why": "Manusia tidak pernah 'it'."
+          },
+          {
+            "text": "she",
+            "why": "Pak Lee laki-laki."
+          },
+          {
+            "text": "he"
+          }
+        ],
+        "answer": 2,
+        "explain": "Satu laki-laki = 'he'.",
+        "errorTag": "he-she"
+      },
+      {
+        "id": "d2-e3",
+        "type": "mc",
+        "prompt": "Ganti 'the kitchen (dapur)' dengan kata ganti:",
+        "options": [
+          {
+            "text": "it"
+          },
+          {
+            "text": "he",
+            "why": "'he' untuk satu laki-laki, bukan benda."
+          },
+          {
+            "text": "they",
+            "why": "'they' untuk dua atau lebih."
+          }
+        ],
+        "answer": 0,
+        "explain": "Satu benda = 'it'."
+      },
+      {
+        "id": "d2-e4",
+        "type": "mc",
+        "prompt": "Ganti 'Budi and Sara' dengan kata ganti:",
+        "options": [
+          {
+            "text": "we",
+            "why": "'we' hanya jika saya termasuk."
+          },
+          {
+            "text": "they"
+          },
+          {
+            "text": "he",
+            "why": "Ada dua orang."
+          }
+        ],
+        "answer": 1,
+        "explain": "Dua orang, tanpa saya = 'they'."
+      },
+      {
+        "id": "d2-e5",
+        "type": "mc",
+        "prompt": "Ganti 'Sara and I' dengan kata ganti:",
+        "options": [
+          {
+            "text": "they",
+            "why": "Saya termasuk, jadi bukan 'they'."
+          },
+          {
+            "text": "we"
+          },
+          {
+            "text": "you",
+            "why": "'you' adalah orang yang diajak bicara."
+          }
+        ],
+        "answer": 1,
+        "explain": "Saya + orang lain = 'we'."
+      },
+      {
+        "id": "d2-e6",
+        "type": "fill",
+        "prompt": "Rina is my friend. ___ is a designer. (Rina perempuan)",
+        "accept": [
+          "she"
+        ],
+        "explain": "Rina perempuan, jadi 'She'.",
+        "errorTag": "he-she"
+      },
+      {
+        "id": "d2-e7",
+        "type": "fill",
+        "prompt": "Andi is my client. ___ is busy. (Andi laki-laki)",
+        "accept": [
+          "he"
+        ],
+        "explain": "Andi laki-laki, jadi 'He'.",
+        "errorTag": "he-she"
+      },
+      {
+        "id": "d2-e8",
+        "type": "order",
+        "prompt": "Susun dengan urutan yang sopan: Sara dan saya",
+        "tokens": [
+          "Sara",
+          "and",
+          "I"
+        ],
+        "explain": "Orang lain disebut dulu, 'I' terakhir dan selalu huruf besar."
+      },
+      {
+        "id": "d2-e9",
+        "type": "translate",
+        "prompt": "Terjemahkan: teman saya dan klien saya",
+        "accept": [
+          "my friend and my client"
+        ],
+        "explain": "Pemilik (my) selalu di depan: my friend, my client."
+      },
+      {
+        "id": "d2-e10",
+        "type": "explain",
+        "prompt": "Jelaskan dengan kata-kata Anda: kenapa orang Indonesia sering salah memakai he dan she?",
+        "model": "Karena bahasa Indonesia hanya punya satu kata 'dia' untuk laki-laki dan perempuan, sedangkan bahasa Inggris wajib memilih: he untuk laki-laki, she untuk perempuan.",
+        "explain": "Menyadari penyebab kesalahan membantu Anda menghindarinya."
+      }
+    ]
+  },
+  "reading": {
+    "id": "R02",
+    "title": "My friend and my client",
+    "cefr": "A1",
+    "intro": "Kalimat 'X is my ...' artinya 'X adalah ... saya'. Kata 'is' akan dibedah tuntas besok.",
+    "paragraphs": [
+      {
+        "en": "Hello! My name is Budi.",
+        "id": "Halo! Nama saya Budi."
+      },
+      {
+        "en": "Sara is my friend. She is a designer.",
+        "id": "Sara teman saya. Dia (perempuan) seorang desainer."
+      },
+      {
+        "en": "Mr. Lee is my client. He is my friend too.",
+        "id": "Pak Lee klien saya. Dia (laki-laki) juga teman saya."
+      },
+      {
+        "en": "Sara and I are a team. We are ready!",
+        "id": "Sara dan saya satu tim. Kami siap!"
+      }
+    ],
+    "glossary": {
+      "is": "adalah (dibahas di Hari 3)",
+      "are": "adalah (untuk we/they/you, Hari 3)",
+      "a": "seorang / sebuah",
+      "designer": "desainer",
+      "mr": "Pak / Tuan",
+      "too": "juga",
+      "team": "tim",
+      "ready": "siap"
+    },
+    "questions": [
+      {
+        "id": "d2-r1",
+        "type": "mc",
+        "prompt": "Siapa Sara?",
+        "options": [
+          {
+            "text": "Klien Budi"
+          },
+          {
+            "text": "Teman Budi"
+          },
+          {
+            "text": "Kakak Budi"
+          }
+        ],
+        "answer": 1,
+        "explain": "'Sara is my friend' = Sara teman saya."
+      },
+      {
+        "id": "d2-r2",
+        "type": "mc",
+        "prompt": "Kata 'He' di kalimat ketiga merujuk ke siapa?",
+        "options": [
+          {
+            "text": "Budi"
+          },
+          {
+            "text": "Sara"
+          },
+          {
+            "text": "Mr. Lee"
+          }
+        ],
+        "answer": 2,
+        "explain": "'He' merujuk ke orang laki-laki yang baru disebut: Mr. Lee."
+      },
+      {
+        "id": "d2-r3",
+        "type": "mc",
+        "prompt": "'We' di kalimat terakhir berarti siapa?",
+        "options": [
+          {
+            "text": "Sara dan Budi"
+          },
+          {
+            "text": "Mr. Lee dan Sara"
+          },
+          {
+            "text": "Semua orang"
+          }
+        ],
+        "answer": 0,
+        "explain": "'Sara and I' = Sara dan Budi (yang bercerita), jadi 'we'."
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Dengar dan tirukan. Perhatikan bunyi 'sh' di she dan 'th' di they.",
+    "items": [
+      {
+        "en": "I",
+        "id": "saya"
+      },
+      {
+        "en": "you",
+        "id": "kamu / Anda"
+      },
+      {
+        "en": "he",
+        "id": "dia (laki-laki)"
+      },
+      {
+        "en": "she",
+        "id": "dia (perempuan)",
+        "tip": "'sh' seperti 'sy' di 'syarat'."
+      },
+      {
+        "en": "it",
+        "id": "ia / itu (benda)"
+      },
+      {
+        "en": "we",
+        "id": "kami / kita"
+      },
+      {
+        "en": "they",
+        "id": "mereka",
+        "tip": "Ujung lidah di antara gigi, lalu bersuara: dhei."
+      },
+      {
+        "en": "Sara is my friend.",
+        "id": "Sara teman saya."
+      },
+      {
+        "en": "He is my client.",
+        "id": "Dia klien saya.",
+        "tip": "'He is' tersambung: hii-yiz."
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Tulis jawabannya. Ingat: pemilik di depan, dan pilih he atau she dengan tepat.",
+    "exercises": [
+      {
+        "id": "d2-w1",
+        "type": "translate",
+        "prompt": "teman saya",
+        "accept": [
+          "my friend"
+        ],
+        "explain": "my + friend."
+      },
+      {
+        "id": "d2-w2",
+        "type": "translate",
+        "prompt": "klien saya",
+        "accept": [
+          "my client"
+        ],
+        "explain": "my + client."
+      },
+      {
+        "id": "d2-w3",
+        "type": "translate",
+        "prompt": "Budi dan saya",
+        "accept": [
+          "Budi and I"
+        ],
+        "explain": "Orang lain dulu, 'I' terakhir, huruf besar."
+      },
+      {
+        "id": "d2-w4",
+        "type": "explain",
+        "prompt": "Tulis nama seorang teman dan seorang klien Anda, lalu tulis kata ganti untuk masing-masing (he/she).",
+        "model": "Rina → she. Andi → he.",
+        "explain": "Melatih pertanyaan otomatis: laki-laki atau perempuan?"
+      }
+    ]
+  }
+}

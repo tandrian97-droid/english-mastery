@@ -1,0 +1,137 @@
+{
+  "day": 5,
+  "month": 1,
+  "title": "Sebuah dan banyak: a, an, dan -s",
+  "goals": [
+    "Memakai a dan an dengan benar berdasarkan bunyi",
+    "Membuat bentuk jamak: house → houses, room → rooms",
+    "Mengerti kenapa \"She is designer\" terasa kurang bagi penutur asli"
+  ],
+  "newWords": ["a", "an", "house", "room", "kitchen", "door", "window", "table", "chair", "project"],
+  "lesson": {
+    "id": "L05",
+    "title": "Artikel a/an dan bentuk jamak",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa menyebut satu benda dengan a/an dan banyak benda dengan -s, serta paham kenapa bahasa Inggris \"cerewet\" soal jumlah.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {"type": "p", "text": "Bahasa Inggris itu seperti **petugas gudang yang selalu menghitung**. Setiap kali Anda menyebut benda yang bisa dihitung, ia bertanya: \"Satu atau banyak?\""},
+          {"type": "p", "text": "Kalau **satu**: pasang label **a** atau **an** di depannya. *a house* (sebuah rumah)."},
+          {"type": "p", "text": "Kalau **banyak**: tempel **-s** di belakangnya. *houses* (rumah-rumah)."},
+          {"type": "p", "text": "Bahasa Indonesia lebih santai: *Dia desainer* dan *dua rumah* sudah jelas tanpa label apa pun. Bahasa Inggris tetap minta labelnya: *She is **a** designer*, *two house**s***."}
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {"type": "table", "head": ["Aturan", "Contoh"], "rows": [
+            ["**a** + kata yang BERBUNYI konsonan", "a house, a room, a designer, a project"],
+            ["**an** + kata yang BERBUNYI vokal (a, i, u, e, o)", "an architect, an office, an evening"],
+            ["Jamak: tambah **-s**", "room → rooms, door → doors, chair → chairs"],
+            ["Jamak: kata berakhiran s, sh, ch, x → tambah **-es**", "kitchen tetap -s; box → boxes; class → classes"],
+            ["Jamak TIDAK memakai a/an", "~~a rooms~~ → rooms / two rooms"]
+          ]},
+          {"type": "p", "text": "**Bunyi -s ada tiga**, dan Anda akan mendengarnya di audio:"},
+          {"type": "table", "head": ["Bunyi", "Setelah", "Contoh"], "rows": [
+            ["/s/ tajam", "bunyi p, t, k, f", "projects (PRO-jekts)"],
+            ["/z/ berdengung", "bunyi lain (paling sering)", "rooms (ruumz), doors (dorz), windows (WIN-douz)"],
+            ["/iz/ tambah suku kata", "bunyi s, z, sy, c, j", "houses (HAU-ziz)"]
+          ]}
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {"type": "p", "text": "**Kenapa harus ada *a*?** *She is **a** designer* artinya \"dia adalah **salah satu** dari kelompok orang yang disebut desainer\". Bagi penutur asli, *She is designer* terdengar seperti ada potongan yang hilang, sama janggalnya dengan orang Indonesia mendengar \"Dia adalah satu desainer\"."},
+          {"type": "p", "text": "**Kenapa *an* sebelum vokal?** Coba ucapkan cepat \"a architect\": ada jeda canggung di antara dua vokal. Huruf **n** menjadi \"jembatan\" agar lancar: *an-architect* terdengar seperti *a-nar-ki-tekt*. Karena tujuannya kelancaran bunyi, yang menentukan adalah **BUNYI**, bukan huruf: *an hour* (huruf h tidak dibaca), tapi *a university* (u dibaca \"yu\", berbunyi konsonan)."},
+          {"type": "p", "text": "**Kenapa \"two houses\" masih pakai -s padahal \"two\" sudah jelas jamak?** Dalam bahasa Inggris, tanda jamak **wajib** ada di kata bendanya, sekalipun informasinya terulang. Ini aturan tata bahasa, bukan soal logika. Bahasa Indonesia justru melarang pengulangan seperti itu: *dua rumah-rumah* salah."}
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {"type": "mistakes", "items": [
+            {"wrong": "She is designer.", "right": "She is **a** designer.", "why": "Satu orang dari kelompok pekerjaan memakai a/an."},
+            {"wrong": "He is a architect.", "right": "He is **an** architect.", "why": "'architect' berbunyi vokal di awal."},
+            {"wrong": "It is an house.", "right": "It is **a** house.", "why": "'house' berbunyi konsonan (h dibaca)."},
+            {"wrong": "two room", "right": "two room**s**", "why": "Lebih dari satu = tambah -s, walau sudah ada angka."},
+            {"wrong": "a windows", "right": "windows / a window", "why": "a/an hanya untuk satu. Jamak tidak memakai a/an."}
+          ]}
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {"type": "p", "text": "**a house** vs **one house**: *a house* = sebuah rumah, jumlahnya tidak penting. *one house* = tepat satu rumah, jumlahnya ditekankan (misalnya \"bukan dua\"). Dalam kalimat biasa, pakai *a*."},
+          {"type": "p", "text": "Ada kata benda yang **tidak bisa dihitung** (seperti air, uang, informasi). Kata-kata ini tidak memakai a/an dan tidak memakai -s. Kita bahas di Minggu 3. Untuk sekarang, semua kata benda di pelajaran ini bisa dihitung."}
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {"type": "p", "text": "*A* dan *an* berasal dari kata Inggris Kuno ***ān***, yang artinya **satu** (saudara dari *one*). Bentuk aslinya justru *an*. Huruf **n** kemudian dihilangkan di depan kata berbunyi konsonan agar lebih mudah diucapkan. Jadi bukan *an* yang ditambah n; *a* yang kehilangan n."}
+        ]
+      }
+    ],
+    "exercises": [
+      {"id": "d5-e1", "type": "mc", "prompt": "She is ___ architect.", "options": [{"text": "a", "why": "'architect' berbunyi vokal."}, {"text": "an"}, {"text": "(tanpa artikel)", "why": "Satu orang dari kelompok pekerjaan butuh a/an."}], "answer": 1, "explain": "'architect' diawali bunyi vokal 'ar', jadi 'an'.", "errorTag": "a-an"},
+      {"id": "d5-e2", "type": "mc", "prompt": "It is ___ big room.", "options": [{"text": "a"}, {"text": "an", "why": "Yang menentukan adalah kata setelahnya: 'big' berbunyi konsonan."}], "answer": 0, "explain": "a/an mengikuti kata TEPAT setelahnya. 'big' berbunyi konsonan, jadi 'a'.", "errorTag": "a-an"},
+      {"id": "d5-e3", "type": "mc", "prompt": "He is ___ office manager.", "options": [{"text": "a", "why": "'office' berbunyi vokal."}, {"text": "an"}], "answer": 1, "explain": "'office' diawali bunyi vokal 'o', jadi 'an'.", "errorTag": "a-an"},
+      {"id": "d5-e4", "type": "fill", "prompt": "two ___ (chair = kursi)", "accept": ["chairs"], "explain": "Lebih dari satu = tambah -s.", "errorTag": "plural-s"},
+      {"id": "d5-e5", "type": "fill", "prompt": "three ___ (window = jendela)", "accept": ["windows"], "explain": "window + s = windows (bunyi akhir: z).", "errorTag": "plural-s"},
+      {"id": "d5-e6", "type": "mc", "prompt": "Kalimat mana yang BENAR?", "options": [{"text": "She is designer.", "why": "Artikel 'a' hilang."}, {"text": "She is a designer."}, {"text": "She is an designer.", "why": "'designer' berbunyi konsonan."}], "answer": 1, "explain": "She + is + a + designer.", "errorTag": "missing-article"},
+      {"id": "d5-e7", "type": "mc", "prompt": "Kalimat mana yang BENAR?", "options": [{"text": "The doors are new."}, {"text": "The door are new.", "why": "Satu pintu = is; banyak pintu = doors + are."}, {"text": "A doors are new.", "why": "'a' tidak dipakai untuk jamak."}], "answer": 0, "explain": "Banyak pintu = doors, dan karena banyak memakai 'are'."},
+      {"id": "d5-e8", "type": "order", "prompt": "Susun: Itu proyek besar.", "tokens": ["It", "is", "a", "big", "project."], "explain": "Kata sifat (big) diletakkan SEBELUM kata benda (project), dan 'a' di depan keduanya."},
+      {"id": "d5-e9", "type": "translate", "prompt": "Terjemahkan: Dia (laki-laki) seorang arsitek.", "accept": ["He is an architect.", "He's an architect."], "explain": "He + is + an + architect.", "errorTag": "a-an"},
+      {"id": "d5-e10", "type": "explain", "prompt": "Jelaskan dengan kata-kata Anda: kenapa 'an architect' tapi 'a house'?", "model": "Karena yang menentukan adalah bunyi awal kata berikutnya. 'architect' berbunyi vokal, jadi 'an' agar lancar diucapkan. 'house' berbunyi konsonan (h), jadi 'a'.", "explain": "Kuncinya: bunyi, bukan huruf."}
+    ]
+  },
+  "reading": {
+    "id": "R05",
+    "title": "The new house",
+    "cefr": "A1",
+    "intro": "Budi bercerita tentang proyek rumah yang sedang ia kerjakan. Perhatikan a/an dan -s.",
+    "paragraphs": [
+      {"en": "It is a big project. It is a house.", "id": "Ini proyek besar. Ini sebuah rumah."},
+      {"en": "The kitchen is big. The windows are big too.", "id": "Dapurnya besar. Jendela-jendelanya juga besar."},
+      {"en": "Two rooms are ready. A room is not ready.", "id": "Dua ruangan sudah siap. Satu ruangan belum siap."},
+      {"en": "The tables and chairs are not here today.", "id": "Meja-meja dan kursi-kursinya belum ada di sini hari ini."},
+      {"en": "The contractor is busy. I am busy too!", "id": "Kontraktornya sibuk. Saya juga sibuk!"}
+    ],
+    "glossary": {"big": "besar", "the": "(kata sandang: yang itu, yang sudah jelas)", "two": "dua", "too": "juga"},
+    "questions": [
+      {"id": "d5-r1", "type": "mc", "prompt": "Berapa ruangan yang sudah siap?", "options": [{"text": "Satu"}, {"text": "Dua"}, {"text": "Tiga"}], "answer": 1, "explain": "'Two rooms are ready.'"},
+      {"id": "d5-r2", "type": "mc", "prompt": "Apa yang belum ada di rumah hari ini?", "options": [{"text": "Jendela"}, {"text": "Meja dan kursi"}, {"text": "Kontraktor"}], "answer": 1, "explain": "'The tables and chairs are not here today.'"},
+      {"id": "d5-r3", "type": "mc", "prompt": "Kenapa ditulis 'The windows ARE big', bukan 'is'?", "options": [{"text": "Karena jendelanya banyak (windows)"}, {"text": "Karena jendelanya besar"}, {"text": "Karena ada kata 'too'"}], "answer": 0, "explain": "windows = jamak, jadi 'are'."}
+    ]
+  },
+  "listening": {
+    "intro": "Dengarkan bunyi -s di akhir kata jamak: s, z, atau iz?",
+    "items": [
+      {"en": "a house, two houses", "id": "sebuah rumah, dua rumah", "tip": "houses = HAU-ziz (tambah satu suku kata)."},
+      {"en": "a room, two rooms", "id": "sebuah ruangan, dua ruangan", "tip": "rooms = ruumz (bunyi z)."},
+      {"en": "a project, two projects", "id": "sebuah proyek, dua proyek", "tip": "projects = PRO-jekts (bunyi s tajam)."},
+      {"en": "an architect", "id": "seorang arsitek", "tip": "Tersambung: e-NAR-ki-tekt."},
+      {"en": "an office", "id": "sebuah kantor", "tip": "Tersambung: e-NO-fis."},
+      {"en": "The kitchen is big.", "id": "Dapurnya besar."},
+      {"en": "The windows are big too.", "id": "Jendela-jendelanya juga besar."}
+    ]
+  },
+  "writing": {
+    "intro": "Gambarkan ruangan di sekitar Anda.",
+    "exercises": [
+      {"id": "d5-w1", "type": "translate", "prompt": "Itu sebuah dapur.", "accept": ["It is a kitchen.", "It's a kitchen.", "That is a kitchen.", "That's a kitchen."], "explain": "It + is + a + kitchen."},
+      {"id": "d5-w2", "type": "translate", "prompt": "Pintu-pintunya baru.", "accept": ["The doors are new."], "explain": "Banyak pintu = doors + are. ('new' = baru, diperkenalkan besok.)", "errorTag": "plural-s"},
+      {"id": "d5-w3", "type": "explain", "prompt": "Lihat ruangan tempat Anda sekarang. Tulis 3 kalimat: satu benda dengan a/an, dan dua benda jamak dengan -s.", "model": "It is a room. The chairs are here. The windows are big.", "explain": "Menghubungkan kata dengan benda nyata di sekitar Anda membuatnya lebih mudah diingat."}
+    ]
+  }
+}

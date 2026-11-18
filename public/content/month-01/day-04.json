@@ -1,0 +1,141 @@
+{
+  "day": 4,
+  "month": 1,
+  "title": "Tidak, dan bertanya: am not, is she...?",
+  "goals": [
+    "Membuat kalimat negatif: I am not, she is not",
+    "Bertanya dengan be: Are you ready? Is he here?",
+    "Menjawab singkat dengan benar: Yes, I am. / No, she isn't."
+  ],
+  "newWords": ["not", "happy", "sad", "at", "home", "office", "here", "there", "today", "now"],
+  "lesson": {
+    "id": "L04",
+    "title": "Be: kalimat negatif dan pertanyaan",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa berkata tidak, bertanya ya/tidak, dan menjawab singkat dengan am, is, are.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {"type": "p", "text": "Ingat kereta api kemarin? Lokomotifnya adalah *am / is / are*. Hari ini kita belajar dua gerakan lokomotif:"},
+          {"type": "p", "text": "**1. Memasang rem (negatif):** taruh **not** tepat **setelah** lokomotif. *I am* → *I am **not***."},
+          {"type": "p", "text": "**2. Pindah ke depan (pertanyaan):** lokomotif **maju ke depan subjek**. *You are ready.* → ***Are** you ready?*"},
+          {"type": "tip", "text": "Bahasa Indonesia membuat pertanyaan dengan menambah kata 'apakah' atau menaikkan nada. Bahasa Inggris membuat pertanyaan dengan MENUKAR URUTAN kata."}
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {"type": "table", "head": ["", "Positif", "Negatif", "Pertanyaan"], "rows": [
+            ["I", "I am here.", "I am **not** here.", "**Am** I late?"],
+            ["you / we / they", "You are ready.", "You are **not** ready.", "**Are** you ready?"],
+            ["he / she / it", "She is at home.", "She is **not** at home.", "**Is** she at home?"]
+          ]},
+          {"type": "p", "text": "**Jawaban singkat** memakai lokomotif yang sama dengan pertanyaannya:"},
+          {"type": "table", "head": ["Pertanyaan", "Ya", "Tidak"], "rows": [
+            ["Are you busy?", "Yes, I am.", "No, I'm not."],
+            ["Is he at the office?", "Yes, he is.", "No, he isn't."],
+            ["Are they here?", "Yes, they are.", "No, they aren't."]
+          ]}
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {"type": "p", "text": "**Kenapa *not* setelah *be*, bukan sebelumnya?** Dalam bahasa Inggris, *not* menempel pada kata kerja pertama dalam kalimat. Di kalimat dengan *be*, kata kerja pertamanya adalah *am/is/are* itu sendiri. Aturan \"not setelah kata kerja pertama\" ini akan terus berguna sampai level mahir."},
+          {"type": "p", "text": "**Kenapa urutannya ditukar saat bertanya?** Bahasa Inggris memberi tanda pertanyaan lewat **posisi kata**. Begitu pendengar mendengar *Are* atau *Is* di awal, mereka langsung tahu ini pertanyaan, bahkan sebelum kalimat selesai. Fungsinya sama dengan kata *apakah* di bahasa Indonesia."},
+          {"type": "p", "text": "**Kenapa jawabannya \"Yes, I am\" dan bukan cukup \"Yes\"?** \"Yes\" saja juga benar, tapi terdengar pendek. Mengulang lokomotifnya membuat jawaban terdengar lengkap dan sopan."}
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {"type": "mistakes", "items": [
+            {"wrong": "I not hungry.", "right": "I am not hungry.", "why": "'not' butuh lokomotif. Tanpa 'am', kalimatnya tidak punya kata kerja."},
+            {"wrong": "You are ready?", "right": "Are you ready?", "why": "Dalam percakapan santai kadang terdengar, tapi bentuk baku pertanyaan adalah menukar urutan."},
+            {"wrong": "Yes, I'm.", "right": "Yes, I am.", "why": "Bentuk singkat (I'm, she's) TIDAK boleh berada di akhir jawaban positif."},
+            {"wrong": "She is not at here.", "right": "She is not here.", "why": "'here' sudah berarti 'di sini'. Tidak perlu 'at'."},
+            {"wrong": "He is at the home.", "right": "He is at home.", "why": "'at home' adalah frasa tetap tanpa 'the'."}
+          ]}
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {"type": "table", "head": ["Lengkap", "Singkat 1", "Singkat 2"], "rows": [
+            ["I am not", "I'm not", "(tidak ada 'I amn't')"],
+            ["you are not", "you're not", "you aren't"],
+            ["she is not", "she's not", "she isn't"],
+            ["they are not", "they're not", "they aren't"]
+          ]},
+          {"type": "p", "text": "Dua bentuk singkat sama-sama benar dan umum. *She's not* sedikit lebih menekankan kata *not*. Di dokumen formal, tulis lengkap: *is not, are not*."}
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {"type": "p", "text": "Kenapa tidak ada *amn't*? Bentuk ini sebenarnya masih dipakai di Skotlandia dan Irlandia, tapi di bahasa Inggris baku menghilang karena sulit diucapkan. Anda mungkin pernah mendengar **ain't** di lagu atau film. Itu bentuk sangat santai yang dianggap tidak baku, jadi jangan dipakai di kantor."}
+        ]
+      }
+    ],
+    "exercises": [
+      {"id": "d4-e1", "type": "fill", "prompt": "I am ___ tired. (Saya tidak lelah.)", "accept": ["not"], "explain": "'not' diletakkan tepat setelah am/is/are."},
+      {"id": "d4-e2", "type": "mc", "prompt": "Ubah ke negatif: She is busy.", "options": [{"text": "She not is busy.", "why": "'not' setelah 'is', bukan sebelumnya."}, {"text": "She is not busy."}, {"text": "She not busy.", "why": "Lokomotif 'is' hilang."}], "answer": 1, "explain": "Subjek + is + not + kata sifat.", "errorTag": "not-position"},
+      {"id": "d4-e3", "type": "order", "prompt": "Susun pertanyaan: Apakah kamu siap?", "tokens": ["Are", "you", "ready?"], "explain": "Lokomotif (Are) maju ke depan subjek (you).", "errorTag": "question-order"},
+      {"id": "d4-e4", "type": "order", "prompt": "Susun pertanyaan: Apakah dia (perempuan) di rumah?", "tokens": ["Is", "she", "at", "home?"], "explain": "Is + she + at home. Ingat: 'at home' tanpa 'the'.", "errorTag": "question-order"},
+      {"id": "d4-e5", "type": "mc", "prompt": "Are you hungry? (Jawaban: ya)", "options": [{"text": "Yes, I'm.", "why": "Bentuk singkat tidak boleh di akhir jawaban positif."}, {"text": "Yes, I am."}, {"text": "Yes, I are.", "why": "I selalu dengan am."}], "answer": 1, "explain": "Jawaban singkat positif memakai bentuk lengkap: Yes, I am."},
+      {"id": "d4-e6", "type": "mc", "prompt": "Is he at the office? (Jawaban: tidak)", "options": [{"text": "No, he isn't."}, {"text": "No, he not.", "why": "Lokomotif hilang."}, {"text": "No, he aren't.", "why": "He = is."}], "answer": 0, "explain": "No + he + isn't (= is not)."},
+      {"id": "d4-e7", "type": "mc", "prompt": "Mana yang benar?", "options": [{"text": "I am at here.", "why": "'here' sudah berarti 'di sini'."}, {"text": "I am here."}, {"text": "I here.", "why": "Lokomotif hilang."}], "answer": 1, "explain": "'here' dan 'there' tidak memakai 'at'.", "errorTag": "at-here"},
+      {"id": "d4-e8", "type": "translate", "prompt": "Terjemahkan: Saya tidak sedih.", "accept": ["I am not sad.", "I'm not sad."], "explain": "I + am + not + sad."},
+      {"id": "d4-e9", "type": "translate", "prompt": "Terjemahkan: Apakah mereka di kantor sekarang?", "accept": ["Are they at the office now?", "Are they in the office now?"], "explain": "Are + they + at the office + now.", "errorTag": "question-order"},
+      {"id": "d4-e10", "type": "explain", "prompt": "Jelaskan dengan kata-kata Anda: bagaimana bahasa Inggris membuat pertanyaan dengan be, dan apa bedanya dengan bahasa Indonesia?", "model": "Bahasa Inggris memindahkan am/is/are ke depan subjek, misalnya 'You are ready' menjadi 'Are you ready?'. Bahasa Indonesia biasanya cukup menambah 'apakah' atau menaikkan nada.", "explain": "Menukar urutan adalah inti semua pertanyaan bahasa Inggris."}
+    ]
+  },
+  "reading": {
+    "id": "R04",
+    "title": "Where are you?",
+    "cefr": "A1",
+    "intro": "Sebuah chat antara Sara dan Budi. Perhatikan pertanyaan dan jawaban singkatnya.",
+    "paragraphs": [
+      {"en": "Sara: Hi, Budi! Are you at the office now?", "id": "Sara: Hai, Budi! Kamu di kantor sekarang?"},
+      {"en": "Budi: No, I am not. I am at home today.", "id": "Budi: Tidak. Saya di rumah hari ini."},
+      {"en": "Sara: Are you sad? Are you tired?", "id": "Sara: Kamu sedih? Kamu lelah?"},
+      {"en": "Budi: No! I am happy. I am not busy today.", "id": "Budi: Tidak! Saya senang. Saya tidak sibuk hari ini."},
+      {"en": "Sara: Is Mr. Lee there?", "id": "Sara: Pak Lee ada di sana?"},
+      {"en": "Budi: Yes, he is. He is here now.", "id": "Budi: Ya, ada. Dia di sini sekarang."}
+    ],
+    "glossary": {"the": "(kata sandang: yang itu)", "mr": "Pak / Tuan", "where": "di mana"},
+    "questions": [
+      {"id": "d4-r1", "type": "mc", "prompt": "Di mana Budi hari ini?", "options": [{"text": "Di kantor"}, {"text": "Di rumah"}, {"text": "Di lokasi proyek"}], "answer": 1, "explain": "'I am at home today.'"},
+      {"id": "d4-r2", "type": "mc", "prompt": "Apakah Budi sedih?", "options": [{"text": "Ya, dia sedih"}, {"text": "Tidak, dia senang"}], "answer": 1, "explain": "'No! I am happy.'"},
+      {"id": "d4-r3", "type": "mc", "prompt": "Siapa yang bersama Budi sekarang?", "options": [{"text": "Sara"}, {"text": "Mr. Lee"}, {"text": "Tidak ada"}], "answer": 1, "explain": "'He is here now' merujuk ke Mr. Lee."}
+    ]
+  },
+  "listening": {
+    "intro": "Perhatikan nada: pertanyaan ya/tidak biasanya naik di akhir.",
+    "items": [
+      {"en": "Are you ready?", "id": "Kamu siap?", "tip": "Nada naik di 'ready'."},
+      {"en": "Yes, I am.", "id": "Ya."},
+      {"en": "Is she at home?", "id": "Apakah dia di rumah?"},
+      {"en": "No, she isn't.", "id": "Tidak.", "tip": "isn't = IZ-ent."},
+      {"en": "I am not tired.", "id": "Saya tidak lelah.", "tip": "Versi santai: I'm not tired."},
+      {"en": "He is at the office now.", "id": "Dia di kantor sekarang.", "tip": "'at the' diucapkan cepat: et-dhe."},
+      {"en": "We are here today.", "id": "Kami di sini hari ini."}
+    ]
+  },
+  "writing": {
+    "intro": "Tulis jawaban jujur tentang diri Anda hari ini.",
+    "exercises": [
+      {"id": "d4-w1", "type": "translate", "prompt": "Saya tidak di kantor hari ini.", "accept": ["I am not at the office today.", "I'm not at the office today.", "I am not in the office today.", "I'm not in the office today."], "explain": "I am not + at the office + today."},
+      {"id": "d4-w2", "type": "translate", "prompt": "Apakah kamu sibuk sekarang?", "accept": ["Are you busy now?"], "explain": "Are + you + busy + now.", "errorTag": "question-order"},
+      {"id": "d4-w3", "type": "explain", "prompt": "Tulis 3 kalimat tentang Anda hari ini: di mana Anda, apa yang Anda rasakan, dan satu hal yang TIDAK (memakai not).", "model": "I am at home today. I am happy. I am not tired.", "explain": "Perkenalan Anda kini bisa menyebut tempat dan perasaan."}
+    ]
+  }
+}

@@ -6,7 +6,7 @@ import { BackupError, downloadBackup, importBackup, parseBackupText, type Backup
 import { formatBytes, getStorageStatus, requestPersistentStorage, type StorageStatus } from '../../db/storage';
 import { useFeedback } from '../../ui/feedback';
 
-export const APP_VERSION = '0.1.1 (Tahap 1)';
+export const APP_VERSION = '0.2.0 (Tahap 2 · Minggu 1)';
 
 export function SettingsPage() {
   const { notify, reportError } = useFeedback();
@@ -88,6 +88,7 @@ export function SettingsPage() {
 
       <div className="grid two">
         {profile && <ProfileCard key={profile.name} initialName={profile.name} />}
+        <AudioCard />
 
         <section className="card">
           <h2>Backup & restore</h2>
@@ -191,6 +192,27 @@ function ProfileCard({ initialName }: { initialName: string }) {
       <button className="btn secondary" onClick={saveName}>
         Simpan nama
       </button>
+    </section>
+  );
+}
+
+function AudioCard() {
+  const { reportError } = useFeedback();
+  const settings = useLiveQuery(() => db.settings.get(1));
+  const rate = settings?.audioRate ?? 1;
+  const set = (r: number) => db.settings.update(1, { audioRate: r }).catch(reportError);
+  return (
+    <section className="card">
+      <h2>Audio</h2>
+      <p className="muted small">Kecepatan suara pengucapan. Tombol "pelan" selalu memutar 70% dari kecepatan ini.</p>
+      <div className="row">
+        {[0.8, 0.9, 1, 1.1].map((r) => (
+          <button key={r} className={`btn ${r === rate ? '' : 'secondary'}`} onClick={() => void set(r)}>
+            {r === 1 ? 'Normal' : `${r}×`}
+          </button>
+        ))}
+      </div>
+      <p className="muted small">Suara memakai mesin suara bahasa Inggris di HP Anda (biasanya Google). Jika tombol suara tidak muncul, pasang suara bahasa Inggris di Pengaturan HP → Text-to-speech.</p>
     </section>
   );
 }

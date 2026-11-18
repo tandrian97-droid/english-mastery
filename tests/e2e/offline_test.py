@@ -122,7 +122,7 @@ with sync_playwright() as p:
     check("Profil & menit tetap ada setelah restart", seconds_today(s2) == secs1 and s2["profile"][0]["name"] == "Budi", f"{seconds_today(s2)} detik")
 
     page.get_by_role("link", name="Belajar").click()
-    expect(page.get_by_text("Bulan 1 · Fondasi")).to_be_visible()
+    expect(page.get_by_text("Bulan 1 · Fondasi").first).to_be_visible()
     check("Kurikulum terbuka offline (dari cache)", True)
     page.screenshot(path=str(OUT / "03-learn-offline-cover.png"), full_page=True)
 

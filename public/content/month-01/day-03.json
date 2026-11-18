@@ -1,0 +1,142 @@
+{
+  "day": 3,
+  "month": 1,
+  "title": "Lokomotif kalimat: am, is, are",
+  "goals": [
+    "Membuat kalimat tentang siapa Anda, keadaan Anda, dan di mana Anda berada",
+    "Memilih am, is, atau are dengan benar",
+    "Mengerti kenapa \"I hungry\" salah dan \"I am work\" juga salah"
+  ],
+  "newWords": ["am", "is", "are", "architect", "designer", "contractor", "tired", "hungry", "busy", "ready"],
+  "lesson": {
+    "id": "L03",
+    "title": "To be: am, is, are",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa membuat kalimat tentang siapa Anda, bagaimana keadaan Anda, dan di mana Anda berada, serta tahu kenapa \"I hungry\" salah.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {"type": "p", "text": "Bayangkan kalimat bahasa Inggris seperti **kereta api**: wajib ada **lokomotif**, yaitu kata kerja. Tanpa lokomotif, kereta tidak jalan."},
+          {"type": "p", "text": "Bahasa Indonesia tidak serewel itu. *Saya lapar* sudah lengkap. Bahasa Inggris menolak *I hungry* karena tidak ada lokomotifnya. Kalau tidak ada aksi (makan, kerja, lari), bahasa Inggris memakai lokomotif serbaguna bernama ***be***, yang artinya kira-kira \"dalam keadaan / adalah / berada\"."},
+          {"type": "examples", "items": [
+            {"en": "I am hungry.", "id": "Saya (dalam keadaan) lapar."},
+            {"en": "I am an architect.", "id": "Saya (adalah) seorang arsitek."},
+            {"en": "I am at the office.", "id": "Saya (berada) di kantor."}
+          ]}
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {"type": "table", "head": ["Subjek", "Be", "Contoh", "Arti"], "rows": [
+            ["I", "**am**", "I am tired.", "Saya lelah."],
+            ["You", "**are**", "You are early.", "Kamu datang lebih awal."],
+            ["He / She / It", "**is**", "She is an architect.", "Dia seorang arsitek."],
+            ["We", "**are**", "We are ready.", "Kami siap."],
+            ["They", "**are**", "They are at the site.", "Mereka ada di lokasi proyek."]
+          ]},
+          {"type": "tip", "text": "Cara cepat mengingat: I punya bentuk sendiri (am). Satu orang/benda lain: is. Selebihnya: are."}
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa bentuknya berubah?",
+        "blocks": [
+          {"type": "p", "text": "Kata kerja bahasa Inggris **menyesuaikan diri dengan subjeknya**, seperti baju yang ukurannya mengikuti pemakainya. *I* punya bentuk khusus: **am**. Satu orang atau satu benda selain saya dan kamu memakai **is**. Lebih dari satu memakai **are**."},
+          {"type": "p", "text": "Lalu kenapa *you* yang hanya satu orang memakai **are**? Ingat cerita kemarin: dulu *you* adalah kata untuk \"kalian\" (jamak). Untuk satu orang dulu dipakai *thou*. Ketika *thou* hilang, *you* dipakai untuk satu orang juga, tapi tata bahasanya tetap memperlakukan *you* sebagai jamak. Jadi: **you are**, selalu."}
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {"type": "p", "text": "*Be* dipakai sebelum tiga hal: **kata sifat** (*I am busy*), **kata benda** (*He is a contractor*), dan **tempat** (*We are in Jakarta*). *Be* **tidak** dipakai bersama kata kerja aksi seperti *work* (bekerja). Ini kesalahan nomor satu penutur Indonesia:"},
+          {"type": "mistakes", "items": [
+            {"wrong": "I hungry.", "right": "I **am** hungry.", "why": "Tidak ada kata kerja. 'hungry' adalah kata sifat, jadi butuh 'be'."},
+            {"wrong": "She architect.", "right": "She **is an** architect.", "why": "Butuh 'is' + artikel 'an' (karena 'architect' berbunyi vokal di awal)."},
+            {"wrong": "I am work in Bandung.", "right": "I **work** in Bandung.", "why": "'work' sudah kata kerja. Lokomotifnya tidak boleh dobel."},
+            {"wrong": "They is ready.", "right": "They **are** ready.", "why": "'They' = banyak orang, jadi 'are'."},
+            {"wrong": "He are my client.", "right": "He **is** my client.", "why": "'He' = satu orang, jadi 'is'."}
+          ]}
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {"type": "p", "text": "Dalam percakapan dan pesan santai, *be* hampir selalu **disingkat**:"},
+          {"type": "table", "head": ["Lengkap", "Singkat", "Bunyi"], "rows": [
+            ["I am", "I'm", "AIM"],
+            ["you are", "you're", "YUR"],
+            ["he is / she is / it is", "he's / she's / it's", "HIIZ / SYIIZ / ITS"],
+            ["we are", "we're", "WIR"],
+            ["they are", "they're", "DHER"]
+          ]},
+          {"type": "p", "text": "Dalam dokumen resmi (kontrak, proposal), tulis **lengkap**: *I am, it is*. Menulis \"I am\" di chat dengan teman terdengar kaku. Menulis \"I'm\" di surat penawaran terdengar terlalu santai."}
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {"type": "p", "text": "*Be, am, is, are* tidak mirip satu sama lain karena berasal dari **beberapa akar kata kuno yang berbeda**, lalu dilebur menjadi satu kata kerja. *Is* masih bersaudara dengan *ist* (bahasa Jerman) dan *est* (bahasa Latin dan Prancis). Itu sebabnya \"be\" tidak beraturan di hampir semua bahasa Eropa. Ia salah satu kata tertua dan paling sering dipakai."}
+        ]
+      }
+    ],
+    "exercises": [
+      {"id": "d3-e1", "type": "fill", "prompt": "I ___ tired.", "accept": ["am"], "explain": "I selalu dengan 'am'.", "errorTag": "be-agreement"},
+      {"id": "d3-e2", "type": "fill", "prompt": "She ___ an architect.", "accept": ["is"], "explain": "She = satu orang, jadi 'is'.", "errorTag": "be-agreement"},
+      {"id": "d3-e3", "type": "fill", "prompt": "We ___ ready.", "accept": ["are"], "explain": "We = lebih dari satu, jadi 'are'.", "errorTag": "be-agreement"},
+      {"id": "d3-e4", "type": "fill", "prompt": "You ___ busy.", "accept": ["are"], "explain": "You selalu 'are', walaupun satu orang.", "errorTag": "be-agreement"},
+      {"id": "d3-e5", "type": "fill", "prompt": "The kitchen ___ big. (big = besar)", "accept": ["is"], "explain": "The kitchen = satu benda (it), jadi 'is'.", "errorTag": "be-agreement"},
+      {"id": "d3-e6", "type": "mc", "prompt": "Kalimat mana yang BENAR?", "options": [{"text": "My client very happy.", "why": "Tidak ada kata kerja."}, {"text": "My client is very happy."}, {"text": "My client are very happy.", "why": "Satu klien = is."}], "answer": 1, "explain": "Satu orang + kata sifat → is + kata sifat.", "errorTag": "missing-be"},
+      {"id": "d3-e7", "type": "mc", "prompt": "Kalimat mana yang BENAR?", "options": [{"text": "I am work in Bandung.", "why": "'work' sudah kata kerja, jadi 'am' tidak boleh ada."}, {"text": "I work in Bandung."}, {"text": "I working in Bandung.", "why": "Bentuk ini butuh 'am' (dipelajari nanti)."}], "answer": 1, "explain": "Kalimat dengan kata kerja aksi tidak memakai 'be' tambahan.", "errorTag": "double-verb"},
+      {"id": "d3-e8", "type": "order", "prompt": "Susun: Dia (laki-laki) seorang kontraktor.", "tokens": ["He", "is", "a", "contractor."], "explain": "He + is + a + kata benda."},
+      {"id": "d3-e9", "type": "translate", "prompt": "Terjemahkan: Saya lapar.", "accept": ["I am hungry.", "I'm hungry."], "explain": "Saya = I, lapar = hungry, dan lokomotifnya = am.", "errorTag": "missing-be"},
+      {"id": "d3-e10", "type": "translate", "prompt": "Terjemahkan: Mereka siap.", "accept": ["They are ready.", "They're ready."], "explain": "They + are + ready."},
+      {"id": "d3-e11", "type": "explain", "prompt": "Jelaskan dengan kata-kata Anda sendiri: kenapa \"I am work\" salah?", "model": "Karena 'work' sudah kata kerja. Satu kalimat cukup punya satu lokomotif. 'am' hanya dipakai kalau tidak ada kata kerja aksi, misalnya sebelum kata sifat, kata benda, atau tempat.", "explain": "Bandingkan jawaban Anda dengan contoh. Di Tahap 3, AI Tutor akan menilai penjelasan Anda."}
+    ]
+  },
+  "reading": {
+    "id": "R03",
+    "title": "Our team",
+    "cefr": "A1",
+    "intro": "Perhatikan setiap am/is/are: siapa subjeknya?",
+    "paragraphs": [
+      {"en": "Hello! I am Budi. I am an architect.", "id": "Halo! Saya Budi. Saya seorang arsitek."},
+      {"en": "Sara is my friend. She is a designer. She is very busy.", "id": "Sara teman saya. Dia seorang desainer. Dia sangat sibuk."},
+      {"en": "Mr. Lee is a contractor. He is tired and hungry.", "id": "Pak Lee seorang kontraktor. Dia lelah dan lapar."},
+      {"en": "We are a team. Are we ready? Yes, we are!", "id": "Kami satu tim. Apakah kami siap? Ya, kami siap!"}
+    ],
+    "glossary": {"a": "seorang / sebuah", "an": "seorang / sebuah (sebelum bunyi vokal)", "very": "sangat", "mr": "Pak / Tuan", "team": "tim"},
+    "questions": [
+      {"id": "d3-r1", "type": "mc", "prompt": "Apa pekerjaan Sara?", "options": [{"text": "Arsitek"}, {"text": "Desainer"}, {"text": "Kontraktor"}], "answer": 1, "explain": "'She is a designer.'"},
+      {"id": "d3-r2", "type": "mc", "prompt": "Bagaimana keadaan Mr. Lee?", "options": [{"text": "Sibuk"}, {"text": "Lelah dan lapar"}, {"text": "Siap"}], "answer": 1, "explain": "'He is tired and hungry.'"},
+      {"id": "d3-r3", "type": "mc", "prompt": "Kenapa kalimat pertama memakai 'am', bukan 'is'?", "options": [{"text": "Karena subjeknya I"}, {"text": "Karena Budi laki-laki"}, {"text": "Karena kalimatnya pendek"}], "answer": 0, "explain": "I selalu dengan am."}
+    ]
+  },
+  "listening": {
+    "intro": "Dengar, tirukan 3 kali, lalu coba ucapkan versi singkatnya (I'm, she's, we're).",
+    "items": [
+      {"en": "I am tired.", "id": "Saya lelah.", "tip": "Versi santai: I'm tired (AIM TAI-erd)."},
+      {"en": "She is an architect.", "id": "Dia seorang arsitek.", "tip": "'is an' tersambung: i-ze-NAR-ki-tekt."},
+      {"en": "He is a contractor.", "id": "Dia seorang kontraktor."},
+      {"en": "We are ready.", "id": "Kami siap.", "tip": "Versi santai: we're ready."},
+      {"en": "They are busy.", "id": "Mereka sibuk.", "tip": "busy = BI-zi."},
+      {"en": "Are you hungry?", "id": "Kamu lapar?", "tip": "Nada naik di akhir pertanyaan."}
+    ]
+  },
+  "writing": {
+    "intro": "Tulis kalimat tentang diri Anda dan orang di sekitar Anda. Jangan lupa lokomotifnya.",
+    "exercises": [
+      {"id": "d3-w1", "type": "translate", "prompt": "Saya seorang desainer.", "accept": ["I am a designer.", "I'm a designer."], "explain": "I + am + a + designer.", "errorTag": "missing-be"},
+      {"id": "d3-w2", "type": "translate", "prompt": "Dia (perempuan) sibuk.", "accept": ["She is busy.", "She's busy."], "explain": "She + is + busy.", "errorTag": "missing-be"},
+      {"id": "d3-w3", "type": "translate", "prompt": "Kami lelah.", "accept": ["We are tired.", "We're tired."], "explain": "We + are + tired."},
+      {"id": "d3-w4", "type": "explain", "prompt": "Perpanjang perkenalan dari Hari 1: tambahkan pekerjaan Anda (I am a/an ...) dan keadaan Anda hari ini.", "model": "Good morning. My name is Budi. I am an architect. I am busy today.", "explain": "Perkenalan Anda bertambah satu kalimat setiap hari."}
+    ]
+  }
+}

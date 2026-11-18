@@ -1,11 +1,22 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { Link } from 'react-router-dom';
 import type { Curriculum } from '../../content/types';
 import { db } from '../../db/db';
+import { BLOCK_ORDER } from '../../db/learning';
 import { contentUrl, useJson } from '../../ui/hooks';
 
 export function LearnPage() {
   const { data, error } = useJson<Curriculum>(contentUrl('curriculum.json'));
   const profile = useLiveQuery(() => db.profile.get(1));
+  const doneByDay = useLiveQuery(async () => {
+    const rows = await db.lesson_progress.where('status').equals('completed').toArray();
+    const m = new Map<number, number>();
+    for (const r of rows) {
+      const d = Number(r.lessonId.slice(4, 7));
+      m.set(d, (m.get(d) ?? 0) + 1);
+    }
+    return m;
+  });
   const day = profile?.curriculumDay ?? 1;
 
   return (
@@ -17,12 +28,41 @@ export function LearnPage() {
         </div>
       </header>
 
-      <div className="banner info">
-        Materi dibuat per bulan, sekitar 2 minggu sebelum Anda sampai di bulan itu, dan disesuaikan dengan kesalahan Anda. Materi bulan 1
-        masuk di Tahap 2.
-      </div>
-
       {error && <div className="banner bad">Kurikulum gagal dimuat ({error}). Buka aplikasi sekali saat online agar materi tersimpan.</div>}
+
+      {data?.months
+        .filter((m) => m.availableThroughDay > 0)
+        .map((m) => (
+          <section className="card" key={`days-${m.month}`}>
+            <div className="row between">
+              <h2>
+                Bulan {m.month} · {m.title}
+              </h2>
+              <span className="muted small">
+                Tersedia s.d. Hari {m.availableThroughDay} dari {m.days[1]}
+              </span>
+            </div>
+            <div className="day-grid">
+              {Array.from({ length: m.days[1] - m.days[0] + 1 }, (_, i) => m.days[0] + i).map((d) => {
+                const available = d <= m.availableThroughDay;
+                const done = (doneByDay?.get(d) ?? 0) >= BLOCK_ORDER.length;
+                const current = d === day;
+                const locked = d > day;
+                const cls = `day-cell${done ? ' done' : ''}${current ? ' current' : ''}${!available || locked ? ' locked' : ''}`;
+                return available && !locked ? (
+                  <Link key={d} to={`/day/${d}`} className={cls} aria-label={`Hari ${d}${done ? ', selesai' : ''}`}>
+                    {d}
+                  </Link>
+                ) : (
+                  <span key={d} className={cls} aria-label={`Hari ${d}, ${available ? 'terkunci' : 'segera'}`}>
+                    {d}
+                  </span>
+                );
+              })}
+            </div>
+            <p className="muted small">Hari berikutnya terbuka setelah kelima blok hari ini selesai. Materi hari 8–30 sedang dibuat.</p>
+          </section>
+        ))}
 
       <div className="grid two">
         {data?.months.map((m) => {
@@ -33,7 +73,7 @@ export function LearnPage() {
                 <h2>
                   Bulan {m.month} · {m.title}
                 </h2>
-                {current ? <span className="badge teal">Sekarang</span> : m.available ? <span className="badge ok">Tersedia</span> : <span className="badge">Segera</span>}
+                {current ? <span className="badge teal">Sekarang</span> : m.availableThroughDay > 0 ? <span className="badge ok">Tersedia</span> : <span className="badge">Segera</span>}
               </div>
               <p className="muted small">
                 Hari {m.days[0]}–{m.days[1]}

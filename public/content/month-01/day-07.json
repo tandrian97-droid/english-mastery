@@ -1,0 +1,480 @@
+{
+  "day": 7,
+  "month": 1,
+  "title": "Review Minggu 1: lima aturan besar",
+  "goals": [
+    "Mengulang semua materi minggu ini tanpa kata baru",
+    "Menemukan kesalahan yang masih sering Anda buat",
+    "Menulis perkenalan diri 5 kalimat secara mandiri"
+  ],
+  "newWords": [],
+  "lesson": {
+    "id": "L07",
+    "title": "Ringkasan Minggu 1",
+    "cefr": "A1",
+    "goal": "Hari ini tidak ada materi baru. Tujuannya: memastikan lima aturan besar minggu ini sudah otomatis, bukan sekadar diingat.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dalam 6 hari, Anda sudah mempelajari **60 kata** dan **lima aturan** yang akan dipakai di hampir setiap kalimat bahasa Inggris seumur hidup. Hari ini kita kumpulkan semuanya di satu tempat."
+          },
+          {
+            "type": "tip",
+            "text": "Review bukan membuang waktu. Penelitian tentang memori menunjukkan bahwa mengingat kembali (retrieval) jauh lebih kuat membentuk ingatan daripada membaca ulang."
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Lima aturan besar",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "#",
+              "Aturan",
+              "Contoh benar",
+              "Kesalahan khas"
+            ],
+            "rows": [
+              [
+                "1",
+                "Setiap kalimat wajib punya kata kerja (lokomotif)",
+                "I **am** hungry.",
+                "I hungry."
+              ],
+              [
+                "2",
+                "am / is / are mengikuti subjek",
+                "I am · she **is** · they **are**",
+                "They is ready."
+              ],
+              [
+                "3",
+                "Dia = **he** (laki-laki) atau **she** (perempuan); milik = **his** / **her**",
+                "Sara? **She** is ... **her** office",
+                "Sara? He is ..."
+              ],
+              [
+                "4",
+                "Satu benda = **a/an**; banyak = **-s**",
+                "**a** house, **an** architect, two house**s**",
+                "She is designer. / two house"
+              ],
+              [
+                "5",
+                "Penjelas di DEPAN: pemilik dan sifat",
+                "**my new** office",
+                "office new my"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa lima aturan ini terasa sulit?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Semuanya adalah hal yang **tidak diwajibkan** bahasa Indonesia. Bahasa Indonesia tidak butuh kata kerja di \"Saya lapar\", tidak membedakan dia laki-laki/perempuan, tidak memberi label satu/banyak, dan meletakkan penjelas di belakang."
+          },
+          {
+            "type": "p",
+            "text": "Jadi kesalahan Anda **bukan karena kurang pintar**. Otak Anda sedang memakai aturan bahasa Indonesia untuk bahasa Inggris. Solusinya adalah latihan sampai aturan baru menjadi kebiasaan. Karena itu kesalahan-kesalahan ini akan terus muncul lagi di latihan minggu-minggu berikutnya."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Cek cepat sebelum menulis atau bicara",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Sebelum mengirim kalimat bahasa Inggris, tanyakan 4 hal ini:"
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "1. Ada kata kerjanya?",
+                "id": "Kalau tidak ada aksi, pakai am/is/are."
+              },
+              {
+                "en": "2. Subjeknya I, satu, atau banyak?",
+                "id": "am / is / are"
+              },
+              {
+                "en": "3. Ada 'dia'? Laki-laki atau perempuan?",
+                "id": "he/his atau she/her"
+              },
+              {
+                "en": "4. Bendanya satu atau banyak?",
+                "id": "a/an atau -s"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Minggu depan",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Minggu 2 kita mulai memakai **kata kerja aksi** (work, design, build...) dengan *simple present*: \"I work in Jakarta\", \"She designs houses\". Di situ Anda akan menemukan alasan kenapa \"I am work\" salah, dan aturan baru yang terkenal sulit: **-s untuk he/she/it**."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d7-e1",
+        "type": "translate",
+        "prompt": "Saya seorang arsitek.",
+        "accept": [
+          "I am an architect.",
+          "I'm an architect."
+        ],
+        "explain": "Aturan 1 + 4: lokomotif 'am', dan 'an' sebelum bunyi vokal.",
+        "errorTag": "missing-article"
+      },
+      {
+        "id": "d7-e2",
+        "type": "translate",
+        "prompt": "Dia (perempuan) klien saya.",
+        "accept": [
+          "She is my client.",
+          "She's my client."
+        ],
+        "explain": "Aturan 3: perempuan = she. Aturan 5: my di depan client.",
+        "errorTag": "he-she"
+      },
+      {
+        "id": "d7-e3",
+        "type": "fill",
+        "prompt": "They ___ at the office.",
+        "accept": [
+          "are"
+        ],
+        "explain": "Aturan 2: they = are.",
+        "errorTag": "be-agreement"
+      },
+      {
+        "id": "d7-e4",
+        "type": "mc",
+        "prompt": "Ini meja Budi.",
+        "options": [
+          {
+            "text": "This is her table.",
+            "why": "Budi laki-laki."
+          },
+          {
+            "text": "This is his table."
+          },
+          {
+            "text": "This is table his.",
+            "why": "Pemilik di depan benda."
+          }
+        ],
+        "answer": 1,
+        "explain": "Aturan 3 + 5.",
+        "errorTag": "his-her"
+      },
+      {
+        "id": "d7-e5",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "We are not ready."
+          },
+          {
+            "text": "We not ready.",
+            "why": "Lokomotif hilang."
+          },
+          {
+            "text": "We is not ready.",
+            "why": "We = are."
+          }
+        ],
+        "answer": 0,
+        "explain": "Aturan 1 + 2: we + are + not."
+      },
+      {
+        "id": "d7-e6",
+        "type": "order",
+        "prompt": "Susun pertanyaan: Apakah dia (laki-laki) seorang kontraktor?",
+        "tokens": [
+          "Is",
+          "he",
+          "a",
+          "contractor?"
+        ],
+        "explain": "Lokomotif di depan untuk bertanya, lalu 'a' sebelum contractor.",
+        "errorTag": "question-order"
+      },
+      {
+        "id": "d7-e7",
+        "type": "fill",
+        "prompt": "three ___ (room)",
+        "accept": [
+          "rooms"
+        ],
+        "explain": "Aturan 4: banyak = -s.",
+        "errorTag": "plural-s"
+      },
+      {
+        "id": "d7-e8",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "It is a house new.",
+            "why": "Kata sifat di depan kata benda."
+          },
+          {
+            "text": "It is new a house.",
+            "why": "a/an sebelum kata sifat + kata benda."
+          },
+          {
+            "text": "It is a new house."
+          }
+        ],
+        "answer": 2,
+        "explain": "Aturan 5: a + new + house."
+      },
+      {
+        "id": "d7-e9",
+        "type": "translate",
+        "prompt": "Jendela-jendela itu besar. (besar = big)",
+        "accept": [
+          "Those windows are big.",
+          "The windows are big."
+        ],
+        "explain": "Banyak + jauh = those; windows + are.",
+        "errorTag": "plural-s"
+      },
+      {
+        "id": "d7-e10",
+        "type": "translate",
+        "prompt": "Apakah kamu di rumah sekarang?",
+        "accept": [
+          "Are you at home now?",
+          "Are you home now?"
+        ],
+        "explain": "Are + you + at home + now.",
+        "errorTag": "question-order"
+      },
+      {
+        "id": "d7-e11",
+        "type": "mc",
+        "prompt": "Good ___! (Anda datang ke rapat jam 19.30)",
+        "options": [
+          {
+            "text": "night",
+            "why": "Night untuk berpisah."
+          },
+          {
+            "text": "evening"
+          },
+          {
+            "text": "afternoon",
+            "why": "Jam 19.30 sudah evening."
+          }
+        ],
+        "answer": 1,
+        "explain": "Bertemu di malam hari = Good evening.",
+        "errorTag": "greeting-time"
+      },
+      {
+        "id": "d7-e12",
+        "type": "explain",
+        "prompt": "Dari lima aturan besar, mana yang paling sulit bagi Anda? Kenapa?",
+        "model": "(Jawaban pribadi.) Contoh: Aturan 3, karena saya terbiasa berkata 'dia' tanpa memikirkan laki-laki atau perempuan.",
+        "explain": "Menyadari titik lemah sendiri adalah langkah pertama memperbaikinya."
+      }
+    ]
+  },
+  "reading": {
+    "id": "R07",
+    "title": "Meet Budi",
+    "cefr": "A1",
+    "intro": "Bacaan terpanjang minggu ini: sekitar 80 kata. Baca sekali tanpa bantuan, lalu baca lagi sambil mengetuk kata yang ragu.",
+    "paragraphs": [
+      {
+        "en": "Hello! My name is Budi. I am an architect. My office is in Jakarta.",
+        "id": "Halo! Nama saya Budi. Saya seorang arsitek. Kantor saya di Jakarta."
+      },
+      {
+        "en": "This is Sara. She is my friend and she is a designer. Her room is next to my room.",
+        "id": "Ini Sara. Dia teman saya dan dia seorang desainer. Ruangannya di sebelah ruangan saya."
+      },
+      {
+        "en": "Mr. Lee is our new client. His house is a big project. It is a new house with five rooms and a big kitchen.",
+        "id": "Pak Lee klien baru kami. Rumahnya proyek besar. Itu rumah baru dengan lima ruangan dan dapur besar."
+      },
+      {
+        "en": "Today we are not at the office. We are there, at his house. The contractor is busy. Are we tired? Yes, we are. But we are happy!",
+        "id": "Hari ini kami tidak di kantor. Kami di sana, di rumahnya. Kontraktornya sibuk. Apakah kami lelah? Ya. Tapi kami senang!"
+      }
+    ],
+    "glossary": {
+      "in": "di (dalam)",
+      "next": "sebelah",
+      "to": "ke / dengan",
+      "next to": "di sebelah",
+      "mr": "Pak / Tuan",
+      "big": "besar",
+      "with": "dengan",
+      "five": "lima",
+      "the": "(kata sandang: yang itu)",
+      "but": "tetapi",
+      "meet": "bertemu, berkenalan dengan"
+    },
+    "questions": [
+      {
+        "id": "d7-r1",
+        "type": "mc",
+        "prompt": "Di mana kantor Budi?",
+        "options": [
+          {
+            "text": "Bandung"
+          },
+          {
+            "text": "Jakarta"
+          },
+          {
+            "text": "Surabaya"
+          }
+        ],
+        "answer": 1,
+        "explain": "'My office is in Jakarta.'"
+      },
+      {
+        "id": "d7-r2",
+        "type": "mc",
+        "prompt": "Berapa ruangan di rumah Mr. Lee?",
+        "options": [
+          {
+            "text": "Tiga"
+          },
+          {
+            "text": "Lima"
+          },
+          {
+            "text": "Dua"
+          }
+        ],
+        "answer": 1,
+        "explain": "'five rooms' = lima ruangan."
+      },
+      {
+        "id": "d7-r3",
+        "type": "mc",
+        "prompt": "Di mana Budi dan Sara hari ini?",
+        "options": [
+          {
+            "text": "Di kantor"
+          },
+          {
+            "text": "Di rumah Mr. Lee"
+          },
+          {
+            "text": "Di rumah Budi"
+          }
+        ],
+        "answer": 1,
+        "explain": "'We are there, at his house.' 'his' merujuk ke Mr. Lee."
+      },
+      {
+        "id": "d7-r4",
+        "type": "mc",
+        "prompt": "Bagaimana perasaan mereka?",
+        "options": [
+          {
+            "text": "Lelah tapi senang"
+          },
+          {
+            "text": "Sedih"
+          },
+          {
+            "text": "Lapar"
+          }
+        ],
+        "answer": 0,
+        "explain": "'Are we tired? Yes, we are. But we are happy!'"
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Dengarkan bacaan 'Meet Budi' kalimat demi kalimat. Tirukan setiap kalimat dua kali.",
+    "items": [
+      {
+        "en": "Hello! My name is Budi. I am an architect.",
+        "id": "Halo! Nama saya Budi. Saya seorang arsitek."
+      },
+      {
+        "en": "This is Sara. She is my friend.",
+        "id": "Ini Sara. Dia teman saya."
+      },
+      {
+        "en": "Mr. Lee is our new client.",
+        "id": "Pak Lee klien baru kami."
+      },
+      {
+        "en": "His house is a big project.",
+        "id": "Rumahnya proyek besar."
+      },
+      {
+        "en": "Today we are not at the office.",
+        "id": "Hari ini kami tidak di kantor."
+      },
+      {
+        "en": "Are we tired? Yes, we are.",
+        "id": "Apakah kami lelah? Ya."
+      },
+      {
+        "en": "But we are happy!",
+        "id": "Tapi kami senang!"
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Tulisan mandiri pertama Anda. Gunakan semua yang sudah dipelajari minggu ini.",
+    "exercises": [
+      {
+        "id": "d7-w1",
+        "type": "translate",
+        "prompt": "Ini kantor baru kami.",
+        "accept": [
+          "This is our new office."
+        ],
+        "explain": "This + is + our + new + office."
+      },
+      {
+        "id": "d7-w2",
+        "type": "translate",
+        "prompt": "Mereka bukan klien saya.",
+        "accept": [
+          "They are not my clients.",
+          "They aren't my clients.",
+          "They're not my clients."
+        ],
+        "explain": "They + are not + my + clients (jamak, karena mereka banyak).",
+        "errorTag": "plural-s"
+      },
+      {
+        "id": "d7-w3",
+        "type": "explain",
+        "prompt": "Tulis perkenalan diri 5 kalimat: sapaan, nama, pekerjaan, satu orang yang Anda kenal (he/she + pekerjaannya), dan keadaan Anda hari ini.",
+        "model": "Good morning. My name is Budi. I am an architect. Sara is my friend. She is a designer. I am busy today, but I am happy.",
+        "explain": "Bandingkan dengan perkenalan Hari 1: dari 1 kalimat menjadi 5 kalimat dalam seminggu. Di Tahap 3, AI Tutor akan mengoreksi tulisan bebas seperti ini."
+      }
+    ]
+  }
+}
