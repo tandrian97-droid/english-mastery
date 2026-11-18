@@ -89,6 +89,21 @@ with sync_playwright() as p:
     s1 = page.evaluate(READ_DB)
     secs1 = seconds_today(s1)
     check("Timer menyimpan detik belajar", 16 <= secs1 <= 19, f"{secs1} detik")
+    # refresh setelah jeda: total hari ini tetap tampil (bukan 00:00)
+    page.reload()
+    clock = page.locator(".timer").first.inner_text()
+    check("Setelah refresh, timer menampilkan total hari ini (bukan 00:00)", clock != "00:00", clock)
+    expect(page.get_by_role("button", name="Lanjutkan")).to_be_visible()
+
+    # refresh SAAT timer masih berjalan: maksimal 5 detik terakhir boleh hilang
+    page.get_by_role("button", name="Lanjutkan").click()
+    page.wait_for_timeout(12_500)
+    page.reload()
+    page.wait_for_timeout(1000)
+    s_mid = page.evaluate(READ_DB)
+    gained = seconds_today(s_mid) - secs1
+    check("Refresh saat timer berjalan: waktu tetap tersimpan", gained >= 7, f"+{gained} detik dari 12")
+    secs1 = seconds_today(s_mid)
     page.screenshot(path=str(OUT / "02-dashboard-cover.png"), full_page=True)
     ctx.close()
 

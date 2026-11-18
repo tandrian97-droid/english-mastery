@@ -38,6 +38,7 @@ export function greeting(hour: number = new Date().getHours()): string {
 }
 
 export function formatMinutes(seconds: number): string {
+  if (seconds > 0 && seconds < 60) return `${Math.round(seconds)} dtk`;
   const m = Math.floor(seconds / 60);
   if (m < 60) return `${m} mnt`;
   const h = Math.floor(m / 60);

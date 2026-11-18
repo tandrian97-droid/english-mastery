@@ -30,7 +30,9 @@ export function HomePage() {
   if (!profile || !stats) return <div className="page" aria-busy="true" />;
 
   const targetSeconds = profile.dailyTargetMinutes * 60;
-  const pct = Math.min(100, Math.round((stats.todaySeconds / targetSeconds) * 100));
+  // Total hari ini = yang sudah tersimpan + detik terakhir yang belum sempat disimpan.
+  const todaySeconds = stats.todaySeconds + timer.unsavedSeconds;
+  const pct = Math.min(100, Math.round((todaySeconds / targetSeconds) * 100));
   const weekMax = Math.max(targetSeconds, ...stats.week.map((d) => d.seconds));
   const today = toLocalDate();
   const backupOverdue = settings ? isBackupOverdue(profile, settings) : false;
@@ -65,7 +67,7 @@ export function HomePage() {
           <div className="row between">
             <h2>Target hari ini</h2>
             <span className="muted small">
-              {formatMinutes(stats.todaySeconds)} / {profile.dailyTargetMinutes} mnt
+              {formatMinutes(todaySeconds)} / {profile.dailyTargetMinutes} mnt
             </span>
           </div>
           <div className="progress" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
@@ -74,13 +76,16 @@ export function HomePage() {
           <p className="muted small">
             {pct >= 100
               ? 'Target 120 menit tercapai. Hebat.'
-              : stats.todaySeconds >= profile.minimumDayMinutes * 60
+              : todaySeconds >= profile.minimumDayMinutes * 60
                 ? 'Minimum 30 menit tercapai, streak aman. Lanjutkan kapan pun sempat.'
                 : 'Belajar boleh dipecah: 10–15 menit sekali, jeda kapan saja.'}
           </p>
           <div className="row between">
-            <div className="timer" aria-live="off">
-              {formatClock(timer.sessionSeconds)}
+            <div className="stack" style={{ gap: 0 }}>
+              <div className="timer" aria-live="off">
+                {formatClock(todaySeconds)}
+              </div>
+              <span className="muted small">total hari ini</span>
             </div>
             {timer.running ? (
               <button className="btn light" onClick={() => timer.stop('user')}>
@@ -88,7 +93,7 @@ export function HomePage() {
               </button>
             ) : (
               <button className="btn" onClick={timer.start}>
-                <PlayIcon /> {timer.sessionSeconds ? 'Lanjutkan' : 'Mulai belajar'}
+                <PlayIcon /> {todaySeconds > 0 ? 'Lanjutkan' : 'Mulai belajar'}
               </button>
             )}
           </div>
