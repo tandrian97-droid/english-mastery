@@ -3,6 +3,9 @@ import { db } from '../../db/db';
 import { TOTAL_CURRICULUM_DAYS } from '../../db/repo';
 import { SKILL_LABELS } from '../../db/schema';
 import { formatMinutes } from '../../engine/dates';
+import { tagInfo } from '../../engine/errorTags';
+import { Link } from 'react-router-dom';
+import { ReportCard } from './ReportCard';
 
 export function ProgressPage() {
   const data = useLiveQuery(async () => {
@@ -15,7 +18,8 @@ export function ProgressPage() {
       db.exercise_attempts.filter((a) => a.isCorrect).count(),
       db.assessments.orderBy('date').reverse().toArray(),
     ]);
-    return { profile, logs, lessonsDone, writings, attempts, correct, assessments };
+    const weak = (await db.error_stats.orderBy('count').reverse().toArray()).filter((e) => e.count > 0).slice(0, 5);
+    return { profile, logs, lessonsDone, writings, attempts, correct, assessments, weak };
   });
   if (!data?.profile) return <div className="page" aria-busy="true" />;
 
@@ -67,6 +71,38 @@ export function ProgressPage() {
             </div>
           </div>
         </section>
+
+        <section className="card span-2">
+          <h2>Peta kelemahan</h2>
+          {data.weak.length === 0 ? (
+            <p className="muted">Belum ada pola kesalahan. Kesalahan dari latihan akan dikumpulkan di sini, dan Latihan Pintar akan fokus ke sana.</p>
+          ) : (
+            <div className="list">
+              {data.weak.map((w) => {
+                const info = tagInfo(w.errorTag);
+                return (
+                  <div className="list-item" key={w.errorTag}>
+                    <div>
+                      <strong>{info.label}</strong>
+                      <div className="muted small">{info.tip}</div>
+                      {info.day > 0 && (
+                        <Link className="small" to={`/day/${info.day}/grammar`}>
+                          Baca ulang pelajaran Hari {info.day}
+                        </Link>
+                      )}
+                    </div>
+                    <span className="badge warn">{w.count}×</span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          <Link to="/practice" className="btn secondary">
+            Latihan Pintar
+          </Link>
+        </section>
+
+        <ReportCard />
 
         <section className="card span-2">
           <h2>Riwayat asesmen</h2>

@@ -22,6 +22,7 @@ def check(name, cond, detail=""):
 def plain(s):  # hapus format **tebal** / *miring*
     return re.sub(r"[*~]", "", s).strip()
 
+WORDS = {w["word"]: w for w in json.loads((APP / "public/content/month-01/words.json").read_text())}
 EXERCISES = {}
 for sec in (DAY["lesson"]["exercises"], DAY["reading"]["questions"], DAY["writing"]["exercises"]):
     for e in sec:
@@ -40,7 +41,21 @@ READ_DB = """async () => {
   db.close(); return out;
 }"""
 
-def run_exercises(page, wrong_once_id=None, shots_prefix=None):
+def answer_generated(page):
+    """Soal buatan Latihan Pintar: cocokkan dijawab benar, pilihan lain dijawab apa saja."""
+    if page.locator(".match").is_visible():
+        page.screenshot(path=str(OUT / "22-match.png"), full_page=True)
+        lefts = page.locator(".match-col").first.locator(".chip")
+        for i in range(lefts.count()):
+            en = lefts.nth(i).inner_text().strip()
+            lefts.nth(i).click()
+            page.locator(".match-col").nth(1).locator(".chip").filter(has_text=re.compile("^" + re.escape(WORDS[en]["meaning"]) + "$")).click()
+    else:
+        page.locator(".opt").first.click()
+    expect(page.locator(".feedback")).to_be_visible()
+    page.locator(".feedback").get_by_role("button", name="Lanjut").click()
+
+def run_exercises(page, wrong_once_id=None, shots_prefix=None, allow_generated=False):
     """Menjawab soal satu per satu sampai layar hasil muncul."""
     answered_wrong = False
     n = 0
@@ -51,12 +66,17 @@ def run_exercises(page, wrong_once_id=None, shots_prefix=None):
             return
         prompt = page.locator(".exercise .prompt").inner_text().strip()
         ex = EXERCISES.get(plain(prompt))
+        if ex is None and allow_generated:
+            answer_generated(page)
+            n += 1
+            continue
         assert ex, f"soal tidak dikenali: {prompt!r}"
         make_wrong = (ex["id"] == wrong_once_id and not answered_wrong)
         t = ex["type"]
         if t == "mc":
             idx = ex["answer"] if not make_wrong else (ex["answer"] + 1) % len(ex["options"])
-            page.locator(".opt").nth(idx).click()
+            want = plain(ex["options"][idx]["text"])
+            page.locator(".opt").filter(has_text=re.compile("^" + re.escape(want) + "$")).click()
         elif t in ("fill", "translate"):
             page.get_by_label("Jawaban").fill("salah sekali" if make_wrong else ex["accept"][0])
             page.get_by_role("button", name="Periksa").click()
@@ -215,6 +235,29 @@ with sync_playwright() as p:
     page.get_by_role("link", name="Kosakata").click()
     expect(page.get_by_text("10 kata dikenal")).to_be_visible()
     page.screenshot(path=str(OUT / "18-vocab.png"), full_page=True)
+    # --- Latihan Pintar (adaptif) ---
+    page.goto(URL + "#/practice")
+    expect(page.get_by_text("Fokus kelemahan Anda saat ini")).to_be_visible()
+    expect(page.get_by_text("Salah sapaan waktu")).to_be_visible()
+    check("Latihan Pintar menampilkan kelemahan dari kesalahan tadi", True)
+    page.screenshot(path=str(OUT / "21-practice.png"), full_page=True)
+    page.get_by_role("button", name="Mulai Latihan Pintar").click()
+    run_exercises(page, allow_generated=True)
+    page.get_by_role("button", name="Selesai").click()
+    expect(page.get_by_role("button", name="Mulai Latihan Pintar")).to_be_visible()
+    check("Latihan Pintar selesai & sesi baru siap", True)
+
+    # --- Progres: peta kelemahan + laporan ---
+    page.get_by_role("link", name="Progres").click()
+    expect(page.get_by_role("heading", name="Peta kelemahan")).to_be_visible()
+    page.get_by_text("Lihat isi laporan").click()
+    expect(page.locator("pre.report")).to_contain_text("Pola kesalahan")
+    report = page.locator("pre.report").inner_text()
+    ok = all(k in report for k in ["LAPORAN ENGLISH MASTERY", "Hari 1:", "greeting-time", "Kosakata", "d1-e3", "Latihan Pintar"])
+    check("Laporan untuk Claude berisi nilai, kesalahan, kosakata", ok)
+    (OUT / "laporan-contoh.txt").write_text(report)
+    page.screenshot(path=str(OUT / "23-progress.png"), full_page=True)
+
     check("Tidak ada error JavaScript", not errors, "; ".join(errors[:3]))
     ctx.close()
 

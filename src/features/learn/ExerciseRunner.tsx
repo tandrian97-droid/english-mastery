@@ -1,9 +1,11 @@
 import { useMemo, useState, type FormEvent } from 'react';
-import type { Exercise, OrderExercise } from '../../content/types';
+import type { Exercise, MatchExercise, OrderExercise } from '../../content/types';
 import { recordAttempt, saveExplanation } from '../../db/learning';
 import { checkOrder, checkTypedAnswer, type AnswerStatus } from '../../engine/answers';
+import { freshSeed, rng, shuffle } from '../../engine/random';
 import { useFeedback } from '../../ui/feedback';
 import { RichText } from '../../ui/RichText';
+import { SpeakButton } from '../../ui/SpeakButton';
 
 export interface RunnerResult {
   /** Persentase benar pada percobaan pertama (soal 'jelaskan' tidak dinilai). Null jika tidak ada soal bernilai. */
@@ -18,11 +20,10 @@ interface Feedback {
   why?: string;
 }
 
-/** Acak deterministik berdasarkan id soal, dan dijamin tidak sama dengan urutan benar. */
-function shuffledTokens(ex: OrderExercise): string[] {
-  const arr = ex.tokens.map((t, i) => ({ t, k: Math.sin((i + 1) * (ex.id.length + 7) * 9301) }));
-  arr.sort((a, b) => a.k - b.k);
-  const out = arr.map((x) => x.t);
+/** Acak potongan kata, dijamin tidak sama dengan urutan benar. */
+function shuffledTokens(ex: OrderExercise, rand: () => number): string[] {
+  let out = shuffle(ex.tokens, rand);
+  for (let i = 0; i < 5 && out.join(' ') === ex.tokens.join(' ') && out.length > 1; i++) out = shuffle(ex.tokens, rand);
   if (out.join(' ') === ex.tokens.join(' ') && out.length > 1) out.push(out.shift()!);
   return out;
 }
@@ -32,15 +33,25 @@ export function ExerciseRunner({
   lessonId,
   onDone,
   doneLabel = 'Selesai',
+  shuffleOrder = true,
 }: {
   exercises: Exercise[];
   lessonId: string;
   onDone: (r: RunnerResult) => void;
   doneLabel?: string;
+  /** Acak urutan soal (soal 'jelaskan' tetap di akhir). */
+  shuffleOrder?: boolean;
 }) {
   const { reportError } = useFeedback();
+  const [seed] = useState(freshSeed);
   // Antrian: putaran pertama semua soal; soal yang salah diulang sekali di akhir.
-  const [queue, setQueue] = useState<{ ex: Exercise; retry: boolean }[]>(() => exercises.map((ex) => ({ ex, retry: false })));
+  const [queue, setQueue] = useState<{ ex: Exercise; retry: boolean }[]>(() => {
+    const rand = rng(seed);
+    const main = exercises.filter((e) => e.type !== 'explain');
+    const explain = exercises.filter((e) => e.type === 'explain');
+    const ordered = shuffleOrder ? [...shuffle(main, rand), ...explain] : exercises;
+    return ordered.map((ex) => ({ ex, retry: false }));
+  });
   const [pos, setPos] = useState(0);
   const [firstTry, setFirstTry] = useState<Record<string, boolean>>({});
   const [correctTexts, setCorrectTexts] = useState<string[]>([]);
@@ -51,7 +62,16 @@ export function ExerciseRunner({
 
   const current = queue[pos];
   const graded = exercises.filter((e) => e.type !== 'explain');
-  const pool = useMemo(() => (current?.ex.type === 'order' ? shuffledTokens(current.ex) : []), [current]);
+  // Urutan tampilan pilihan & potongan diacak per soal (dan berbeda saat soal diulang).
+  const layout = useMemo(() => {
+    if (!current) return { order: [] as number[], pool: [] as string[], right: [] as string[] };
+    const rand = rng(seed + pos * 7919);
+    const ex = current.ex;
+    if (ex.type === 'mc' || ex.type === 'listen') return { order: shuffle(ex.options.map((_, i) => i), rand), pool: [], right: [] };
+    if (ex.type === 'order') return { order: [], pool: shuffledTokens(ex, rand), right: [] };
+    if (ex.type === 'match') return { order: [], pool: [], right: shuffle(ex.pairs.map((p) => p[1]), rand) };
+    return { order: [], pool: [], right: [] };
+  }, [current, seed, pos]);
 
   function finishAnswer(isCorrect: boolean, answer: string, fb: Feedback) {
     const ex = current.ex;
@@ -73,9 +93,9 @@ export function ExerciseRunner({
     finishAnswer(r.isCorrect, text, { status: r.status, expected: r.expected });
   }
 
-  function chooseMc(i: number) {
+  function chooseOption(i: number) {
     const ex = current.ex;
-    if (feedback || ex.type !== 'mc') return;
+    if (feedback || (ex.type !== 'mc' && ex.type !== 'listen')) return;
     const ok = i === ex.answer;
     finishAnswer(ok, ex.options[i].text, { status: ok ? 'correct' : 'wrong', expected: ex.options[ex.answer].text, why: ok ? undefined : ex.options[i].why });
     setChosen([String(i)]);
@@ -120,7 +140,7 @@ export function ExerciseRunner({
             <div className="timer">{score}%</div>
             <p className="muted">
               {right} dari {graded.length} benar pada percobaan pertama.
-              {score >= 80 ? ' Bagus sekali.' : score >= 60 ? ' Cukup baik; ulangi bagian yang salah besok.' : ' Tidak apa-apa. Baca lagi penjelasannya, lalu ulangi latihan ini.'}
+              {score >= 80 ? ' Bagus sekali.' : score >= 60 ? ' Cukup baik; bagian yang salah akan muncul lagi di Latihan Pintar.' : ' Tidak apa-apa. Baca lagi penjelasannya; soal-soal ini akan diulang di Latihan Pintar.'}
             </p>
           </>
         )}
@@ -149,6 +169,7 @@ export function ExerciseRunner({
     wrong: 'Belum tepat.',
     saved: 'Tersimpan. Bandingkan dengan contoh jawaban:',
   };
+  const typeBadge: Partial<Record<Exercise['type'], string>> = { explain: 'jelaskan sendiri', listen: 'dengarkan', match: 'cocokkan', order: 'susun kata', translate: 'terjemahkan' };
 
   return (
     <section className="card exercise" aria-live="polite">
@@ -157,7 +178,7 @@ export function ExerciseRunner({
           Soal {Math.min(pos + 1, total)} dari {total}
           {current.retry && ' · ulangan'}
         </span>
-        {ex.type === 'explain' && <span className="badge teal">jelaskan sendiri</span>}
+        {typeBadge[ex.type] && <span className="badge teal">{typeBadge[ex.type]}</span>}
       </div>
       <div className="progress thin">
         <span style={{ width: `${(pos / total) * 100}%` }} />
@@ -166,13 +187,22 @@ export function ExerciseRunner({
         <RichText text={ex.prompt} />
       </h3>
 
-      {ex.type === 'mc' && (
+      {ex.type === 'listen' && (
+        <div className="row">
+          <SpeakButton text={ex.audio} label="Putar audio soal" />
+          <SpeakButton text={ex.audio} slow label="Putar audio soal pelan" />
+          {feedback && <span className="en">{ex.audio}</span>}
+        </div>
+      )}
+
+      {(ex.type === 'mc' || ex.type === 'listen') && (
         <div className="options">
-          {ex.options.map((o, i) => {
+          {layout.order.map((i) => {
+            const o = ex.options[i];
             const isChosen = chosen[0] === String(i);
             const cls = feedback ? (i === ex.answer ? 'opt right' : isChosen ? 'opt wrong' : 'opt') : 'opt';
             return (
-              <button key={i} className={cls} onClick={() => chooseMc(i)} disabled={!!feedback}>
+              <button key={i} className={cls} onClick={() => chooseOption(i)} disabled={!!feedback}>
                 <RichText text={o.text} />
               </button>
             );
@@ -214,9 +244,9 @@ export function ExerciseRunner({
             ))}
           </div>
           <div className="order-pool">
-            {pool.map((t, i) => {
+            {layout.pool.map((t, i) => {
               const usedCount = chosen.filter((c) => c === t).length;
-              const before = pool.slice(0, i).filter((p) => p === t).length;
+              const before = layout.pool.slice(0, i).filter((p) => p === t).length;
               const used = before < usedCount;
               return (
                 <button key={i} className="chip" disabled={used || !!feedback} onClick={() => setChosen([...chosen, t])}>
@@ -231,6 +261,20 @@ export function ExerciseRunner({
             </button>
           )}
         </div>
+      )}
+
+      {ex.type === 'match' && !feedback && (
+        <MatchBoard
+          key={`${ex.id}-${pos}`}
+          ex={ex}
+          right={layout.right}
+          onComplete={(mistakes) =>
+            finishAnswer(mistakes === 0, `${mistakes} salah`, {
+              status: mistakes === 0 ? 'correct' : 'wrong',
+              expected: mistakes ? ex.pairs.map(([a, b]) => `${a} = ${b}`).join(' · ') : undefined,
+            })
+          }
+        />
       )}
 
       {ex.type === 'explain' && (
@@ -262,14 +306,66 @@ export function ExerciseRunner({
               <RichText text={feedback.why} />
             </p>
           )}
-          <p className="small">
-            <RichText text={ex.explain} />
-          </p>
+          {ex.explain && (
+            <p className="small">
+              <RichText text={ex.explain} />
+            </p>
+          )}
           <button className="btn block" onClick={next} autoFocus>
             Lanjut
           </button>
         </div>
       )}
     </section>
+  );
+}
+
+/** Papan cocokkan: ketuk kata di kiri, lalu artinya di kanan. Pasangan benar terkunci hijau. */
+function MatchBoard({ ex, right, onComplete }: { ex: MatchExercise; right: string[]; onComplete: (mistakes: number) => void }) {
+  const [left, setLeft] = useState<number | null>(null);
+  const [matched, setMatched] = useState<Record<number, boolean>>({});
+  const [wrongFlash, setWrongFlash] = useState<string | null>(null);
+  const [mistakes, setMistakes] = useState(0);
+
+  const [hint, setHint] = useState(false);
+  function chooseRight(text: string) {
+    if (left === null) {
+      setHint(true);
+      return;
+    }
+    setHint(false);
+    if (ex.pairs[left][1] === text) {
+      const m = { ...matched, [left]: true };
+      setMatched(m);
+      setLeft(null);
+      if (Object.keys(m).length === ex.pairs.length) onComplete(mistakes);
+    } else {
+      setMistakes((n) => n + 1);
+      setWrongFlash(text);
+      window.setTimeout(() => setWrongFlash(null), 600);
+    }
+  }
+
+  const matchedRight = new Set(Object.keys(matched).map((k) => ex.pairs[Number(k)][1]));
+  return (
+    <div className="match">
+      <div className="match-col">
+        {ex.pairs.map(([en], i) => (
+          <button key={i} className={`chip${matched[i] ? ' matched' : left === i ? ' chosen' : ''}`} disabled={!!matched[i]} onClick={() => setLeft(i)}>
+            {en}
+          </button>
+        ))}
+      </div>
+      <div className="match-col">
+        {right.map((t) => (
+          <button key={t} className={`chip${matchedRight.has(t) ? ' matched' : wrongFlash === t ? ' wrong' : ''}`} disabled={matchedRight.has(t)} onClick={() => chooseRight(t)}>
+            {t}
+          </button>
+        ))}
+      </div>
+      <p className="muted small" style={{ gridColumn: '1 / -1' }}>
+        {hint ? <b>Pilih kata di kiri dulu.</b> : 'Ketuk kata di kiri, lalu artinya di kanan.'} {mistakes > 0 && `Salah pasang: ${mistakes}`}
+      </p>
+    </div>
   );
 }

@@ -111,7 +111,22 @@ export interface ExplainExercise extends ExerciseBase {
   model: string;
 }
 
-export type Exercise = McExercise | FillExercise | TranslateExercise | OrderExercise | ExplainExercise;
+/** Dengar audio (tanpa melihat tulisan), lalu pilih jawaban. */
+export interface ListenExercise extends ExerciseBase {
+  type: 'listen';
+  /** Teks yang diputar sebagai audio. */
+  audio: string;
+  options: { text: string; why?: string }[];
+  answer: number;
+}
+
+/** Cocokkan pasangan: kiri (bahasa Inggris) dengan kanan (arti). */
+export interface MatchExercise extends ExerciseBase {
+  type: 'match';
+  pairs: [string, string][];
+}
+
+export type Exercise = McExercise | FillExercise | TranslateExercise | OrderExercise | ExplainExercise | ListenExercise | MatchExercise;
 
 // ---------- Pelajaran, bacaan, listening, writing ----------
 

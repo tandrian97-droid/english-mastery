@@ -61,6 +61,13 @@ function checkExercise(ex, where, isReading = false) {
     case 'order':
       if (!Array.isArray(ex.tokens) || ex.tokens.length < 2) err(`${ex.id}: soal susun minimal 2 potongan`);
       break;
+    case 'listen':
+      if (!ex.audio?.trim()) err(`${ex.id}: soal dengar tanpa audio`);
+      if (!Number.isInteger(ex.answer) || ex.answer < 0 || ex.answer >= (ex.options?.length ?? 0)) err(`${ex.id}: indeks jawaban tidak valid`);
+      break;
+    case 'match':
+      if (!Array.isArray(ex.pairs) || ex.pairs.length < 3) err(`${ex.id}: soal cocokkan minimal 3 pasang`);
+      break;
     case 'explain':
       if (!ex.model?.trim()) err(`${ex.id}: soal penjelasan tanpa contoh jawaban (model)`);
       break;

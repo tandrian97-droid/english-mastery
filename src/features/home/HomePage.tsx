@@ -106,6 +106,16 @@ export function HomePage() {
 
         <TodayLessonCard day={profile.curriculumDay} />
 
+        {profile.curriculumDay > 1 && (
+          <section className="card">
+            <h2>Latihan Pintar</h2>
+            <p className="muted small">±10 soal yang disusun dari kesalahan dan kata tersulit Anda. Setiap sesi berbeda. Cocok untuk pemanasan atau waktu luang 5 menit.</p>
+            <Link to="/practice" className="btn secondary block">
+              Mulai Latihan Pintar
+            </Link>
+          </section>
+        )}
+
         <section className="card span-2">
           <div className="stats">
             <div className="stat">

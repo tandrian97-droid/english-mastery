@@ -63,7 +63,7 @@ function SpeakPhase({ listening, lessonId, onNext }: { listening: Listening; les
               setBest((b) => ({ ...b, [i]: Math.max(b[i] ?? 0, r.score) }));
               if (r.score >= SPEAK_PASS) setDone((d) => ({ ...d, [i]: true }));
               const ex: Exercise = { id: `${lessonId}:speak-${i}`, type: 'translate', prompt: it.en, accept: [it.en], explain: '', errorTag: 'pronunciation' };
-              void recordAttempt(ex, lessonId, r.heard, r.score >= SPEAK_PASS).catch(reportError);
+              void recordAttempt(ex, lessonId, `${r.score}% | ${r.heard}`, r.score >= SPEAK_PASS).catch(reportError);
             }}
           />
           <div className="row between">

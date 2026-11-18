@@ -106,6 +106,11 @@ export function DayPage() {
             })}
           </div>
           <p className="muted small">Boleh dikerjakan terpisah dan dijeda kapan saja. Urutan disarankan, tidak diwajibkan.</p>
+          {day.day > 1 && (
+            <Link to="/practice" className="btn secondary">
+              Pemanasan: Latihan Pintar (opsional)
+            </Link>
+          )}
         </section>
       </div>
     </div>

@@ -232,7 +232,7 @@ textarea { font: inherit; width: 100%; padding: 12px 14px; border-radius: 12px; 
 .check { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; font-weight: 600; }
 .check input { width: 20px; height: 20px; accent-color: var(--teal); }
 
-.timer-chip { font: inherit; font-variant-numeric: tabular-nums; font-weight: 700; border: 0; border-radius: 999px; padding: 8px 12px; background: #e8eef3; color: var(--muted); cursor: pointer; }
+.timer-chip { white-space: nowrap; flex: none; font: inherit; font-variant-numeric: tabular-nums; font-weight: 700; border: 0; border-radius: 999px; padding: 8px 12px; background: #e8eef3; color: var(--muted); cursor: pointer; }
 .timer-chip.on { background: var(--teal-soft); color: var(--teal); }
 .block-link { text-decoration: none; color: inherit; }
 .day-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(42px, 1fr)); gap: 6px; }
@@ -258,3 +258,14 @@ textarea { font: inherit; width: 100%; padding: 12px 14px; border-radius: 12px; 
 .marks .missed { color: var(--bad); text-decoration: underline wavy; }
 .speak-btn.failed { background: #eee; color: #999; }
 .steps { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.prompt-big { font-size: 17px; font-weight: 650; }
+.meaning.big { font-size: 26px; }
+.flash-front input { text-align: center; font-size: 18px; }
+.ratings:has(> :nth-child(3):last-child) { grid-template-columns: repeat(3, 1fr); }
+.match { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.match-col { display: grid; gap: 8px; align-content: start; }
+.match .chip { width: 100%; text-align: left; }
+.chip.matched { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); opacity: 1; }
+.chip.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.report { white-space: pre-wrap; font-size: 12px; background: #f3f5f8; border-radius: 10px; padding: 10px; max-height: 360px; overflow: auto; }
+details summary { cursor: pointer; }

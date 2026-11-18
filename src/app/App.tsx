@@ -4,6 +4,7 @@ import { db } from '../db/db';
 import { HomePage } from '../features/home/HomePage';
 import { LearnPage } from '../features/learn/LearnPage';
 import { DayPage } from '../features/learn/DayPage';
+import { PracticePage } from '../features/practice/PracticePage';
 import { BlockPage } from '../features/learn/BlockPage';
 import { ProgressPage } from '../features/progress/ProgressPage';
 import { SettingsPage } from '../features/settings/SettingsPage';
@@ -36,6 +37,7 @@ function Shell() {
           <Route path="/" element={<HomePage />} />
           <Route path="/learn" element={<LearnPage />} />
           <Route path="/day/:day" element={<DayPage />} />
+          <Route path="/practice" element={<PracticePage />} />
           <Route path="/day/:day/:block" element={<BlockPage />} />
           <Route path="/vocabulary" element={<VocabularyPage />} />
           <Route path="/tutor" element={<TutorPage />} />
