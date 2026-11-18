@@ -1,0 +1,16 @@
+{
+  "version": "2026.11.19-1",
+  "totalDays": 300,
+  "months": [
+    { "month": 1, "days": [1, 30], "title": "Fondasi", "focus": "Bunyi & ejaan, 300 kata pertama, to be (am/is/are), simple present, kalimat S-V-O, frasa sapaan", "target": "Reading A1 awal · ucapkan 300 kata dengan benar", "available": false },
+    { "month": 2, "days": [31, 60], "title": "Kalimat", "focus": "Simple past & future, present continuous, kalimat tanya, artikel a/an/the, preposisi; 600 kata; percakapan suara pertama dengan AI Tutor", "target": "Teks 100 kata · perkenalan diri lancar", "available": false },
+    { "month": 3, "days": [61, 90], "title": "Membaca pertama", "focus": "Teks bertingkat A1–A2, konjungsi, paragraf pendek, graded reader pertama; asesmen 1", "target": "Reading A2 awal · paragraf harian", "available": false },
+    { "month": 4, "days": [91, 120], "title": "Tulisan sehari-hari & kerja", "focus": "Email sederhana, present perfect, modal verbs, chat dengan klien", "target": "Reading A2 · email sederhana", "available": false },
+    { "month": 5, "days": [121, 150], "title": "Bahasa praktis", "focus": "Telepon, meeting, small talk, deskripsi produk/jasa, konten media sosial", "target": "Percakapan topik familiar", "available": false },
+    { "month": 6, "days": [151, 180], "title": "Bacaan profesional", "focus": "Arsitektur, interior, konstruksi, digital marketing, gadget; press release dan manga dengan kamus; asesmen 2", "target": "Reading A2+/B1 awal", "available": false },
+    { "month": 7, "days": [181, 210], "title": "Tulisan profesional", "focus": "Laporan, ringkasan proyek, penawaran, passive voice, formal vs informal", "target": "Writing: laporan singkat", "available": false },
+    { "month": 8, "days": [211, 240], "title": "Bacaan lanjutan", "focus": "Artikel asli lewat pembaca impor, relative clause, conditional, non-fiksi di bidang Anda", "target": "Reading B1 dengan kamus", "available": false },
+    { "month": 9, "days": [241, 270], "title": "Menulis mandiri", "focus": "Proposal, argumen, problem–solution, reported speech, presentasi", "target": "Writing B1 awal", "available": false },
+    { "month": 10, "days": [271, 300], "title": "Konsolidasi & asesmen", "focus": "Proyek akhir: dokumen kerja nyata Anda, novel ringan pertama; asesmen 3", "target": "Reading B1→B2 · Writing B1 · Speaking A2+/B1", "available": false }
+  ]
+}
