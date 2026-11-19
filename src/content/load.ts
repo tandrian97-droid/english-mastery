@@ -44,3 +44,13 @@ export async function lastAvailableDay(): Promise<number> {
   const c = await loadCurriculum();
   return c.months.reduce((max, m) => Math.max(max, m.availableThroughDay), 0);
 }
+
+/** Peta id soal → jenis kesalahan, dari semua materi yang tersedia. */
+export async function loadErrorTagIndex(): Promise<Map<string, string>> {
+  const last = await lastAvailableDay();
+  const days = await Promise.all(Array.from({ length: last }, (_, i) => loadDay(i + 1)));
+  const map = new Map<string, string>();
+  for (const d of days)
+    for (const e of [...d.lesson.exercises, ...d.reading.questions, ...d.writing.exercises]) if (e.errorTag) map.set(e.id, e.errorTag);
+  return map;
+}

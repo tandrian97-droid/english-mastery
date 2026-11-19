@@ -153,12 +153,13 @@ export function SpeakPractice({ text, onScore }: { text: string; onScore?: (r: P
           </div>
           <p className="marks">
             {result.marks.map((m, i) => (
-              <span key={i} className={m.heard ? 'heard' : 'missed'}>
+              <span key={i} className={m.name ? 'name' : m.heard ? 'heard' : 'missed'} title={m.name ? 'Nama tidak dinilai' : undefined}>
                 {m.word}{' '}
               </span>
             ))}
           </p>
           <p className="muted small">Terdengar: “{result.heard || '—'}”</p>
+          {result.marks.some((m) => m.name) && <p className="muted small">Nama orang (abu-abu) tidak dinilai: pengenal suara bahasa Inggris tidak mengenal nama Indonesia.</p>}
           {result.score < 80 && <p className="small">Kata merah belum terdengar jelas. Putar contoh versi pelan, perhatikan kata itu, lalu coba lagi.</p>}
         </div>
       )}

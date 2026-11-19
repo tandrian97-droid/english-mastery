@@ -37,6 +37,19 @@ describe('penilaian ucapan', () => {
   it('homofon (two/too/to) tidak dihukum', () => {
     expect(scorePronunciation('Nice to meet you too.', ['nice 2 meet you to']).score).toBe(100);
   });
+  it('nama Indonesia tidak dinilai (Budi terdengar "beauty")', () => {
+    for (const heard of ['my name is beauty', 'my name is Moody', 'my name is Booty', 'my name is Budi']) {
+      const r = scorePronunciation('My name is Budi.', [heard]);
+      expect(r.score).toBe(100);
+      expect(r.marks.find((m) => m.word === 'budi')?.name).toBe(true);
+    }
+  });
+  it('nama tidak menutupi kesalahan kata lain', () => {
+    expect(scorePronunciation('My name is Budi.', ['my game is beauty']).score).toBeLessThan(80);
+  });
+  it('nama di tengah kalimat dikenali otomatis', () => {
+    expect(scorePronunciation('This is Kevin, my friend.', ['this is cabin my friend']).score).toBe(100);
+  });
   it('tidak ada yang terdengar = 0%', () => {
     expect(scorePronunciation('Hello.', []).score).toBe(0);
   });

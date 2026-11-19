@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { lastAvailableDay, loadAllWords, loadDay } from '../../content/load';
+import { lastAvailableDay, loadAllWords, loadDay, loadErrorTagIndex } from '../../content/load';
+import { deriveErrorStats } from '../../db/learning';
 import { db } from '../../db/db';
 import { tagInfo } from '../../engine/errorTags';
 import { freshSeed } from '../../engine/random';
@@ -19,12 +20,13 @@ async function preparePlan(): Promise<State> {
   const doneThrough = Math.min((profile?.curriculumDay ?? 1) - 1, last);
   const cards = await db.vocab_cards.toArray();
   if (doneThrough < 1 && cards.length < 4) return { kind: 'empty' };
-  const [days, wordsMap, errorStats, wrong] = await Promise.all([
+  const [days, wordsMap, tagIndex, wrong] = await Promise.all([
     Promise.all(Array.from({ length: Math.max(doneThrough, 0) }, (_, i) => loadDay(i + 1))),
     loadAllWords(),
-    db.error_stats.toArray(),
+    loadErrorTagIndex(),
     db.exercise_attempts.filter((a) => !a.isCorrect).toArray(),
   ]);
+  const errorStats = deriveErrorStats(wrong, tagIndex);
   const plan = buildWarmup({
     days,
     words: [...wordsMap.values()],

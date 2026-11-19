@@ -140,8 +140,62 @@
         "title": "Kapan dipakai, kapan TIDAK",
         "blocks": [
           {
+            "type": "p",
+            "text": "Kunci utamanya: **evening dan night dibedakan oleh SITUASI, bukan oleh jam.** *Good evening* untuk menyapa saat **bertemu**, *Good night* untuk **berpisah** atau mau tidur. Keduanya sama-sama malam."
+          },
+          {
+            "type": "table",
+            "head": [
+              "Bahasa Indonesia",
+              "Jam (kira-kira)",
+              "Bahasa Inggris"
+            ],
+            "rows": [
+              [
+                "Selamat pagi",
+                "bangun s.d. 12.00",
+                "Good morning"
+              ],
+              [
+                "Selamat siang",
+                "12.00–15.00",
+                "Good afternoon"
+              ],
+              [
+                "Selamat siang (jam 11.00)",
+                "sebelum 12.00",
+                "Good **morning** (belum lewat tengah hari)"
+              ],
+              [
+                "Selamat sore",
+                "15.00–18.00",
+                "Good **afternoon** (bukan evening!)"
+              ],
+              [
+                "Selamat malam (saat datang/bertemu)",
+                "setelah ±18.00",
+                "Good evening"
+              ],
+              [
+                "Selamat malam (saat pamit/mau tidur)",
+                "setelah ±18.00",
+                "Good night"
+              ]
+            ]
+          },
+          {
             "type": "mistakes",
             "items": [
+              {
+                "wrong": "Good evening! (jam 16.00, 'selamat sore')",
+                "right": "Good afternoon!",
+                "why": "'Sore' dalam bahasa Indonesia masih termasuk afternoon. Evening baru dimulai sekitar jam 6 sore."
+              },
+              {
+                "wrong": "andrian / budi",
+                "right": "Andrian / Budi",
+                "why": "Nama orang selalu diawali huruf BESAR, di mana pun posisinya dalam kalimat."
+              },
               {
                 "wrong": "Good night! (saat datang ke rapat jam 19.00)",
                 "right": "Good evening!",
@@ -340,10 +394,80 @@
         "explain": "Good morning + My name is + nama."
       },
       {
+        "id": "d1-e10",
+        "type": "mc",
+        "prompt": "'Selamat sore' (jam 16.00) dalam bahasa Inggris:",
+        "options": [
+          {
+            "text": "Good evening!",
+            "why": "Evening dimulai sekitar jam 6 sore. Jam 4 sore masih afternoon."
+          },
+          {
+            "text": "Good afternoon!"
+          },
+          {
+            "text": "Good night!",
+            "why": "Good night untuk berpisah di malam hari."
+          }
+        ],
+        "answer": 1,
+        "explain": "Bahasa Inggris tidak punya kata khusus untuk 'sore'. Siang dan sore = afternoon.",
+        "errorTag": "greeting-time"
+      },
+      {
+        "id": "d1-e11",
+        "type": "mc",
+        "prompt": "Jam 21.00 Anda PAMIT pulang dari rumah klien. Anda berkata:",
+        "options": [
+          {
+            "text": "Good evening!",
+            "why": "Good evening untuk menyapa saat bertemu, bukan saat pamit."
+          },
+          {
+            "text": "Good night!"
+          },
+          {
+            "text": "Good afternoon!",
+            "why": "Jam 9 malam bukan afternoon."
+          }
+        ],
+        "answer": 1,
+        "explain": "Berpisah di malam hari = Good night.",
+        "errorTag": "greeting-time"
+      },
+      {
+        "id": "d1-e12",
+        "type": "mc",
+        "prompt": "Jam 11.00 Anda menelepon klien. Sapaan yang tepat:",
+        "options": [
+          {
+            "text": "Good afternoon!",
+            "why": "Afternoon dimulai SETELAH jam 12 (after noon)."
+          },
+          {
+            "text": "Good morning!"
+          }
+        ],
+        "answer": 1,
+        "explain": "Walaupun di Indonesia jam 11 sering disebut 'siang', dalam bahasa Inggris sebelum jam 12 masih morning.",
+        "errorTag": "greeting-time"
+      },
+      {
+        "id": "d1-e13",
+        "type": "translate",
+        "prompt": "Terjemahkan: Selamat sore, Sara.",
+        "accept": [
+          "Good afternoon, Sara.",
+          "Good afternoon Sara"
+        ],
+        "explain": "Sore = afternoon. Evening baru dipakai setelah sekitar jam 6.",
+        "errorTag": "greeting-time"
+      },
+      {
         "id": "d1-e9",
         "type": "explain",
         "prompt": "Jelaskan dengan kata-kata Anda sendiri: apa bedanya Good evening dan Good night?",
-        "model": "Good evening dipakai untuk menyapa saat bertemu di malam hari. Good night dipakai saat berpisah di malam hari atau mau tidur.",
+        "model": "Good evening dipakai untuk MENYAPA saat bertemu di malam hari. Good night dipakai saat BERPISAH di malam hari atau mau tidur. Bedanya bukan jam (sore vs malam), tapi situasinya: datang atau pamit.",
         "explain": "Kalau Anda bisa menjelaskannya sendiri, berarti Anda paham, bukan sekadar hafal."
       }
     ]
@@ -480,7 +604,7 @@
     ]
   },
   "writing": {
-    "intro": "Tulis kalimat Anda sendiri. Jawaban dicek offline. Tanda baca dan huruf besar tidak memengaruhi nilai.",
+    "intro": "Tulis kalimat Anda sendiri. Jawaban dicek offline. Tanda baca tidak memengaruhi nilai, tapi biasakan: nama orang selalu diawali huruf besar (Andrian, bukan andrian).",
     "exercises": [
       {
         "id": "d1-w1",
@@ -491,7 +615,8 @@
           "Good afternoon, Mr Lee.",
           "Good afternoon Mr. Lee"
         ],
-        "explain": "Pak/Bapak = Mr. (dibaca MIS-ter), diletakkan sebelum nama."
+        "explain": "Siang = afternoon (setelah jam 12). Pak/Bapak = Mr. (dibaca MIS-ter), diletakkan sebelum nama.",
+        "errorTag": "greeting-time"
       },
       {
         "id": "d1-w2",
@@ -501,7 +626,8 @@
           "Hello, my name is Rina.",
           "Hi, my name is Rina."
         ],
-        "explain": "Hello (atau Hi) + my name is + nama."
+        "explain": "Hello (atau Hi) + my name is + nama.",
+        "errorTag": "possessive-order"
       },
       {
         "id": "d1-w3",

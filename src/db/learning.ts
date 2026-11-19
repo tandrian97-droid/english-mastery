@@ -1,5 +1,5 @@
 import { db, type EnglishMasteryDB } from './db';
-import type { LessonProgress, MasteryLevel, ReviewRating, VocabCard } from './schema';
+import type { ErrorStat, ExerciseAttempt, LessonProgress, MasteryLevel, ReviewRating, VocabCard } from './schema';
 import type { BlockKey, Exercise } from '../content/types';
 import { newVocabCard, reviewCard } from '../engine/srs';
 import { toLocalDate } from '../engine/dates';
@@ -139,4 +139,25 @@ export function wordsInText(text: string, words: Map<string, { id: string; word:
   const found: string[] = [];
   for (const w of words.values()) if (tokens.has(w.word.toLowerCase())) found.push(w.id);
   return found;
+}
+
+/**
+ * Statistik kesalahan dihitung ulang dari riwayat jawaban + label kesalahan di materi terbaru.
+ * Jadi jika materi diperbaiki (label kesalahan ditambah), jawaban lama ikut terhitung.
+ */
+export function deriveErrorStats(attempts: ExerciseAttempt[], tagById: Map<string, string>): ErrorStat[] {
+  const stats = new Map<string, ErrorStat>();
+  for (const a of attempts) {
+    if (a.isCorrect) continue;
+    const tags = new Set(a.errorTags);
+    const fromContent = tagById.get(a.exerciseId);
+    if (fromContent) tags.add(fromContent);
+    for (const t of tags) {
+      const s = stats.get(t) ?? { errorTag: t, count: 0, lastSeenAt: 0 };
+      s.count++;
+      s.lastSeenAt = Math.max(s.lastSeenAt, a.at);
+      stats.set(t, s);
+    }
+  }
+  return [...stats.values()].sort((x, y) => y.count - x.count);
 }

@@ -6,6 +6,8 @@ import { formatMinutes } from '../../engine/dates';
 import { tagInfo } from '../../engine/errorTags';
 import { Link } from 'react-router-dom';
 import { ReportCard } from './ReportCard';
+import { deriveErrorStats } from '../../db/learning';
+import { loadErrorTagIndex } from '../../content/load';
 
 export function ProgressPage() {
   const data = useLiveQuery(async () => {
@@ -18,7 +20,8 @@ export function ProgressPage() {
       db.exercise_attempts.filter((a) => a.isCorrect).count(),
       db.assessments.orderBy('date').reverse().toArray(),
     ]);
-    const weak = (await db.error_stats.orderBy('count').reverse().toArray()).filter((e) => e.count > 0).slice(0, 5);
+    const wrongAttempts = await db.exercise_attempts.filter((a) => !a.isCorrect).toArray();
+    const weak = deriveErrorStats(wrongAttempts, await loadErrorTagIndex()).slice(0, 5);
     return { profile, logs, lessonsDone, writings, attempts, correct, assessments, weak };
   });
   if (!data?.profile) return <div className="page" aria-busy="true" />;

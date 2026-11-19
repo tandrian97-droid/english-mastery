@@ -6,7 +6,7 @@ import { BackupError, downloadBackup, importBackup, parseBackupText, type Backup
 import { formatBytes, getStorageStatus, requestPersistentStorage, type StorageStatus } from '../../db/storage';
 import { useFeedback } from '../../ui/feedback';
 
-export const APP_VERSION = '0.3.0 (Tahap 2 · Minggu 1)';
+export const APP_VERSION = '0.3.1 (Tahap 2 · Minggu 1)';
 
 export function SettingsPage() {
   const { notify, reportError } = useFeedback();

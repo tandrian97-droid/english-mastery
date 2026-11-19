@@ -13,6 +13,7 @@ import {
   recordAttempt,
   saveReview,
   wordsInText,
+  deriveErrorStats,
 } from '../src/db/learning';
 import type { Exercise } from '../src/content/types';
 
@@ -96,5 +97,17 @@ describe('jawaban & statistik kesalahan', () => {
     await recordAttempt(ex, 'day-003:grammar', 'am', true, database);
     expect((await database.error_stats.get('be-agreement'))?.count).toBe(2);
     expect(await database.exercise_attempts.count()).toBe(3);
+  });
+});
+
+describe('statistik kesalahan dihitung ulang', () => {
+  it('label baru di materi berlaku untuk jawaban lama', () => {
+    const attempts = [
+      { exerciseId: 'd1-w1', lessonId: 'day-001:writing', answer: 'good morning mr lee', isCorrect: false, errorTags: [], at: 100 },
+      { exerciseId: 'd1-e3', lessonId: 'day-001:grammar', answer: 'x', isCorrect: false, errorTags: ['greeting-time'], at: 200 },
+      { exerciseId: 'd1-e1', lessonId: 'day-001:grammar', answer: 'ok', isCorrect: true, errorTags: [], at: 300 },
+    ];
+    const stats = deriveErrorStats(attempts, new Map([['d1-w1', 'greeting-time'], ['d1-e3', 'greeting-time']]));
+    expect(stats).toEqual([{ errorTag: 'greeting-time', count: 2, lastSeenAt: 200 }]);
   });
 });

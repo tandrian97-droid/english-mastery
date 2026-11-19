@@ -1,23 +1,25 @@
 import { useState } from 'react';
-import { loadAllWords } from '../../content/load';
+import { loadAllWords, loadErrorTagIndex } from '../../content/load';
+import { deriveErrorStats } from '../../db/learning';
 import { db } from '../../db/db';
 import { buildReport } from '../../engine/report';
 import { useFeedback } from '../../ui/feedback';
 import { APP_VERSION } from '../settings/SettingsPage';
 
 async function makeReport(): Promise<string> {
-  const [profile, logs, progress, attempts, errorStats, cards, reviews, writings, words] = await Promise.all([
+  const [profile, logs, progress, attempts, tagIndex, cards, reviews, writings, words] = await Promise.all([
     db.profile.get(1),
     db.daily_log.toArray(),
     db.lesson_progress.toArray(),
     db.exercise_attempts.toArray(),
-    db.error_stats.toArray(),
+    loadErrorTagIndex(),
     db.vocab_cards.toArray(),
     db.vocab_reviews.toArray(),
     db.writings.toArray(),
     loadAllWords(),
   ]);
   if (!profile) throw new Error('Profil belum ada.');
+  const errorStats = deriveErrorStats(attempts, tagIndex);
   return buildReport({ profile, logs, progress, attempts, errorStats, cards, reviews, writings, words, appVersion: APP_VERSION });
 }
 
