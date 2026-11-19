@@ -4,15 +4,19 @@
 
 Brief proyek lengkap: dokumen **English Mastery — Brief v2 (Revisi)** di Claude.
 
-## Status
+## Status (versi 1.0.0)
 
-| Tahap | Isi | Status |
-| --- | --- | --- |
-| 1 · Fondasi | Proyek, PWA offline, database, backup/restore, navigasi, dashboard, timer belajar | **Selesai — 13 unit test + 17 uji end-to-end lulus** |
-| 2 · Inti belajar | Sesi harian, flashcard FSRS + audio, pelajaran grammar & bacaan, konten bulan 1 | **Berjalan — Minggu 1 (Hari 1–7) rilis; 38 unit test + 35 uji e2e lulus** |
-| 3 · Writing & data | Writing Studio, Harper, katalog kesalahan, AI Tutor di Claude | — |
-| 4 · Melengkapi | Rekam-dan-bandingkan, grafik, AI lokal di Fold 7, pembaca impor buku | — |
-| 5 · Lanjutan | Konten bulanan berlanjut, skenario percakapan, review mingguan | — |
+| Bagian | Status |
+| --- | --- |
+| Aplikasi: PWA offline, database, backup/restore, update otomatis tanpa tombol | Selesai |
+| Belajar harian: 5 blok, pelajaran 7 lapis, latihan 7 tipe, flashcard FSRS 3 arah, bacaan ketuk-kata, audio terpasang, rekam suara, cek ucapan, dikte | Selesai |
+| Latihan Pintar adaptif, Peta kelemahan, Laporan untuk Claude | Selesai |
+| Writing Studio (5 level, pemeriksa offline, riwayat, salin ke Claude) | Selesai |
+| Grafik progres & catatan asesmen | Selesai |
+| Materi | Hari 1–14 (120 kata, 268 soal, 589 audio). Materi berikutnya ditambahkan per minggu, menyesuaikan laporan |
+| AI Tutor di dalam aplikasi, AI lokal, pembaca impor buku | Setelah laporan 7 hari pertama |
+
+Uji: 80 unit test + validator materi + 56 uji end-to-end di Chrome (offline, restart, backup/restore, Hari 1 penuh, Writing Studio, update otomatis).
 
 ## Menjalankan di komputer
 
@@ -27,6 +31,7 @@ npm run build      # build produksi ke folder dist/
 npm run preview    # menjalankan hasil build di http://localhost:4173
 npm run test:e2e   # uji end-to-end di Chrome: offline, restart, backup/restore (butuh Python + Playwright)
 python3 tests/e2e/day1_test.py . tests/e2e/out   # menyelesaikan Hari 1 penuh secara offline
+python3 tests/e2e/features_test.py . tests/e2e/out   # Writing Studio, grafik, asesmen, update otomatis
 ```
 
 ## Memasang di HP Android
@@ -37,7 +42,7 @@ python3 tests/e2e/day1_test.py . tests/e2e/out   # menyelesaikan Hari 1 penuh se
 
 ## Deploy
 
-Setiap push ke branch `main` otomatis menjalankan tes, build, lalu deploy ke GitHub Pages (`.github/workflows/deploy.yml`). Sekali saja di GitHub: **Settings → Pages → Source: GitHub Actions**.
+Setiap push ke branch `main` otomatis menjalankan tes, build, lalu deploy ke GitHub Pages (`.github/workflows/deploy.yml`). Aplikasi di HP memeriksa versi baru saat dibuka dan setiap jam, lalu memasangnya sendiri saat pengguna berada di halaman aman (tidak di tengah pelajaran).
 
 ## Arsitektur
 

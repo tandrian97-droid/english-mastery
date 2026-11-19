@@ -1,0 +1,602 @@
+{
+  "day": 8,
+  "month": 1,
+  "title": "Kata kerja aksi: I work, we build",
+  "goals": [
+    "Memakai 10 kata kerja aksi untuk bercerita tentang pekerjaan Anda",
+    "Mengerti kapan memakai am/is/are dan kapan TIDAK",
+    "Mengerti bahwa simple present = kebiasaan dan fakta, bukan 'sedang'"
+  ],
+  "newWords": [
+    "work",
+    "live",
+    "like",
+    "want",
+    "need",
+    "have",
+    "make",
+    "use",
+    "build",
+    "design"
+  ],
+  "lesson": {
+    "id": "L08",
+    "title": "Simple present (I, you, we, they)",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa berkata \"I work in Jakarta. I design kitchens. We build houses.\" dan tahu kenapa \"I am work\" salah.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Ingat kereta api di Hari 3? Setiap kalimat butuh **lokomotif** (kata kerja). Ternyata ada **dua jenis lokomotif**:"
+          },
+          {
+            "type": "table",
+            "head": [
+              "Lokomotif",
+              "Dipakai untuk",
+              "Contoh"
+            ],
+            "rows": [
+              [
+                "**am / is / are**",
+                "keadaan, identitas, tempat (TIDAK ada aksi)",
+                "I **am** an architect. I **am** tired."
+              ],
+              [
+                "**kata kerja aksi**",
+                "melakukan sesuatu",
+                "I **work** in Jakarta. I **design** kitchens."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Satu kalimat cukup **satu lokomotif**. Kalau sudah ada kata kerja aksi (*work, design, build*), am/is/are **tidak boleh** ikut. Itulah kenapa *I am work* salah: ada dua lokomotif yang berebut tempat."
+          },
+          {
+            "type": "tip",
+            "text": "Tes cepat: apakah ada AKSI (bekerja, membuat, memakai)? Ada → pakai kata kerjanya langsung. Tidak ada → pakai am/is/are."
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Untuk **I, you, we, they**, polanya sangat mudah: **subjek + kata kerja dasar**. Tidak ada tambahan apa pun."
+          },
+          {
+            "type": "table",
+            "head": [
+              "Subjek",
+              "Kata kerja",
+              "Kalimat",
+              "Arti"
+            ],
+            "rows": [
+              [
+                "I",
+                "work",
+                "I work in Jakarta.",
+                "Saya bekerja di Jakarta."
+              ],
+              [
+                "You",
+                "design",
+                "You design kitchens.",
+                "Kamu mendesain dapur."
+              ],
+              [
+                "We",
+                "build",
+                "We build houses.",
+                "Kami membangun rumah."
+              ],
+              [
+                "They",
+                "live",
+                "They live in Bali.",
+                "Mereka tinggal di Bali."
+              ],
+              [
+                "My clients",
+                "want",
+                "My clients want a big kitchen.",
+                "Klien-klien saya ingin dapur besar."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Untuk **he, she, it** ada satu aturan tambahan (huruf -s). Kita bahas besok di Hari 9."
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kenapa namanya *simple present*?** Karena ini bentuk \"sekarang\" yang paling **sederhana**: kata kerjanya dipakai apa adanya. Tapi hati-hati, \"present\" di sini **bukan berarti \"sedang\"**. *I work in Jakarta* artinya pekerjaan saya memang di Jakarta, setiap hari, sebagai fakta. Bukan \"saya sedang bekerja detik ini\"."
+          },
+          {
+            "type": "table",
+            "head": [
+              "Simple present dipakai untuk",
+              "Contoh"
+            ],
+            "rows": [
+              [
+                "Kebiasaan / rutinitas",
+                "I **make** a video every week."
+              ],
+              [
+                "Fakta tentang hidup Anda",
+                "We **live** in Bandung."
+              ],
+              [
+                "Hal yang selalu benar",
+                "Architects **design** buildings."
+              ],
+              [
+                "Suka, ingin, butuh, punya",
+                "I **like** modern design. I **need** a new laptop."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Bahasa Indonesia tidak mengubah kata kerja (*saya bekerja, dia bekerja, kemarin saya bekerja*). Bahasa Inggris **mengubah bentuk** kata kerja untuk menandai waktu. Simple present adalah bentuk pertama yang Anda pelajari."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {
+            "type": "mistakes",
+            "items": [
+              {
+                "wrong": "I am work in Jakarta.",
+                "right": "I work in Jakarta.",
+                "why": "Dua lokomotif. 'work' sudah kata kerja, jadi 'am' harus dibuang."
+              },
+              {
+                "wrong": "I am like modern design.",
+                "right": "I like modern design.",
+                "why": "'like' juga kata kerja (suka). Tidak butuh 'am'."
+              },
+              {
+                "wrong": "We working at the site.",
+                "right": "We work at the site.",
+                "why": "Bentuk -ing butuh am/is/are dan artinya 'sedang'. Untuk kebiasaan: bentuk dasar."
+              },
+              {
+                "wrong": "I very like this design.",
+                "right": "I like this design very much.",
+                "why": "'very' tidak menempel pada kata kerja. Pakai 'very much' di akhir."
+              },
+              {
+                "wrong": "I want learn English.",
+                "right": "I want **to** learn English.",
+                "why": "want/need + **to** + kata kerja."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**want** terdengar langsung, bahkan bisa terasa menuntut jika ditujukan ke orang lain. Kepada klien, nanti Anda akan memakai **would like** (lebih sopan): *I would like to show you the design.* Untuk sekarang, *want* aman dipakai untuk diri sendiri: *I want to learn English.*"
+          },
+          {
+            "type": "p",
+            "text": "**make vs do:** keduanya bisa berarti \"membuat/melakukan\". Pola umumnya: **make** = menghasilkan sesuatu yang bisa dilihat (*make a video, make a plan*), **do** = mengerjakan aktivitas (*do the work, do homework*)."
+          }
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Seribu tahun lalu, bahasa Inggris Kuno punya **banyak akhiran** kata kerja untuk setiap subjek, mirip bahasa Jerman sekarang (*ich arbeite, du arbeitest, er arbeitet*). Selama berabad-abad akhiran itu hilang satu per satu. Yang tersisa di zaman modern hanya **satu**: huruf **-s untuk he/she/it**. Itu \"sisa fosil\" yang akan Anda pelajari besok."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d8-e1",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "I am work at a design company.",
+            "why": "Dua lokomotif: am + work."
+          },
+          {
+            "text": "I work at a design company."
+          },
+          {
+            "text": "I working at a design company.",
+            "why": "Bentuk -ing butuh am dan berarti 'sedang'."
+          }
+        ],
+        "answer": 1,
+        "explain": "Ada aksi (work), jadi pakai kata kerjanya langsung.",
+        "errorTag": "double-verb"
+      },
+      {
+        "id": "d8-e2",
+        "type": "mc",
+        "prompt": "Kalimat mana yang butuh am/is/are?",
+        "options": [
+          {
+            "text": "I ___ tired."
+          },
+          {
+            "text": "I ___ coffee. (suka)",
+            "why": "'like' adalah kata kerja aksi."
+          },
+          {
+            "text": "We ___ houses. (membangun)",
+            "why": "'build' adalah kata kerja aksi."
+          }
+        ],
+        "answer": 0,
+        "explain": "'tired' adalah keadaan (kata sifat), tidak ada aksi → I am tired.",
+        "errorTag": "missing-be"
+      },
+      {
+        "id": "d8-e3",
+        "type": "fill",
+        "prompt": "We ___ in Bandung. (tinggal)",
+        "accept": [
+          "live"
+        ],
+        "explain": "We + kata kerja dasar: we live."
+      },
+      {
+        "id": "d8-e4",
+        "type": "fill",
+        "prompt": "I ___ modern design. (suka)",
+        "accept": [
+          "like"
+        ],
+        "explain": "I + like. Tanpa 'am'.",
+        "errorTag": "double-verb"
+      },
+      {
+        "id": "d8-e5",
+        "type": "fill",
+        "prompt": "My clients ___ a big kitchen. (ingin)",
+        "accept": [
+          "want"
+        ],
+        "explain": "My clients = they (banyak) → want."
+      },
+      {
+        "id": "d8-e6",
+        "type": "mc",
+        "prompt": "Pilih yang benar:",
+        "options": [
+          {
+            "text": "I want learn English.",
+            "why": "Butuh 'to' sebelum kata kerja kedua."
+          },
+          {
+            "text": "I want to learn English."
+          },
+          {
+            "text": "I am want to learn English.",
+            "why": "Dua lokomotif."
+          }
+        ],
+        "answer": 1,
+        "explain": "want + to + kata kerja."
+      },
+      {
+        "id": "d8-e7",
+        "type": "mc",
+        "prompt": "'I work in Jakarta' artinya:",
+        "options": [
+          {
+            "text": "Saya sedang bekerja di Jakarta (detik ini)."
+          },
+          {
+            "text": "Saya bekerja di Jakarta (fakta / setiap hari)."
+          }
+        ],
+        "answer": 1,
+        "explain": "Simple present = fakta dan kebiasaan, bukan 'sedang'."
+      },
+      {
+        "id": "d8-e8",
+        "type": "order",
+        "prompt": "Susun: Kami membangun rumah di Bali.",
+        "tokens": [
+          "We",
+          "build",
+          "houses",
+          "in",
+          "Bali."
+        ],
+        "explain": "Subjek + kata kerja + objek + tempat."
+      },
+      {
+        "id": "d8-e9",
+        "type": "order",
+        "prompt": "Susun: Saya memakai HP saya untuk kerja.",
+        "tokens": [
+          "I",
+          "use",
+          "my",
+          "phone",
+          "for",
+          "work."
+        ],
+        "explain": "I + use + my phone + for work."
+      },
+      {
+        "id": "d8-e10",
+        "type": "translate",
+        "prompt": "Saya mendesain dapur.",
+        "accept": [
+          "I design kitchens.",
+          "I design kitchen.",
+          "I design a kitchen."
+        ],
+        "explain": "I + design + kitchens. Dalam bahasa Inggris, untuk hal umum biasanya dipakai bentuk jamak: kitchens.",
+        "errorTag": "double-verb"
+      },
+      {
+        "id": "d8-e11",
+        "type": "translate",
+        "prompt": "Mereka butuh dua kursi baru.",
+        "accept": [
+          "They need two new chairs."
+        ],
+        "explain": "two + new + chairs (jamak!).",
+        "errorTag": "plural-s"
+      },
+      {
+        "id": "d8-e12",
+        "type": "translate",
+        "prompt": "Saya punya proyek baru.",
+        "accept": [
+          "I have a new project."
+        ],
+        "explain": "have = punya. a + new + project."
+      },
+      {
+        "id": "d8-e13",
+        "type": "explain",
+        "prompt": "Jelaskan dengan kata-kata Anda: kapan kalimat memakai am/is/are, dan kapan memakai kata kerja aksi?",
+        "model": "Am/is/are dipakai kalau tidak ada aksi: untuk keadaan, pekerjaan/identitas, atau tempat (I am tired, I am an architect). Kalau ada aksi seperti bekerja atau membuat, pakai kata kerjanya langsung tanpa am/is/are (I work, I make).",
+        "explain": "Ini aturan terpenting minggu ini."
+      }
+    ]
+  },
+  "reading": {
+    "id": "R08",
+    "title": "My work",
+    "cefr": "A1",
+    "intro": "Budi bercerita tentang pekerjaannya. Hitung: ada berapa kata kerja aksi? Dan berapa kalimat yang memakai am/is?",
+    "paragraphs": [
+      {
+        "en": "My name is Budi. I live in Jakarta. I am an architect, and I work at a design company.",
+        "id": "Nama saya Budi. Saya tinggal di Jakarta. Saya seorang arsitek, dan saya bekerja di sebuah perusahaan desain."
+      },
+      {
+        "en": "We design houses and offices. We don't build them. Our contractors build them.",
+        "id": "Kami mendesain rumah dan kantor. Kami tidak membangunnya. Kontraktor-kontraktor kami yang membangunnya."
+      },
+      {
+        "en": "I like my work. I design kitchens and living rooms. My clients want modern rooms with big windows.",
+        "id": "Saya suka pekerjaan saya. Saya mendesain dapur dan ruang keluarga. Klien-klien saya ingin ruangan modern dengan jendela besar."
+      },
+      {
+        "en": "I use my phone and my laptop for work. I make short videos about my projects, too.",
+        "id": "Saya memakai HP dan laptop untuk kerja. Saya juga membuat video pendek tentang proyek-proyek saya."
+      },
+      {
+        "en": "Now I have a new project. It is a big house. I need a new team!",
+        "id": "Sekarang saya punya proyek baru. Itu rumah besar. Saya butuh tim baru!"
+      }
+    ],
+    "glossary": {
+      "company": "perusahaan",
+      "offices": "kantor-kantor",
+      "don't": "tidak (dibahas di Hari 10)",
+      "them": "mereka (sebagai objek)",
+      "living rooms": "ruang keluarga",
+      "living": "(lihat living room)",
+      "modern": "modern",
+      "with": "dengan",
+      "big": "besar",
+      "laptop": "laptop",
+      "for": "untuk",
+      "short": "pendek",
+      "videos": "video-video",
+      "about": "tentang",
+      "too": "juga",
+      "team": "tim",
+      "in": "di (dalam)",
+      "phone": "HP, telepon (Hari 10)"
+    },
+    "questions": [
+      {
+        "id": "d8-r1",
+        "type": "mc",
+        "prompt": "Siapa yang membangun rumah-rumah desain Budi?",
+        "options": [
+          {
+            "text": "Budi"
+          },
+          {
+            "text": "Kontraktor-kontraktornya"
+          },
+          {
+            "text": "Klien-kliennya"
+          }
+        ],
+        "answer": 1,
+        "explain": "'We don't build them. Our contractors build them.'"
+      },
+      {
+        "id": "d8-r2",
+        "type": "mc",
+        "prompt": "Apa yang diinginkan klien-klien Budi?",
+        "options": [
+          {
+            "text": "Rumah kecil"
+          },
+          {
+            "text": "Ruangan modern dengan jendela besar"
+          },
+          {
+            "text": "Video pendek"
+          }
+        ],
+        "answer": 1,
+        "explain": "'My clients want modern rooms with big windows.'"
+      },
+      {
+        "id": "d8-r3",
+        "type": "mc",
+        "prompt": "Kenapa ditulis 'I am an architect' tapi 'I work at a design company'?",
+        "options": [
+          {
+            "text": "Arsitek adalah identitas (tanpa aksi); bekerja adalah aksi"
+          },
+          {
+            "text": "Karena kalimat pertama lebih pendek"
+          },
+          {
+            "text": "Keduanya boleh ditukar"
+          }
+        ],
+        "answer": 0,
+        "explain": "Identitas → am. Aksi → kata kerja langsung."
+      },
+      {
+        "id": "d8-r4",
+        "type": "mc",
+        "prompt": "Apa yang Budi butuhkan sekarang?",
+        "options": [
+          {
+            "text": "Laptop baru"
+          },
+          {
+            "text": "Tim baru"
+          },
+          {
+            "text": "Kantor baru"
+          }
+        ],
+        "answer": 1,
+        "explain": "'I need a new team!'"
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Kata kerja aksi diucapkan jelas dan sedikit ditekan dalam kalimat. Perhatikan irama.",
+    "items": [
+      {
+        "en": "I work in Jakarta.",
+        "id": "Saya bekerja di Jakarta.",
+        "tip": "work = WERK, bukan 'wor-k'."
+      },
+      {
+        "en": "We live in Bandung.",
+        "id": "Kami tinggal di Bandung.",
+        "tip": "live = LIV, pendek."
+      },
+      {
+        "en": "I like modern design.",
+        "id": "Saya suka desain modern."
+      },
+      {
+        "en": "My clients want a big kitchen.",
+        "id": "Klien-klien saya ingin dapur besar."
+      },
+      {
+        "en": "We need two new chairs.",
+        "id": "Kami butuh dua kursi baru."
+      },
+      {
+        "en": "I have a new project.",
+        "id": "Saya punya proyek baru.",
+        "tip": "have = HEV."
+      },
+      {
+        "en": "They build houses in Bali.",
+        "id": "Mereka membangun rumah di Bali.",
+        "tip": "build = BILD (u tidak dibaca)."
+      },
+      {
+        "en": "I want to learn English.",
+        "id": "Saya ingin belajar bahasa Inggris.",
+        "tip": "'want to' sering diucapkan cepat: WON-te."
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Tulis tentang pekerjaan Anda sendiri. Ingat: ada aksi → kata kerja langsung, tanpa am/is/are.",
+    "exercises": [
+      {
+        "id": "d8-w1",
+        "type": "translate",
+        "prompt": "Saya bekerja di Jakarta.",
+        "accept": [
+          "I work in Jakarta."
+        ],
+        "explain": "I + work + in + kota.",
+        "errorTag": "double-verb"
+      },
+      {
+        "id": "d8-w2",
+        "type": "translate",
+        "prompt": "Kami membuat video.",
+        "accept": [
+          "We make videos.",
+          "We make a video."
+        ],
+        "explain": "make = membuat sesuatu yang bisa dilihat."
+      },
+      {
+        "id": "d8-w3",
+        "type": "translate",
+        "prompt": "Saya suka pekerjaan saya.",
+        "accept": [
+          "I like my work.",
+          "I like my job."
+        ],
+        "explain": "I + like + my work.",
+        "errorTag": "double-verb"
+      },
+      {
+        "id": "d8-w4",
+        "type": "explain",
+        "prompt": "Tulis 5 kalimat tentang pekerjaan Anda: di mana Anda tinggal, di mana bekerja, apa yang Anda desain/buat/bangun, apa yang Anda pakai, dan apa yang Anda sukai.",
+        "model": "I live in Jakarta. I work at a design company. I design kitchens and offices. I use my laptop for work. I like modern design.",
+        "explain": "Simpan kalimat-kalimat ini. Di Writing Studio, Anda bisa mengembangkannya menjadi paragraf."
+      }
+    ]
+  }
+}

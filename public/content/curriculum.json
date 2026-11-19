@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.19-2",
+  "version": "2026.11.19-3",
   "totalDays": 300,
   "months": [
     {
@@ -11,7 +11,7 @@
       "title": "Fondasi",
       "focus": "Bunyi & ejaan, 300 kata pertama, to be (am/is/are), simple present, kalimat S-V-O, frasa sapaan",
       "target": "Reading A1 awal · ucapkan 300 kata dengan benar",
-      "availableThroughDay": 7
+      "availableThroughDay": 14
     },
     {
       "month": 2,

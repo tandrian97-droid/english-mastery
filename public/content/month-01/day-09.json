@@ -1,0 +1,609 @@
+{
+  "day": 9,
+  "month": 1,
+  "title": "Si -s yang sering terlupa: she works, he watches",
+  "goals": [
+    "Menambahkan -s / -es / -ies untuk he, she, it",
+    "Mengucapkan akhiran -s dengan benar (s, z, iz)",
+    "Bercerita tentang rutinitas orang lain"
+  ],
+  "newWords": [
+    "watch",
+    "play",
+    "study",
+    "read",
+    "write",
+    "go",
+    "do",
+    "video",
+    "game",
+    "every"
+  ],
+  "lesson": {
+    "id": "L09",
+    "title": "Simple present: he/she/it + -s",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa berkata \"She designs kitchens. He watches videos every day.\" tanpa lupa -s, dan tahu kenapa -s itu ada.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Kemarin: *I work, you work, we work, they work*. Sangat mudah. Hari ini ada **satu pengecualian**: kalau subjeknya **satu orang lain atau satu benda** (he, she, it, Sara, my client, the company), kata kerjanya diberi **-s**."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "I work. → She works.",
+                "id": "Saya bekerja. → Dia bekerja."
+              },
+              {
+                "en": "We design. → Sara designs.",
+                "id": "Kami mendesain. → Sara mendesain."
+              },
+              {
+                "en": "They play games. → My friend plays games.",
+                "id": "Mereka main game. → Teman saya main game."
+              }
+            ]
+          },
+          {
+            "type": "tip",
+            "text": "Bayangkan -s sebagai 'stiker' yang wajib ditempel setiap kali Anda membicarakan SATU orang lain. Bahkan penutur Inggris tingkat menengah masih sering lupa stiker ini, jadi latihan rutin itu penting."
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "Akhiran kata kerja",
+              "Aturan",
+              "Contoh"
+            ],
+            "rows": [
+              [
+                "kebanyakan",
+                "+ **s**",
+                "work → works, design → designs, play → plays"
+              ],
+              [
+                "-s, -sh, -ch, -x, -o",
+                "+ **es**",
+                "watch → watches, fix → fixes, go → goes, do → does"
+              ],
+              [
+                "konsonan + y",
+                "y → **ies**",
+                "study → studies"
+              ],
+              [
+                "vokal + y",
+                "+ **s** saja",
+                "play → plays, buy → buys"
+              ],
+              [
+                "have (tidak beraturan)",
+                "→ **has**",
+                "She **has** a new phone."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Bunyi -s ada tiga** (sama seperti jamak di Hari 5):"
+          },
+          {
+            "type": "table",
+            "head": [
+              "Bunyi",
+              "Contoh"
+            ],
+            "rows": [
+              [
+                "/s/ tajam",
+                "works (WERKS), makes (MEIKS)"
+              ],
+              [
+                "/z/ berdengung (paling sering)",
+                "plays (PLEIZ), designs (di-ZAINZ), goes (GOUZ)"
+              ],
+              [
+                "/iz/ tambah suku kata",
+                "watches (WO-ciz), fixes (FIK-siz)"
+              ],
+              [
+                "khusus",
+                "does = DAZ, says = SEZ"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kenapa hanya he/she/it?** Ingat cerita kemarin: dulu bahasa Inggris punya akhiran untuk SEMUA subjek. Hampir semuanya hilang, kecuali satu: akhiran untuk orang ketiga tunggal. Jadi -s bukan aturan logis yang baru dibuat; ia **sisa sejarah** yang tetap dipakai sampai sekarang."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa 'my client' juga pakai -s?** Karena *my client* = satu orang selain saya dan kamu = *he/she*. Begitu juga *the company* (= it), *Sara* (= she), *my phone* (= it). Tanyakan: \"bisakah diganti he/she/it?\" Kalau bisa → -s."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa 'goes' dan 'watches' pakai -es?** Coba ucapkan \"watchs\": lidah sulit. Huruf **e** menambah satu suku kata supaya mudah diucapkan: WO-ciz. Ejaan mengikuti bunyi."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {
+            "type": "mistakes",
+            "items": [
+              {
+                "wrong": "She work at a design company.",
+                "right": "She work**s** at a design company.",
+                "why": "She = satu orang lain → -s. Kesalahan nomor satu di level ini."
+              },
+              {
+                "wrong": "My client want a big kitchen.",
+                "right": "My client want**s** a big kitchen.",
+                "why": "My client = he/she → -s."
+              },
+              {
+                "wrong": "He haves a new phone.",
+                "right": "He **has** a new phone.",
+                "why": "have tidak beraturan: has."
+              },
+              {
+                "wrong": "She studys English.",
+                "right": "She stud**ies** English.",
+                "why": "Konsonan + y → ies."
+              },
+              {
+                "wrong": "They works every day.",
+                "right": "They work every day.",
+                "why": "-s hanya untuk SATU (he/she/it), bukan they."
+              },
+              {
+                "wrong": "She can draws.",
+                "right": "She can draw.",
+                "why": "Setelah can, kata kerja tanpa -s (Hari 13)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dalam percakapan cepat, penutur asli kadang menelan bunyi -s sehingga sulit didengar. Tapi dalam **tulisan**, lupa -s langsung terlihat dan membuat tulisan terkesan seperti pemula. Untuk email kerja, cek setiap kalimat dengan he/she/it."
+          },
+          {
+            "type": "p",
+            "text": "**every** selalu diikuti kata **tunggal**: *every day, every week, every client* (bukan *every days*). Walaupun artinya \"semua\", tata bahasanya tunggal: *Every client **wants** a good design.*"
+          }
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dulu akhiran orang ketiga adalah **-eth**: *he worketh, she goeth*. Anda masih bisa menemukannya di teks kuno. Akhiran **-s** berasal dari dialek Inggris utara, lalu menyebar ke London sekitar abad ke-16 dan akhirnya menggantikan -eth sepenuhnya."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d9-e1",
+        "type": "fill",
+        "prompt": "She ___ in Bandung. (work)",
+        "accept": [
+          "works"
+        ],
+        "explain": "She → work + s.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e2",
+        "type": "fill",
+        "prompt": "He ___ videos every day. (watch)",
+        "accept": [
+          "watches"
+        ],
+        "explain": "watch berakhiran -ch → watches.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e3",
+        "type": "fill",
+        "prompt": "Sara ___ English every morning. (study)",
+        "accept": [
+          "studies"
+        ],
+        "explain": "Konsonan + y → studies.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e4",
+        "type": "fill",
+        "prompt": "My client ___ a big house. (have)",
+        "accept": [
+          "has"
+        ],
+        "explain": "have → has untuk he/she/it.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e5",
+        "type": "fill",
+        "prompt": "They ___ games on the weekend. (play)",
+        "accept": [
+          "play"
+        ],
+        "explain": "They = banyak → tanpa -s.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e6",
+        "type": "fill",
+        "prompt": "He ___ to the office at eight. (go)",
+        "accept": [
+          "goes"
+        ],
+        "explain": "go → goes.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e7",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "The company build houses.",
+            "why": "The company = it → -s."
+          },
+          {
+            "text": "The company builds houses."
+          },
+          {
+            "text": "The company is build houses.",
+            "why": "Dua lokomotif."
+          }
+        ],
+        "answer": 1,
+        "explain": "Satu perusahaan = it → builds.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e8",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "My friends plays games.",
+            "why": "My friends = they → tanpa -s."
+          },
+          {
+            "text": "My friends play games."
+          },
+          {
+            "text": "My friends playes games.",
+            "why": "Ejaan play + s = plays, dan subjeknya jamak."
+          }
+        ],
+        "answer": 1,
+        "explain": "My friends = they → tanpa -s.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e9",
+        "type": "mc",
+        "prompt": "Bagaimana bunyi -es di 'watches'?",
+        "options": [
+          {
+            "text": "s (tajam)",
+            "why": "Setelah bunyi 'c', -es menjadi suku kata baru."
+          },
+          {
+            "text": "iz (tambah suku kata: WO-ciz)"
+          },
+          {
+            "text": "tidak dibaca",
+            "why": "Akhiran -es dibaca 'iz'."
+          }
+        ],
+        "answer": 1,
+        "explain": "Setelah bunyi c/sy/s/z, akhiran menjadi suku kata baru: iz."
+      },
+      {
+        "id": "d9-e10",
+        "type": "order",
+        "prompt": "Susun: Dia (perempuan) menulis email setiap hari.",
+        "tokens": [
+          "She",
+          "writes",
+          "emails",
+          "every",
+          "day."
+        ],
+        "explain": "She + writes (+s) + emails + every day.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e11",
+        "type": "translate",
+        "prompt": "Dia (laki-laki) bermain game setiap malam.",
+        "accept": [
+          "He plays games every night.",
+          "He plays a game every night."
+        ],
+        "explain": "He + plays + games + every night.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e12",
+        "type": "translate",
+        "prompt": "Klien saya ingin dapur baru.",
+        "accept": [
+          "My client wants a new kitchen."
+        ],
+        "explain": "My client (= he/she) + wants.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e13",
+        "type": "translate",
+        "prompt": "Rina membaca berita setiap pagi.",
+        "accept": [
+          "Rina reads the news every morning.",
+          "Rina reads news every morning."
+        ],
+        "explain": "Rina = she → reads.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-e14",
+        "type": "explain",
+        "prompt": "Jelaskan dengan kata-kata Anda: kapan kata kerja diberi -s, dan kenapa 'They works' salah?",
+        "model": "Kata kerja diberi -s kalau subjeknya satu orang atau satu benda selain saya dan kamu (he, she, it, Sara, my client). 'They works' salah karena they itu banyak, jadi tanpa -s: they work.",
+        "explain": "Kalau Anda bisa menjelaskan ini, Anda sudah paham aturan terpenting simple present."
+      }
+    ]
+  },
+  "reading": {
+    "id": "R09",
+    "title": "Sara's day",
+    "cefr": "A1",
+    "intro": "Cerita tentang rutinitas Sara. Garis bawahi dalam pikiran setiap kata kerja ber-s.",
+    "paragraphs": [
+      {
+        "en": "Sara is a designer. She lives in Jakarta and she works at a small design company.",
+        "id": "Sara seorang desainer. Dia tinggal di Jakarta dan bekerja di sebuah perusahaan desain kecil."
+      },
+      {
+        "en": "Every day, she goes to the office at eight. She reads emails and writes to clients.",
+        "id": "Setiap hari, dia pergi ke kantor jam delapan. Dia membaca email dan menulis ke klien."
+      },
+      {
+        "en": "She designs kitchens and bedrooms. Her clients like her work. They want simple and modern rooms.",
+        "id": "Dia mendesain dapur dan kamar tidur. Klien-kliennya suka hasil kerjanya. Mereka ingin ruangan yang sederhana dan modern."
+      },
+      {
+        "en": "After work, Sara studies English. She watches English videos and she reads a little every day.",
+        "id": "Setelah bekerja, Sara belajar bahasa Inggris. Dia menonton video berbahasa Inggris dan membaca sedikit setiap hari."
+      },
+      {
+        "en": "Her friend Andi plays games every night, but Sara doesn't. She has a new hobby: she makes videos about interior design!",
+        "id": "Temannya, Andi, main game setiap malam, tapi Sara tidak. Dia punya hobi baru: dia membuat video tentang desain interior!"
+      }
+    ],
+    "glossary": {
+      "small": "kecil",
+      "company": "perusahaan",
+      "eight": "delapan (jam 8)",
+      "emails": "email-email",
+      "clients": "klien-klien",
+      "bedrooms": "kamar tidur",
+      "simple": "sederhana",
+      "modern": "modern",
+      "after": "setelah",
+      "english": "bahasa Inggris",
+      "little": "sedikit",
+      "a little": "sedikit",
+      "night": "malam",
+      "but": "tetapi",
+      "doesn't": "tidak (untuk he/she, Hari 10)",
+      "hobby": "hobi",
+      "about": "tentang",
+      "interior": "interior",
+      "the": "(kata sandang)",
+      "to": "ke",
+      "in": "di",
+      "with": "dengan",
+      "day": "hari (every day = setiap hari)"
+    },
+    "questions": [
+      {
+        "id": "d9-r1",
+        "type": "mc",
+        "prompt": "Jam berapa Sara pergi ke kantor?",
+        "options": [
+          {
+            "text": "Jam 7"
+          },
+          {
+            "text": "Jam 8"
+          },
+          {
+            "text": "Jam 9"
+          }
+        ],
+        "answer": 1,
+        "explain": "'she goes to the office at eight'."
+      },
+      {
+        "id": "d9-r2",
+        "type": "mc",
+        "prompt": "Apa yang Sara lakukan setelah bekerja?",
+        "options": [
+          {
+            "text": "Main game"
+          },
+          {
+            "text": "Belajar bahasa Inggris"
+          },
+          {
+            "text": "Pergi ke lokasi proyek"
+          }
+        ],
+        "answer": 1,
+        "explain": "'After work, Sara studies English.'"
+      },
+      {
+        "id": "d9-r3",
+        "type": "mc",
+        "prompt": "Siapa yang main game setiap malam?",
+        "options": [
+          {
+            "text": "Sara"
+          },
+          {
+            "text": "Andi"
+          },
+          {
+            "text": "Klien Sara"
+          }
+        ],
+        "answer": 1,
+        "explain": "'Her friend Andi plays games every night, but Sara doesn't.'"
+      },
+      {
+        "id": "d9-r4",
+        "type": "mc",
+        "prompt": "Kenapa ditulis 'They WANT simple and modern rooms' (tanpa -s)?",
+        "options": [
+          {
+            "text": "Karena 'they' (klien-klien) jamak"
+          },
+          {
+            "text": "Karena kalimatnya tentang ruangan"
+          },
+          {
+            "text": "Salah ketik"
+          }
+        ],
+        "answer": 0,
+        "explain": "They = banyak → tanpa -s."
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Fokus pada bunyi akhir: -s, -z, atau -iz. Jangan sampai bunyi -s hilang saat Anda menirukan.",
+    "items": [
+      {
+        "en": "She works in Jakarta.",
+        "id": "Dia bekerja di Jakarta.",
+        "tip": "works = WERKS (s tajam)."
+      },
+      {
+        "en": "He plays games every night.",
+        "id": "Dia main game setiap malam.",
+        "tip": "plays = PLEIZ (z)."
+      },
+      {
+        "en": "She watches English videos.",
+        "id": "Dia menonton video berbahasa Inggris.",
+        "tip": "watches = WO-ciz (tambah suku kata)."
+      },
+      {
+        "en": "He goes to the office at eight.",
+        "id": "Dia pergi ke kantor jam delapan.",
+        "tip": "goes = GOUZ."
+      },
+      {
+        "en": "Sara studies English every day.",
+        "id": "Sara belajar bahasa Inggris setiap hari.",
+        "tip": "studies = STA-diz."
+      },
+      {
+        "en": "My client has a big house.",
+        "id": "Klien saya punya rumah besar.",
+        "tip": "has = HEZ."
+      },
+      {
+        "en": "She writes emails to clients.",
+        "id": "Dia menulis email ke klien.",
+        "tip": "writes = RAITS (w tidak dibaca)."
+      },
+      {
+        "en": "He does his work at home.",
+        "id": "Dia mengerjakan pekerjaannya di rumah.",
+        "tip": "does = DAZ, bukan 'dus'."
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Ceritakan orang lain. Setiap kalimat dengan he/she: cek stiker -s!",
+    "exercises": [
+      {
+        "id": "d9-w1",
+        "type": "translate",
+        "prompt": "Dia (perempuan) mendesain kamar tidur.",
+        "accept": [
+          "She designs bedrooms.",
+          "She designs a bedroom.",
+          "She designs bedroom."
+        ],
+        "explain": "She + designs.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-w2",
+        "type": "translate",
+        "prompt": "Teman saya menonton video setiap hari.",
+        "accept": [
+          "My friend watches videos every day.",
+          "My friend watches a video every day."
+        ],
+        "explain": "My friend = he/she → watches.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-w3",
+        "type": "translate",
+        "prompt": "Dia (laki-laki) punya HP baru.",
+        "accept": [
+          "He has a new phone."
+        ],
+        "explain": "have → has.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d9-w4",
+        "type": "explain",
+        "prompt": "Tulis 5 kalimat tentang rutinitas seorang teman, rekan kerja, atau klien Anda (he/she + kata kerja + s).",
+        "model": "Rina is my client. She lives in Bandung. She works at a bank. She reads the news every morning. She wants a new kitchen.",
+        "explain": "Periksa setiap kalimat: ada he/she → ada -s?"
+      }
+    ]
+  }
+}

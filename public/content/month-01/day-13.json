@@ -1,0 +1,148 @@
+{
+  "day": 13,
+  "month": 1,
+  "title": "Bisa atau tidak: can, can't, Can you…?",
+  "goals": [
+    "Menyebut kemampuan Anda: I can draw floor plans",
+    "Meminta bantuan dengan sopan: Can you help me?",
+    "Tidak lagi menulis 'She can draws' atau 'I can to speak'"
+  ],
+  "newWords": ["can", "speak", "draw", "drive", "cook", "fix", "help", "english", "well", "fast"],
+  "lesson": {
+    "id": "L13",
+    "title": "Can / can't",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa menyebut kemampuan, meminta bantuan, dan menawarkan bantuan dengan can, serta paham kenapa can adalah kata kerja paling 'malas' dalam bahasa Inggris.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {"type": "p", "text": "**can** = bisa. Kabar baiknya, *can* adalah kata kerja paling **malas** (paling mudah) dalam bahasa Inggris:"},
+          {"type": "table", "head": ["Aturan", "can"], "rows": [
+            ["Berubah untuk he/she/it?", "**Tidak**: I can, she can (bukan cans)"],
+            ["Butuh do/does untuk negatif & tanya?", "**Tidak**: I can't, Can you…?"],
+            ["Kata kerja setelahnya", "Selalu **bentuk dasar**, tanpa -s, tanpa to"]
+          ]},
+          {"type": "examples", "items": [
+            {"en": "I can draw floor plans.", "id": "Saya bisa menggambar denah."},
+            {"en": "She can speak English.", "id": "Dia bisa berbicara bahasa Inggris."},
+            {"en": "Can you help me?", "id": "Bisakah kamu membantu saya?"}
+          ]}
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {"type": "table", "head": ["", "Pola", "Contoh"], "rows": [
+            ["Positif", "subjek + **can** + kata kerja dasar", "He **can drive**."],
+            ["Negatif", "subjek + **can't / cannot** + kata kerja dasar", "I **can't cook**."],
+            ["Pertanyaan", "**Can** + subjek + kata kerja dasar?", "**Can** you **fix** it?"],
+            ["Jawaban", "Yes, I can. / No, I can't.", ""]
+          ]},
+          {"type": "p", "text": "**Cara bilang 'dengan baik/cepat':** tambahkan *well* atau *fast* di akhir: *She speaks English **well**.* *He types **fast**.*"}
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {"type": "p", "text": "**Kenapa can tidak pakai -s dan do?** *can* termasuk keluarga **kata kerja modal** (can, will, must, should…). Kata-kata ini adalah lokomotif yang sudah \"lengkap\": ia bisa pindah ke depan sendiri (*Can you…?*) dan bisa membawa *not* sendiri (*can't*). Karena itu ia tidak butuh lokomotif pembantu *do*, dan tidak memakai stiker -s."},
+          {"type": "p", "text": "**Kenapa kata kerja setelahnya bentuk dasar?** Karena lokomotifnya sudah *can*. Kata kerja kedua hanya \"gerbong\" yang menunjukkan aksinya, jadi tidak diberi tanda apa pun: *She can **draw*** (bukan draws), *I can **speak*** (bukan to speak)."},
+          {"type": "p", "text": "**good vs well:** *good* menjelaskan **benda/orang** (*a good designer*). *well* menjelaskan **cara melakukan** (*She designs well*). Bahasa Indonesia memakai 'baik' untuk keduanya."}
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {"type": "mistakes", "items": [
+            {"wrong": "She can draws.", "right": "She can draw.", "why": "Setelah can, bentuk dasar (tanpa -s)."},
+            {"wrong": "I can to speak English.", "right": "I can speak English.", "why": "Tanpa 'to' setelah can."},
+            {"wrong": "He cans drive.", "right": "He can drive.", "why": "can tidak berubah untuk he/she/it."},
+            {"wrong": "Do you can help me?", "right": "Can you help me?", "why": "can pindah ke depan sendiri, tanpa do."},
+            {"wrong": "I don't can cook.", "right": "I can't cook.", "why": "can membawa not sendiri: can't."},
+            {"wrong": "She speaks English good.", "right": "She speaks English well.", "why": "Cara melakukan → well."}
+          ]}
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {"type": "p", "text": "**Can you…?** juga dipakai untuk **meminta tolong**. Untuk klien atau atasan, versi yang lebih sopan adalah **Could you…?** (akan dipelajari lebih dalam nanti):"},
+          {"type": "examples", "items": [
+            {"en": "Can you help me?", "id": "Bisa bantu saya? (santai, ke teman/rekan)"},
+            {"en": "Could you send me the floor plan, please?", "id": "Bisakah Anda mengirimkan denahnya? (sopan, ke klien)"},
+            {"en": "Can I help you?", "id": "Ada yang bisa saya bantu? (menawarkan bantuan)"}
+          ]},
+          {"type": "p", "text": "**Pengucapan penting:** dalam kalimat positif, *can* diucapkan lemah: *I can draw* = \"ai ken DRO\". Dalam kalimat negatif, *can't* diucapkan kuat: *I CAN'T draw* = \"ai KENT dro\". Perbedaan tekanan ini membantu pendengar membedakan bisa dan tidak bisa."}
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {"type": "p", "text": "*can* berasal dari kata Inggris Kuno *cunnan* yang artinya **tahu / tahu caranya**. Ia bersaudara dengan *know* dan *cunning* (cerdik). Jadi \"I can swim\" awalnya berarti \"saya tahu cara berenang\". Makna 'bisa' berkembang dari makna 'tahu caranya' itu."}
+        ]
+      }
+    ],
+    "exercises": [
+      {"id": "d13-e1", "type": "mc", "prompt": "Mana yang BENAR?", "options": [{"text": "She can draws floor plans.", "why": "Setelah can, tanpa -s."}, {"text": "She can draw floor plans."}, {"text": "She cans draw floor plans.", "why": "can tidak berubah."}], "answer": 1, "explain": "can + bentuk dasar.", "errorTag": "can-verb"},
+      {"id": "d13-e2", "type": "mc", "prompt": "Mana yang BENAR?", "options": [{"text": "Do you can help me?", "why": "can tidak butuh do."}, {"text": "Can you help me?"}, {"text": "Can you to help me?", "why": "Tanpa to."}], "answer": 1, "explain": "Can + subjek + bentuk dasar?", "errorTag": "can-verb"},
+      {"id": "d13-e3", "type": "fill", "prompt": "I ___ cook. (tidak bisa)", "accept": ["can't", "cannot", "can not"], "explain": "can't = cannot.", "errorTag": "can-verb"},
+      {"id": "d13-e4", "type": "fill", "prompt": "He can ___ a truck. (drive)", "accept": ["drive"], "explain": "Setelah can: drive (tanpa -s).", "errorTag": "can-verb"},
+      {"id": "d13-e5", "type": "fill", "prompt": "She speaks English very ___. (dengan baik)", "accept": ["well"], "explain": "Cara melakukan → well, bukan good.", "errorTag": "good-well"},
+      {"id": "d13-e6", "type": "mc", "prompt": "'He is a ___ designer.'", "options": [{"text": "good"}, {"text": "well", "why": "Menjelaskan orang (designer) → good."}], "answer": 0, "explain": "good + kata benda; well + cara melakukan.", "errorTag": "good-well"},
+      {"id": "d13-e7", "type": "mc", "prompt": "Can you fix the door? (Jawaban: tidak)", "options": [{"text": "No, I can't."}, {"text": "No, I don't.", "why": "Pertanyaan pakai can → jawaban pakai can."}, {"text": "No, I can't fix.", "why": "Jawaban singkat cukup 'No, I can't.'"}], "answer": 0, "explain": "Jawaban singkat mengulang lokomotif pertanyaan."},
+      {"id": "d13-e8", "type": "order", "prompt": "Susun: Bisakah kamu mengirim denahnya?", "tokens": ["Can", "you", "send", "the", "floor", "plan?"], "explain": "Can + you + send + the floor plan?", "errorTag": "can-verb"},
+      {"id": "d13-e9", "type": "order", "prompt": "Susun: Dia (laki-laki) bisa berbicara bahasa Inggris sedikit.", "tokens": ["He", "can", "speak", "English", "a", "little."], "explain": "He + can + speak + English + a little.", "errorTag": "can-verb"},
+      {"id": "d13-e10", "type": "translate", "prompt": "Saya bisa menggambar denah.", "accept": ["I can draw floor plans.", "I can draw a floor plan.", "I can draw the floor plan."], "explain": "I + can + draw + floor plans.", "errorTag": "can-verb"},
+      {"id": "d13-e11", "type": "translate", "prompt": "Bisakah kamu membantu saya?", "accept": ["Can you help me?", "Could you help me?"], "explain": "Can + you + help + me?", "errorTag": "can-verb"},
+      {"id": "d13-e12", "type": "translate", "prompt": "Dia (perempuan) tidak bisa menyetir.", "accept": ["She can't drive.", "She cannot drive.", "She can not drive."], "explain": "She + can't + drive (tanpa -s).", "errorTag": "can-verb"},
+      {"id": "d13-e13", "type": "explain", "prompt": "Jelaskan dengan kata-kata Anda: kenapa 'She can draws' salah, padahal 'She draws' benar?", "model": "Karena setelah can, kata kerja selalu bentuk dasar. Lokomotifnya sudah can, dan can tidak memakai -s. Tanpa can, kata kerjanya sendiri yang jadi lokomotif, jadi memakai -s: She draws.", "explain": "-s hanya menempel di lokomotif pertama, dan can tidak pernah mendapat -s."}
+    ]
+  },
+  "reading": {
+    "id": "R13",
+    "title": "Our team",
+    "cefr": "A1",
+    "intro": "Budi memperkenalkan timnya kepada klien baru. Apa yang bisa dan tidak bisa dilakukan setiap orang?",
+    "paragraphs": [
+      {"en": "Let me introduce our team. I am Budi, the architect. I can draw floor plans and 3D designs. I can't build, but I can help the contractor.", "id": "Izinkan saya memperkenalkan tim kami. Saya Budi, arsiteknya. Saya bisa menggambar denah dan desain 3D. Saya tidak bisa membangun, tapi saya bisa membantu kontraktor."},
+      {"en": "This is Sara, our interior designer. She can choose colors and furniture very well. She speaks English well, too.", "id": "Ini Sara, desainer interior kami. Dia bisa memilih warna dan perabot dengan sangat baik. Dia juga berbicara bahasa Inggris dengan baik."},
+      {"en": "This is Andi, our contractor. He can fix anything in a house. He works fast, and he is never late.", "id": "Ini Andi, kontraktor kami. Dia bisa memperbaiki apa saja di rumah. Dia bekerja cepat, dan dia tidak pernah terlambat."},
+      {"en": "Andi can't speak English, but Sara can help him. Do you have questions? Can we start next week?", "id": "Andi tidak bisa berbahasa Inggris, tapi Sara bisa membantunya. Apakah Anda punya pertanyaan? Bisakah kita mulai minggu depan?"}
+    ],
+    "glossary": {"let": "izinkan", "me": "saya (objek)", "introduce": "memperkenalkan", "team": "tim", "the": "(kata sandang)", "plans": "rencana; denah (floor plans)", "floor plans": "denah", "3d": "3 dimensi", "interior": "interior", "choose": "memilih", "furniture": "perabot", "too": "juga", "anything": "apa saja", "him": "dia (objek, laki-laki)", "questions": "pertanyaan-pertanyaan", "start": "mulai", "next": "berikutnya, depan", "next week": "minggu depan", "in": "di"},
+    "questions": [
+      {"id": "d13-r1", "type": "mc", "prompt": "Siapa yang bisa memilih warna dan perabot?", "options": [{"text": "Budi"}, {"text": "Sara"}, {"text": "Andi"}], "answer": 1, "explain": "'She can choose colors and furniture very well.'"},
+      {"id": "d13-r2", "type": "mc", "prompt": "Apa yang TIDAK bisa Budi lakukan?", "options": [{"text": "Menggambar denah"}, {"text": "Membangun"}, {"text": "Membantu kontraktor"}], "answer": 1, "explain": "'I can't build'."},
+      {"id": "d13-r3", "type": "mc", "prompt": "Siapa yang tidak bisa berbahasa Inggris?", "options": [{"text": "Sara"}, {"text": "Andi"}, {"text": "Klien"}], "answer": 1, "explain": "'Andi can't speak English, but Sara can help him.'"},
+      {"id": "d13-r4", "type": "mc", "prompt": "Kenapa ditulis 'He works FAST' dan bukan 'fastly'?", "options": [{"text": "Karena 'fast' bisa menjadi kata sifat dan kata keterangan sekaligus"}, {"text": "Karena Andi laki-laki"}, {"text": "Salah ketik"}], "answer": 0, "explain": "fast = cepat (sifat) sekaligus dengan cepat (keterangan). 'fastly' tidak ada."}
+    ]
+  },
+  "listening": {
+    "intro": "Dengarkan bedanya: 'can' positif diucapkan lemah (ken), 'can't' negatif diucapkan kuat (KENT).",
+    "items": [
+      {"en": "I can draw floor plans.", "id": "Saya bisa menggambar denah.", "tip": "can lemah: ai-ken-DRO."},
+      {"en": "I can't cook.", "id": "Saya tidak bisa memasak.", "tip": "can't kuat: ai-KENT-kuk."},
+      {"en": "Can you help me?", "id": "Bisakah kamu membantu saya?", "tip": "Nada naik di akhir."},
+      {"en": "Yes, I can.", "id": "Ya, bisa.", "tip": "Di akhir jawaban, can diucapkan penuh: KEN."},
+      {"en": "She speaks English well.", "id": "Dia berbicara bahasa Inggris dengan baik."},
+      {"en": "He can fix anything.", "id": "Dia bisa memperbaiki apa saja."},
+      {"en": "Can I help you?", "id": "Ada yang bisa saya bantu?"},
+      {"en": "He works fast.", "id": "Dia bekerja cepat."}
+    ]
+  },
+  "writing": {
+    "intro": "Ceritakan kemampuan Anda dan tim Anda.",
+    "exercises": [
+      {"id": "d13-w1", "type": "translate", "prompt": "Saya bisa membuat video, tapi saya tidak bisa memasak.", "accept": ["I can make videos, but I can't cook.", "I can make videos, but I cannot cook.", "I can make videos but I can't cook."], "explain": "can + make; can't + cook.", "errorTag": "can-verb"},
+      {"id": "d13-w2", "type": "translate", "prompt": "Apakah kontraktor Anda bisa mulai besok? (mulai = start, besok = tomorrow)", "accept": ["Can your contractor start tomorrow?"], "explain": "Can + your contractor + start + tomorrow?", "errorTag": "can-verb"},
+      {"id": "d13-w3", "type": "explain", "prompt": "Tulis 5 kalimat tentang kemampuan Anda untuk profil kerja (portfolio): 3 hal yang Anda bisa (I can…), 1 hal yang belum bisa (I can't… yet), dan 1 kalimat dengan 'well'.", "model": "I can design kitchens and living rooms. I can draw floor plans. I can make short videos about interior design. I can't speak English well yet, but I study every day. I work well with clients.", "explain": "'yet' = belum. Kalimat ini bisa langsung dipakai untuk profil LinkedIn atau portofolio Anda."}
+    ]
+  }
+}

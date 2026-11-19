@@ -1,0 +1,610 @@
+{
+  "day": 14,
+  "month": 1,
+  "title": "Review Minggu 2: enam aturan kata kerja",
+  "goals": [
+    "Mengulang semua aturan simple present tanpa kata baru",
+    "Memilih otomatis: am/is/are, do/does, atau can",
+    "Menulis paragraf pertama tentang hidup Anda (8–10 kalimat)"
+  ],
+  "newWords": [],
+  "lesson": {
+    "id": "L14",
+    "title": "Ringkasan Minggu 2",
+    "cefr": "A1",
+    "goal": "Tidak ada materi baru. Tujuannya: dalam setiap kalimat, Anda bisa memilih lokomotif yang tepat tanpa berpikir lama.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dalam 2 minggu Anda sudah mengenal **120 kata** dan **tiga jenis lokomotif**. Hampir semua kalimat sederhana bahasa Inggris memakai salah satunya:"
+          },
+          {
+            "type": "table",
+            "head": [
+              "Lokomotif",
+              "Kapan",
+              "Negatif",
+              "Pertanyaan"
+            ],
+            "rows": [
+              [
+                "**am / is / are**",
+                "keadaan, identitas, tempat",
+                "is not / isn't",
+                "**Is** she busy?"
+              ],
+              [
+                "**kata kerja aksi** (+ do/does)",
+                "melakukan sesuatu, kebiasaan",
+                "don't / doesn't + dasar",
+                "**Does** she work?"
+              ],
+              [
+                "**can**",
+                "kemampuan, permintaan",
+                "can't + dasar",
+                "**Can** she draw?"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Enam aturan besar Minggu 2",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "#",
+              "Aturan",
+              "Benar",
+              "Kesalahan khas"
+            ],
+            "rows": [
+              [
+                "1",
+                "Satu kalimat, satu lokomotif",
+                "I **work** in Jakarta.",
+                "I am work…"
+              ],
+              [
+                "2",
+                "he/she/it + kata kerja **-s**",
+                "She **works**. He **watches**. It **has**.",
+                "She work…"
+              ],
+              [
+                "3",
+                "-s pindah ke **does**",
+                "She **doesn't work**. **Does** she **work**?",
+                "She doesn't works."
+              ],
+              [
+                "4",
+                "always/never **sebelum** aksi, **setelah** be",
+                "I **always** check… / I am **always** busy.",
+                "I check always…"
+              ],
+              [
+                "5",
+                "'ada' (berada) = **there is/are**",
+                "**There are** two bedrooms.",
+                "In my house have…"
+              ],
+              [
+                "6",
+                "**can** + bentuk dasar",
+                "She **can draw**.",
+                "She can draws / can to draw."
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Satu pertanyaan untuk semua",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Keenam aturan itu menjawab satu pertanyaan: **di mana lokomotifnya, dan apa bentuknya?** Lokomotif pertama membawa semua informasi: waktu, jumlah (-s), negatif (not), dan pertanyaan (pindah ke depan). Kata kerja sesudahnya hanya gerbong dalam bentuk dasar."
+          },
+          {
+            "type": "p",
+            "text": "Cara pikir ini akan terus berlaku di minggu-minggu berikutnya (past tense, future, present perfect). Di setiap tense baru, yang berubah hanya lokomotifnya."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Cek cepat sebelum menulis",
+        "blocks": [
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "1. Ada aksi?",
+                "id": "Ya → kata kerja (atau do/does/can). Tidak → am/is/are."
+              },
+              {
+                "en": "2. Subjeknya he/she/it/satu orang?",
+                "id": "Ya → -s di lokomotif pertama (works / does / is)."
+              },
+              {
+                "en": "3. Ada can / don't / doesn't?",
+                "id": "Ya → kata kerja berikutnya bentuk dasar."
+              },
+              {
+                "en": "4. Ingin bilang 'ada' (berada)?",
+                "id": "there is / there are, bukan have."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Minggu depan",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Minggu 3 kita masuk ke hal yang sangat sering dipakai dalam percakapan: **sedang** (*I am working now*, present continuous), **kata benda yang tidak bisa dihitung** (*water, money, information*), dan **kata tanya** (*what, where, when, why, how*). Setelah itu Anda bisa mulai bertanya dan bercakap-cakap dengan lebih bebas."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d14-e1",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "My client is want a modern kitchen.",
+            "why": "Dua lokomotif."
+          },
+          {
+            "text": "My client want a modern kitchen.",
+            "why": "My client = he/she → wants."
+          },
+          {
+            "text": "My client wants a modern kitchen."
+          }
+        ],
+        "answer": 2,
+        "explain": "Aturan 1 + 2.",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d14-e2",
+        "type": "fill",
+        "prompt": "She ___ like coffee. (tidak)",
+        "accept": [
+          "doesn't",
+          "does not"
+        ],
+        "explain": "Aturan 3: she → doesn't + bentuk dasar.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d14-e3",
+        "type": "fill",
+        "prompt": "___ your house have a garden?",
+        "accept": [
+          "does"
+        ],
+        "explain": "Your house = it → Does.",
+        "errorTag": "do-question"
+      },
+      {
+        "id": "d14-e4",
+        "type": "fill",
+        "prompt": "___ you busy today?",
+        "accept": [
+          "are"
+        ],
+        "explain": "busy = keadaan → be (Are), bukan Do.",
+        "errorTag": "question-order"
+      },
+      {
+        "id": "d14-e5",
+        "type": "order",
+        "prompt": "Susun: Dia (perempuan) biasanya bekerja di rumah hari Jumat.",
+        "tokens": [
+          "She",
+          "usually",
+          "works",
+          "at",
+          "home",
+          "on",
+          "Friday."
+        ],
+        "explain": "Aturan 2 + 4 + on + hari.",
+        "errorTag": "frequency-position"
+      },
+      {
+        "id": "d14-e6",
+        "type": "mc",
+        "prompt": "'Ada tiga kamar tidur di apartemen ini.'",
+        "options": [
+          {
+            "text": "There are three bedrooms in this apartment."
+          },
+          {
+            "text": "In this apartment have three bedrooms.",
+            "why": "'ada' (berada) = there are."
+          },
+          {
+            "text": "There is three bedrooms in this apartment.",
+            "why": "Tiga → are."
+          }
+        ],
+        "answer": 0,
+        "explain": "Aturan 5.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d14-e7",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "He can speaks English.",
+            "why": "can + bentuk dasar."
+          },
+          {
+            "text": "He can speak English."
+          },
+          {
+            "text": "He cans speak English.",
+            "why": "can tidak berubah."
+          }
+        ],
+        "answer": 1,
+        "explain": "Aturan 6.",
+        "errorTag": "can-verb"
+      },
+      {
+        "id": "d14-e8",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "I don't never work on Sunday.",
+            "why": "Negatif dobel."
+          },
+          {
+            "text": "I never work on Sunday."
+          },
+          {
+            "text": "I work never on Sunday.",
+            "why": "never sebelum kata kerja aksi."
+          }
+        ],
+        "answer": 1,
+        "explain": "Aturan 4.",
+        "errorTag": "frequency-position"
+      },
+      {
+        "id": "d14-e9",
+        "type": "translate",
+        "prompt": "Maaf, saya tidak mengerti.",
+        "accept": [
+          "Sorry, I don't understand.",
+          "Sorry, I do not understand.",
+          "I'm sorry, I don't understand."
+        ],
+        "explain": "understand = aksi → don't.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d14-e10",
+        "type": "translate",
+        "prompt": "Dia (laki-laki) menonton video desain setiap malam.",
+        "accept": [
+          "He watches design videos every night.",
+          "He watches design videos every evening."
+        ],
+        "explain": "watch → watches (-es).",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d14-e11",
+        "type": "translate",
+        "prompt": "Apakah dia (perempuan) bisa mulai minggu depan?",
+        "accept": [
+          "Can she start next week?"
+        ],
+        "explain": "Can + she + start (dasar) + next week?",
+        "errorTag": "can-verb"
+      },
+      {
+        "id": "d14-e12",
+        "type": "translate",
+        "prompt": "Ada sofa abu-abu di ruang keluarga. (abu-abu = grey)",
+        "accept": [
+          "There is a grey sofa in the living room.",
+          "There's a grey sofa in the living room.",
+          "There is a gray sofa in the living room."
+        ],
+        "explain": "There is + a grey sofa + in the living room.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d14-e13",
+        "type": "translate",
+        "prompt": "Saya selalu sibuk di pagi hari.",
+        "accept": [
+          "I am always busy in the morning.",
+          "I'm always busy in the morning."
+        ],
+        "explain": "am + always + busy + in the morning.",
+        "errorTag": "frequency-position"
+      },
+      {
+        "id": "d14-e14",
+        "type": "explain",
+        "prompt": "Dari enam aturan Minggu 2, mana yang paling sulit untuk Anda? Berikan satu contoh kalimat yang benar.",
+        "model": "(Jawaban pribadi.) Contoh: Aturan 3 paling sulit, karena saya ingin menulis -s dua kali. Contoh benar: She doesn't work on Sunday.",
+        "explain": "Jawaban ini masuk ke laporan mingguan Anda untuk Claude."
+      }
+    ]
+  },
+  "reading": {
+    "id": "R14",
+    "title": "A day in the life of a designer",
+    "cefr": "A1",
+    "intro": "Bacaan terpanjang sejauh ini: sekitar 170 kata. Baca sekali tanpa bantuan, lalu baca lagi sambil mengetuk kata yang ragu.",
+    "paragraphs": [
+      {
+        "en": "Rina is an interior designer and a content creator. She lives in Bandung with her family. She has a small studio next to her house.",
+        "id": "Rina seorang desainer interior dan kreator konten. Dia tinggal di Bandung bersama keluarganya. Dia punya studio kecil di sebelah rumahnya."
+      },
+      {
+        "en": "She usually wakes up at five. She drinks coffee and reads design news on her phone. She never checks her emails before eight.",
+        "id": "Dia biasanya bangun jam lima. Dia minum kopi dan membaca berita desain di HP-nya. Dia tidak pernah mengecek email sebelum jam delapan."
+      },
+      {
+        "en": "On Monday and Tuesday, she meets clients. Her clients want modern and simple homes, but they don't have big budgets. Rina can make small rooms look big. She uses white walls, big mirrors, and warm lamps.",
+        "id": "Hari Senin dan Selasa, dia bertemu klien. Klien-kliennya ingin rumah yang modern dan sederhana, tapi mereka tidak punya anggaran besar. Rina bisa membuat ruangan kecil terlihat besar. Dia memakai dinding putih, cermin besar, dan lampu hangat."
+      },
+      {
+        "en": "On Wednesday and Thursday, she goes to the sites. There are always problems! The contractors are sometimes late, and sometimes they don't understand her drawings.",
+        "id": "Hari Rabu dan Kamis, dia pergi ke lokasi-lokasi proyek. Selalu ada masalah! Kontraktornya kadang-kadang terlambat, dan kadang-kadang mereka tidak memahami gambar-gambarnya."
+      },
+      {
+        "en": "On Friday, she makes videos for her channel. Her videos are short and helpful. Do people like them? Yes, they do. She has twenty thousand followers!",
+        "id": "Hari Jumat, dia membuat video untuk channel-nya. Video-videonya pendek dan bermanfaat. Apakah orang menyukainya? Ya. Dia punya dua puluh ribu pengikut!"
+      },
+      {
+        "en": "On the weekend, Rina doesn't work. She plays games with her son and cooks for her family.",
+        "id": "Di akhir pekan, Rina tidak bekerja. Dia main game bersama anak laki-lakinya dan memasak untuk keluarganya."
+      }
+    ],
+    "glossary": {
+      "content": "konten",
+      "creator": "kreator",
+      "content creator": "kreator konten",
+      "with": "dengan, bersama",
+      "family": "keluarga",
+      "small": "kecil",
+      "studio": "studio",
+      "next": "(lihat next to)",
+      "next to": "di sebelah",
+      "to": "ke; (next to)",
+      "wakes": "bangun",
+      "wakes up": "bangun tidur",
+      "up": "(lihat wake up)",
+      "five": "lima",
+      "drinks": "minum",
+      "news": "berita",
+      "checks": "mengecek",
+      "emails": "email-email",
+      "before": "sebelum",
+      "eight": "delapan",
+      "meets": "bertemu",
+      "modern": "modern",
+      "simple": "sederhana",
+      "homes": "rumah, hunian",
+      "budgets": "anggaran",
+      "big": "besar",
+      "look": "terlihat",
+      "white": "putih",
+      "mirrors": "cermin",
+      "warm": "hangat",
+      "sites": "lokasi proyek",
+      "problems": "masalah",
+      "drawings": "gambar-gambar",
+      "for": "untuk",
+      "channel": "channel",
+      "short": "pendek",
+      "helpful": "bermanfaat",
+      "people": "orang-orang",
+      "them": "mereka (objek)",
+      "twenty": "dua puluh",
+      "thousand": "ribu",
+      "followers": "pengikut",
+      "son": "anak laki-laki",
+      "the": "(kata sandang)",
+      "in": "di",
+      "on": "pada (hari); di",
+      "at": "pada (jam)",
+      "monday": "Senin",
+      "tuesday": "Selasa",
+      "wednesday": "Rabu",
+      "thursday": "Kamis",
+      "friday": "Jumat",
+      "interior": "interior"
+    },
+    "questions": [
+      {
+        "id": "d14-r1",
+        "type": "mc",
+        "prompt": "Apa pekerjaan Rina?",
+        "options": [
+          {
+            "text": "Arsitek dan kontraktor"
+          },
+          {
+            "text": "Desainer interior dan kreator konten"
+          },
+          {
+            "text": "Hanya kreator konten"
+          }
+        ],
+        "answer": 1,
+        "explain": "'Rina is an interior designer and a content creator.'"
+      },
+      {
+        "id": "d14-r2",
+        "type": "mc",
+        "prompt": "Bagaimana Rina membuat ruangan kecil terlihat besar?",
+        "options": [
+          {
+            "text": "Dinding putih, cermin besar, lampu hangat"
+          },
+          {
+            "text": "Sofa besar dan karpet"
+          },
+          {
+            "text": "Jendela kecil"
+          }
+        ],
+        "answer": 0,
+        "explain": "'She uses white walls, big mirrors, and warm lamps.'"
+      },
+      {
+        "id": "d14-r3",
+        "type": "mc",
+        "prompt": "Apa masalah di lokasi proyek?",
+        "options": [
+          {
+            "text": "Klien tidak datang"
+          },
+          {
+            "text": "Kontraktor kadang terlambat dan tidak memahami gambar"
+          },
+          {
+            "text": "Tidak ada material"
+          }
+        ],
+        "answer": 1,
+        "explain": "'The contractors are sometimes late, and sometimes they don't understand her drawings.'"
+      },
+      {
+        "id": "d14-r4",
+        "type": "mc",
+        "prompt": "Berapa pengikut channel Rina?",
+        "options": [
+          {
+            "text": "2.000"
+          },
+          {
+            "text": "20.000"
+          },
+          {
+            "text": "200.000"
+          }
+        ],
+        "answer": 1,
+        "explain": "'twenty thousand' = 20.000."
+      },
+      {
+        "id": "d14-r5",
+        "type": "mc",
+        "prompt": "Kenapa ditulis 'Do people like them? Yes, they DO' (bukan does)?",
+        "options": [
+          {
+            "text": "Karena people = mereka (jamak)"
+          },
+          {
+            "text": "Karena videonya pendek"
+          },
+          {
+            "text": "Karena Rina perempuan"
+          }
+        ],
+        "answer": 0,
+        "explain": "people = they → do."
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Kalimat-kalimat kunci dari bacaan. Dengarkan dulu tanpa membaca, lalu cek.",
+    "items": [
+      {
+        "en": "She usually wakes up at five.",
+        "id": "Dia biasanya bangun jam lima."
+      },
+      {
+        "en": "She never checks her emails before eight.",
+        "id": "Dia tidak pernah mengecek email sebelum jam delapan."
+      },
+      {
+        "en": "Her clients don't have big budgets.",
+        "id": "Klien-kliennya tidak punya anggaran besar."
+      },
+      {
+        "en": "Rina can make small rooms look big.",
+        "id": "Rina bisa membuat ruangan kecil terlihat besar."
+      },
+      {
+        "en": "There are always problems!",
+        "id": "Selalu ada masalah!"
+      },
+      {
+        "en": "Do people like them? Yes, they do.",
+        "id": "Apakah orang menyukainya? Ya."
+      },
+      {
+        "en": "On the weekend, she doesn't work.",
+        "id": "Di akhir pekan, dia tidak bekerja."
+      },
+      {
+        "en": "She plays games with her son.",
+        "id": "Dia main game bersama anak laki-lakinya."
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Tulisan mandiri terpanjang Anda sejauh ini. Pakai semua yang sudah dipelajari dalam 2 minggu.",
+    "exercises": [
+      {
+        "id": "d14-w1",
+        "type": "translate",
+        "prompt": "Klien saya tidak punya banyak waktu.",
+        "accept": [
+          "My client doesn't have much time.",
+          "My client does not have much time.",
+          "My clients don't have much time."
+        ],
+        "explain": "My client = he/she → doesn't have (bentuk dasar).",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d14-w2",
+        "type": "translate",
+        "prompt": "Apakah ada lampu di kamar mandi?",
+        "accept": [
+          "Is there a lamp in the bathroom?",
+          "Is there a light in the bathroom?",
+          "Are there any lamps in the bathroom?"
+        ],
+        "explain": "Is there + a + benda tunggal?",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d14-w3",
+        "type": "explain",
+        "prompt": "Tulis paragraf 8–10 kalimat tentang hidup Anda, seperti bacaan tentang Rina: pekerjaan, tempat tinggal, rutinitas (always/usually/never), apa yang bisa Anda lakukan (can), dan akhir pekan Anda.",
+        "model": "My name is Andrian. I live in Jakarta. I am an interior designer and a content creator. I usually wake up at six. I always drink coffee in the morning. On Monday, I meet clients. They want modern homes. I can draw floor plans and I can make videos. I never work on Sunday. On the weekend, I play games.",
+        "explain": "Simpan paragraf ini. Untuk koreksi lengkap, salin ke Writing Studio lalu tekan 'Salin untuk Claude'."
+      }
+    ]
+  }
+}

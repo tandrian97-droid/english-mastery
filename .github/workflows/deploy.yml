@@ -29,6 +29,7 @@ jobs:
         env:
           # Aplikasi di-hosting di https://<username>.github.io/<nama-repo>/
           BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_BUILD_ID: ${{ github.run_number }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

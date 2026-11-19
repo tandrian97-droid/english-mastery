@@ -85,7 +85,8 @@ function variants(w) {
   return v;
 }
 
-const CONTRACTION_PARTS = { "i'm": ['i', 'am'], "isn't": ['is', 'not'], "aren't": ['are', 'not'], "he's": ['he', 'is'], "she's": ['she', 'is'], "it's": ['it', 'is'], "we're": ['we', 'are'], "they're": ['they', 'are'], "you're": ['you', 'are'] };
+const IRREGULAR = { has: 'have', does: 'do', goes: 'go' };
+const CONTRACTION_PARTS = { "don't": ['do', 'not'], "doesn't": ['do', 'not'], "can't": ['can', 'not'], "there's": ['there', 'is'], "i'm": ['i', 'am'], "isn't": ['is', 'not'], "aren't": ['are', 'not'], "he's": ['he', 'is'], "she's": ['she', 'is'], "it's": ['it', 'is'], "we're": ['we', 'are'], "they're": ['they', 'are'], "you're": ['you', 'are'] };
 
 for (const month of curriculum.months) {
   if (!month.availableThroughDay) continue;
@@ -99,7 +100,7 @@ for (const month of curriculum.months) {
     if (byId.has(w.id)) err(`kata ganda: ${w.id}`);
     byId.set(w.id, w);
     if (!/^\/.+\/$/.test(w.ipa ?? '')) err(`kata ${w.id}: IPA harus diapit /.../`);
-    if (!w.example?.toLowerCase().includes(w.word.toLowerCase())) warn(`kata ${w.id}: contoh kalimat tidak memuat kata '${w.word}'`);
+    if (!w.example?.toLowerCase().includes(w.word.toLowerCase().replace(/y$/, ''))) warn(`kata ${w.id}: contoh kalimat tidak memuat kata '${w.word}'`);
     needAudio(w.word, `kata ${w.id}`);
     needAudio(w.example, `contoh kata ${w.id}`);
   }
@@ -131,14 +132,15 @@ for (const month of curriculum.months) {
 
     // Kosakata bacaan: semua kata harus sudah dikenal
     const known = new Set();
-    for (const w of words) if (w.day <= d) for (const v of variants(w.word.toLowerCase())) known.add(v);
+    for (const w of words) if (w.day <= d) for (const part of w.word.toLowerCase().split(/\s+/)) for (const v of variants(part)) known.add(v);
     for (const k of Object.keys(day.reading.glossary)) for (const part of k.toLowerCase().split(/\s+/)) for (const v of variants(part)) known.add(v);
     const unknown = new Set();
     for (const p of day.reading.paragraphs) {
       const text = p.en.replace(/^[A-Z][a-z]+:\s/, ''); // label pembicara "Sara: "
-      for (const raw of text.toLowerCase().match(/[a-z']+/g) ?? []) {
+      for (const raw of text.toLowerCase().match(/[a-z0-9']+/g) ?? []) {
         const tok = raw.replace(/^'+|'+$/g, '');
-        if (!tok) continue;
+        if (!tok || /\d/.test(tok)) continue;
+        if (IRREGULAR[tok] && known.has(IRREGULAR[tok])) continue;
         if (PROPER_NOUNS.has(tok) || known.has(tok)) continue;
         const parts = CONTRACTION_PARTS[tok];
         if (parts && parts.every((x) => known.has(x))) continue;

@@ -270,3 +270,27 @@ textarea { font: inherit; width: 100%; padding: 12px 14px; border-radius: 12px; 
 .report { white-space: pre-wrap; font-size: 12px; background: #f3f5f8; border-radius: 10px; padding: 10px; max-height: 360px; overflow: auto; }
 details summary { cursor: pointer; }
 .marks .name { color: #9aa3b2; font-style: italic; }
+
+/* ===== Writing Studio ===== */
+.level-tabs { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+.level-tabs .chip { white-space: nowrap; }
+textarea.editor { font-size: 17px; line-height: 1.6; min-height: 220px; }
+.written { font-size: 17px; line-height: 1.8; white-space: pre-wrap; }
+mark.issue { background: var(--bad-soft); color: inherit; border-bottom: 2px solid var(--bad); border-radius: 3px; padding: 0 1px; }
+mark.issue.mechanics { background: var(--warn-soft); border-bottom-color: var(--warn); }
+mark.issue sup { font-size: 10px; font-weight: 700; color: var(--bad); margin-left: 1px; }
+.issues { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 14.5px; }
+
+/* ===== Grafik ===== */
+.chart { margin: 0; display: grid; gap: 8px; }
+.chart svg { width: 100%; height: auto; display: block; touch-action: pan-y; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.hbars { display: grid; gap: 8px; }
+.hbar { display: grid; grid-template-columns: 120px 1fr 44px 28px; gap: 8px; align-items: center; font-size: 13.5px; }
+.hbar-track { height: 14px; background: #f0f1f4; border-radius: 4px; overflow: hidden; }
+.hbar-fill { display: block; height: 100%; border-radius: 0 4px 4px 0; }
+.hbar-value { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.hbar-n { color: var(--muted); font-size: 12px; text-align: right; }
+select, input[type='date'] { font: inherit; width: 100%; padding: 12px 10px; border-radius: 12px; border: 1px solid var(--line); background: #fff; min-height: 46px; }
+.form { border-top: 1px solid var(--line); padding-top: 12px; }

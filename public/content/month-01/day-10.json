@@ -1,0 +1,632 @@
+{
+  "day": 10,
+  "month": 1,
+  "title": "Tidak dan bertanya: don't, doesn't, Do you…?",
+  "goals": [
+    "Membuat kalimat negatif: I don't know, she doesn't drink coffee",
+    "Bertanya: Do you…? Does he…? dan menjawab singkat",
+    "Tidak lagi menulis 'I am not understand' atau 'She doesn't works'"
+  ],
+  "newWords": [
+    "coffee",
+    "phone",
+    "company",
+    "customer",
+    "money",
+    "time",
+    "but",
+    "very",
+    "understand",
+    "know"
+  ],
+  "lesson": {
+    "id": "L10",
+    "title": "Simple present: negatif & pertanyaan (do/does)",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa berkata \"I don't understand\", bertanya \"Do you use Instagram?\" / \"Does she work here?\", dan tahu kenapa -s pindah ke 'does'.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Di Hari 4, membuat negatif dan pertanyaan dengan **am/is/are** itu mudah: tambah *not*, atau pindahkan lokomotif ke depan. Tapi kata kerja aksi (*work, like*) **tidak bisa** dipindah ke depan atau diberi *not* langsung. Bahasa Inggris tidak pernah berkata *\"Work you here?\"* atau *\"I work not\"*."
+          },
+          {
+            "type": "p",
+            "text": "Solusinya: **lokomotif pembantu** bernama **do / does**. Ia datang khusus untuk membawa *not* dan untuk pindah ke depan saat bertanya. Kata kerja aslinya tetap di tempat, dalam **bentuk dasar**."
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "I like coffee. → I don't like coffee.",
+                "id": "Saya suka kopi. → Saya tidak suka kopi."
+              },
+              {
+                "en": "You work here. → Do you work here?",
+                "id": "Kamu bekerja di sini. → Apakah kamu bekerja di sini?"
+              },
+              {
+                "en": "She knows him. → Does she know him?",
+                "id": "Dia kenal dia. → Apakah dia mengenalnya?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "",
+              "I / you / we / they",
+              "he / she / it"
+            ],
+            "rows": [
+              [
+                "Positif",
+                "I **work**.",
+                "She **works**."
+              ],
+              [
+                "Negatif",
+                "I **don't** work. (do not)",
+                "She **doesn't** work. (does not)"
+              ],
+              [
+                "Pertanyaan",
+                "**Do** you work?",
+                "**Does** she work?"
+              ],
+              [
+                "Jawaban ya",
+                "Yes, I do.",
+                "Yes, she does."
+              ],
+              [
+                "Jawaban tidak",
+                "No, I don't.",
+                "No, she doesn't."
+              ]
+            ]
+          },
+          {
+            "type": "tip",
+            "text": "Perhatikan kolom kanan: -s pindah dari 'works' ke 'does'. Kata kerja utamanya kembali ke bentuk dasar: She doesn't WORK (bukan works)."
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kenapa -s pindah ke does?** Stiker -s hanya boleh ditempel **satu kali** per kalimat, di lokomotif pertama. Begitu *does* datang, ia menjadi lokomotif pertama dan mengambil stikernya. Kata kerja utama tidak perlu stiker lagi: *She doesn't work*, *Does she work?*"
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa tidak pakai am/is/are?** Karena am/is/are adalah lokomotif untuk kalimat **tanpa aksi**. Kalimat dengan aksi memakai lokomotif pembantu *do*. Jadi:"
+          },
+          {
+            "type": "table",
+            "head": [
+              "Kalimat tanpa aksi (be)",
+              "Kalimat dengan aksi (do)"
+            ],
+            "rows": [
+              [
+                "I am **not** tired.",
+                "I **don't** understand."
+              ],
+              [
+                "**Are** you busy?",
+                "**Do** you work here?"
+              ],
+              [
+                "She is**n't** at home.",
+                "She **doesn't** drink coffee."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa *understand* dan *know* tidak pakai -ing?** Kata kerja \"pikiran\" (know, understand, like, want, need) hampir selalu memakai simple present, bahkan untuk saat ini: *I don't understand* (bukan *I am not understanding*)."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {
+            "type": "mistakes",
+            "items": [
+              {
+                "wrong": "I am not understand.",
+                "right": "I don't understand.",
+                "why": "understand = aksi (kata kerja). Negatifnya pakai don't, bukan am not. Ini salah satu kalimat yang paling sering salah."
+              },
+              {
+                "wrong": "She doesn't works here.",
+                "right": "She doesn't work here.",
+                "why": "-s sudah dipakai oleh does. Kata kerja kembali ke bentuk dasar."
+              },
+              {
+                "wrong": "He don't like coffee.",
+                "right": "He doesn't like coffee.",
+                "why": "He/she/it → doesn't."
+              },
+              {
+                "wrong": "You work here?",
+                "right": "Do you work here?",
+                "why": "Pertanyaan baku memakai Do di depan."
+              },
+              {
+                "wrong": "Does she works at the office?",
+                "right": "Does she work at the office?",
+                "why": "Setelah does, bentuk dasar."
+              },
+              {
+                "wrong": "Do you are busy?",
+                "right": "Are you busy?",
+                "why": "busy = keadaan (be). Do hanya untuk kata kerja aksi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kalimat penyelamat** yang wajib dihafal untuk percakapan dan rapat:"
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "Sorry, I don't understand.",
+                "id": "Maaf, saya tidak mengerti."
+              },
+              {
+                "en": "I don't know.",
+                "id": "Saya tidak tahu."
+              },
+              {
+                "en": "Do you understand?",
+                "id": "Apakah Anda mengerti?"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**don't vs do not:** dalam percakapan dan chat, pakai *don't / doesn't*. Dalam dokumen resmi, *do not / does not* (misalnya di kontrak: *The price does not include delivery.*)."
+          },
+          {
+            "type": "p",
+            "text": "**client vs customer:** *client* untuk jasa profesional yang berhubungan jangka panjang (klien arsitek/desainer). *customer* untuk pembeli produk atau toko."
+          }
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dalam bahasa Inggris zaman Shakespeare (abad ke-16), orang masih berkata *\"I know not\"* dan *\"Know you this man?\"*, tanpa *do*. Pemakaian *do* untuk negatif dan pertanyaan baru menjadi wajib sekitar abad ke-17 sampai ke-18. Bahasa Inggris adalah salah satu dari sedikit bahasa di dunia yang memakai 'lokomotif pembantu' seperti ini."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d10-e1",
+        "type": "fill",
+        "prompt": "I ___ understand. (tidak)",
+        "accept": [
+          "don't",
+          "do not"
+        ],
+        "explain": "Kata kerja aksi → don't + bentuk dasar.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d10-e2",
+        "type": "fill",
+        "prompt": "She ___ drink coffee. (tidak)",
+        "accept": [
+          "doesn't",
+          "does not"
+        ],
+        "explain": "She → doesn't.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d10-e3",
+        "type": "fill",
+        "prompt": "___ you work on the weekend?",
+        "accept": [
+          "do"
+        ],
+        "explain": "Pertanyaan dengan kata kerja aksi + you → Do.",
+        "errorTag": "do-question"
+      },
+      {
+        "id": "d10-e4",
+        "type": "fill",
+        "prompt": "___ your company build houses?",
+        "accept": [
+          "does"
+        ],
+        "explain": "Your company = it → Does.",
+        "errorTag": "do-question"
+      },
+      {
+        "id": "d10-e5",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "I am not understand.",
+            "why": "understand = kata kerja aksi; negatifnya don't, bukan am not."
+          },
+          {
+            "text": "I don't understand."
+          },
+          {
+            "text": "I not understand.",
+            "why": "Butuh lokomotif pembantu don't."
+          }
+        ],
+        "answer": 1,
+        "explain": "understand = kata kerja aksi → don't.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d10-e6",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "He doesn't knows her name.",
+            "why": "-s sudah dipakai doesn't."
+          },
+          {
+            "text": "He don't know her name.",
+            "why": "He → doesn't."
+          },
+          {
+            "text": "He doesn't know her name."
+          }
+        ],
+        "answer": 2,
+        "explain": "doesn't + bentuk dasar.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d10-e7",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "Do you are busy?",
+            "why": "busy = keadaan, pakai Are."
+          },
+          {
+            "text": "Are you busy?"
+          },
+          {
+            "text": "Does you busy?",
+            "why": "'you' tidak memakai does, dan busy butuh be."
+          }
+        ],
+        "answer": 1,
+        "explain": "Kalimat tanpa aksi → be (Are you busy?).",
+        "errorTag": "question-order"
+      },
+      {
+        "id": "d10-e8",
+        "type": "mc",
+        "prompt": "Does she use Instagram? (Jawaban: ya)",
+        "options": [
+          {
+            "text": "Yes, she does."
+          },
+          {
+            "text": "Yes, she uses.",
+            "why": "Jawaban singkat memakai lokomotif pembantu."
+          },
+          {
+            "text": "Yes, she is.",
+            "why": "Pertanyaannya memakai does."
+          }
+        ],
+        "answer": 0,
+        "explain": "Jawaban singkat mengulang lokomotif pertanyaan: does."
+      },
+      {
+        "id": "d10-e9",
+        "type": "order",
+        "prompt": "Susun: Apakah klien Anda punya waktu hari ini?",
+        "tokens": [
+          "Does",
+          "your",
+          "client",
+          "have",
+          "time",
+          "today?"
+        ],
+        "explain": "Does + subjek + kata kerja dasar (have, bukan has).",
+        "errorTag": "do-question"
+      },
+      {
+        "id": "d10-e10",
+        "type": "order",
+        "prompt": "Susun: Kami tidak punya banyak uang.",
+        "tokens": [
+          "We",
+          "don't",
+          "have",
+          "much",
+          "money."
+        ],
+        "explain": "We + don't + have. 'money' tidak bisa dihitung → much money."
+      },
+      {
+        "id": "d10-e11",
+        "type": "translate",
+        "prompt": "Maaf, saya tidak mengerti.",
+        "accept": [
+          "Sorry, I don't understand.",
+          "Sorry, I do not understand.",
+          "I'm sorry, I don't understand."
+        ],
+        "explain": "Kalimat penyelamat: Sorry, I don't understand.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d10-e12",
+        "type": "translate",
+        "prompt": "Apakah kamu tahu namanya (laki-laki)?",
+        "accept": [
+          "Do you know his name?"
+        ],
+        "explain": "Do + you + know + his name.",
+        "errorTag": "do-question"
+      },
+      {
+        "id": "d10-e13",
+        "type": "translate",
+        "prompt": "Dia (perempuan) tidak bekerja di sini.",
+        "accept": [
+          "She doesn't work here.",
+          "She does not work here."
+        ],
+        "explain": "She + doesn't + work (bentuk dasar).",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d10-e14",
+        "type": "explain",
+        "prompt": "Jelaskan dengan kata-kata Anda: kenapa 'She doesn't works' salah?",
+        "model": "Karena -s hanya dipakai satu kali, di lokomotif pertama. Di kalimat negatif, -s sudah ada di 'doesn't', jadi kata kerja utama kembali ke bentuk dasar: She doesn't work.",
+        "explain": "Aturan ini juga berlaku di pertanyaan: Does she work?"
+      }
+    ]
+  },
+  "reading": {
+    "id": "R10",
+    "title": "A new client",
+    "cefr": "A1",
+    "intro": "Percakapan pertama Budi dengan calon klien. Perhatikan setiap Do/Does dan don't/doesn't.",
+    "paragraphs": [
+      {
+        "en": "Budi: Good afternoon, Mr. Lee. Do you have time today?",
+        "id": "Budi: Selamat siang, Pak Lee. Apakah Bapak punya waktu hari ini?"
+      },
+      {
+        "en": "Mr. Lee: Yes, I do. I need a new design for my coffee shop.",
+        "id": "Pak Lee: Ya. Saya butuh desain baru untuk kedai kopi saya."
+      },
+      {
+        "en": "Budi: Do you want a modern design? Does your shop have big windows?",
+        "id": "Budi: Bapak ingin desain modern? Apakah toko Bapak punya jendela besar?"
+      },
+      {
+        "en": "Mr. Lee: Yes, it does. My customers like the windows, but they don't like the chairs. And I don't have much money.",
+        "id": "Pak Lee: Ya. Pelanggan saya suka jendelanya, tapi mereka tidak suka kursinya. Dan saya tidak punya banyak uang."
+      },
+      {
+        "en": "Budi: I understand. We don't need a very big budget. My company makes simple and beautiful designs.",
+        "id": "Budi: Saya mengerti. Kita tidak butuh anggaran yang sangat besar. Perusahaan saya membuat desain yang sederhana dan indah."
+      },
+      {
+        "en": "Mr. Lee: Very good. Do you know a good contractor?",
+        "id": "Pak Lee: Bagus sekali. Apakah Anda kenal kontraktor yang bagus?"
+      }
+    ],
+    "glossary": {
+      "mr": "Pak / Tuan",
+      "for": "untuk",
+      "shop": "toko, kedai",
+      "coffee shop": "kedai kopi",
+      "modern": "modern",
+      "much": "banyak (untuk yang tidak bisa dihitung)",
+      "budget": "anggaran",
+      "simple": "sederhana",
+      "beautiful": "indah, cantik",
+      "big": "besar",
+      "the": "(kata sandang)"
+    },
+    "questions": [
+      {
+        "id": "d10-r1",
+        "type": "mc",
+        "prompt": "Apa yang Pak Lee butuhkan?",
+        "options": [
+          {
+            "text": "Rumah baru"
+          },
+          {
+            "text": "Desain baru untuk kedai kopinya"
+          },
+          {
+            "text": "Kursi baru saja"
+          }
+        ],
+        "answer": 1,
+        "explain": "'I need a new design for my coffee shop.'"
+      },
+      {
+        "id": "d10-r2",
+        "type": "mc",
+        "prompt": "Apa yang TIDAK disukai pelanggan Pak Lee?",
+        "options": [
+          {
+            "text": "Jendelanya"
+          },
+          {
+            "text": "Kursinya"
+          },
+          {
+            "text": "Kopinya"
+          }
+        ],
+        "answer": 1,
+        "explain": "'they don't like the chairs'."
+      },
+      {
+        "id": "d10-r3",
+        "type": "mc",
+        "prompt": "Kenapa Pak Lee menjawab 'Yes, it does' (bukan 'Yes, I do')?",
+        "options": [
+          {
+            "text": "Karena pertanyaannya tentang tokonya (your shop = it)"
+          },
+          {
+            "text": "Karena dia sopan"
+          },
+          {
+            "text": "Karena jendelanya besar"
+          }
+        ],
+        "answer": 0,
+        "explain": "'Does your shop have…?' → subjeknya the shop = it → Yes, it does."
+      },
+      {
+        "id": "d10-r4",
+        "type": "mc",
+        "prompt": "Apa masalah Pak Lee?",
+        "options": [
+          {
+            "text": "Tidak punya banyak uang"
+          },
+          {
+            "text": "Tidak punya waktu"
+          },
+          {
+            "text": "Tidak suka desain modern"
+          }
+        ],
+        "answer": 0,
+        "explain": "'I don't have much money.'"
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Dalam bicara cepat, don't sering terdengar 'doun' dan does terdengar 'daz'. Biasakan telinga Anda.",
+    "items": [
+      {
+        "en": "Sorry, I don't understand.",
+        "id": "Maaf, saya tidak mengerti.",
+        "tip": "Kalimat terpenting minggu ini. Hafalkan iramanya."
+      },
+      {
+        "en": "I don't know.",
+        "id": "Saya tidak tahu.",
+        "tip": "know = NOU (k tidak dibaca)."
+      },
+      {
+        "en": "Do you have time today?",
+        "id": "Apakah kamu punya waktu hari ini?",
+        "tip": "Nada naik di akhir."
+      },
+      {
+        "en": "Does she work here?",
+        "id": "Apakah dia bekerja di sini?",
+        "tip": "Does she = daz-syi."
+      },
+      {
+        "en": "He doesn't drink coffee.",
+        "id": "Dia tidak minum kopi.",
+        "tip": "doesn't = DA-zent."
+      },
+      {
+        "en": "Yes, I do.",
+        "id": "Ya."
+      },
+      {
+        "en": "No, she doesn't.",
+        "id": "Tidak."
+      },
+      {
+        "en": "My customers like the windows, but they don't like the chairs.",
+        "id": "Pelanggan saya suka jendelanya, tapi mereka tidak suka kursinya."
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Bayangkan Anda bertemu klien baru. Tulis pertanyaan dan jawaban.",
+    "exercises": [
+      {
+        "id": "d10-w1",
+        "type": "translate",
+        "prompt": "Apakah Anda punya waktu besok? (besok = tomorrow)",
+        "accept": [
+          "Do you have time tomorrow?"
+        ],
+        "explain": "Do + you + have + time + tomorrow.",
+        "errorTag": "do-question"
+      },
+      {
+        "id": "d10-w2",
+        "type": "translate",
+        "prompt": "Perusahaan saya tidak membangun rumah.",
+        "accept": [
+          "My company doesn't build houses.",
+          "My company does not build houses."
+        ],
+        "explain": "My company = it → doesn't + build.",
+        "errorTag": "do-negative"
+      },
+      {
+        "id": "d10-w3",
+        "type": "translate",
+        "prompt": "Apakah dia (perempuan) suka desain modern?",
+        "accept": [
+          "Does she like modern design?",
+          "Does she like modern designs?"
+        ],
+        "explain": "Does + she + like (bentuk dasar).",
+        "errorTag": "do-question"
+      },
+      {
+        "id": "d10-w4",
+        "type": "explain",
+        "prompt": "Tulis 3 pertanyaan yang akan Anda tanyakan ke calon klien (Do you…? / Does your…?) dan 2 kalimat negatif tentang diri Anda (I don't…).",
+        "model": "Do you have a floor plan? Does your house have a garden? Do you want a modern design? I don't build houses. I don't work on Sunday.",
+        "explain": "Pertanyaan-pertanyaan ini akan berguna saat bertemu klien sungguhan."
+      }
+    ]
+  }
+}

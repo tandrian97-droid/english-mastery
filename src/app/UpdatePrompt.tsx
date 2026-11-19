@@ -1,65 +1,79 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useRegisterSW } from 'virtual:pwa-register/react';
+import { useFeedback } from '../ui/feedback';
 
-const SHOWN_KEY = 'em-offline-ready-shown';
-function readShown(): boolean {
-  try {
-    return localStorage.getItem(SHOWN_KEY) === '1';
-  } catch {
-    return false;
-  }
+/** Halaman "aman": tidak ada pelajaran/latihan yang sedang dikerjakan, jadi boleh dimuat ulang. */
+export function isSafeRoute(path: string): boolean {
+  return path === '/' || path === '/learn' || path === '/progress' || path === '/vocabulary' || path === '/settings' || path === '/writing' || /^\/day\/\d+$/.test(path);
 }
 
+const CHECK_EVERY_MS = 60 * 60 * 1000;
+
 /**
- * Service worker: menyimpan aplikasi + materi untuk offline.
- * Saat versi baru tersedia, pengguna yang memilih kapan memuat ulang
- * (supaya sesi belajar yang sedang berjalan tidak terputus).
+ * Update otomatis tanpa tombol:
+ *  - Aplikasi memeriksa versi baru saat dibuka, saat kembali ke layar, dan setiap jam (jika online).
+ *  - Versi baru diunduh di latar belakang (aplikasi + materi + audio).
+ *  - Versi baru DIPASANG hanya saat Anda berada di halaman aman (bukan di tengah pelajaran),
+ *    supaya jawaban yang sedang dikerjakan tidak hilang. Semua progres sudah tersimpan di database.
  */
-export function UpdatePrompt() {
+export function AutoUpdater() {
+  const { pathname } = useLocation();
+  const { notify } = useFeedback();
+  const registration = useRef<ServiceWorkerRegistration | null>(null);
   const {
-    offlineReady: [offlineReady, setOfflineReady],
-    needRefresh: [needRefresh, setNeedRefresh],
+    needRefresh: [needRefresh],
+    offlineReady: [offlineReady],
     updateServiceWorker,
   } = useRegisterSW({
+    onRegisteredSW(_url, reg) {
+      registration.current = reg ?? null;
+    },
     onRegisterError(error) {
       console.error('Service worker gagal didaftarkan', error);
     },
   });
 
-  // Pesan "siap offline" cukup ditampilkan sekali seumur instalasi.
-  const [shownBefore] = useState(readShown);
+  // Periksa versi baru secara berkala dan saat aplikasi kembali dibuka.
   useEffect(() => {
-    if (!offlineReady) return;
-    try {
-      localStorage.setItem(SHOWN_KEY, '1');
-    } catch {
-      /* tidak apa-apa */
-    }
-  }, [offlineReady]);
-  const showOfflineReady = offlineReady && !shownBefore;
-  if (!showOfflineReady && !needRefresh) return null;
+    const check = () => {
+      if (navigator.onLine) void registration.current?.update().catch(() => {});
+    };
+    const id = window.setInterval(check, CHECK_EVERY_MS);
+    const onVisible = () => document.visibilityState === 'visible' && check();
+    document.addEventListener('visibilitychange', onVisible);
+    return () => {
+      window.clearInterval(id);
+      document.removeEventListener('visibilitychange', onVisible);
+    };
+  }, []);
 
-  return (
-    <div style={{ position: 'fixed', left: 8, right: 8, bottom: 'calc(var(--nav-h) + 12px)', zIndex: 40, maxWidth: 560, margin: '0 auto' }}>
-      <div className="banner info" style={{ boxShadow: '0 6px 20px rgba(10,16,30,.15)' }}>
-        <span>{needRefresh ? 'Versi baru aplikasi tersedia.' : 'Aplikasi siap dipakai offline.'}</span>
-        <div className="row">
-          {needRefresh && (
-            <button className="btn" onClick={() => updateServiceWorker(true)}>
-              Perbarui
-            </button>
-          )}
-          <button
-            className="btn secondary"
-            onClick={() => {
-              setOfflineReady(false);
-              setNeedRefresh(false);
-            }}
-          >
-            Tutup
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+  // Pasang versi baru begitu berada di halaman aman.
+  useEffect(() => {
+    if (needRefresh && isSafeRoute(pathname)) {
+      try {
+        sessionStorage.setItem('em-just-updated', '1');
+      } catch {
+        /* abaikan */
+      }
+      void updateServiceWorker(true);
+    }
+  }, [needRefresh, pathname, updateServiceWorker]);
+
+  // Beri tahu sekali setelah update terpasang / saat siap offline pertama kali.
+  useEffect(() => {
+    try {
+      if (sessionStorage.getItem('em-just-updated') === '1') {
+        sessionStorage.removeItem('em-just-updated');
+        notify('info', 'Aplikasi sudah diperbarui otomatis. Materi dan fitur terbaru sudah tersedia.');
+      } else if (offlineReady && localStorage.getItem('em-offline-ready-shown') !== '1') {
+        localStorage.setItem('em-offline-ready-shown', '1');
+        notify('info', 'Aplikasi siap dipakai offline.');
+      }
+    } catch {
+      /* penyimpanan tidak tersedia */
+    }
+  }, [offlineReady, notify]);
+
+  return null;
 }

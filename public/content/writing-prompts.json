@@ -1,0 +1,67 @@
+{
+  "version": "2026.11.19-1",
+  "levels": [
+    {
+      "level": 1,
+      "title": "Kalimat",
+      "desc": "Kalimat-kalimat pendek yang benar. Fokus: am/is/are, a/an, he/she, huruf besar.",
+      "fromDay": 1,
+      "prompts": [
+        {"id": "w1-intro", "title": "Perkenalkan diri Anda", "task": "Tulis 4–6 kalimat: sapaan, nama, pekerjaan, kota, dan keadaan Anda hari ini.", "minWords": 15, "hint": "Good morning. My name is … I am a/an … I am from … Today I am …"},
+        {"id": "w1-room", "title": "Ruangan Anda sekarang", "task": "Gambarkan ruangan tempat Anda berada: 4–6 kalimat dengan this/that/these/those dan a/an.", "minWords": 15, "hint": "This is my office. It is a small room. These chairs are new. That window is big."},
+        {"id": "w1-people", "title": "Dua orang yang Anda kenal", "task": "Ceritakan dua orang: satu laki-laki, satu perempuan. Pekerjaan dan keadaan mereka. Perhatikan he/she dan his/her.", "minWords": 20, "hint": "Rina is my client. She is a designer. Her office is in Jakarta. Andi is …"},
+        {"id": "w1-project", "title": "Proyek Anda", "task": "Ceritakan satu proyek interior atau bangunan yang sedang/pernah Anda kerjakan: rumah apa, ruangan apa, siapa kliennya.", "minWords": 20, "hint": "It is a new house. It is a big project. The kitchen is …"},
+        {"id": "w1-gadget", "title": "Gadget favorit", "task": "Ceritakan HP, laptop, atau konsol game favorit Anda dalam 4–6 kalimat.", "minWords": 15, "hint": "My phone is a Samsung Galaxy Z Fold 7. It is new. It is big and …"}
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Paragraf",
+      "desc": "Satu paragraf utuh (6–10 kalimat) dengan kata sambung: and, but, because, so.",
+      "fromDay": 31,
+      "prompts": [
+        {"id": "w2-routine", "title": "Rutinitas harian", "task": "Tulis satu paragraf tentang hari kerja Anda dari pagi sampai malam.", "minWords": 60, "hint": "I wake up at … Then I … After that …"},
+        {"id": "w2-office", "title": "Kantor atau studio Anda", "task": "Gambarkan tempat kerja Anda: ruangan, perabot, warna, suasana.", "minWords": 60, "hint": "My studio is … There is/are …"},
+        {"id": "w2-game", "title": "Game yang Anda mainkan", "task": "Ceritakan game favorit Anda: jenisnya, kenapa Anda suka, kapan Anda main.", "minWords": 60, "hint": "My favorite game is … because …"},
+        {"id": "w2-opinion", "title": "Pendapat sederhana", "task": "HP lipat atau HP biasa: mana yang lebih baik untuk kerja? Beri 2 alasan.", "minWords": 60, "hint": "I think … is better because … Also …"},
+        {"id": "w2-weekend", "title": "Akhir pekan lalu", "task": "Ceritakan akhir pekan Anda kemarin (simple past).", "minWords": 60, "hint": "Last weekend I … On Saturday …"}
+      ]
+    },
+    {
+      "level": 3,
+      "title": "Email & pesan kerja",
+      "desc": "Email singkat yang sopan dan jelas: pembuka, tujuan, detail, penutup.",
+      "fromDay": 91,
+      "prompts": [
+        {"id": "w3-meeting", "title": "Mengatur jadwal rapat", "task": "Email ke klien untuk mengajak rapat membahas desain dapur. Usulkan 2 pilihan waktu.", "minWords": 70, "hint": "Dear Mr. …, I would like to … Are you available on …"},
+        {"id": "w3-followup", "title": "Menindaklanjuti penawaran", "task": "Email ke calon klien yang belum membalas penawaran (quotation) Anda minggu lalu.", "minWords": 70, "hint": "I am writing to follow up on …"},
+        {"id": "w3-contractor", "title": "Minta update ke kontraktor", "task": "Pesan ke kontraktor menanyakan progres pekerjaan dan kapan selesai.", "minWords": 60, "hint": "Could you please send me an update on …"},
+        {"id": "w3-collab", "title": "Ajakan kolaborasi konten", "task": "Pesan ke brand atau kreator lain untuk mengajak kolaborasi konten.", "minWords": 70, "hint": "I am a content creator focusing on …"},
+        {"id": "w3-complaint", "title": "Membalas keluhan pelanggan", "task": "Balas pesan pelanggan yang kecewa karena pekerjaan terlambat. Minta maaf dan beri solusi.", "minWords": 70, "hint": "Thank you for your message. I am sorry that …"}
+      ]
+    },
+    {
+      "level": 4,
+      "title": "Laporan & ringkasan",
+      "desc": "Tulisan terstruktur: judul, poin utama, data, kesimpulan.",
+      "fromDay": 181,
+      "prompts": [
+        {"id": "w4-summary", "title": "Ringkasan proyek", "task": "Ringkasan progres proyek renovasi: yang sudah selesai, yang tertunda, risiko, langkah berikutnya.", "minWords": 150, "hint": "Project: … Status: … Completed: … Next steps: …"},
+        {"id": "w4-problem", "title": "Masalah & solusi", "task": "Jelaskan satu masalah di proyek (misalnya material terlambat) dan tiga pilihan solusinya.", "minWords": 150, "hint": "The main problem is … There are three options …"},
+        {"id": "w4-compare", "title": "Perbandingan produk", "task": "Bandingkan dua material lantai (misalnya granit vs vinyl) untuk klien: harga, ketahanan, tampilan.", "minWords": 150, "hint": "Granite is more … than vinyl, but …"},
+        {"id": "w4-campaign", "title": "Rencana kampanye digital", "task": "Ringkas rencana kampanye media sosial untuk jasa desain interior Anda selama 1 bulan.", "minWords": 150, "hint": "Goal: … Audience: … Content plan: …"}
+      ]
+    },
+    {
+      "level": 5,
+      "title": "Dokumen profesional",
+      "desc": "Proposal, artikel analitis, dan korespondensi formal yang panjang.",
+      "fromDay": 241,
+      "prompts": [
+        {"id": "w5-proposal", "title": "Proposal desain", "task": "Proposal desain interior untuk kantor klien: latar belakang, konsep, ruang lingkup, jadwal, biaya.", "minWords": 300, "hint": "Executive summary … Design concept … Scope of work …"},
+        {"id": "w5-article", "title": "Artikel analitis", "task": "Artikel: bagaimana AI mengubah pekerjaan desainer interior. Beri argumen dan contoh.", "minWords": 300, "hint": "Introduction … First … However … In conclusion …"},
+        {"id": "w5-formal", "title": "Surat formal", "task": "Surat resmi ke pemilik gedung untuk mengajukan izin renovasi, lengkap dengan detail teknis.", "minWords": 250, "hint": "Dear Sir or Madam, I am writing on behalf of …"}
+      ]
+    }
+  ]
+}

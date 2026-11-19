@@ -1,0 +1,620 @@
+{
+  "day": 12,
+  "month": 1,
+  "title": "Menggambarkan ruangan: There is, there are",
+  "goals": [
+    "Berkata 'ada' dengan benar: there is / there are (bukan have)",
+    "Menunjukkan letak benda: in, on, under, next to, behind",
+    "Menggambarkan ruangan dan desain interior dalam bahasa Inggris"
+  ],
+  "newWords": [
+    "lamp",
+    "sofa",
+    "bed",
+    "wall",
+    "floor",
+    "bathroom",
+    "bedroom",
+    "living-room",
+    "garden",
+    "color"
+  ],
+  "lesson": {
+    "id": "L12",
+    "title": "There is / there are + kata depan tempat",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa menggambarkan ruangan seperti desainer: \"There is a grey sofa in the living room. There are two lamps next to the bed.\"",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dalam bahasa Indonesia, kata **ada** dipakai untuk dua hal berbeda:"
+          },
+          {
+            "type": "table",
+            "head": [
+              "Arti",
+              "Bahasa Indonesia",
+              "Bahasa Inggris"
+            ],
+            "rows": [
+              [
+                "memiliki",
+                "Saya **punya/ada** mobil.",
+                "I **have** a car."
+              ],
+              [
+                "sesuatu berada/eksis di suatu tempat",
+                "**Ada** sofa di ruang keluarga.",
+                "**There is** a sofa in the living room."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Untuk arti kedua, bahasa Inggris memakai **there is / there are**, bukan *have*. Kesalahan *\"In my house have three bedrooms\"* sangat sering muncul karena kebiasaan bahasa Indonesia."
+          },
+          {
+            "type": "tip",
+            "text": "Tes cepat: apakah ada PEMILIK yang jadi subjek (saya, dia, rumah itu)? → have/has. Apakah Anda hanya menyatakan sesuatu ada di suatu tempat? → there is/are."
+          }
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola",
+        "blocks": [
+          {
+            "type": "table",
+            "head": [
+              "",
+              "Satu benda",
+              "Banyak benda"
+            ],
+            "rows": [
+              [
+                "Positif",
+                "**There is** a lamp. (There's)",
+                "**There are** two lamps."
+              ],
+              [
+                "Negatif",
+                "**There isn't** a garden.",
+                "**There aren't** any windows."
+              ],
+              [
+                "Pertanyaan",
+                "**Is there** a bathroom?",
+                "**Are there** any chairs?"
+              ],
+              [
+                "Jawaban",
+                "Yes, there is. / No, there isn't.",
+                "Yes, there are. / No, there aren't."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Kata depan tempat** (di mana bendanya?):"
+          },
+          {
+            "type": "table",
+            "head": [
+              "Kata",
+              "Arti",
+              "Contoh"
+            ],
+            "rows": [
+              [
+                "in",
+                "di dalam",
+                "in the bedroom"
+              ],
+              [
+                "on",
+                "di atas (menempel)",
+                "on the table, on the wall, on the floor"
+              ],
+              [
+                "under",
+                "di bawah",
+                "under the bed"
+              ],
+              [
+                "next to",
+                "di sebelah",
+                "next to the sofa"
+              ],
+              [
+                "behind",
+                "di belakang",
+                "behind the house"
+              ],
+              [
+                "between",
+                "di antara",
+                "between the windows"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Beberapa **warna**: white (putih), black (hitam), grey (abu-abu), brown (cokelat), blue (biru), green (hijau)."
+          }
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**Kenapa harus pakai 'there'?** Kalimat bahasa Inggris wajib punya **subjek** di depan. *\"Is a sofa in the room\"* tidak punya subjek yang jelas. Kata *there* menjadi **subjek pengisi**, seperti kursi kosong yang diduduki sementara supaya kalimat lengkap. Di sini *there* tidak berarti \"di sana\"."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa is atau are?** Mengikuti benda **yang datang setelahnya**: *There is a lamp* (satu), *There are two lamps* (banyak). Aturan satu/banyak dari Hari 5 dan Hari 3 bekerja sama di sini."
+          },
+          {
+            "type": "p",
+            "text": "**Kenapa 'on the wall' tapi 'in the room'?** Ingat gambaran kemarin: **on** = menempel di permukaan (dinding, lantai, meja), **in** = di dalam wadah (ruangan, laci, kota). Lukisan *on the wall*, kursi *in the room*."
+          }
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {
+            "type": "mistakes",
+            "items": [
+              {
+                "wrong": "In my house have three bedrooms.",
+                "right": "There are three bedrooms in my house. / My house has three bedrooms.",
+                "why": "'ada' (berada) = there are. Kalau mau pakai have, rumahnya harus jadi subjek: My house HAS…"
+              },
+              {
+                "wrong": "There is two sofas.",
+                "right": "There **are** two sofas.",
+                "why": "Dua = banyak → are."
+              },
+              {
+                "wrong": "There are a lamp on the table.",
+                "right": "There **is** a lamp on the table.",
+                "why": "Satu → is."
+              },
+              {
+                "wrong": "Is there have a garden?",
+                "right": "Is there a garden?",
+                "why": "Jangan campur there dengan have."
+              },
+              {
+                "wrong": "The picture is in the wall.",
+                "right": "The picture is **on** the wall.",
+                "why": "Menempel di permukaan → on."
+              },
+              {
+                "wrong": "next the bed",
+                "right": "next **to** the bed",
+                "why": "'next to' selalu berpasangan."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Dalam presentasi desain ke klien, pola yang sangat sering dipakai: **There is / There are** untuk memperkenalkan elemen, lalu **It is / They are** untuk menjelaskannya:"
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "en": "There is a large window in the living room. It is the main light source.",
+                "id": "Ada jendela besar di ruang keluarga. Itu sumber cahaya utama."
+              },
+              {
+                "en": "There are two lamps next to the bed. They are warm white.",
+                "id": "Ada dua lampu di sebelah tempat tidur. Warnanya putih hangat."
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**any** dipakai di kalimat negatif dan pertanyaan dengan benda jamak: *Are there **any** windows?* *There aren't **any** chairs.*"
+          }
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Banyak bahasa Eropa punya \"subjek kosong\" seperti *there*: bahasa Jerman *es gibt* (harfiah: \"itu memberi\"), bahasa Prancis *il y a* (\"ia di sana punya\"). Bahasa-bahasa itu sama-sama mewajibkan subjek, sehingga perlu kata pengisi untuk menyatakan \"ada\"."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "d12-e1",
+        "type": "fill",
+        "prompt": "There ___ a sofa in the living room.",
+        "accept": [
+          "is"
+        ],
+        "explain": "Satu sofa → is.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-e2",
+        "type": "fill",
+        "prompt": "There ___ three bedrooms in the house.",
+        "accept": [
+          "are"
+        ],
+        "explain": "Tiga → are.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-e3",
+        "type": "mc",
+        "prompt": "'Ada dua kamar mandi di rumah itu.'",
+        "options": [
+          {
+            "text": "In the house have two bathrooms.",
+            "why": "'ada' (berada) bukan 'have'."
+          },
+          {
+            "text": "There are two bathrooms in the house."
+          },
+          {
+            "text": "There is two bathrooms in the house.",
+            "why": "Dua → are."
+          }
+        ],
+        "answer": 1,
+        "explain": "There are + jamak + tempat.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-e4",
+        "type": "mc",
+        "prompt": "Mana yang BENAR?",
+        "options": [
+          {
+            "text": "My house has a garden."
+          },
+          {
+            "text": "My house have a garden.",
+            "why": "My house = it → has."
+          },
+          {
+            "text": "In my house there have a garden.",
+            "why": "Campuran there + have."
+          }
+        ],
+        "answer": 0,
+        "explain": "Kalau rumah jadi subjek pemilik → has.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-e5",
+        "type": "fill",
+        "prompt": "The picture is ___ the wall. (menempel)",
+        "accept": [
+          "on"
+        ],
+        "explain": "Menempel di permukaan → on.",
+        "errorTag": "place-preposition"
+      },
+      {
+        "id": "d12-e6",
+        "type": "fill",
+        "prompt": "The shoes are ___ the bed. (di bawah)",
+        "accept": [
+          "under"
+        ],
+        "explain": "under = di bawah.",
+        "errorTag": "place-preposition"
+      },
+      {
+        "id": "d12-e7",
+        "type": "fill",
+        "prompt": "There is a lamp next ___ the sofa.",
+        "accept": [
+          "to"
+        ],
+        "explain": "next to = di sebelah.",
+        "errorTag": "place-preposition"
+      },
+      {
+        "id": "d12-e8",
+        "type": "order",
+        "prompt": "Susun: Apakah ada kamar mandi di lantai atas? (upstairs)",
+        "tokens": [
+          "Is",
+          "there",
+          "a",
+          "bathroom",
+          "upstairs?"
+        ],
+        "explain": "Is there + a + benda tunggal?",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-e9",
+        "type": "order",
+        "prompt": "Susun: Tidak ada jendela di kamar mandi.",
+        "tokens": [
+          "There",
+          "aren't",
+          "any",
+          "windows",
+          "in",
+          "the",
+          "bathroom."
+        ],
+        "explain": "There aren't + any + jamak.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-e10",
+        "type": "translate",
+        "prompt": "Ada taman kecil di belakang rumah.",
+        "accept": [
+          "There is a small garden behind the house.",
+          "There's a small garden behind the house."
+        ],
+        "explain": "There is + a small garden + behind the house.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-e11",
+        "type": "translate",
+        "prompt": "Dinding-dindingnya putih dan lantainya kayu. (kayu = wood)",
+        "accept": [
+          "The walls are white and the floor is wood.",
+          "The walls are white and the floor is wooden."
+        ],
+        "explain": "walls (jamak) are · floor (tunggal) is."
+      },
+      {
+        "id": "d12-e12",
+        "type": "translate",
+        "prompt": "Rumah itu punya tiga kamar tidur.",
+        "accept": [
+          "The house has three bedrooms.",
+          "That house has three bedrooms."
+        ],
+        "explain": "Rumah sebagai pemilik → has. (Bisa juga: There are three bedrooms in the house.)",
+        "errorTag": "third-person-s"
+      },
+      {
+        "id": "d12-e13",
+        "type": "explain",
+        "prompt": "Jelaskan dengan kata-kata Anda: kenapa 'In my house have three bedrooms' salah, dan bagaimana dua cara memperbaikinya?",
+        "model": "Karena 'ada' yang artinya berada di suatu tempat memakai there is/there are, bukan have. Perbaikannya: 'There are three bedrooms in my house', atau jadikan rumah sebagai subjek: 'My house has three bedrooms'.",
+        "explain": "Kesalahan ini sangat umum, bahkan di level menengah."
+      }
+    ]
+  },
+  "reading": {
+    "id": "R12",
+    "title": "A design brief",
+    "cefr": "A1",
+    "intro": "Budi menjelaskan desain apartemen kepada klien. Bayangkan ruangannya saat membaca.",
+    "paragraphs": [
+      {
+        "en": "This is the new design for your apartment. There are two bedrooms, one bathroom, a kitchen, and a living room.",
+        "id": "Ini desain baru untuk apartemen Anda. Ada dua kamar tidur, satu kamar mandi, dapur, dan ruang keluarga."
+      },
+      {
+        "en": "In the living room, there is a big grey sofa. There is a small table in front of the sofa, and there are two lamps next to it.",
+        "id": "Di ruang keluarga, ada sofa abu-abu besar. Ada meja kecil di depan sofa, dan ada dua lampu di sebelahnya."
+      },
+      {
+        "en": "The walls are white, and the floor is wood. There is a big picture on the wall.",
+        "id": "Dindingnya putih, dan lantainya kayu. Ada lukisan besar di dinding."
+      },
+      {
+        "en": "In the main bedroom, there is a king-size bed. There aren't any windows behind the bed, so we use warm lamps.",
+        "id": "Di kamar tidur utama, ada tempat tidur king-size. Tidak ada jendela di belakang tempat tidur, jadi kami memakai lampu hangat."
+      },
+      {
+        "en": "Is there a garden? No, there isn't. But there is a small balcony with plants. What color do you like for the bathroom?",
+        "id": "Apakah ada taman? Tidak ada. Tapi ada balkon kecil dengan tanaman. Anda suka warna apa untuk kamar mandi?"
+      }
+    ],
+    "glossary": {
+      "apartment": "apartemen",
+      "for": "untuk",
+      "one": "satu",
+      "grey": "abu-abu",
+      "small": "kecil",
+      "in front of": "di depan",
+      "front": "depan",
+      "of": "dari",
+      "it": "itu",
+      "white": "putih",
+      "wood": "kayu",
+      "picture": "gambar, lukisan",
+      "main": "utama",
+      "king-size": "ukuran king (besar)",
+      "king": "(lihat king-size)",
+      "size": "ukuran",
+      "any": "(tidak) satu pun",
+      "so": "jadi",
+      "warm": "hangat",
+      "balcony": "balkon",
+      "plants": "tanaman",
+      "what": "apa",
+      "big": "besar",
+      "the": "(kata sandang)",
+      "with": "dengan",
+      "next to": "di sebelah",
+      "to": "(lihat next to)",
+      "next": "(lihat next to)",
+      "behind": "di belakang",
+      "on": "di (atas permukaan)",
+      "in": "di (dalam)",
+      "two": "dua"
+    },
+    "questions": [
+      {
+        "id": "d12-r1",
+        "type": "mc",
+        "prompt": "Berapa kamar tidur di apartemen itu?",
+        "options": [
+          {
+            "text": "Satu"
+          },
+          {
+            "text": "Dua"
+          },
+          {
+            "text": "Tiga"
+          }
+        ],
+        "answer": 1,
+        "explain": "'There are two bedrooms'."
+      },
+      {
+        "id": "d12-r2",
+        "type": "mc",
+        "prompt": "Apa yang ada di depan sofa?",
+        "options": [
+          {
+            "text": "Meja kecil"
+          },
+          {
+            "text": "Dua lampu"
+          },
+          {
+            "text": "Lukisan"
+          }
+        ],
+        "answer": 0,
+        "explain": "'There is a small table in front of the sofa.'"
+      },
+      {
+        "id": "d12-r3",
+        "type": "mc",
+        "prompt": "Kenapa kamar tidur utama memakai lampu hangat?",
+        "options": [
+          {
+            "text": "Karena klien suka gelap"
+          },
+          {
+            "text": "Karena tidak ada jendela di belakang tempat tidur"
+          },
+          {
+            "text": "Karena lantainya kayu"
+          }
+        ],
+        "answer": 1,
+        "explain": "'There aren't any windows behind the bed, so we use warm lamps.'"
+      },
+      {
+        "id": "d12-r4",
+        "type": "mc",
+        "prompt": "Apakah apartemen itu punya taman?",
+        "options": [
+          {
+            "text": "Ya"
+          },
+          {
+            "text": "Tidak, tapi ada balkon kecil"
+          }
+        ],
+        "answer": 1,
+        "explain": "'Is there a garden? No, there isn't. But there is a small balcony…'"
+      }
+    ]
+  },
+  "listening": {
+    "intro": "Dalam bicara cepat, 'there is' menjadi 'there's' (DHERZ) dan 'there are' terdengar 'dher-er'.",
+    "items": [
+      {
+        "en": "There is a sofa in the living room.",
+        "id": "Ada sofa di ruang keluarga.",
+        "tip": "Versi cepat: There's a sofa…"
+      },
+      {
+        "en": "There are two bedrooms.",
+        "id": "Ada dua kamar tidur."
+      },
+      {
+        "en": "Is there a bathroom upstairs?",
+        "id": "Apakah ada kamar mandi di lantai atas?",
+        "tip": "upstairs = ap-STERZ."
+      },
+      {
+        "en": "No, there isn't.",
+        "id": "Tidak ada."
+      },
+      {
+        "en": "The walls are white.",
+        "id": "Dindingnya putih."
+      },
+      {
+        "en": "There is a picture on the wall.",
+        "id": "Ada lukisan di dinding."
+      },
+      {
+        "en": "There are two lamps next to the bed.",
+        "id": "Ada dua lampu di sebelah tempat tidur."
+      },
+      {
+        "en": "What color do you like?",
+        "id": "Anda suka warna apa?",
+        "tip": "color = KA-ler."
+      }
+    ]
+  },
+  "writing": {
+    "intro": "Gambarkan ruangan yang benar-benar ada: rumah Anda, kantor Anda, atau proyek Anda.",
+    "exercises": [
+      {
+        "id": "d12-w1",
+        "type": "translate",
+        "prompt": "Ada lampu di atas meja.",
+        "accept": [
+          "There is a lamp on the table.",
+          "There's a lamp on the table."
+        ],
+        "explain": "There is + a lamp + on the table.",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-w2",
+        "type": "translate",
+        "prompt": "Apakah ada kursi di ruang rapat? (ruang rapat = meeting room)",
+        "accept": [
+          "Are there any chairs in the meeting room?",
+          "Are there chairs in the meeting room?",
+          "Is there a chair in the meeting room?"
+        ],
+        "explain": "Are there + any + jamak?",
+        "errorTag": "there-be"
+      },
+      {
+        "id": "d12-w3",
+        "type": "explain",
+        "prompt": "Gambarkan satu ruangan dalam 6 kalimat: ukuran, warna dinding dan lantai, perabot (there is/are), dan letaknya (on, next to, under, behind).",
+        "model": "This is my office. It is a small room. The walls are white and the floor is grey. There is a big table in the middle. There are two chairs next to the table. There is a lamp on the table.",
+        "explain": "Ini latihan langsung untuk presentasi desain ke klien."
+      }
+    ]
+  }
+}

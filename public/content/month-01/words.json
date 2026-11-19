@@ -1,67 +1,2144 @@
 [
-  {"id":"hello","word":"hello","ipa":"/həˈloʊ/","say":"he-LOU","pos":"kata seru (sapaan)","meaning":"halo","core":"Sapaan umum untuk membuka percakapan, cocok untuk siapa saja dan kapan saja.","example":"Hello, my name is Budi.","exampleId":"Halo, nama saya Budi.","cefr":"A1","day":1,"trap":"Diucapkan he-LOU, tekanan di suku kedua. Bukan 'HE-lo'.","collocations":["say hello","hello everyone"]},
-  {"id":"hi","word":"hi","ipa":"/haɪ/","say":"HAI","pos":"kata seru (sapaan)","meaning":"hai","core":"Versi santai dari hello. Untuk teman, rekan kerja dekat, dan chat.","example":"Hi, Sara!","exampleId":"Hai, Sara!","cefr":"A1","day":1,"trap":"Terlalu santai untuk email pertama ke klien baru. Di situ pakai 'Hello' atau 'Dear ...'."},
-  {"id":"good","word":"good","ipa":"/ɡʊd/","say":"GUD","pos":"kata sifat","meaning":"baik, bagus","core":"Menilai sesuatu sebagai positif atau memenuhi harapan.","example":"Good morning!","exampleId":"Selamat pagi!","cefr":"A1","day":1,"trap":"Huruf 'oo' di sini berbunyi pendek 'u', bukan 'uu' panjang.","family":["better (lebih baik)","best (terbaik)","goodbye (selamat tinggal)"],"collocations":["good morning","good job","good idea"]},
-  {"id":"morning","word":"morning","ipa":"/ˈmɔːrnɪŋ/","say":"MOR-ning","pos":"kata benda","meaning":"pagi","core":"Waktu dari bangun tidur sampai sekitar jam 12 siang.","example":"Good morning, everyone.","exampleId":"Selamat pagi, semuanya.","cefr":"A1","day":1,"trap":"'Good morning' dipakai sampai sekitar jam 12, bukan hanya subuh.","collocations":["good morning","this morning","in the morning"]},
-  {"id":"afternoon","word":"afternoon","ipa":"/ˌæftərˈnuːn/","say":"af-ter-NUUN","pos":"kata benda","meaning":"siang–sore","core":"Waktu setelah jam 12 siang sampai sekitar jam 5–6 sore. Dari after (setelah) + noon (tengah hari).","example":"Good afternoon, Mr. Lee.","exampleId":"Selamat siang, Pak Lee.","cefr":"A1","day":1,"trap":"Bahasa Inggris tidak membedakan 'siang' dan 'sore' seperti Bahasa Indonesia. Keduanya 'afternoon'.","collocations":["good afternoon","this afternoon","in the afternoon"]},
-  {"id":"evening","word":"evening","ipa":"/ˈiːvnɪŋ/","say":"IIV-ning","pos":"kata benda","meaning":"petang, malam (awal)","core":"Waktu dari sekitar jam 6 sore sampai menjelang tidur.","example":"Good evening, sir.","exampleId":"Selamat malam, Pak.","cefr":"A1","day":1,"trap":"'Good evening' = sapaan saat bertemu malam hari. 'Good night' = salam saat BERPISAH atau mau tidur, bukan sapaan bertemu.","collocations":["good evening","this evening","in the evening"]},
-  {"id":"name","word":"name","ipa":"/neɪm/","say":"NEIM","pos":"kata benda","meaning":"nama","core":"Kata untuk menyebut siapa seseorang atau apa sesuatu.","example":"My name is Rina.","exampleId":"Nama saya Rina.","cefr":"A1","day":1,"trap":"Huruf 'e' di akhir tidak dibaca; huruf 'a' berbunyi 'ei'.","collocations":["my name is ...","first name","last name"]},
-  {"id":"my","word":"my","ipa":"/maɪ/","say":"MAI","pos":"kata kepemilikan","meaning":"-ku, saya (milik)","core":"Menunjukkan sesuatu milik saya. Selalu diletakkan SEBELUM bendanya.","example":"My name is Andi.","exampleId":"Nama saya Andi.","cefr":"A1","day":1,"trap":"Urutannya terbalik dari Bahasa Indonesia: 'nama saya' = 'my name', bukan 'name my'.","collocations":["my name","my house","my friend"]},
-  {"id":"yes","word":"yes","ipa":"/jes/","say":"YES","pos":"kata keterangan","meaning":"ya","core":"Jawaban setuju atau membenarkan.","example":"Yes, I am ready.","exampleId":"Ya, saya siap.","cefr":"A1","day":1},
-  {"id":"no","word":"no","ipa":"/noʊ/","say":"NOU","pos":"kata keterangan","meaning":"tidak, bukan","core":"Jawaban menolak atau menyangkal.","example":"No, I am not tired.","exampleId":"Tidak, saya tidak lelah.","cefr":"A1","day":1,"trap":"Diucapkan 'nou' dengan bunyi meluncur, bukan 'no' pendek seperti Bahasa Indonesia."},
-
-  {"id":"i","word":"I","ipa":"/aɪ/","say":"AI","pos":"kata ganti orang","meaning":"saya, aku","core":"Kata ganti untuk diri sendiri sebagai pelaku kalimat.","example":"I am Budi.","exampleId":"Saya Budi.","cefr":"A1","day":2,"trap":"Selalu huruf BESAR, bahkan di tengah kalimat: 'Yesterday I ...'. Bahasa Inggris hanya punya satu kata, tidak membedakan 'saya' (sopan) dan 'aku' (akrab)."},
-  {"id":"you","word":"you","ipa":"/juː/","say":"YUU","pos":"kata ganti orang","meaning":"kamu, Anda, kalian","core":"Orang yang diajak bicara, satu orang atau banyak.","example":"You are my friend.","exampleId":"Kamu temanku.","cefr":"A1","day":2,"trap":"Satu kata untuk 'kamu', 'Anda', dan 'kalian'. Kesopanan ditunjukkan dengan pilihan kata lain, bukan dengan 'you'."},
-  {"id":"he","word":"he","ipa":"/hiː/","say":"HII","pos":"kata ganti orang","meaning":"dia (laki-laki)","core":"Satu orang laki-laki yang sedang dibicarakan.","example":"He is a contractor.","exampleId":"Dia (laki-laki) seorang kontraktor.","cefr":"A1","day":2,"trap":"Bahasa Indonesia hanya punya 'dia'. Bahasa Inggris WAJIB memilih: laki-laki = he, perempuan = she. Ini kesalahan sangat umum."},
-  {"id":"she","word":"she","ipa":"/ʃiː/","say":"SYII","pos":"kata ganti orang","meaning":"dia (perempuan)","core":"Satu orang perempuan yang sedang dibicarakan.","example":"She is a designer.","exampleId":"Dia (perempuan) seorang desainer.","cefr":"A1","day":2,"trap":"'sh' dibaca 'sy' seperti di 'syarat'. 'She' (perempuan) jangan tertukar dengan 'he' (laki-laki)."},
-  {"id":"it","word":"it","ipa":"/ɪt/","say":"IT","pos":"kata ganti","meaning":"ia, itu (benda/hewan)","core":"Satu benda, hewan, atau hal yang bukan manusia.","example":"It is a big house.","exampleId":"Itu rumah besar.","cefr":"A1","day":2,"trap":"Jangan pakai 'it' untuk orang. Untuk orang: he atau she."},
-  {"id":"we","word":"we","ipa":"/wiː/","say":"WII","pos":"kata ganti orang","meaning":"kami, kita","core":"Saya + orang lain sebagai satu kelompok.","example":"We are a team.","exampleId":"Kami satu tim.","cefr":"A1","day":2,"trap":"Bahasa Indonesia membedakan 'kami' dan 'kita'. Bahasa Inggris hanya punya 'we' untuk keduanya."},
-  {"id":"they","word":"they","ipa":"/ðeɪ/","say":"DHEI","pos":"kata ganti orang","meaning":"mereka","core":"Dua orang/benda atau lebih yang sedang dibicarakan.","example":"They are my clients.","exampleId":"Mereka klien saya.","cefr":"A1","day":2,"trap":"Bunyi 'th' di sini: ujung lidah di antara gigi atas dan bawah, lalu bersuara. Bukan 'd' biasa dan bukan 't'."},
-  {"id":"and","word":"and","ipa":"/ænd/","say":"END","pos":"kata sambung","meaning":"dan","core":"Menyambung dua hal yang setara.","example":"Budi and Sara are friends.","exampleId":"Budi dan Sara berteman.","cefr":"A1","day":2,"trap":"Huruf 'a' berbunyi antara 'a' dan 'e' (mulut lebar). Dalam kalimat cepat sering terdengar 'en'."},
-  {"id":"friend","word":"friend","ipa":"/frend/","say":"FREND","pos":"kata benda","meaning":"teman","core":"Orang yang Anda kenal dan sukai, bukan keluarga.","example":"Sara is my friend.","exampleId":"Sara teman saya.","cefr":"A1","day":2,"trap":"Huruf 'i' tidak dibaca. Bukan 'fri-end'.","family":["friendly (ramah)","friendship (persahabatan)"],"collocations":["my friend","best friend","old friend"]},
-  {"id":"client","word":"client","ipa":"/ˈklaɪənt/","say":"KLAI-ent","pos":"kata benda","meaning":"klien","core":"Orang atau perusahaan yang membayar jasa profesional Anda.","example":"He is my new client.","exampleId":"Dia klien baru saya.","cefr":"A2","day":2,"trap":"Diucapkan 'KLAI-ent', bukan 'kli-en' seperti Bahasa Indonesia.","collocations":["new client","meet a client","client meeting"]},
-
-  {"id":"am","word":"am","ipa":"/æm/","say":"EM","pos":"kata kerja (to be)","meaning":"adalah / sedang (untuk I)","core":"Bentuk 'be' khusus untuk I. Menghubungkan saya dengan keadaan, identitas, atau tempat.","example":"I am an architect.","exampleId":"Saya seorang arsitek.","cefr":"A1","day":3,"trap":"Hanya dipakai dengan I. 'I is' dan 'I are' selalu salah. Lisan: I'm."},
-  {"id":"is","word":"is","ipa":"/ɪz/","say":"IZ","pos":"kata kerja (to be)","meaning":"adalah / sedang (untuk he, she, it)","core":"Bentuk 'be' untuk SATU orang atau benda selain saya dan kamu.","example":"The kitchen is big.","exampleId":"Dapurnya besar.","cefr":"A1","day":3,"trap":"Berbunyi 'iz' (ada getaran), bukan 'is' dengan s tajam."},
-  {"id":"are","word":"are","ipa":"/ɑːr/","say":"AR","pos":"kata kerja (to be)","meaning":"adalah / sedang (untuk you, we, they)","core":"Bentuk 'be' untuk you dan untuk lebih dari satu.","example":"We are ready.","exampleId":"Kami siap.","cefr":"A1","day":3,"trap":"'You' satu orang pun tetap 'are': You are early. Huruf 'e' di akhir tidak dibaca."},
-  {"id":"architect","word":"architect","ipa":"/ˈɑːrkɪtekt/","say":"AR-ki-tekt","pos":"kata benda","meaning":"arsitek","core":"Orang yang merancang bangunan.","example":"She is an architect.","exampleId":"Dia (perempuan) seorang arsitek.","cefr":"A2","day":3,"trap":"'ch' di sini dibaca 'k'. Karena berbunyi vokal di awal, pakai 'an': an architect.","family":["architecture (arsitektur)","architectural (arsitektural)"],"collocations":["an architect","landscape architect","architect firm"]},
-  {"id":"designer","word":"designer","ipa":"/dɪˈzaɪnər/","say":"di-ZAI-ner","pos":"kata benda","meaning":"desainer, perancang","core":"Orang yang merancang rupa dan fungsi sesuatu sebelum dibuat.","example":"He is an interior designer.","exampleId":"Dia (laki-laki) seorang desainer interior.","cefr":"A2","day":3,"trap":"Huruf 'g' tidak dibaca. Ejaan Inggris 'designer', bukan 'desainer'.","family":["design (desain, mendesain)","redesign (desain ulang)"],"collocations":["interior designer","graphic designer","fashion designer"]},
-  {"id":"contractor","word":"contractor","ipa":"/ˈkɑːntræktər/","say":"KON-trek-ter","pos":"kata benda","meaning":"kontraktor","core":"Orang atau perusahaan yang dibayar untuk mengerjakan pembangunan atau renovasi sesuai kontrak.","example":"The contractor is busy today.","exampleId":"Kontraktornya sibuk hari ini.","cefr":"B1","day":3,"trap":"Tekanan di suku PERTAMA: KON-trek-ter.","family":["contract (kontrak)"],"collocations":["building contractor","main contractor","hire a contractor"]},
-  {"id":"tired","word":"tired","ipa":"/ˈtaɪərd/","say":"TAI-erd","pos":"kata sifat","meaning":"lelah, capek","core":"Keadaan butuh istirahat.","example":"I am tired.","exampleId":"Saya lelah.","cefr":"A1","day":3,"trap":"Kata sifat butuh 'be': 'I am tired', bukan 'I tired'."},
-  {"id":"hungry","word":"hungry","ipa":"/ˈhʌŋɡri/","say":"HANG-gri","pos":"kata sifat","meaning":"lapar","core":"Keadaan ingin makan.","example":"Are you hungry?","exampleId":"Kamu lapar?","cefr":"A1","day":3,"trap":"'I hungry' salah, harus 'I am hungry'. Jangan tertukar dengan 'angry' (marah)."},
-  {"id":"busy","word":"busy","ipa":"/ˈbɪzi/","say":"BI-zi","pos":"kata sifat","meaning":"sibuk","core":"Banyak pekerjaan sehingga tidak punya waktu luang.","example":"The contractor is busy.","exampleId":"Kontraktornya sibuk.","cefr":"A1","day":3,"trap":"Huruf 'u' dibaca 'i' dan 's' dibaca 'z': BI-zi, bukan 'bu-si'.","family":["business (bisnis)"]},
-  {"id":"ready","word":"ready","ipa":"/ˈredi/","say":"RE-di","pos":"kata sifat","meaning":"siap","core":"Sudah dipersiapkan dan bisa mulai.","example":"Are you ready?","exampleId":"Kamu siap?","cefr":"A1","day":3,"trap":"'ea' di sini dibaca 'e' pendek.","collocations":["ready to start","get ready","are you ready?"]},
-
-  {"id":"not","word":"not","ipa":"/nɑːt/","say":"NOT","pos":"kata keterangan","meaning":"tidak, bukan","core":"Membalik arti kalimat menjadi negatif. Diletakkan SETELAH am/is/are.","example":"I am not hungry.","exampleId":"Saya tidak lapar.","cefr":"A1","day":4,"trap":"Bahasa Inggris tidak membedakan 'tidak' dan 'bukan'. Keduanya 'not'.","collocations":["is not = isn't","are not = aren't"]},
-  {"id":"happy","word":"happy","ipa":"/ˈhæpi/","say":"HE-pi","pos":"kata sifat","meaning":"senang, bahagia","core":"Perasaan gembira atau puas.","example":"The client is happy.","exampleId":"Kliennya senang.","cefr":"A1","day":4,"family":["happiness (kebahagiaan)","unhappy (tidak senang)"],"collocations":["happy with the design","happy birthday"]},
-  {"id":"sad","word":"sad","ipa":"/sæd/","say":"SED","pos":"kata sifat","meaning":"sedih","core":"Perasaan tidak senang karena sesuatu yang buruk.","example":"She is not sad.","exampleId":"Dia tidak sedih.","cefr":"A1","day":4,"trap":"Huruf 'a' berbunyi 'e' lebar (mulut terbuka), bukan 'a'."},
-  {"id":"at","word":"at","ipa":"/æt/","say":"ET","pos":"kata depan","meaning":"di (titik/tempat tertentu)","core":"Menunjukkan posisi di satu titik atau tempat yang dianggap satu titik.","example":"I am at the office.","exampleId":"Saya di kantor.","cefr":"A1","day":4,"trap":"'di rumah' = 'at home' (tanpa 'the'). 'di kantor' = 'at the office' (pakai 'the').","collocations":["at home","at the office","at work"]},
-  {"id":"home","word":"home","ipa":"/hoʊm/","say":"HOUM","pos":"kata benda","meaning":"rumah (tempat tinggal)","core":"Tempat Anda tinggal dan merasa milik sendiri. Lebih personal daripada 'house' (bangunannya).","example":"We are at home.","exampleId":"Kami di rumah.","cefr":"A1","day":4,"trap":"'at home' tanpa 'the'. Bedakan: home = tempat tinggal; house = bangunan rumah.","collocations":["at home","go home","home office"]},
-  {"id":"office","word":"office","ipa":"/ˈɔːfɪs/","say":"O-fis","pos":"kata benda","meaning":"kantor","core":"Tempat orang bekerja dengan meja dan komputer.","example":"He is at the office now.","exampleId":"Dia di kantor sekarang.","cefr":"A1","day":4,"family":["officer (petugas)","official (resmi)"],"collocations":["at the office","office hours","head office"]},
-  {"id":"here","word":"here","ipa":"/hɪr/","say":"HIR","pos":"kata keterangan","meaning":"di sini","core":"Tempat yang dekat dengan pembicara.","example":"I am here.","exampleId":"Saya di sini.","cefr":"A1","day":4,"trap":"Sudah berarti 'di sini', jadi tidak perlu 'at': 'I am here', bukan 'I am at here'."},
-  {"id":"there","word":"there","ipa":"/ðer/","say":"DHER","pos":"kata keterangan","meaning":"di sana, di situ","core":"Tempat yang jauh dari pembicara.","example":"The client is there.","exampleId":"Kliennya di sana.","cefr":"A1","day":4,"trap":"Sudah berarti 'di sana', jadi tidak pakai 'at'. Bunyi 'th' bersuara seperti di 'they'."},
-  {"id":"today","word":"today","ipa":"/təˈdeɪ/","say":"te-DEI","pos":"kata keterangan","meaning":"hari ini","core":"Hari yang sedang berlangsung.","example":"I am busy today.","exampleId":"Saya sibuk hari ini.","cefr":"A1","day":4,"trap":"Biasanya di akhir kalimat, tanpa 'at' atau 'in'."},
-  {"id":"now","word":"now","ipa":"/naʊ/","say":"NAU","pos":"kata keterangan","meaning":"sekarang","core":"Saat ini juga.","example":"She is at home now.","exampleId":"Dia di rumah sekarang.","cefr":"A1","day":4,"trap":"Diucapkan 'nau', bukan 'nou'."},
-
-  {"id":"a","word":"a","ipa":"/ə/","say":"e (lemah)","pos":"artikel","meaning":"sebuah, seorang, se-","core":"Menandai SATU benda yang belum spesifik, untuk kata yang berbunyi KONSONAN di awal.","example":"It is a house.","exampleId":"Itu sebuah rumah.","cefr":"A1","day":5,"trap":"Wajib sebelum kata benda tunggal yang bisa dihitung: 'She is a designer', bukan 'She is designer'. Diucapkan lemah 'e', bukan 'ei'."},
-  {"id":"an","word":"an","ipa":"/ən/","say":"en (lemah)","pos":"artikel","meaning":"sebuah, seorang, se-","core":"Sama dengan 'a', tapi untuk kata yang BERBUNYI vokal di awal (a, e, i, o, u).","example":"He is an architect.","exampleId":"Dia seorang arsitek.","cefr":"A1","day":5,"trap":"Yang menentukan adalah BUNYI, bukan huruf: 'an hour' (h tidak dibaca), tapi 'a university' (u dibaca 'yu')."},
-  {"id":"house","word":"house","ipa":"/haʊs/","say":"HAUS","pos":"kata benda","meaning":"rumah (bangunan)","core":"Bangunan tempat tinggal. Fokus pada bangunannya.","example":"It is a new house.","exampleId":"Itu rumah baru.","cefr":"A1","day":5,"trap":"Jamak 'houses' diucapkan HAU-ziz (s berubah jadi z).","collocations":["a new house","house design","build a house"]},
-  {"id":"room","word":"room","ipa":"/ruːm/","say":"RUUM","pos":"kata benda","meaning":"ruang, kamar","core":"Bagian dalam bangunan yang dibatasi dinding.","example":"The room is small.","exampleId":"Ruangannya kecil.","cefr":"A1","day":5,"family":["bedroom (kamar tidur)","bathroom (kamar mandi)","living room (ruang tamu/keluarga)"],"collocations":["living room","meeting room","room size"]},
-  {"id":"kitchen","word":"kitchen","ipa":"/ˈkɪtʃɪn/","say":"KI-cin","pos":"kata benda","meaning":"dapur","core":"Ruangan untuk memasak.","example":"The kitchen is big.","exampleId":"Dapurnya besar.","cefr":"A1","day":5,"trap":"'tch' dibaca 'c' seperti di 'cinta'. Bukan 'kit-chen'.","collocations":["kitchen design","kitchen set","open kitchen"]},
-  {"id":"door","word":"door","ipa":"/dɔːr/","say":"DOR","pos":"kata benda","meaning":"pintu","core":"Bidang yang bisa dibuka-tutup untuk masuk dan keluar ruangan.","example":"The door is new.","exampleId":"Pintunya baru.","cefr":"A1","day":5,"collocations":["front door","sliding door","open the door"]},
-  {"id":"window","word":"window","ipa":"/ˈwɪndoʊ/","say":"WIN-dou","pos":"kata benda","meaning":"jendela","core":"Bukaan di dinding, biasanya berkaca, untuk cahaya dan udara.","example":"The windows are big.","exampleId":"Jendela-jendelanya besar.","cefr":"A1","day":5,"collocations":["window frame","glass window","open the window"]},
-  {"id":"table","word":"table","ipa":"/ˈteɪbl/","say":"TEI-bel","pos":"kata benda","meaning":"meja","core":"Perabot dengan permukaan datar di atas kaki-kaki.","example":"It is a wooden table.","exampleId":"Itu meja kayu.","cefr":"A1","day":5,"trap":"Huruf 'a' dibaca 'ei'. Juga berarti 'tabel' (data).","collocations":["dining table","coffee table","meeting table"]},
-  {"id":"chair","word":"chair","ipa":"/tʃer/","say":"CER","pos":"kata benda","meaning":"kursi","core":"Tempat duduk untuk satu orang, biasanya bersandaran.","example":"The chairs are new.","exampleId":"Kursi-kursinya baru.","cefr":"A1","day":5,"trap":"'ch' dibaca 'c' seperti 'cerah'.","collocations":["office chair","dining chair"]},
-  {"id":"project","word":"project","ipa":"/ˈprɑːdʒekt/","say":"PRO-jekt","pos":"kata benda","meaning":"proyek","core":"Pekerjaan terencana dengan tujuan dan batas waktu tertentu.","example":"It is a big project.","exampleId":"Itu proyek besar.","cefr":"A2","day":5,"trap":"Sebagai kata benda, tekanan di depan: PRO-jekt. 'j' dibaca seperti 'j' Indonesia.","collocations":["project manager","new project","project schedule"]},
-
-  {"id":"this","word":"this","ipa":"/ðɪs/","say":"DHIS","pos":"kata penunjuk","meaning":"ini (satu)","core":"Menunjuk SATU benda yang DEKAT.","example":"This is my office.","exampleId":"Ini kantor saya.","cefr":"A1","day":6,"trap":"Bunyi 'th' bersuara. 'This' (ini, dekat) vs 'that' (itu, jauh)."},
-  {"id":"that","word":"that","ipa":"/ðæt/","say":"DHET","pos":"kata penunjuk","meaning":"itu (satu)","core":"Menunjuk SATU benda yang JAUH.","example":"That is a new house.","exampleId":"Itu rumah baru.","cefr":"A1","day":6},
-  {"id":"these","word":"these","ipa":"/ðiːz/","say":"DHIIZ","pos":"kata penunjuk","meaning":"ini (banyak)","core":"Bentuk jamak 'this': BANYAK benda yang DEKAT.","example":"These chairs are new.","exampleId":"Kursi-kursi ini baru.","cefr":"A1","day":6,"trap":"'these' (banyak) + are + benda jamak (-s). Bunyi 'ii' panjang, beda dengan 'this' yang pendek."},
-  {"id":"those","word":"those","ipa":"/ðoʊz/","say":"DHOUZ","pos":"kata penunjuk","meaning":"itu (banyak)","core":"Bentuk jamak 'that': BANYAK benda yang JAUH.","example":"Those windows are big.","exampleId":"Jendela-jendela itu besar.","cefr":"A1","day":6},
-  {"id":"your","word":"your","ipa":"/jʊr/","say":"YUR","pos":"kata kepemilikan","meaning":"-mu, Anda (milik)","core":"Milik orang yang diajak bicara.","example":"Is this your table?","exampleId":"Apakah ini mejamu?","cefr":"A1","day":6,"trap":"Jangan tertukar dengan 'you're' (= you are), yang bunyinya hampir sama."},
-  {"id":"his","word":"his","ipa":"/hɪz/","say":"HIZ","pos":"kata kepemilikan","meaning":"-nya (milik laki-laki)","core":"Milik seorang laki-laki.","example":"His office is here.","exampleId":"Kantornya (laki-laki) di sini.","cefr":"A1","day":6,"trap":"Bergantung pada PEMILIK, bukan pada bendanya. Milik Budi = his, apa pun bendanya."},
-  {"id":"her","word":"her","ipa":"/hɝː/","say":"HER","pos":"kata kepemilikan","meaning":"-nya (milik perempuan)","core":"Milik seorang perempuan.","example":"Her house is new.","exampleId":"Rumahnya (perempuan) baru.","cefr":"A1","day":6,"trap":"Milik Sara = her. Jangan pakai 'she house' atau 'her' untuk laki-laki."},
-  {"id":"our","word":"our","ipa":"/aʊr/","say":"AUR","pos":"kata kepemilikan","meaning":"kami/kita (milik)","core":"Milik kelompok yang termasuk saya.","example":"Our project is big.","exampleId":"Proyek kami besar.","cefr":"A1","day":6},
-  {"id":"their","word":"their","ipa":"/ðer/","say":"DHER","pos":"kata kepemilikan","meaning":"mereka (milik)","core":"Milik dua orang atau lebih yang dibicarakan.","example":"Their kitchen is big.","exampleId":"Dapur mereka besar.","cefr":"A1","day":6,"trap":"Bunyinya sama dengan 'there' (di sana) dan 'they're' (= they are). Bedanya hanya di tulisan."},
-  {"id":"new","word":"new","ipa":"/nuː/","say":"NUU","pos":"kata sifat","meaning":"baru","core":"Belum lama dibuat, dibeli, atau dimulai.","example":"This is a new project.","exampleId":"Ini proyek baru.","cefr":"A1","day":6,"trap":"Kata sifat diletakkan SEBELUM kata benda: 'a new house' (rumah baru), bukan 'a house new'.","collocations":["new project","new client","brand new"]}
+ {
+  "id": "hello",
+  "word": "hello",
+  "ipa": "/həˈloʊ/",
+  "say": "he-LOU",
+  "pos": "kata seru (sapaan)",
+  "meaning": "halo",
+  "core": "Sapaan umum untuk membuka percakapan, cocok untuk siapa saja dan kapan saja.",
+  "example": "Hello, my name is Budi.",
+  "exampleId": "Halo, nama saya Budi.",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "Diucapkan he-LOU, tekanan di suku kedua. Bukan 'HE-lo'.",
+  "collocations": [
+   "say hello",
+   "hello everyone"
+  ]
+ },
+ {
+  "id": "hi",
+  "word": "hi",
+  "ipa": "/haɪ/",
+  "say": "HAI",
+  "pos": "kata seru (sapaan)",
+  "meaning": "hai",
+  "core": "Versi santai dari hello. Untuk teman, rekan kerja dekat, dan chat.",
+  "example": "Hi, Sara!",
+  "exampleId": "Hai, Sara!",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "Terlalu santai untuk email pertama ke klien baru. Di situ pakai 'Hello' atau 'Dear ...'."
+ },
+ {
+  "id": "good",
+  "word": "good",
+  "ipa": "/ɡʊd/",
+  "say": "GUD",
+  "pos": "kata sifat",
+  "meaning": "baik, bagus",
+  "core": "Menilai sesuatu sebagai positif atau memenuhi harapan.",
+  "example": "Good morning!",
+  "exampleId": "Selamat pagi!",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "Huruf 'oo' di sini berbunyi pendek 'u', bukan 'uu' panjang.",
+  "family": [
+   "better (lebih baik)",
+   "best (terbaik)",
+   "goodbye (selamat tinggal)"
+  ],
+  "collocations": [
+   "good morning",
+   "good job",
+   "good idea"
+  ]
+ },
+ {
+  "id": "morning",
+  "word": "morning",
+  "ipa": "/ˈmɔːrnɪŋ/",
+  "say": "MOR-ning",
+  "pos": "kata benda",
+  "meaning": "pagi",
+  "core": "Waktu dari bangun tidur sampai sekitar jam 12 siang.",
+  "example": "Good morning, everyone.",
+  "exampleId": "Selamat pagi, semuanya.",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "'Good morning' dipakai sampai sekitar jam 12, bukan hanya subuh.",
+  "collocations": [
+   "good morning",
+   "this morning",
+   "in the morning"
+  ]
+ },
+ {
+  "id": "afternoon",
+  "word": "afternoon",
+  "ipa": "/ˌæftərˈnuːn/",
+  "say": "af-ter-NUUN",
+  "pos": "kata benda",
+  "meaning": "siang–sore",
+  "core": "Waktu setelah jam 12 siang sampai sekitar jam 5–6 sore. Dari after (setelah) + noon (tengah hari).",
+  "example": "Good afternoon, Mr. Lee.",
+  "exampleId": "Selamat siang, Pak Lee.",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "Bahasa Inggris tidak membedakan 'siang' dan 'sore' seperti Bahasa Indonesia. Keduanya 'afternoon'.",
+  "collocations": [
+   "good afternoon",
+   "this afternoon",
+   "in the afternoon"
+  ]
+ },
+ {
+  "id": "evening",
+  "word": "evening",
+  "ipa": "/ˈiːvnɪŋ/",
+  "say": "IIV-ning",
+  "pos": "kata benda",
+  "meaning": "petang, malam (awal)",
+  "core": "Waktu dari sekitar jam 6 sore sampai menjelang tidur.",
+  "example": "Good evening, sir.",
+  "exampleId": "Selamat malam, Pak.",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "'Good evening' = sapaan saat bertemu malam hari. 'Good night' = salam saat BERPISAH atau mau tidur, bukan sapaan bertemu.",
+  "collocations": [
+   "good evening",
+   "this evening",
+   "in the evening"
+  ]
+ },
+ {
+  "id": "name",
+  "word": "name",
+  "ipa": "/neɪm/",
+  "say": "NEIM",
+  "pos": "kata benda",
+  "meaning": "nama",
+  "core": "Kata untuk menyebut siapa seseorang atau apa sesuatu.",
+  "example": "My name is Rina.",
+  "exampleId": "Nama saya Rina.",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "Huruf 'e' di akhir tidak dibaca; huruf 'a' berbunyi 'ei'.",
+  "collocations": [
+   "my name is ...",
+   "first name",
+   "last name"
+  ]
+ },
+ {
+  "id": "my",
+  "word": "my",
+  "ipa": "/maɪ/",
+  "say": "MAI",
+  "pos": "kata kepemilikan",
+  "meaning": "-ku, saya (milik)",
+  "core": "Menunjukkan sesuatu milik saya. Selalu diletakkan SEBELUM bendanya.",
+  "example": "My name is Andi.",
+  "exampleId": "Nama saya Andi.",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "Urutannya terbalik dari Bahasa Indonesia: 'nama saya' = 'my name', bukan 'name my'.",
+  "collocations": [
+   "my name",
+   "my house",
+   "my friend"
+  ]
+ },
+ {
+  "id": "yes",
+  "word": "yes",
+  "ipa": "/jes/",
+  "say": "YES",
+  "pos": "kata keterangan",
+  "meaning": "ya",
+  "core": "Jawaban setuju atau membenarkan.",
+  "example": "Yes, I am ready.",
+  "exampleId": "Ya, saya siap.",
+  "cefr": "A1",
+  "day": 1
+ },
+ {
+  "id": "no",
+  "word": "no",
+  "ipa": "/noʊ/",
+  "say": "NOU",
+  "pos": "kata keterangan",
+  "meaning": "tidak, bukan",
+  "core": "Jawaban menolak atau menyangkal.",
+  "example": "No, I am not tired.",
+  "exampleId": "Tidak, saya tidak lelah.",
+  "cefr": "A1",
+  "day": 1,
+  "trap": "Diucapkan 'nou' dengan bunyi meluncur, bukan 'no' pendek seperti Bahasa Indonesia."
+ },
+ {
+  "id": "i",
+  "word": "I",
+  "ipa": "/aɪ/",
+  "say": "AI",
+  "pos": "kata ganti orang",
+  "meaning": "saya, aku",
+  "core": "Kata ganti untuk diri sendiri sebagai pelaku kalimat.",
+  "example": "I am Budi.",
+  "exampleId": "Saya Budi.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Selalu huruf BESAR, bahkan di tengah kalimat: 'Yesterday I ...'. Bahasa Inggris hanya punya satu kata, tidak membedakan 'saya' (sopan) dan 'aku' (akrab)."
+ },
+ {
+  "id": "you",
+  "word": "you",
+  "ipa": "/juː/",
+  "say": "YUU",
+  "pos": "kata ganti orang",
+  "meaning": "kamu, Anda, kalian",
+  "core": "Orang yang diajak bicara, satu orang atau banyak.",
+  "example": "You are my friend.",
+  "exampleId": "Kamu temanku.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Satu kata untuk 'kamu', 'Anda', dan 'kalian'. Kesopanan ditunjukkan dengan pilihan kata lain, bukan dengan 'you'."
+ },
+ {
+  "id": "he",
+  "word": "he",
+  "ipa": "/hiː/",
+  "say": "HII",
+  "pos": "kata ganti orang",
+  "meaning": "dia (laki-laki)",
+  "core": "Satu orang laki-laki yang sedang dibicarakan.",
+  "example": "He is a contractor.",
+  "exampleId": "Dia (laki-laki) seorang kontraktor.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Bahasa Indonesia hanya punya 'dia'. Bahasa Inggris WAJIB memilih: laki-laki = he, perempuan = she. Ini kesalahan sangat umum."
+ },
+ {
+  "id": "she",
+  "word": "she",
+  "ipa": "/ʃiː/",
+  "say": "SYII",
+  "pos": "kata ganti orang",
+  "meaning": "dia (perempuan)",
+  "core": "Satu orang perempuan yang sedang dibicarakan.",
+  "example": "She is a designer.",
+  "exampleId": "Dia (perempuan) seorang desainer.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "'sh' dibaca 'sy' seperti di 'syarat'. 'She' (perempuan) jangan tertukar dengan 'he' (laki-laki)."
+ },
+ {
+  "id": "it",
+  "word": "it",
+  "ipa": "/ɪt/",
+  "say": "IT",
+  "pos": "kata ganti",
+  "meaning": "ia, itu (benda/hewan)",
+  "core": "Satu benda, hewan, atau hal yang bukan manusia.",
+  "example": "It is a big house.",
+  "exampleId": "Itu rumah besar.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Jangan pakai 'it' untuk orang. Untuk orang: he atau she."
+ },
+ {
+  "id": "we",
+  "word": "we",
+  "ipa": "/wiː/",
+  "say": "WII",
+  "pos": "kata ganti orang",
+  "meaning": "kami, kita",
+  "core": "Saya + orang lain sebagai satu kelompok.",
+  "example": "We are a team.",
+  "exampleId": "Kami satu tim.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Bahasa Indonesia membedakan 'kami' dan 'kita'. Bahasa Inggris hanya punya 'we' untuk keduanya."
+ },
+ {
+  "id": "they",
+  "word": "they",
+  "ipa": "/ðeɪ/",
+  "say": "DHEI",
+  "pos": "kata ganti orang",
+  "meaning": "mereka",
+  "core": "Dua orang/benda atau lebih yang sedang dibicarakan.",
+  "example": "They are my clients.",
+  "exampleId": "Mereka klien saya.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Bunyi 'th' di sini: ujung lidah di antara gigi atas dan bawah, lalu bersuara. Bukan 'd' biasa dan bukan 't'."
+ },
+ {
+  "id": "and",
+  "word": "and",
+  "ipa": "/ænd/",
+  "say": "END",
+  "pos": "kata sambung",
+  "meaning": "dan",
+  "core": "Menyambung dua hal yang setara.",
+  "example": "Budi and Sara are friends.",
+  "exampleId": "Budi dan Sara berteman.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Huruf 'a' berbunyi antara 'a' dan 'e' (mulut lebar). Dalam kalimat cepat sering terdengar 'en'."
+ },
+ {
+  "id": "friend",
+  "word": "friend",
+  "ipa": "/frend/",
+  "say": "FREND",
+  "pos": "kata benda",
+  "meaning": "teman",
+  "core": "Orang yang Anda kenal dan sukai, bukan keluarga.",
+  "example": "Sara is my friend.",
+  "exampleId": "Sara teman saya.",
+  "cefr": "A1",
+  "day": 2,
+  "trap": "Huruf 'i' tidak dibaca. Bukan 'fri-end'.",
+  "family": [
+   "friendly (ramah)",
+   "friendship (persahabatan)"
+  ],
+  "collocations": [
+   "my friend",
+   "best friend",
+   "old friend"
+  ]
+ },
+ {
+  "id": "client",
+  "word": "client",
+  "ipa": "/ˈklaɪənt/",
+  "say": "KLAI-ent",
+  "pos": "kata benda",
+  "meaning": "klien",
+  "core": "Orang atau perusahaan yang membayar jasa profesional Anda.",
+  "example": "He is my new client.",
+  "exampleId": "Dia klien baru saya.",
+  "cefr": "A2",
+  "day": 2,
+  "trap": "Diucapkan 'KLAI-ent', bukan 'kli-en' seperti Bahasa Indonesia.",
+  "collocations": [
+   "new client",
+   "meet a client",
+   "client meeting"
+  ]
+ },
+ {
+  "id": "am",
+  "word": "am",
+  "ipa": "/æm/",
+  "say": "EM",
+  "pos": "kata kerja (to be)",
+  "meaning": "adalah / sedang (untuk I)",
+  "core": "Bentuk 'be' khusus untuk I. Menghubungkan saya dengan keadaan, identitas, atau tempat.",
+  "example": "I am an architect.",
+  "exampleId": "Saya seorang arsitek.",
+  "cefr": "A1",
+  "day": 3,
+  "trap": "Hanya dipakai dengan I. 'I is' dan 'I are' selalu salah. Lisan: I'm."
+ },
+ {
+  "id": "is",
+  "word": "is",
+  "ipa": "/ɪz/",
+  "say": "IZ",
+  "pos": "kata kerja (to be)",
+  "meaning": "adalah / sedang (untuk he, she, it)",
+  "core": "Bentuk 'be' untuk SATU orang atau benda selain saya dan kamu.",
+  "example": "The kitchen is big.",
+  "exampleId": "Dapurnya besar.",
+  "cefr": "A1",
+  "day": 3,
+  "trap": "Berbunyi 'iz' (ada getaran), bukan 'is' dengan s tajam."
+ },
+ {
+  "id": "are",
+  "word": "are",
+  "ipa": "/ɑːr/",
+  "say": "AR",
+  "pos": "kata kerja (to be)",
+  "meaning": "adalah / sedang (untuk you, we, they)",
+  "core": "Bentuk 'be' untuk you dan untuk lebih dari satu.",
+  "example": "We are ready.",
+  "exampleId": "Kami siap.",
+  "cefr": "A1",
+  "day": 3,
+  "trap": "'You' satu orang pun tetap 'are': You are early. Huruf 'e' di akhir tidak dibaca."
+ },
+ {
+  "id": "architect",
+  "word": "architect",
+  "ipa": "/ˈɑːrkɪtekt/",
+  "say": "AR-ki-tekt",
+  "pos": "kata benda",
+  "meaning": "arsitek",
+  "core": "Orang yang merancang bangunan.",
+  "example": "She is an architect.",
+  "exampleId": "Dia (perempuan) seorang arsitek.",
+  "cefr": "A2",
+  "day": 3,
+  "trap": "'ch' di sini dibaca 'k'. Karena berbunyi vokal di awal, pakai 'an': an architect.",
+  "family": [
+   "architecture (arsitektur)",
+   "architectural (arsitektural)"
+  ],
+  "collocations": [
+   "an architect",
+   "landscape architect",
+   "architect firm"
+  ]
+ },
+ {
+  "id": "designer",
+  "word": "designer",
+  "ipa": "/dɪˈzaɪnər/",
+  "say": "di-ZAI-ner",
+  "pos": "kata benda",
+  "meaning": "desainer, perancang",
+  "core": "Orang yang merancang rupa dan fungsi sesuatu sebelum dibuat.",
+  "example": "He is an interior designer.",
+  "exampleId": "Dia (laki-laki) seorang desainer interior.",
+  "cefr": "A2",
+  "day": 3,
+  "trap": "Huruf 'g' tidak dibaca. Ejaan Inggris 'designer', bukan 'desainer'.",
+  "family": [
+   "design (desain, mendesain)",
+   "redesign (desain ulang)"
+  ],
+  "collocations": [
+   "interior designer",
+   "graphic designer",
+   "fashion designer"
+  ]
+ },
+ {
+  "id": "contractor",
+  "word": "contractor",
+  "ipa": "/ˈkɑːntræktər/",
+  "say": "KON-trek-ter",
+  "pos": "kata benda",
+  "meaning": "kontraktor",
+  "core": "Orang atau perusahaan yang dibayar untuk mengerjakan pembangunan atau renovasi sesuai kontrak.",
+  "example": "The contractor is busy today.",
+  "exampleId": "Kontraktornya sibuk hari ini.",
+  "cefr": "B1",
+  "day": 3,
+  "trap": "Tekanan di suku PERTAMA: KON-trek-ter.",
+  "family": [
+   "contract (kontrak)"
+  ],
+  "collocations": [
+   "building contractor",
+   "main contractor",
+   "hire a contractor"
+  ]
+ },
+ {
+  "id": "tired",
+  "word": "tired",
+  "ipa": "/ˈtaɪərd/",
+  "say": "TAI-erd",
+  "pos": "kata sifat",
+  "meaning": "lelah, capek",
+  "core": "Keadaan butuh istirahat.",
+  "example": "I am tired.",
+  "exampleId": "Saya lelah.",
+  "cefr": "A1",
+  "day": 3,
+  "trap": "Kata sifat butuh 'be': 'I am tired', bukan 'I tired'."
+ },
+ {
+  "id": "hungry",
+  "word": "hungry",
+  "ipa": "/ˈhʌŋɡri/",
+  "say": "HANG-gri",
+  "pos": "kata sifat",
+  "meaning": "lapar",
+  "core": "Keadaan ingin makan.",
+  "example": "Are you hungry?",
+  "exampleId": "Kamu lapar?",
+  "cefr": "A1",
+  "day": 3,
+  "trap": "'I hungry' salah, harus 'I am hungry'. Jangan tertukar dengan 'angry' (marah)."
+ },
+ {
+  "id": "busy",
+  "word": "busy",
+  "ipa": "/ˈbɪzi/",
+  "say": "BI-zi",
+  "pos": "kata sifat",
+  "meaning": "sibuk",
+  "core": "Banyak pekerjaan sehingga tidak punya waktu luang.",
+  "example": "The contractor is busy.",
+  "exampleId": "Kontraktornya sibuk.",
+  "cefr": "A1",
+  "day": 3,
+  "trap": "Huruf 'u' dibaca 'i' dan 's' dibaca 'z': BI-zi, bukan 'bu-si'.",
+  "family": [
+   "business (bisnis)"
+  ]
+ },
+ {
+  "id": "ready",
+  "word": "ready",
+  "ipa": "/ˈredi/",
+  "say": "RE-di",
+  "pos": "kata sifat",
+  "meaning": "siap",
+  "core": "Sudah dipersiapkan dan bisa mulai.",
+  "example": "Are you ready?",
+  "exampleId": "Kamu siap?",
+  "cefr": "A1",
+  "day": 3,
+  "trap": "'ea' di sini dibaca 'e' pendek.",
+  "collocations": [
+   "ready to start",
+   "get ready",
+   "are you ready?"
+  ]
+ },
+ {
+  "id": "not",
+  "word": "not",
+  "ipa": "/nɑːt/",
+  "say": "NOT",
+  "pos": "kata keterangan",
+  "meaning": "tidak, bukan",
+  "core": "Membalik arti kalimat menjadi negatif. Diletakkan SETELAH am/is/are.",
+  "example": "I am not hungry.",
+  "exampleId": "Saya tidak lapar.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "Bahasa Inggris tidak membedakan 'tidak' dan 'bukan'. Keduanya 'not'.",
+  "collocations": [
+   "is not = isn't",
+   "are not = aren't"
+  ]
+ },
+ {
+  "id": "happy",
+  "word": "happy",
+  "ipa": "/ˈhæpi/",
+  "say": "HE-pi",
+  "pos": "kata sifat",
+  "meaning": "senang, bahagia",
+  "core": "Perasaan gembira atau puas.",
+  "example": "The client is happy.",
+  "exampleId": "Kliennya senang.",
+  "cefr": "A1",
+  "day": 4,
+  "family": [
+   "happiness (kebahagiaan)",
+   "unhappy (tidak senang)"
+  ],
+  "collocations": [
+   "happy with the design",
+   "happy birthday"
+  ]
+ },
+ {
+  "id": "sad",
+  "word": "sad",
+  "ipa": "/sæd/",
+  "say": "SED",
+  "pos": "kata sifat",
+  "meaning": "sedih",
+  "core": "Perasaan tidak senang karena sesuatu yang buruk.",
+  "example": "She is not sad.",
+  "exampleId": "Dia tidak sedih.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "Huruf 'a' berbunyi 'e' lebar (mulut terbuka), bukan 'a'."
+ },
+ {
+  "id": "at",
+  "word": "at",
+  "ipa": "/æt/",
+  "say": "ET",
+  "pos": "kata depan",
+  "meaning": "di (titik/tempat tertentu)",
+  "core": "Menunjukkan posisi di satu titik atau tempat yang dianggap satu titik.",
+  "example": "I am at the office.",
+  "exampleId": "Saya di kantor.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "'di rumah' = 'at home' (tanpa 'the'). 'di kantor' = 'at the office' (pakai 'the').",
+  "collocations": [
+   "at home",
+   "at the office",
+   "at work"
+  ]
+ },
+ {
+  "id": "home",
+  "word": "home",
+  "ipa": "/hoʊm/",
+  "say": "HOUM",
+  "pos": "kata benda",
+  "meaning": "rumah (tempat tinggal)",
+  "core": "Tempat Anda tinggal dan merasa milik sendiri. Lebih personal daripada 'house' (bangunannya).",
+  "example": "We are at home.",
+  "exampleId": "Kami di rumah.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "'at home' tanpa 'the'. Bedakan: home = tempat tinggal; house = bangunan rumah.",
+  "collocations": [
+   "at home",
+   "go home",
+   "home office"
+  ]
+ },
+ {
+  "id": "office",
+  "word": "office",
+  "ipa": "/ˈɔːfɪs/",
+  "say": "O-fis",
+  "pos": "kata benda",
+  "meaning": "kantor",
+  "core": "Tempat orang bekerja dengan meja dan komputer.",
+  "example": "He is at the office now.",
+  "exampleId": "Dia di kantor sekarang.",
+  "cefr": "A1",
+  "day": 4,
+  "family": [
+   "officer (petugas)",
+   "official (resmi)"
+  ],
+  "collocations": [
+   "at the office",
+   "office hours",
+   "head office"
+  ]
+ },
+ {
+  "id": "here",
+  "word": "here",
+  "ipa": "/hɪr/",
+  "say": "HIR",
+  "pos": "kata keterangan",
+  "meaning": "di sini",
+  "core": "Tempat yang dekat dengan pembicara.",
+  "example": "I am here.",
+  "exampleId": "Saya di sini.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "Sudah berarti 'di sini', jadi tidak perlu 'at': 'I am here', bukan 'I am at here'."
+ },
+ {
+  "id": "there",
+  "word": "there",
+  "ipa": "/ðer/",
+  "say": "DHER",
+  "pos": "kata keterangan",
+  "meaning": "di sana, di situ",
+  "core": "Tempat yang jauh dari pembicara.",
+  "example": "The client is there.",
+  "exampleId": "Kliennya di sana.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "Sudah berarti 'di sana', jadi tidak pakai 'at'. Bunyi 'th' bersuara seperti di 'they'."
+ },
+ {
+  "id": "today",
+  "word": "today",
+  "ipa": "/təˈdeɪ/",
+  "say": "te-DEI",
+  "pos": "kata keterangan",
+  "meaning": "hari ini",
+  "core": "Hari yang sedang berlangsung.",
+  "example": "I am busy today.",
+  "exampleId": "Saya sibuk hari ini.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "Biasanya di akhir kalimat, tanpa 'at' atau 'in'."
+ },
+ {
+  "id": "now",
+  "word": "now",
+  "ipa": "/naʊ/",
+  "say": "NAU",
+  "pos": "kata keterangan",
+  "meaning": "sekarang",
+  "core": "Saat ini juga.",
+  "example": "She is at home now.",
+  "exampleId": "Dia di rumah sekarang.",
+  "cefr": "A1",
+  "day": 4,
+  "trap": "Diucapkan 'nau', bukan 'nou'."
+ },
+ {
+  "id": "a",
+  "word": "a",
+  "ipa": "/ə/",
+  "say": "e (lemah)",
+  "pos": "artikel",
+  "meaning": "sebuah, seorang, se-",
+  "core": "Menandai SATU benda yang belum spesifik, untuk kata yang berbunyi KONSONAN di awal.",
+  "example": "It is a house.",
+  "exampleId": "Itu sebuah rumah.",
+  "cefr": "A1",
+  "day": 5,
+  "trap": "Wajib sebelum kata benda tunggal yang bisa dihitung: 'She is a designer', bukan 'She is designer'. Diucapkan lemah 'e', bukan 'ei'."
+ },
+ {
+  "id": "an",
+  "word": "an",
+  "ipa": "/ən/",
+  "say": "en (lemah)",
+  "pos": "artikel",
+  "meaning": "sebuah, seorang, se-",
+  "core": "Sama dengan 'a', tapi untuk kata yang BERBUNYI vokal di awal (a, e, i, o, u).",
+  "example": "He is an architect.",
+  "exampleId": "Dia seorang arsitek.",
+  "cefr": "A1",
+  "day": 5,
+  "trap": "Yang menentukan adalah BUNYI, bukan huruf: 'an hour' (h tidak dibaca), tapi 'a university' (u dibaca 'yu')."
+ },
+ {
+  "id": "house",
+  "word": "house",
+  "ipa": "/haʊs/",
+  "say": "HAUS",
+  "pos": "kata benda",
+  "meaning": "rumah (bangunan)",
+  "core": "Bangunan tempat tinggal. Fokus pada bangunannya.",
+  "example": "It is a new house.",
+  "exampleId": "Itu rumah baru.",
+  "cefr": "A1",
+  "day": 5,
+  "trap": "Jamak 'houses' diucapkan HAU-ziz (s berubah jadi z).",
+  "collocations": [
+   "a new house",
+   "house design",
+   "build a house"
+  ]
+ },
+ {
+  "id": "room",
+  "word": "room",
+  "ipa": "/ruːm/",
+  "say": "RUUM",
+  "pos": "kata benda",
+  "meaning": "ruang, kamar",
+  "core": "Bagian dalam bangunan yang dibatasi dinding.",
+  "example": "The room is small.",
+  "exampleId": "Ruangannya kecil.",
+  "cefr": "A1",
+  "day": 5,
+  "family": [
+   "bedroom (kamar tidur)",
+   "bathroom (kamar mandi)",
+   "living room (ruang tamu/keluarga)"
+  ],
+  "collocations": [
+   "living room",
+   "meeting room",
+   "room size"
+  ]
+ },
+ {
+  "id": "kitchen",
+  "word": "kitchen",
+  "ipa": "/ˈkɪtʃɪn/",
+  "say": "KI-cin",
+  "pos": "kata benda",
+  "meaning": "dapur",
+  "core": "Ruangan untuk memasak.",
+  "example": "The kitchen is big.",
+  "exampleId": "Dapurnya besar.",
+  "cefr": "A1",
+  "day": 5,
+  "trap": "'tch' dibaca 'c' seperti di 'cinta'. Bukan 'kit-chen'.",
+  "collocations": [
+   "kitchen design",
+   "kitchen set",
+   "open kitchen"
+  ]
+ },
+ {
+  "id": "door",
+  "word": "door",
+  "ipa": "/dɔːr/",
+  "say": "DOR",
+  "pos": "kata benda",
+  "meaning": "pintu",
+  "core": "Bidang yang bisa dibuka-tutup untuk masuk dan keluar ruangan.",
+  "example": "The door is new.",
+  "exampleId": "Pintunya baru.",
+  "cefr": "A1",
+  "day": 5,
+  "collocations": [
+   "front door",
+   "sliding door",
+   "open the door"
+  ]
+ },
+ {
+  "id": "window",
+  "word": "window",
+  "ipa": "/ˈwɪndoʊ/",
+  "say": "WIN-dou",
+  "pos": "kata benda",
+  "meaning": "jendela",
+  "core": "Bukaan di dinding, biasanya berkaca, untuk cahaya dan udara.",
+  "example": "The windows are big.",
+  "exampleId": "Jendela-jendelanya besar.",
+  "cefr": "A1",
+  "day": 5,
+  "collocations": [
+   "window frame",
+   "glass window",
+   "open the window"
+  ]
+ },
+ {
+  "id": "table",
+  "word": "table",
+  "ipa": "/ˈteɪbl/",
+  "say": "TEI-bel",
+  "pos": "kata benda",
+  "meaning": "meja",
+  "core": "Perabot dengan permukaan datar di atas kaki-kaki.",
+  "example": "It is a wooden table.",
+  "exampleId": "Itu meja kayu.",
+  "cefr": "A1",
+  "day": 5,
+  "trap": "Huruf 'a' dibaca 'ei'. Juga berarti 'tabel' (data).",
+  "collocations": [
+   "dining table",
+   "coffee table",
+   "meeting table"
+  ]
+ },
+ {
+  "id": "chair",
+  "word": "chair",
+  "ipa": "/tʃer/",
+  "say": "CER",
+  "pos": "kata benda",
+  "meaning": "kursi",
+  "core": "Tempat duduk untuk satu orang, biasanya bersandaran.",
+  "example": "The chairs are new.",
+  "exampleId": "Kursi-kursinya baru.",
+  "cefr": "A1",
+  "day": 5,
+  "trap": "'ch' dibaca 'c' seperti 'cerah'.",
+  "collocations": [
+   "office chair",
+   "dining chair"
+  ]
+ },
+ {
+  "id": "project",
+  "word": "project",
+  "ipa": "/ˈprɑːdʒekt/",
+  "say": "PRO-jekt",
+  "pos": "kata benda",
+  "meaning": "proyek",
+  "core": "Pekerjaan terencana dengan tujuan dan batas waktu tertentu.",
+  "example": "It is a big project.",
+  "exampleId": "Itu proyek besar.",
+  "cefr": "A2",
+  "day": 5,
+  "trap": "Sebagai kata benda, tekanan di depan: PRO-jekt. 'j' dibaca seperti 'j' Indonesia.",
+  "collocations": [
+   "project manager",
+   "new project",
+   "project schedule"
+  ]
+ },
+ {
+  "id": "this",
+  "word": "this",
+  "ipa": "/ðɪs/",
+  "say": "DHIS",
+  "pos": "kata penunjuk",
+  "meaning": "ini (satu)",
+  "core": "Menunjuk SATU benda yang DEKAT.",
+  "example": "This is my office.",
+  "exampleId": "Ini kantor saya.",
+  "cefr": "A1",
+  "day": 6,
+  "trap": "Bunyi 'th' bersuara. 'This' (ini, dekat) vs 'that' (itu, jauh)."
+ },
+ {
+  "id": "that",
+  "word": "that",
+  "ipa": "/ðæt/",
+  "say": "DHET",
+  "pos": "kata penunjuk",
+  "meaning": "itu (satu)",
+  "core": "Menunjuk SATU benda yang JAUH.",
+  "example": "That is a new house.",
+  "exampleId": "Itu rumah baru.",
+  "cefr": "A1",
+  "day": 6
+ },
+ {
+  "id": "these",
+  "word": "these",
+  "ipa": "/ðiːz/",
+  "say": "DHIIZ",
+  "pos": "kata penunjuk",
+  "meaning": "ini (banyak)",
+  "core": "Bentuk jamak 'this': BANYAK benda yang DEKAT.",
+  "example": "These chairs are new.",
+  "exampleId": "Kursi-kursi ini baru.",
+  "cefr": "A1",
+  "day": 6,
+  "trap": "'these' (banyak) + are + benda jamak (-s). Bunyi 'ii' panjang, beda dengan 'this' yang pendek."
+ },
+ {
+  "id": "those",
+  "word": "those",
+  "ipa": "/ðoʊz/",
+  "say": "DHOUZ",
+  "pos": "kata penunjuk",
+  "meaning": "itu (banyak)",
+  "core": "Bentuk jamak 'that': BANYAK benda yang JAUH.",
+  "example": "Those windows are big.",
+  "exampleId": "Jendela-jendela itu besar.",
+  "cefr": "A1",
+  "day": 6
+ },
+ {
+  "id": "your",
+  "word": "your",
+  "ipa": "/jʊr/",
+  "say": "YUR",
+  "pos": "kata kepemilikan",
+  "meaning": "-mu, Anda (milik)",
+  "core": "Milik orang yang diajak bicara.",
+  "example": "Is this your table?",
+  "exampleId": "Apakah ini mejamu?",
+  "cefr": "A1",
+  "day": 6,
+  "trap": "Jangan tertukar dengan 'you're' (= you are), yang bunyinya hampir sama."
+ },
+ {
+  "id": "his",
+  "word": "his",
+  "ipa": "/hɪz/",
+  "say": "HIZ",
+  "pos": "kata kepemilikan",
+  "meaning": "-nya (milik laki-laki)",
+  "core": "Milik seorang laki-laki.",
+  "example": "His office is here.",
+  "exampleId": "Kantornya (laki-laki) di sini.",
+  "cefr": "A1",
+  "day": 6,
+  "trap": "Bergantung pada PEMILIK, bukan pada bendanya. Milik Budi = his, apa pun bendanya."
+ },
+ {
+  "id": "her",
+  "word": "her",
+  "ipa": "/hɝː/",
+  "say": "HER",
+  "pos": "kata kepemilikan",
+  "meaning": "-nya (milik perempuan)",
+  "core": "Milik seorang perempuan.",
+  "example": "Her house is new.",
+  "exampleId": "Rumahnya (perempuan) baru.",
+  "cefr": "A1",
+  "day": 6,
+  "trap": "Milik Sara = her. Jangan pakai 'she house' atau 'her' untuk laki-laki."
+ },
+ {
+  "id": "our",
+  "word": "our",
+  "ipa": "/aʊr/",
+  "say": "AUR",
+  "pos": "kata kepemilikan",
+  "meaning": "kami/kita (milik)",
+  "core": "Milik kelompok yang termasuk saya.",
+  "example": "Our project is big.",
+  "exampleId": "Proyek kami besar.",
+  "cefr": "A1",
+  "day": 6
+ },
+ {
+  "id": "their",
+  "word": "their",
+  "ipa": "/ðer/",
+  "say": "DHER",
+  "pos": "kata kepemilikan",
+  "meaning": "mereka (milik)",
+  "core": "Milik dua orang atau lebih yang dibicarakan.",
+  "example": "Their kitchen is big.",
+  "exampleId": "Dapur mereka besar.",
+  "cefr": "A1",
+  "day": 6,
+  "trap": "Bunyinya sama dengan 'there' (di sana) dan 'they're' (= they are). Bedanya hanya di tulisan."
+ },
+ {
+  "id": "new",
+  "word": "new",
+  "ipa": "/nuː/",
+  "say": "NUU",
+  "pos": "kata sifat",
+  "meaning": "baru",
+  "core": "Belum lama dibuat, dibeli, atau dimulai.",
+  "example": "This is a new project.",
+  "exampleId": "Ini proyek baru.",
+  "cefr": "A1",
+  "day": 6,
+  "trap": "Kata sifat diletakkan SEBELUM kata benda: 'a new house' (rumah baru), bukan 'a house new'.",
+  "collocations": [
+   "new project",
+   "new client",
+   "brand new"
+  ]
+ },
+ {
+  "id": "work",
+  "word": "work",
+  "ipa": "/wɝːk/",
+  "say": "WERK",
+  "pos": "kata kerja",
+  "meaning": "bekerja",
+  "core": "Melakukan pekerjaan, biasanya untuk mendapat uang.",
+  "example": "I work in Jakarta.",
+  "exampleId": "Saya bekerja di Jakarta.",
+  "cefr": "A1",
+  "day": 8,
+  "trap": "Bunyi 'or' di sini seperti 'er', bukan 'wor'. He/she: works.",
+  "family": [
+   "worker (pekerja)",
+   "workshop (bengkel/lokakarya)"
+  ],
+  "collocations": [
+   "work at/in",
+   "work hard",
+   "work from home"
+  ]
+ },
+ {
+  "id": "live",
+  "word": "live",
+  "ipa": "/lɪv/",
+  "say": "LIV",
+  "pos": "kata kerja",
+  "meaning": "tinggal; hidup",
+  "core": "Bertempat tinggal di suatu tempat dalam waktu lama.",
+  "example": "We live in Bandung.",
+  "exampleId": "Kami tinggal di Bandung.",
+  "cefr": "A1",
+  "day": 8,
+  "trap": "'I live in Jakarta' (tinggal), bukan 'I stay in Jakarta' untuk tempat tinggal tetap.",
+  "collocations": [
+   "live in",
+   "live with"
+  ]
+ },
+ {
+  "id": "like",
+  "word": "like",
+  "ipa": "/laɪk/",
+  "say": "LAIK",
+  "pos": "kata kerja",
+  "meaning": "suka",
+  "core": "Merasa senang terhadap sesuatu.",
+  "example": "I like modern design.",
+  "exampleId": "Saya suka desain modern.",
+  "cefr": "A1",
+  "day": 8,
+  "trap": "'I like it' (wajib ada objek), bukan 'I like' saja.",
+  "family": [
+   "likes (menyukai, untuk he/she)",
+   "unlike (tidak seperti)"
+  ],
+  "collocations": [
+   "like + kata benda",
+   "like + -ing (I like drawing)"
+  ]
+ },
+ {
+  "id": "want",
+  "word": "want",
+  "ipa": "/wɑːnt/",
+  "say": "WONT",
+  "pos": "kata kerja",
+  "meaning": "ingin, mau",
+  "core": "Berharap memiliki atau melakukan sesuatu.",
+  "example": "The client wants a big kitchen.",
+  "exampleId": "Klien ingin dapur besar.",
+  "cefr": "A1",
+  "day": 8,
+  "trap": "Tidak dipakai dengan 'am/is/are': 'I want', bukan 'I am want'.",
+  "collocations": [
+   "want to + kata kerja (I want to learn)"
+  ]
+ },
+ {
+  "id": "need",
+  "word": "need",
+  "ipa": "/niːd/",
+  "say": "NIID",
+  "pos": "kata kerja",
+  "meaning": "butuh, perlu",
+  "core": "Harus memiliki sesuatu karena penting.",
+  "example": "We need two new chairs.",
+  "exampleId": "Kami butuh dua kursi baru.",
+  "cefr": "A1",
+  "day": 8,
+  "collocations": [
+   "need to + kata kerja"
+  ]
+ },
+ {
+  "id": "have",
+  "word": "have",
+  "ipa": "/hæv/",
+  "say": "HEV",
+  "pos": "kata kerja",
+  "meaning": "punya, memiliki",
+  "core": "Memiliki sesuatu.",
+  "example": "I have a new project.",
+  "exampleId": "Saya punya proyek baru.",
+  "cefr": "A1",
+  "day": 8,
+  "trap": "Untuk he/she/it bentuknya HAS, bukan 'haves'.",
+  "family": [
+   "has (he/she/it)"
+  ],
+  "collocations": [
+   "have a meeting",
+   "have lunch"
+  ]
+ },
+ {
+  "id": "make",
+  "word": "make",
+  "ipa": "/meɪk/",
+  "say": "MEIK",
+  "pos": "kata kerja",
+  "meaning": "membuat",
+  "core": "Menghasilkan sesuatu yang sebelumnya tidak ada.",
+  "example": "I make videos about interior design.",
+  "exampleId": "Saya membuat video tentang desain interior.",
+  "cefr": "A1",
+  "day": 8,
+  "trap": "'make' = menghasilkan barang (make a video). 'do' = mengerjakan aktivitas (do homework).",
+  "family": [
+   "maker (pembuat)"
+  ],
+  "collocations": [
+   "make a video",
+   "make money",
+   "make a plan"
+  ]
+ },
+ {
+  "id": "use",
+  "word": "use",
+  "ipa": "/juːz/",
+  "say": "YUUZ",
+  "pos": "kata kerja",
+  "meaning": "memakai, menggunakan",
+  "core": "Memakai sesuatu untuk suatu tujuan.",
+  "example": "I use my phone for work.",
+  "exampleId": "Saya memakai HP untuk kerja.",
+  "cefr": "A1",
+  "day": 8,
+  "trap": "Awalnya berbunyi 'yu', jadi: a user, a useful tool (bukan 'an').",
+  "family": [
+   "user (pengguna)",
+   "useful (berguna)"
+  ],
+  "collocations": [
+   "use for",
+   "easy to use"
+  ]
+ },
+ {
+  "id": "build",
+  "word": "build",
+  "ipa": "/bɪld/",
+  "say": "BILD",
+  "pos": "kata kerja",
+  "meaning": "membangun",
+  "core": "Membuat bangunan atau struktur.",
+  "example": "They build houses in Bali.",
+  "exampleId": "Mereka membangun rumah di Bali.",
+  "cefr": "A2",
+  "day": 8,
+  "trap": "Huruf 'u' tidak dibaca: BILD.",
+  "family": [
+   "building (bangunan)",
+   "builder (tukang/pemborong)"
+  ],
+  "collocations": [
+   "build a house",
+   "build a team"
+  ]
+ },
+ {
+  "id": "design",
+  "word": "design",
+  "ipa": "/dɪˈzaɪn/",
+  "say": "di-ZAIN",
+  "pos": "kata kerja",
+  "meaning": "mendesain; desain",
+  "core": "Merencanakan bentuk dan fungsi sesuatu sebelum dibuat.",
+  "example": "She designs modern kitchens.",
+  "exampleId": "Dia mendesain dapur modern.",
+  "cefr": "A2",
+  "day": 8,
+  "trap": "Huruf 'g' tidak dibaca. Bisa kata kerja (to design) dan kata benda (a design).",
+  "family": [
+   "designer (desainer)",
+   "redesign (desain ulang)"
+  ],
+  "collocations": [
+   "interior design",
+   "design a house",
+   "final design"
+  ]
+ },
+ {
+  "id": "watch",
+  "word": "watch",
+  "ipa": "/wɑːtʃ/",
+  "say": "WOC",
+  "pos": "kata kerja",
+  "meaning": "menonton; jam tangan",
+  "core": "Melihat sesuatu yang bergerak dengan perhatian.",
+  "example": "He watches design videos.",
+  "exampleId": "Dia menonton video desain.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "He/she: watches (tambah -es karena berakhiran ch).",
+  "collocations": [
+   "watch TV",
+   "watch a video"
+  ]
+ },
+ {
+  "id": "play",
+  "word": "play",
+  "ipa": "/pleɪ/",
+  "say": "PLEI",
+  "pos": "kata kerja",
+  "meaning": "bermain; memainkan",
+  "core": "Melakukan permainan atau olahraga untuk bersenang-senang.",
+  "example": "She plays games on her phone.",
+  "exampleId": "Dia main game di HP-nya.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "He/she: plays (y setelah vokal tetap, + s).",
+  "family": [
+   "player (pemain)"
+  ],
+  "collocations": [
+   "play games",
+   "play football"
+  ]
+ },
+ {
+  "id": "study",
+  "word": "study",
+  "ipa": "/ˈstʌdi/",
+  "say": "STA-di",
+  "pos": "kata kerja",
+  "meaning": "belajar",
+  "core": "Belajar dengan sengaja, biasanya dari buku atau kursus.",
+  "example": "He studies English every day.",
+  "exampleId": "Dia belajar bahasa Inggris setiap hari.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "He/she: studies (y setelah konsonan → ies).",
+  "family": [
+   "student (pelajar)"
+  ],
+  "collocations": [
+   "study English",
+   "study hard"
+  ]
+ },
+ {
+  "id": "read",
+  "word": "read",
+  "ipa": "/riːd/",
+  "say": "RIID",
+  "pos": "kata kerja",
+  "meaning": "membaca",
+  "core": "Memahami tulisan.",
+  "example": "I read the news in the morning.",
+  "exampleId": "Saya membaca berita di pagi hari.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "Bentuk lampaunya ditulis sama (read) tapi dibaca 'red'.",
+  "family": [
+   "reader (pembaca)",
+   "reading (bacaan)"
+  ],
+  "collocations": [
+   "read a book",
+   "read the news"
+  ]
+ },
+ {
+  "id": "write",
+  "word": "write",
+  "ipa": "/raɪt/",
+  "say": "RAIT",
+  "pos": "kata kerja",
+  "meaning": "menulis",
+  "core": "Membuat huruf atau kata di kertas atau layar.",
+  "example": "She writes emails to clients.",
+  "exampleId": "Dia menulis email ke klien.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "Huruf 'w' tidak dibaca: RAIT.",
+  "family": [
+   "writer (penulis)",
+   "writing (tulisan)"
+  ],
+  "collocations": [
+   "write an email",
+   "write a report"
+  ]
+ },
+ {
+  "id": "go",
+  "word": "go",
+  "ipa": "/ɡoʊ/",
+  "say": "GOU",
+  "pos": "kata kerja",
+  "meaning": "pergi",
+  "core": "Berpindah ke tempat lain.",
+  "example": "He goes to the office at eight.",
+  "exampleId": "Dia pergi ke kantor jam delapan.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "He/she: GOES (tambah -es).",
+  "collocations": [
+   "go to work",
+   "go home (tanpa 'to')"
+  ]
+ },
+ {
+  "id": "do",
+  "word": "do",
+  "ipa": "/duː/",
+  "say": "DUU",
+  "pos": "kata kerja",
+  "meaning": "melakukan, mengerjakan",
+  "core": "Melakukan sebuah aktivitas. Juga dipakai untuk membuat kalimat tanya dan negatif.",
+  "example": "I do my work at home.",
+  "exampleId": "Saya mengerjakan pekerjaan saya di rumah.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "He/she: DOES (dibaca 'daz').",
+  "family": [
+   "does",
+   "don't = do not",
+   "doesn't = does not"
+  ],
+  "collocations": [
+   "do homework",
+   "do the work"
+  ]
+ },
+ {
+  "id": "video",
+  "word": "video",
+  "ipa": "/ˈvɪdioʊ/",
+  "say": "VI-di-ou",
+  "pos": "kata benda",
+  "meaning": "video",
+  "core": "Rekaman gambar bergerak.",
+  "example": "I make a video every week.",
+  "exampleId": "Saya membuat video setiap minggu.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "Dibaca VI-di-ou, bukan 'fi-de-o'.",
+  "collocations": [
+   "make a video",
+   "watch a video",
+   "short video"
+  ]
+ },
+ {
+  "id": "game",
+  "word": "game",
+  "ipa": "/ɡeɪm/",
+  "say": "GEIM",
+  "pos": "kata benda",
+  "meaning": "permainan, game",
+  "core": "Aktivitas bermain dengan aturan, termasuk video game.",
+  "example": "My favorite game is a racing game.",
+  "exampleId": "Game favorit saya game balap.",
+  "cefr": "A1",
+  "day": 9,
+  "family": [
+   "gamer (pemain game)",
+   "gaming (bermain game)"
+  ],
+  "collocations": [
+   "play a game",
+   "mobile game",
+   "video game"
+  ]
+ },
+ {
+  "id": "every",
+  "word": "every",
+  "ipa": "/ˈevri/",
+  "say": "EV-ri",
+  "pos": "kata keterangan",
+  "meaning": "setiap",
+  "core": "Semua, satu per satu, tanpa kecuali.",
+  "example": "She works every day.",
+  "exampleId": "Dia bekerja setiap hari.",
+  "cefr": "A1",
+  "day": 9,
+  "trap": "Diikuti kata TUNGGAL: every day (bukan every days).",
+  "family": [
+   "everyone (semua orang)",
+   "everything (semuanya)"
+  ],
+  "collocations": [
+   "every day",
+   "every week",
+   "every morning"
+  ]
+ },
+ {
+  "id": "coffee",
+  "word": "coffee",
+  "ipa": "/ˈkɔːfi/",
+  "say": "KO-fi",
+  "pos": "kata benda",
+  "meaning": "kopi",
+  "core": "Minuman dari biji kopi.",
+  "example": "I don't drink coffee at night.",
+  "exampleId": "Saya tidak minum kopi di malam hari.",
+  "cefr": "A1",
+  "day": 10,
+  "collocations": [
+   "a cup of coffee",
+   "coffee shop"
+  ]
+ },
+ {
+  "id": "phone",
+  "word": "phone",
+  "ipa": "/foʊn/",
+  "say": "FOUN",
+  "pos": "kata benda",
+  "meaning": "telepon, HP",
+  "core": "Alat untuk menelepon dan memakai aplikasi.",
+  "example": "Do you use your phone for work?",
+  "exampleId": "Apakah kamu memakai HP untuk kerja?",
+  "cefr": "A1",
+  "day": 10,
+  "trap": "'ph' dibaca 'f'.",
+  "family": [
+   "smartphone",
+   "phone call (panggilan telepon)"
+  ],
+  "collocations": [
+   "on the phone",
+   "phone number"
+  ]
+ },
+ {
+  "id": "company",
+  "word": "company",
+  "ipa": "/ˈkʌmpəni/",
+  "say": "KAM-pe-ni",
+  "pos": "kata benda",
+  "meaning": "perusahaan",
+  "core": "Organisasi bisnis yang menjual barang atau jasa.",
+  "example": "Her company doesn't build houses.",
+  "exampleId": "Perusahaannya tidak membangun rumah.",
+  "cefr": "A2",
+  "day": 10,
+  "trap": "Huruf 'o' pertama dibaca 'a': KAM-pe-ni.",
+  "collocations": [
+   "design company",
+   "work for a company"
+  ]
+ },
+ {
+  "id": "customer",
+  "word": "customer",
+  "ipa": "/ˈkʌstəmər/",
+  "say": "KAS-te-mer",
+  "pos": "kata benda",
+  "meaning": "pelanggan",
+  "core": "Orang yang membeli barang atau jasa.",
+  "example": "Our customers like simple designs.",
+  "exampleId": "Pelanggan kami suka desain sederhana.",
+  "cefr": "A2",
+  "day": 10,
+  "trap": "'Client' untuk jasa profesional (arsitek, desainer). 'Customer' untuk pembeli umum (toko, produk).",
+  "collocations": [
+   "happy customer",
+   "customer service"
+  ]
+ },
+ {
+  "id": "money",
+  "word": "money",
+  "ipa": "/ˈmʌni/",
+  "say": "MA-ni",
+  "pos": "kata benda",
+  "meaning": "uang",
+  "core": "Alat pembayaran.",
+  "example": "We don't have much money for this project.",
+  "exampleId": "Kami tidak punya banyak uang untuk proyek ini.",
+  "cefr": "A1",
+  "day": 10,
+  "trap": "Tidak bisa dihitung: 'much money', bukan 'many moneys'.",
+  "collocations": [
+   "make money",
+   "save money"
+  ]
+ },
+ {
+  "id": "time",
+  "word": "time",
+  "ipa": "/taɪm/",
+  "say": "TAIM",
+  "pos": "kata benda",
+  "meaning": "waktu; kali",
+  "core": "Durasi atau saat tertentu.",
+  "example": "I don't have time today.",
+  "exampleId": "Saya tidak punya waktu hari ini.",
+  "cefr": "A1",
+  "day": 10,
+  "collocations": [
+   "free time",
+   "on time",
+   "What time is it?"
+  ]
+ },
+ {
+  "id": "but",
+  "word": "but",
+  "ipa": "/bʌt/",
+  "say": "BAT",
+  "pos": "kata keterangan",
+  "meaning": "tetapi",
+  "core": "Menyambung dua hal yang berlawanan.",
+  "example": "I like the design, but it is expensive.",
+  "exampleId": "Saya suka desainnya, tapi mahal.",
+  "cefr": "A1",
+  "day": 10
+ },
+ {
+  "id": "very",
+  "word": "very",
+  "ipa": "/ˈveri/",
+  "say": "VE-ri",
+  "pos": "kata keterangan",
+  "meaning": "sangat",
+  "core": "Menguatkan kata sifat.",
+  "example": "The client is very happy.",
+  "exampleId": "Kliennya sangat senang.",
+  "cefr": "A1",
+  "day": 10,
+  "trap": "'very' + kata sifat. Tidak dipakai dengan kata kerja: 'I like it very much', bukan 'I very like it'.",
+  "collocations": [
+   "very good",
+   "very much"
+  ]
+ },
+ {
+  "id": "understand",
+  "word": "understand",
+  "ipa": "/ˌʌndərˈstænd/",
+  "say": "an-der-STEND",
+  "pos": "kata kerja",
+  "meaning": "mengerti, paham",
+  "core": "Mengetahui arti atau maksud sesuatu.",
+  "example": "Do you understand the plan?",
+  "exampleId": "Apakah kamu paham rencananya?",
+  "cefr": "A1",
+  "day": 10,
+  "trap": "Tidak dipakai dengan am/is/are: 'I don't understand', bukan 'I am not understand'.",
+  "collocations": [
+   "I don't understand",
+   "understand English"
+  ]
+ },
+ {
+  "id": "know",
+  "word": "know",
+  "ipa": "/noʊ/",
+  "say": "NOU",
+  "pos": "kata kerja",
+  "meaning": "tahu, kenal",
+  "core": "Memiliki informasi atau mengenal seseorang.",
+  "example": "I don't know his name.",
+  "exampleId": "Saya tidak tahu namanya.",
+  "cefr": "A1",
+  "day": 10,
+  "trap": "Huruf 'k' tidak dibaca: NOU (sama bunyinya dengan 'no').",
+  "family": [
+   "knowledge (pengetahuan)"
+  ],
+  "collocations": [
+   "I know",
+   "I don't know"
+  ]
+ },
+ {
+  "id": "always",
+  "word": "always",
+  "ipa": "/ˈɔːlweɪz/",
+  "say": "OL-weiz",
+  "pos": "kata keterangan",
+  "meaning": "selalu",
+  "core": "100% waktu, tanpa kecuali.",
+  "example": "I always check my email in the morning.",
+  "exampleId": "Saya selalu mengecek email di pagi hari.",
+  "cefr": "A1",
+  "day": 11,
+  "trap": "Diletakkan SEBELUM kata kerja aksi (I always work), tapi SETELAH am/is/are (I am always busy)."
+ },
+ {
+  "id": "usually",
+  "word": "usually",
+  "ipa": "/ˈjuːʒuəli/",
+  "say": "YUU-zhu-e-li",
+  "pos": "kata keterangan",
+  "meaning": "biasanya",
+  "core": "Hampir selalu (±80–90%).",
+  "example": "She usually works from home on Friday.",
+  "exampleId": "Dia biasanya bekerja dari rumah hari Jumat.",
+  "cefr": "A1",
+  "day": 11,
+  "family": [
+   "usual (biasa)"
+  ]
+ },
+ {
+  "id": "often",
+  "word": "often",
+  "ipa": "/ˈɔːfən/",
+  "say": "O-fen",
+  "pos": "kata keterangan",
+  "meaning": "sering",
+  "core": "Banyak kali (±60–70%).",
+  "example": "We often meet clients at the site.",
+  "exampleId": "Kami sering bertemu klien di lokasi proyek.",
+  "cefr": "A1",
+  "day": 11,
+  "trap": "Huruf 't' biasanya tidak dibaca: O-fen."
+ },
+ {
+  "id": "sometimes",
+  "word": "sometimes",
+  "ipa": "/ˈsʌmtaɪmz/",
+  "say": "SAM-taimz",
+  "pos": "kata keterangan",
+  "meaning": "kadang-kadang",
+  "core": "Beberapa kali (±30–50%).",
+  "example": "I sometimes play games at night.",
+  "exampleId": "Saya kadang-kadang main game di malam hari.",
+  "cefr": "A1",
+  "day": 11,
+  "trap": "Satu kata: sometimes (bukan 'some times')."
+ },
+ {
+  "id": "never",
+  "word": "never",
+  "ipa": "/ˈnevər/",
+  "say": "NE-ver",
+  "pos": "kata keterangan",
+  "meaning": "tidak pernah",
+  "core": "0% waktu.",
+  "example": "He never drinks coffee.",
+  "exampleId": "Dia tidak pernah minum kopi.",
+  "cefr": "A1",
+  "day": 11,
+  "trap": "Sudah bermakna negatif: 'I never drink', bukan 'I don't never drink'."
+ },
+ {
+  "id": "day",
+  "word": "day",
+  "ipa": "/deɪ/",
+  "say": "DEI",
+  "pos": "kata benda",
+  "meaning": "hari",
+  "core": "Waktu 24 jam; atau siang hari.",
+  "example": "I work eight hours a day.",
+  "exampleId": "Saya bekerja delapan jam sehari.",
+  "cefr": "A1",
+  "day": 11,
+  "family": [
+   "daily (harian)",
+   "today (hari ini)"
+  ],
+  "collocations": [
+   "every day",
+   "a day",
+   "day off (hari libur)"
+  ]
+ },
+ {
+  "id": "week",
+  "word": "week",
+  "ipa": "/wiːk/",
+  "say": "WIIK",
+  "pos": "kata benda",
+  "meaning": "minggu (7 hari)",
+  "core": "Periode tujuh hari.",
+  "example": "I post three videos a week.",
+  "exampleId": "Saya mengunggah tiga video seminggu.",
+  "cefr": "A1",
+  "day": 11,
+  "trap": "'week' = minggu (7 hari). Hari Minggu = Sunday.",
+  "family": [
+   "weekly (mingguan)",
+   "weekend (akhir pekan)"
+  ],
+  "collocations": [
+   "every week",
+   "next week",
+   "a week"
+  ]
+ },
+ {
+  "id": "weekend",
+  "word": "weekend",
+  "ipa": "/ˈwiːkend/",
+  "say": "WIIK-end",
+  "pos": "kata benda",
+  "meaning": "akhir pekan",
+  "core": "Sabtu dan Minggu.",
+  "example": "I play games on the weekend.",
+  "exampleId": "Saya main game di akhir pekan.",
+  "cefr": "A1",
+  "day": 11,
+  "trap": "Amerika: 'on the weekend'. Inggris: 'at the weekend'.",
+  "collocations": [
+   "on the weekend",
+   "this weekend"
+  ]
+ },
+ {
+  "id": "early",
+  "word": "early",
+  "ipa": "/ˈɝːli/",
+  "say": "ER-li",
+  "pos": "kata sifat",
+  "meaning": "awal, pagi-pagi",
+  "core": "Sebelum waktu biasa atau yang direncanakan.",
+  "example": "I usually wake up early.",
+  "exampleId": "Saya biasanya bangun pagi.",
+  "cefr": "A1",
+  "day": 11,
+  "collocations": [
+   "early morning",
+   "too early"
+  ]
+ },
+ {
+  "id": "late",
+  "word": "late",
+  "ipa": "/leɪt/",
+  "say": "LEIT",
+  "pos": "kata sifat",
+  "meaning": "terlambat; larut",
+  "core": "Setelah waktu yang seharusnya.",
+  "example": "The contractor is often late.",
+  "exampleId": "Kontraktornya sering terlambat.",
+  "cefr": "A1",
+  "day": 11,
+  "trap": "'late' = terlambat/larut. 'lately' = akhir-akhir ini (arti berbeda!).",
+  "collocations": [
+   "be late",
+   "late at night"
+  ]
+ },
+ {
+  "id": "lamp",
+  "word": "lamp",
+  "ipa": "/læmp/",
+  "say": "LEMP",
+  "pos": "kata benda",
+  "meaning": "lampu (benda)",
+  "core": "Alat penerang yang bisa dipindah, misalnya lampu meja.",
+  "example": "There is a lamp on the table.",
+  "exampleId": "Ada lampu di atas meja.",
+  "cefr": "A1",
+  "day": 12,
+  "trap": "'lamp' = lampu meja/lantai (perabot). 'light' = cahaya/lampu secara umum.",
+  "collocations": [
+   "table lamp",
+   "floor lamp"
+  ]
+ },
+ {
+  "id": "sofa",
+  "word": "sofa",
+  "ipa": "/ˈsoʊfə/",
+  "say": "SOU-fe",
+  "pos": "kata benda",
+  "meaning": "sofa",
+  "core": "Kursi panjang empuk untuk beberapa orang.",
+  "example": "There is a grey sofa in the living room.",
+  "exampleId": "Ada sofa abu-abu di ruang keluarga.",
+  "cefr": "A1",
+  "day": 12,
+  "collocations": [
+   "corner sofa",
+   "sofa bed"
+  ]
+ },
+ {
+  "id": "bed",
+  "word": "bed",
+  "ipa": "/bed/",
+  "say": "BED",
+  "pos": "kata benda",
+  "meaning": "tempat tidur",
+  "core": "Perabot untuk tidur.",
+  "example": "There are two beds in the bedroom.",
+  "exampleId": "Ada dua tempat tidur di kamar.",
+  "cefr": "A1",
+  "day": 12,
+  "family": [
+   "bedroom (kamar tidur)"
+  ],
+  "collocations": [
+   "single bed",
+   "king-size bed"
+  ]
+ },
+ {
+  "id": "wall",
+  "word": "wall",
+  "ipa": "/wɔːl/",
+  "say": "WOL",
+  "pos": "kata benda",
+  "meaning": "dinding",
+  "core": "Bidang tegak yang membatasi ruangan.",
+  "example": "The walls are white.",
+  "exampleId": "Dinding-dindingnya putih.",
+  "cefr": "A1",
+  "day": 12,
+  "collocations": [
+   "wall color",
+   "accent wall"
+  ]
+ },
+ {
+  "id": "floor",
+  "word": "floor",
+  "ipa": "/flɔːr/",
+  "say": "FLOR",
+  "pos": "kata benda",
+  "meaning": "lantai",
+  "core": "Permukaan bawah ruangan; juga tingkat bangunan.",
+  "example": "The floor is wood.",
+  "exampleId": "Lantainya kayu.",
+  "cefr": "A1",
+  "day": 12,
+  "trap": "Juga berarti 'lantai/tingkat': the second floor (lantai 2).",
+  "collocations": [
+   "wooden floor",
+   "floor plan (denah)",
+   "on the floor"
+  ]
+ },
+ {
+  "id": "bathroom",
+  "word": "bathroom",
+  "ipa": "/ˈbæθruːm/",
+  "say": "BETH-ruum",
+  "pos": "kata benda",
+  "meaning": "kamar mandi",
+  "core": "Ruangan untuk mandi, biasanya dengan toilet.",
+  "example": "There is one bathroom upstairs.",
+  "exampleId": "Ada satu kamar mandi di lantai atas.",
+  "cefr": "A1",
+  "day": 12,
+  "trap": "'th' tak bersuara: lidah di antara gigi, hembuskan udara.",
+  "collocations": [
+   "master bathroom",
+   "bathroom tiles"
+  ]
+ },
+ {
+  "id": "bedroom",
+  "word": "bedroom",
+  "ipa": "/ˈbedruːm/",
+  "say": "BED-ruum",
+  "pos": "kata benda",
+  "meaning": "kamar tidur",
+  "core": "Ruangan untuk tidur.",
+  "example": "The house has three bedrooms.",
+  "exampleId": "Rumah itu punya tiga kamar tidur.",
+  "cefr": "A1",
+  "day": 12,
+  "collocations": [
+   "master bedroom",
+   "guest bedroom"
+  ]
+ },
+ {
+  "id": "living-room",
+  "word": "living room",
+  "ipa": "/ˈlɪvɪŋ ruːm/",
+  "say": "LI-ving ruum",
+  "pos": "kata benda",
+  "meaning": "ruang keluarga, ruang tamu",
+  "core": "Ruangan untuk bersantai dan menerima tamu.",
+  "example": "The living room is bright.",
+  "exampleId": "Ruang keluarganya terang.",
+  "cefr": "A1",
+  "day": 12,
+  "trap": "Dua kata, tekanan di 'LI-ving'.",
+  "collocations": [
+   "living room design"
+  ]
+ },
+ {
+  "id": "garden",
+  "word": "garden",
+  "ipa": "/ˈɡɑːrdn/",
+  "say": "GAR-den",
+  "pos": "kata benda",
+  "meaning": "taman, kebun",
+  "core": "Area tanah di sekitar rumah dengan tanaman.",
+  "example": "There is a small garden behind the house.",
+  "exampleId": "Ada taman kecil di belakang rumah.",
+  "cefr": "A1",
+  "day": 12,
+  "family": [
+   "gardener (tukang kebun)"
+  ],
+  "collocations": [
+   "front garden",
+   "garden design"
+  ]
+ },
+ {
+  "id": "color",
+  "word": "color",
+  "ipa": "/ˈkʌlər/",
+  "say": "KA-ler",
+  "pos": "kata benda",
+  "meaning": "warna",
+  "core": "Sifat cahaya seperti merah, biru, putih.",
+  "example": "What color is the sofa?",
+  "exampleId": "Sofanya warna apa?",
+  "cefr": "A1",
+  "day": 12,
+  "trap": "Ejaan Amerika: color. Inggris: colour.",
+  "family": [
+   "colorful (berwarna-warni)"
+  ],
+  "collocations": [
+   "wall color",
+   "color scheme"
+  ]
+ },
+ {
+  "id": "can",
+  "word": "can",
+  "ipa": "/kæn/",
+  "say": "KEN",
+  "pos": "kata kerja",
+  "meaning": "bisa, dapat",
+  "core": "Mampu atau boleh melakukan sesuatu.",
+  "example": "I can draw floor plans.",
+  "exampleId": "Saya bisa menggambar denah.",
+  "cefr": "A1",
+  "day": 13,
+  "trap": "Setelah 'can', kata kerja TANPA -s dan tanpa 'to': 'She can draw', bukan 'She can draws / can to draw'.",
+  "family": [
+   "cannot / can't (tidak bisa)"
+  ],
+  "collocations": [
+   "can + kata kerja dasar"
+  ]
+ },
+ {
+  "id": "speak",
+  "word": "speak",
+  "ipa": "/spiːk/",
+  "say": "SPIIK",
+  "pos": "kata kerja",
+  "meaning": "berbicara",
+  "core": "Mengucapkan kata-kata; memakai suatu bahasa.",
+  "example": "He can speak English a little.",
+  "exampleId": "Dia bisa berbicara bahasa Inggris sedikit.",
+  "cefr": "A1",
+  "day": 13,
+  "trap": "'speak English' (memakai bahasa), 'talk to someone' (mengobrol dengan seseorang).",
+  "family": [
+   "speaker (pembicara; pengeras suara)"
+  ],
+  "collocations": [
+   "speak English",
+   "speak to"
+  ]
+ },
+ {
+  "id": "draw",
+  "word": "draw",
+  "ipa": "/drɔː/",
+  "say": "DRO",
+  "pos": "kata kerja",
+  "meaning": "menggambar",
+  "core": "Membuat gambar dengan garis.",
+  "example": "She draws by hand and on a tablet.",
+  "exampleId": "Dia menggambar dengan tangan dan di tablet.",
+  "cefr": "A1",
+  "day": 13,
+  "family": [
+   "drawing (gambar)"
+  ],
+  "collocations": [
+   "draw a plan",
+   "draw a sketch"
+  ]
+ },
+ {
+  "id": "drive",
+  "word": "drive",
+  "ipa": "/draɪv/",
+  "say": "DRAIV",
+  "pos": "kata kerja",
+  "meaning": "menyetir",
+  "core": "Mengemudikan kendaraan.",
+  "example": "I can't drive a truck.",
+  "exampleId": "Saya tidak bisa menyetir truk.",
+  "cefr": "A1",
+  "day": 13,
+  "family": [
+   "driver (sopir)"
+  ],
+  "collocations": [
+   "drive a car",
+   "drive to work"
+  ]
+ },
+ {
+  "id": "cook",
+  "word": "cook",
+  "ipa": "/kʊk/",
+  "say": "KUK",
+  "pos": "kata kerja",
+  "meaning": "memasak",
+  "core": "Menyiapkan makanan dengan panas.",
+  "example": "My mother cooks very well.",
+  "exampleId": "Ibu saya memasak dengan sangat baik.",
+  "cefr": "A1",
+  "day": 13,
+  "trap": "'cook' juga kata benda = juru masak. 'cooker' = kompor (bukan orang!).",
+  "family": [
+   "cooking (memasak)"
+  ],
+  "collocations": [
+   "cook dinner",
+   "cook well"
+  ]
+ },
+ {
+  "id": "fix",
+  "word": "fix",
+  "ipa": "/fɪks/",
+  "say": "FIKS",
+  "pos": "kata kerja",
+  "meaning": "memperbaiki",
+  "core": "Membuat sesuatu yang rusak berfungsi lagi.",
+  "example": "Can you fix the door?",
+  "exampleId": "Bisakah kamu memperbaiki pintunya?",
+  "cefr": "A1",
+  "day": 13,
+  "trap": "He/she: fixes.",
+  "collocations": [
+   "fix a problem",
+   "fix the door"
+  ]
+ },
+ {
+  "id": "help",
+  "word": "help",
+  "ipa": "/help/",
+  "say": "HELP",
+  "pos": "kata kerja",
+  "meaning": "membantu",
+  "core": "Membuat pekerjaan orang lain lebih mudah.",
+  "example": "Can you help me?",
+  "exampleId": "Bisakah kamu membantu saya?",
+  "cefr": "A1",
+  "day": 13,
+  "family": [
+   "helpful (membantu)"
+  ],
+  "collocations": [
+   "help me",
+   "Can I help you?"
+  ]
+ },
+ {
+  "id": "english",
+  "word": "English",
+  "ipa": "/ˈɪŋɡlɪʃ/",
+  "say": "ING-glisy",
+  "pos": "kata benda",
+  "meaning": "bahasa Inggris; orang Inggris",
+  "core": "Bahasa Inggris, atau hal dari negara Inggris.",
+  "example": "I study English every day.",
+  "exampleId": "Saya belajar bahasa Inggris setiap hari.",
+  "cefr": "A1",
+  "day": 13,
+  "trap": "Selalu huruf besar: English, bukan english. Tanpa 'the': speak English.",
+  "collocations": [
+   "speak English",
+   "learn English"
+  ]
+ },
+ {
+  "id": "well",
+  "word": "well",
+  "ipa": "/wel/",
+  "say": "WEL",
+  "pos": "kata keterangan",
+  "meaning": "dengan baik",
+  "core": "Cara melakukan sesuatu yang baik (kata keterangan dari 'good').",
+  "example": "He speaks English well.",
+  "exampleId": "Dia berbicara bahasa Inggris dengan baik.",
+  "cefr": "A1",
+  "day": 13,
+  "trap": "'good' menjelaskan benda (a good designer). 'well' menjelaskan cara melakukan (designs well).",
+  "collocations": [
+   "very well",
+   "speak well"
+  ]
+ },
+ {
+  "id": "fast",
+  "word": "fast",
+  "ipa": "/fæst/",
+  "say": "FEST",
+  "pos": "kata sifat",
+  "meaning": "cepat",
+  "core": "Bergerak atau bekerja dengan kecepatan tinggi.",
+  "example": "She types very fast.",
+  "exampleId": "Dia mengetik sangat cepat.",
+  "cefr": "A1",
+  "day": 13,
+  "trap": "'fast' bisa sifat dan keterangan sekaligus: a fast car / drive fast (bukan 'fastly').",
+  "collocations": [
+   "fast internet",
+   "work fast"
+  ]
+ }
 ]

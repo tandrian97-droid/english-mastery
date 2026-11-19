@@ -8,6 +8,36 @@ import { Link } from 'react-router-dom';
 import { ReportCard } from './ReportCard';
 import { deriveErrorStats } from '../../db/learning';
 import { loadErrorTagIndex } from '../../content/load';
+import { AccuracyBars, MinutesChart, VocabGrowth } from './Charts';
+import { AssessmentForm } from './AssessmentCard';
+import { lastNDays, toLocalDate } from '../../engine/dates';
+import type { ExerciseAttempt, VocabCard } from '../../db/schema';
+
+/** Mengelompokkan jawaban per bagian untuk grafik akurasi. */
+function skillOf(a: ExerciseAttempt): string {
+  if (a.exerciseId.includes(':speak-')) return 'Speaking';
+  if (a.exerciseId.includes(':dictation-')) return 'Listening (dikte)';
+  if (a.lessonId === 'practice') return 'Latihan Pintar';
+  if (a.lessonId === 'writing-studio') return '';
+  const part = a.lessonId.split(':')[1];
+  return ({ grammar: 'Grammar', reading: 'Reading', writing: 'Writing' } as Record<string, string>)[part] ?? '';
+}
+
+function vocabSeries(cards: VocabCard[]): { date: string; known: number; mastered: number }[] {
+  if (!cards.length) return [];
+  const first = Math.min(...cards.map((c) => c.firstSeenAt));
+  const days = Math.min(120, Math.ceil((Date.now() - first) / 86_400_000) + 1);
+  const dates = lastNDays(days);
+  return dates.map((d) => {
+    const endOfDay = new Date(`${d}T23:59:59`).getTime();
+    return {
+      date: d,
+      known: cards.filter((c) => c.firstSeenAt <= endOfDay).length,
+      // tanggal penguasaan diperkirakan dari pembaruan terakhir kartu
+      mastered: cards.filter((c) => c.mastery >= 3 && c.updatedAt <= endOfDay).length,
+    };
+  });
+}
 
 export function ProgressPage() {
   const data = useLiveQuery(async () => {
@@ -22,13 +52,30 @@ export function ProgressPage() {
     ]);
     const wrongAttempts = await db.exercise_attempts.filter((a) => !a.isCorrect).toArray();
     const weak = deriveErrorStats(wrongAttempts, await loadErrorTagIndex()).slice(0, 5);
-    return { profile, logs, lessonsDone, writings, attempts, correct, assessments, weak };
+    const allAttempts = await db.exercise_attempts.toArray();
+    const cards = await db.vocab_cards.toArray();
+    return { profile, logs, lessonsDone, writings, attempts, correct, assessments, weak, allAttempts, cards };
   });
   if (!data?.profile) return <div className="page" aria-busy="true" />;
 
   const total = data.logs.reduce((s, l) => s + l.activeSeconds, 0);
   const accuracy = data.attempts ? Math.round((data.correct / data.attempts) * 100) : null;
   const programPct = Math.round(((data.profile.curriculumDay - 1) / TOTAL_CURRICULUM_DAYS) * 100);
+  const byDate = new Map(data.logs.map((l) => [l.date, l.activeSeconds]));
+  const minutes30 = lastNDays(30, toLocalDate()).map((date) => ({ date, minutes: Math.round((byDate.get(date) ?? 0) / 60) }));
+  const groups = new Map<string, { ok: number; n: number }>();
+  for (const a of data.allAttempts) {
+    const k = skillOf(a);
+    if (!k) continue;
+    const g = groups.get(k) ?? { ok: 0, n: 0 };
+    g.n++;
+    if (a.isCorrect) g.ok++;
+    groups.set(k, g);
+  }
+  const accItems = ['Grammar', 'Reading', 'Writing', 'Listening (dikte)', 'Speaking', 'Latihan Pintar'].map((label) => {
+    const g = groups.get(label);
+    return { label, pct: g ? Math.round((g.ok / g.n) * 100) : null, n: g?.n ?? 0 };
+  });
 
   return (
     <div className="page">
@@ -73,6 +120,21 @@ export function ProgressPage() {
               <div className="value">{data.writings}</div>
             </div>
           </div>
+        </section>
+
+        <section className="card span-2">
+          <h2>Menit belajar · 30 hari terakhir</h2>
+          <MinutesChart days={minutes30} target={data.profile.dailyTargetMinutes} />
+        </section>
+
+        <section className="card">
+          <h2>Akurasi per bagian</h2>
+          <AccuracyBars items={accItems} />
+        </section>
+
+        <section className="card">
+          <h2>Pertumbuhan kosakata</h2>
+          <VocabGrowth points={vocabSeries(data.cards)} />
         </section>
 
         <section className="card span-2">
@@ -135,7 +197,8 @@ export function ProgressPage() {
               </tbody>
             </table>
           )}
-          <p className="muted small">Skor otomatis aplikasi bukan sertifikasi CEFR resmi.</p>
+          <p className="muted small">Skor otomatis aplikasi bukan sertifikasi CEFR resmi. Disarankan tes gratis EF SET di bulan 3, 6, dan 10, lalu catat hasilnya di sini. Level di Beranda hanya berubah dari catatan ini.</p>
+          <AssessmentForm />
         </section>
       </div>
     </div>

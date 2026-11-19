@@ -1,0 +1,154 @@
+{
+  "day": 11,
+  "month": 1,
+  "title": "Seberapa sering: always, usually, never",
+  "goals": [
+    "Memakai always, usually, often, sometimes, never di posisi yang benar",
+    "Menyebut waktu: at 8, in the morning, on Monday, every day",
+    "Menceritakan rutinitas mingguan Anda"
+  ],
+  "newWords": ["always", "usually", "often", "sometimes", "never", "day", "week", "weekend", "early", "late"],
+  "lesson": {
+    "id": "L11",
+    "title": "Kata frekuensi & keterangan waktu",
+    "cefr": "A1",
+    "goal": "Setelah pelajaran ini Anda bisa berkata \"I usually work from home on Friday\" dan \"I am never late\", dengan kata frekuensi di posisi yang tepat.",
+    "layers": [
+      {
+        "kind": "simple",
+        "title": "Gambaran sederhana",
+        "blocks": [
+          {"type": "p", "text": "Simple present menceritakan **kebiasaan**. Kebiasaan selalu punya pertanyaan tersembunyi: **seberapa sering?** Bahasa Inggris menjawabnya dengan lima kata seperti tangga:"},
+          {"type": "table", "head": ["Kata", "Bunyi", "Arti", "Kira-kira"], "rows": [
+            ["always", "OL-weiz", "selalu", "100%"],
+            ["usually", "YUU-zhu-e-li", "biasanya", "±85%"],
+            ["often", "O-fen", "sering", "±65%"],
+            ["sometimes", "SAM-taimz", "kadang-kadang", "±40%"],
+            ["never", "NE-ver", "tidak pernah", "0%"]
+          ]}
+        ]
+      },
+      {
+        "kind": "pattern",
+        "title": "Pola: di mana letaknya?",
+        "blocks": [
+          {"type": "p", "text": "Aturan posisinya mengikuti **dua jenis lokomotif** yang Anda kenal:"},
+          {"type": "table", "head": ["Jenis kalimat", "Posisi", "Contoh"], "rows": [
+            ["Kata kerja aksi", "**SEBELUM** kata kerja", "I **always** check my email. She **usually** works at home."],
+            ["am / is / are", "**SETELAH** am/is/are", "I am **always** busy. The contractor is **often** late."],
+            ["don't / doesn't", "di antara don't dan kata kerja", "I don't **usually** drink coffee."]
+          ]},
+          {"type": "p", "text": "**Keterangan waktu** biasanya di **akhir** kalimat, dengan kata depan yang tepat:"},
+          {"type": "table", "head": ["Kata depan", "Untuk", "Contoh"], "rows": [
+            ["**at**", "jam tepat", "at 8 o'clock, at noon, at night"],
+            ["**in**", "bagian hari, bulan, tahun", "in the morning, in the afternoon, in June"],
+            ["**on**", "hari & tanggal", "on Monday, on the weekend, on May 5"],
+            ["(tanpa kata depan)", "every / this / next", "every day, this week, next Monday"]
+          ]},
+          {"type": "table", "head": ["Hari", "Bunyi"], "rows": [
+            ["Monday · Tuesday · Wednesday", "MAN-dei · TYUUZ-dei · WENZ-dei"],
+            ["Thursday · Friday", "THERZ-dei · FRAI-dei"],
+            ["Saturday · Sunday", "SE-ter-dei · SAN-dei"]
+          ]}
+        ]
+      },
+      {
+        "kind": "why",
+        "title": "Kenapa begitu?",
+        "blocks": [
+          {"type": "p", "text": "**Kenapa posisinya berbeda?** Kata frekuensi suka menempel tepat di sebelah \"inti\" kalimat. Pada kalimat aksi, intinya adalah kata kerja → kata frekuensi berdiri **di depannya** (*always work*). Pada kalimat be, intinya adalah keadaan setelah be → kata frekuensi masuk **di antara** be dan keadaannya (*is always busy*)."},
+          {"type": "p", "text": "**Kenapa at / in / on?** Bayangkan waktu seperti tempat. **at** = satu titik kecil (jam 8). **in** = wadah yang lebih besar (pagi, bulan Juni). **on** = permukaan satu hari (Senin, tanggal 5). Gambaran 'titik → permukaan → wadah' ini juga dipakai untuk tempat: *at the door, on the table, in the room*."},
+          {"type": "p", "text": "**Kenapa *never* tidak pakai don't?** *never* sudah berarti 'tidak + pernah'. Menambah *don't* membuat negatif dobel, dan dalam bahasa Inggris baku negatif dobel dianggap salah."}
+        ]
+      },
+      {
+        "kind": "when",
+        "title": "Kapan dipakai, kapan TIDAK",
+        "blocks": [
+          {"type": "mistakes", "items": [
+            {"wrong": "I check always my email.", "right": "I always check my email.", "why": "Kata frekuensi SEBELUM kata kerja aksi."},
+            {"wrong": "I always am busy.", "right": "I am always busy.", "why": "Dengan am/is/are, kata frekuensi SETELAH be."},
+            {"wrong": "I don't never drink coffee.", "right": "I never drink coffee.", "why": "never sudah negatif. Jangan dobel."},
+            {"wrong": "I work in Monday.", "right": "I work on Monday.", "why": "Hari memakai 'on'."},
+            {"wrong": "at the morning", "right": "in the morning", "why": "Bagian hari memakai 'in' (pengecualian: at night)."},
+            {"wrong": "every days", "right": "every day", "why": "every + kata tunggal."},
+            {"wrong": "monday", "right": "Monday", "why": "Nama hari selalu huruf besar."}
+          ]}
+        ]
+      },
+      {
+        "kind": "nuance",
+        "title": "Nuansa",
+        "blocks": [
+          {"type": "p", "text": "**Sometimes** boleh juga di **awal** kalimat untuk penekanan: *Sometimes I work at night.* **Usually** dan **often** juga kadang di awal. Tapi **always** dan **never** hampir selalu di tengah."},
+          {"type": "p", "text": "**late vs lately:** *late* = terlambat (*He is often late*). *lately* = akhir-akhir ini, artinya berbeda sama sekali (*I play games a lot lately*)."},
+          {"type": "p", "text": "Di dunia kerja, *I'm always on time* (saya selalu tepat waktu) adalah kalimat yang sangat dihargai klien. *on time* = tepat waktu."}
+        ]
+      },
+      {
+        "kind": "origin",
+        "title": "Asal-usul",
+        "optional": true,
+        "blocks": [
+          {"type": "p", "text": "Nama hari dalam bahasa Inggris berasal dari nama dewa dan benda langit: *Sunday* = hari Matahari (sun), *Monday* = hari Bulan (moon), *Saturday* = hari Saturnus. *Wednesday* dari dewa Woden (Odin), dan *Thursday* dari Thor. Ini juga sebabnya nama hari selalu ditulis dengan huruf besar, seperti nama orang."}
+        ]
+      }
+    ],
+    "exercises": [
+      {"id": "d11-e1", "type": "order", "prompt": "Susun: Saya selalu mengecek email saya.", "tokens": ["I", "always", "check", "my", "email."], "explain": "always SEBELUM kata kerja aksi.", "errorTag": "frequency-position"},
+      {"id": "d11-e2", "type": "order", "prompt": "Susun: Kontraktornya sering terlambat.", "tokens": ["The", "contractor", "is", "often", "late."], "explain": "often SETELAH is.", "errorTag": "frequency-position"},
+      {"id": "d11-e3", "type": "mc", "prompt": "Mana yang BENAR?", "options": [{"text": "She works usually at home.", "why": "usually sebelum kata kerja."}, {"text": "She usually works at home."}, {"text": "She is usually work at home.", "why": "Dua lokomotif."}], "answer": 1, "explain": "usually + works.", "errorTag": "frequency-position"},
+      {"id": "d11-e4", "type": "mc", "prompt": "Mana yang BENAR?", "options": [{"text": "I am never late."}, {"text": "I never am late.", "why": "Dengan am, never di belakang am."}, {"text": "I don't never late.", "why": "Negatif dobel dan tanpa lokomotif."}], "answer": 0, "explain": "am + never.", "errorTag": "frequency-position"},
+      {"id": "d11-e5", "type": "mc", "prompt": "Mana yang BENAR?", "options": [{"text": "I don't never play games.", "why": "Negatif dobel."}, {"text": "I never play games."}], "answer": 1, "explain": "never sudah berarti 'tidak pernah'."},
+      {"id": "d11-e6", "type": "fill", "prompt": "I go to the office ___ Monday.", "accept": ["on"], "explain": "Hari → on.", "errorTag": "time-preposition"},
+      {"id": "d11-e7", "type": "fill", "prompt": "I read the news ___ the morning.", "accept": ["in"], "explain": "Bagian hari → in the morning.", "errorTag": "time-preposition"},
+      {"id": "d11-e8", "type": "fill", "prompt": "The meeting is ___ 9 o'clock.", "accept": ["at"], "explain": "Jam tepat → at.", "errorTag": "time-preposition"},
+      {"id": "d11-e9", "type": "fill", "prompt": "I play games ___ the weekend. (gaya Amerika)", "accept": ["on"], "explain": "on the weekend (Amerika) / at the weekend (Inggris).", "errorTag": "time-preposition"},
+      {"id": "d11-e10", "type": "translate", "prompt": "Saya biasanya bangun pagi. (bangun = wake up)", "accept": ["I usually wake up early.", "I usually get up early."], "explain": "usually sebelum wake up; early di akhir.", "errorTag": "frequency-position"},
+      {"id": "d11-e11", "type": "translate", "prompt": "Dia (laki-laki) kadang-kadang bekerja di malam hari.", "accept": ["He sometimes works at night.", "Sometimes he works at night."], "explain": "sometimes + works (-s!) + at night.", "errorTag": "third-person-s"},
+      {"id": "d11-e12", "type": "translate", "prompt": "Kami tidak pernah bekerja hari Minggu.", "accept": ["We never work on Sunday.", "We never work on Sundays."], "explain": "never (tanpa don't) + on Sunday.", "errorTag": "frequency-position"},
+      {"id": "d11-e13", "type": "explain", "prompt": "Jelaskan dengan kata-kata Anda: kenapa 'I always work' tapi 'I am always busy'?", "model": "Karena kata frekuensi diletakkan sebelum kata kerja aksi (always work), tetapi setelah am/is/are (am always busy).", "explain": "Dua jenis lokomotif, dua posisi."}
+    ]
+  },
+  "reading": {
+    "id": "R11",
+    "title": "My week",
+    "cefr": "A1",
+    "intro": "Budi menceritakan minggunya. Temukan semua kata frekuensi dan perhatikan posisinya.",
+    "paragraphs": [
+      {"en": "I usually wake up early, at six o'clock. I always drink coffee in the morning, and I read the news on my phone.", "id": "Saya biasanya bangun pagi, jam enam. Saya selalu minum kopi di pagi hari, dan saya membaca berita di HP."},
+      {"en": "On Monday and Wednesday, I go to the office. On Tuesday and Thursday, I often go to the site. I am never late.", "id": "Hari Senin dan Rabu, saya pergi ke kantor. Hari Selasa dan Kamis, saya sering pergi ke lokasi proyek. Saya tidak pernah terlambat."},
+      {"en": "But our contractor is sometimes late, and my clients don't like that!", "id": "Tapi kontraktor kami kadang-kadang terlambat, dan klien saya tidak suka itu!"},
+      {"en": "On Friday, I usually work at home. I write emails and I make videos for my channel.", "id": "Hari Jumat, saya biasanya bekerja di rumah. Saya menulis email dan membuat video untuk channel saya."},
+      {"en": "On the weekend, I sometimes play games with my friends. I never work on Sunday. It is my day!", "id": "Di akhir pekan, saya kadang-kadang main game dengan teman-teman. Saya tidak pernah bekerja hari Minggu. Itu hari saya!"}
+    ],
+    "glossary": {"wake": "bangun", "wake up": "bangun tidur", "up": "(lihat wake up)", "six": "enam", "o'clock": "tepat (jam)", "drink": "minum", "news": "berita", "on": "pada / di (atas)", "monday": "Senin", "wednesday": "Rabu", "tuesday": "Selasa", "thursday": "Kamis", "friday": "Jumat", "sunday": "Minggu", "site": "lokasi proyek", "that": "itu", "emails": "email-email", "for": "untuk", "channel": "channel (YouTube dll.)", "with": "dengan", "friends": "teman-teman", "the": "(kata sandang)", "to": "ke", "in": "di", "at": "pada (jam), di"},
+    "questions": [
+      {"id": "d11-r1", "type": "mc", "prompt": "Jam berapa Budi biasanya bangun?", "options": [{"text": "Jam 5"}, {"text": "Jam 6"}, {"text": "Jam 8"}], "answer": 1, "explain": "'at six o'clock'."},
+      {"id": "d11-r2", "type": "mc", "prompt": "Ke mana Budi sering pergi hari Selasa dan Kamis?", "options": [{"text": "Ke kantor"}, {"text": "Ke lokasi proyek"}, {"text": "Ke rumah klien"}], "answer": 1, "explain": "'On Tuesday and Thursday, I often go to the site.'"},
+      {"id": "d11-r3", "type": "mc", "prompt": "Siapa yang kadang-kadang terlambat?", "options": [{"text": "Budi"}, {"text": "Kontraktornya"}, {"text": "Kliennya"}], "answer": 1, "explain": "'our contractor is sometimes late'. Budi sendiri 'never late'."},
+      {"id": "d11-r4", "type": "mc", "prompt": "Apa yang Budi TIDAK PERNAH lakukan?", "options": [{"text": "Minum kopi di pagi hari"}, {"text": "Bekerja hari Minggu"}, {"text": "Main game"}], "answer": 1, "explain": "'I never work on Sunday.'"}
+    ]
+  },
+  "listening": {
+    "intro": "Kata frekuensi biasanya diucapkan agak ditekan. Tirukan iramanya.",
+    "items": [
+      {"en": "I always drink coffee in the morning.", "id": "Saya selalu minum kopi di pagi hari.", "tip": "always = OL-weiz."},
+      {"en": "She usually works at home on Friday.", "id": "Dia biasanya bekerja di rumah hari Jumat.", "tip": "usually = YUU-zhu-e-li, empat suku kata."},
+      {"en": "We often meet clients at the site.", "id": "Kami sering bertemu klien di lokasi proyek.", "tip": "often = O-fen (t biasanya tidak dibaca)."},
+      {"en": "I sometimes play games on the weekend.", "id": "Saya kadang-kadang main game di akhir pekan."},
+      {"en": "He is never late.", "id": "Dia tidak pernah terlambat."},
+      {"en": "The meeting is at nine o'clock.", "id": "Rapatnya jam sembilan.", "tip": "o'clock = e-KLOK."},
+      {"en": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.", "id": "Senin sampai Minggu.", "tip": "Wednesday = WENZ-dei (huruf d pertama tidak dibaca)."},
+      {"en": "I work eight hours a day.", "id": "Saya bekerja delapan jam sehari."}
+    ]
+  },
+  "writing": {
+    "intro": "Ceritakan minggu Anda yang sebenarnya.",
+    "exercises": [
+      {"id": "d11-w1", "type": "translate", "prompt": "Saya selalu sibuk hari Senin.", "accept": ["I am always busy on Monday.", "I'm always busy on Monday.", "I am always busy on Mondays.", "I'm always busy on Mondays."], "explain": "am + always + busy + on Monday.", "errorTag": "frequency-position"},
+      {"id": "d11-w2", "type": "translate", "prompt": "Dia (perempuan) sering membuat video di malam hari.", "accept": ["She often makes videos at night.", "She often makes a video at night."], "explain": "often + makes (-s) + at night.", "errorTag": "third-person-s"},
+      {"id": "d11-w3", "type": "explain", "prompt": "Tulis 6 kalimat tentang minggu Anda: pakai always, usually, often, sometimes, never, dan minimal 3 nama hari.", "model": "I always wake up at six. I usually work at the office on Monday. I often go to the site on Wednesday. I sometimes make videos on Friday. I play games on the weekend. I never work on Sunday.", "explain": "Gunakan rutinitas Anda yang sebenarnya, supaya kalimatnya mudah diingat."}
+    ]
+  }
+}

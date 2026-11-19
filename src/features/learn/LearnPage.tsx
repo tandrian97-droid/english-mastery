@@ -28,6 +28,17 @@ export function LearnPage() {
         </div>
       </header>
 
+      <div className="grid two">
+        <Link to="/writing" className="card block-link">
+          <h2>Writing Studio</h2>
+          <p className="muted small">Menulis bebas: perkenalan, proyek, email klien, laporan. Diperiksa offline, bisa disalin ke Claude.</p>
+        </Link>
+        <Link to="/practice" className="card block-link">
+          <h2>Latihan Pintar</h2>
+          <p className="muted small">±10 soal dari kelemahan dan kata tersulit Anda. Setiap sesi berbeda.</p>
+        </Link>
+      </div>
+
       {error && <div className="banner bad">Kurikulum gagal dimuat ({error}). Buka aplikasi sekali saat online agar materi tersimpan.</div>}
 
       {data?.months

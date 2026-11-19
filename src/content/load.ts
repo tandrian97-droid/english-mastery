@@ -1,4 +1,4 @@
-import type { ContentDay, Curriculum, Word } from './types';
+import type { ContentDay, Curriculum, Word, WritingPrompts } from './types';
 
 const base = () => `${import.meta.env.BASE_URL}content/`;
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -54,3 +54,5 @@ export async function loadErrorTagIndex(): Promise<Map<string, string>> {
     for (const e of [...d.lesson.exercises, ...d.reading.questions, ...d.writing.exercises]) if (e.errorTag) map.set(e.id, e.errorTag);
   return map;
 }
+
+export const loadWritingPrompts = () => getJson<WritingPrompts>('writing-prompts.json');

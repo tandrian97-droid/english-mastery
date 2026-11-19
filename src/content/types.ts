@@ -181,3 +181,27 @@ export interface ContentDay {
 }
 
 export type { CefrLevel };
+
+// ---------- Writing Studio ----------
+
+export interface WritingPrompt {
+  id: string;
+  title: string;
+  task: string;
+  minWords: number;
+  hint: string;
+}
+
+export interface WritingLevelDef {
+  level: 1 | 2 | 3 | 4 | 5;
+  title: string;
+  desc: string;
+  /** Disarankan mulai hari kurikulum ini. */
+  fromDay: number;
+  prompts: WritingPrompt[];
+}
+
+export interface WritingPrompts {
+  version: string;
+  levels: WritingLevelDef[];
+}
